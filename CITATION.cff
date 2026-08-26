@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "ortho-tech-diffusion: tooling for measuring technology research diffusion in orthopaedic literature"
+abstract: >-
+  Pipeline for measuring the share of orthopaedic surgical literature devoted to
+  distinct technology families in MEDLINE/PubMed, 2005-2025. Provides a local mirror
+  of the PubMed baseline and update files with MD5 verification, a parallel parser
+  producing an analytic denominator table with explicit PubMed/MEDLINE status flags,
+  PMID deduplication honouring DeleteCitation, and programmatic expansion of MeSH
+  subtrees defining the clinical field. Study protocol in docs/protocol/.
+type: software
+authors:
+  - family-names: "Czuma"
+    given-names: "Przemysław"
+    orcid: "https://orcid.org/0009-0009-8235-2053"
+    email: "przemek.czuma@gmail.com"
+    affiliation: "Department of Orthopedics and Traumatology, Piekary Śląskie, Poland; Polish Association for Artificial Intelligence in Medicine"
+version: "0.1.0"
+date-released: "2026-08-26"
+license: "CC-BY-4.0"
+keywords:
+  - bibliometrics
+  - orthopaedics
+  - technology diffusion
+  - MEDLINE
+  - MeSH
+# repository-code celowo pominiete: repo nie ma jeszcze zdalnego adresu.
+# Wpisac dopiero po utworzeniu remote'a — nie zgadywac URL-a.

@@ -1,0 +1,39 @@
+# === Poswiadczenia — nigdy do repo ===
+.aws/
+.env
+*.pem
+*.key
+credentials
+secrets.*
+
+# === Python ===
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# === Lustro PubMed i wyjscia posrednie — odtwarzalne skryptami, nie wersjonowane ===
+*.xml.gz
+parsed/
+baseline/
+updatefiles/
+deleted_pmids.json
+
+# === Dane surowe ===
+data/raw/*
+!data/raw/.gitkeep
+
+# === Logi i wyniki robocze ===
+logs/*
+!logs/.gitkeep
+results/*
+!results/.gitkeep
+
+# === Dokumentacja: WERSJONOWANA (celowo brak wpisu docs/) ===
+# Wyjatek: notatki wewnetrzne, ktore nie ida do publikacji
+docs/internal/
+
+# === System ===
+Thumbs.db
+.DS_Store

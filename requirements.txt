@@ -1,0 +1,7 @@
+# Wersje zweryfikowane w srodowisku, w ktorym pipeline byl uruchamiany (2026-08-26).
+pandas>=2.3
+pyarrow>=23.0
+numpy>=2.0
+
+# medline_fetch.py i mesh_tree.py korzystaja wylacznie z biblioteki standardowej.
+# medline_extract.py wymaga pandas + pyarrow; medline_dedup.py dodatkowo numpy.
