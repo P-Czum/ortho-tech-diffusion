@@ -10,8 +10,8 @@ definicji 2 — bo te sluza jako niezalezne kontrole PO kodowaniu (kodeks §5). 
 tu latwiejsze niz u czlowieka: model nie zobaczy tego, czego nie wyslemy.
 
 Odtwarzalnosc jest jedyna realna przewaga tej konstrukcji nad koderem-czlowiekiem i trzeba ja
-wykorzystac: temperatura 0, model podawany jawnie, kazda surowa odpowiedz zapisywana do JSONL,
-hash promptu w wyniku. Recenzent moze przebieg powtorzyc.
+wykorzystac: seed podawany jawnie, model i dostawca w wyniku, kazda surowa odpowiedz
+zapisywana do JSONL, hash promptu w wyniku. Recenzent moze przebieg powtorzyc.
 
 Uruchom:
     set OPENAI_API_KEY=...
@@ -153,8 +153,12 @@ def main() -> int:
             for i, (_, r) in enumerate(sub.iterrows(), 1):
                 msg = build(r)
                 try:
+                    # BEZ temperature: modele serii GPT-5.6 jej NIE wspieraja (sprawdzone
+                    # w metadanych OpenRouter). Determinizm zapewnia seed, ktory wspieraja —
+                    # i ktory jest do naszych celow lepszy, bo jest jawna liczba do rejestracji,
+                    # a nie zalozeniem o interpretacji temperatury zerowej.
                     resp = client.chat.completions.create(
-                        model=args.model, temperature=0,
+                        model=args.model, seed=args.seed,
                         response_format={"type": "json_object"},
                         messages=[{"role": "system", "content": SYSTEM},
                                   {"role": "user", "content": msg}])
@@ -167,7 +171,7 @@ def main() -> int:
                 if cat and cat not in CATEGORIES:
                     err = err or f"kategoria spoza listy: {cat!r}"
                 raw.write(json.dumps({"run": run, "term": r["term"], "model": args.model,
-                                      "provider": args.provider,
+                                      "provider": args.provider, "seed": args.seed,
                                       "prompt_hash": prompt_hash, "raw": txt, "blad": err},
                                      ensure_ascii=False) + "\n")
                 rows.append({"run": run, "term": r["term"], "y0": r["y0"],

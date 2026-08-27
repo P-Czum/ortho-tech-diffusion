@@ -103,7 +103,9 @@ TYTUŁY ZAWIERAJĄCE OBA TERMINY NARAZ:
 | parametr | wartość |
 |---|---|
 | model | podawany jawnie przy uruchomieniu, zapisywany w wyniku |
-| temperatura | 0 |
+| temperatura | **nieuzywana** — modele GPT-5.6 jej nie wspieraja (metadane OpenRouter) |
+| seed | 20260827, jawny i zapisywany w wyniku |
+| dostawca | zapisywany obok identyfikatora: `openai/gpt-5.6-sol` (OpenRouter) to nie to samo co `gpt-5.6-sol` (OpenAI) |
 | liczba przebiegów na termin | 1 (przy 3 raportujemy zgodność wewnętrzną) |
 | format odpowiedzi | wymuszony JSON |
 | pola widoczne | wyłącznie te z szablonu powyżej |
