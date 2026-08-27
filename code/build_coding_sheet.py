@@ -91,7 +91,8 @@ def main() -> int:
     dec_terms = list(dec["term"])
     print(f"celow: {len(tgt)}, kandydatow na poprzednika: {len(dec_terms)}", file=sys.stderr)
 
-    tgt_id = {t: i for i, t in enumerate(tgt["term"])}
+    terms = list(tgt["term"])
+    tgt_id = {t: i for i, t in enumerate(terms)}
     dec_id = {t: i for i, t in enumerate(dec_terms)}
     y0 = tgt["y0"].to_numpy(int)
 
@@ -125,6 +126,43 @@ def main() -> int:
         if (n + 1) % 50000 == 0:
             print(f"  {n+1}/{len(df)} ({(time.time()-t0)/60:.1f} min)", file=sys.stderr)
 
+    # --- przebieg 2: tytuly POPRZEDNIKA i tytuly WSPOLNE.
+    # Test podstawienia z kodeksu §2 wymaga materialu z okresu nakladania po OBU stronach:
+    # bez tytulow zawierajacych poprzednika koder moze test tylko wyobrazic sobie, nie wykonac.
+    best_pred: dict[int, str] = {}
+    for i in range(len(tgt)):
+        lo = max(YEAR_MIN, y0[i] - WINDOW) - YEAR_MIN
+        hi = min(YEAR_MAX, y0[i] + WINDOW) - YEAR_MIN
+        n_win = int(rec_by_year[lo:hi + 1].sum())
+        base = dec_by_year[:, lo:hi + 1].sum(axis=1) / max(n_win, 1)
+        n_t = max(int(co[i].max()), 1)
+        with np.errstate(divide="ignore", invalid="ignore"):
+            lift = np.where(base > 0, (co[i] / n_t) / base, 0.0)
+        ok = (co[i] >= args.min_co) & (lift >= args.min_lift)
+        if ok.any():
+            best_pred[i] = dec_terms[int(np.argmax(lift * ok))]
+
+    titles_pred: dict[int, list] = defaultdict(list)
+    titles_both: dict[int, list] = defaultdict(list)
+    want = {}
+    for i, pterm in best_pred.items():
+        want.setdefault(pterm, []).append(i)
+    print(f"przebieg 2: tytuly poprzednika dla {len(best_pred)} terminow", file=sys.stderr)
+    for yr, title, abstract in zip(df["year"].values, df["title"].values, df["abstract"].values):
+        if not title:
+            continue
+        present = ngrams(canon(f"{title} {abstract}"))
+        for pterm, idxs in want.items():
+            if pterm not in present:
+                continue
+            for i in idxs:
+                if abs(int(yr) - y0[i]) > WINDOW:
+                    continue
+                if terms[i] in present and len(titles_both[i]) < N_TITLES:
+                    titles_both[i].append(f"[{int(yr)}] {title}")
+                elif len(titles_pred[i]) < N_TITLES:
+                    titles_pred[i].append(f"[{int(yr)}] {title}")
+
     rows = []
     for i, r in tgt.iterrows():
         lo, hi = max(YEAR_MIN, y0[i] - WINDOW) - YEAR_MIN, min(YEAR_MAX, y0[i] + WINDOW) - YEAR_MIN
@@ -146,6 +184,9 @@ def main() -> int:
             "kandydaci_na_poprzednika": preds,
             "tytuly_okolo_y0": " | ".join(titles_early.get(i, []))[:600],
             "tytuly_2023_2025": " | ".join(titles_late.get(i, []))[:600],
+            "poprzednik_glowny": best_pred.get(i, ""),
+            "tytuly_poprzednika": " | ".join(titles_pred.get(i, []))[:600],
+            "tytuly_WSPOLNE": " | ".join(titles_both.get(i, []))[:600],
             "kategoria": "", "poprzednik": "", "uwagi": "",
         })
 
