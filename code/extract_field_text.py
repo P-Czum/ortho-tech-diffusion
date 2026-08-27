@@ -80,27 +80,44 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--src", required=True)
     ap.add_argument("--parsed", required=True)
-    ap.add_argument("--field", required=True)
+    ap.add_argument("--field", help="CSV z UI deskryptorow MeSH (definicja 1)")
+    ap.add_argument("--journals", help="CSV z NlmUniqueID czasopism (definicja 2)")
+    ap.add_argument("--reuse", help="parquet z juz wyciagnietym tekstem — te PMID-y pomijamy")
     ap.add_argument("--out", required=True)
     ap.add_argument("--workers", type=int, default=8)
     args = ap.parse_args()
 
-    with open(args.field, encoding="utf-8") as fh:
-        uis = [r["ui"] for r in csv.DictReader(fh) if r["ui"].strip()]
-    bad = [u for u in uis if not re.fullmatch(r"D\d+", u)]
-    if bad:
-        sys.exit(f"UI o nietypowym formacie: {bad[:5]}")
-    # granice separatora, bo UI nie maja stalej dlugosci (D019637 obok D000072228)
-    pattern = r"(?:^|\|)(?:" + "|".join(uis) + r")(?:\||$)"
+    if bool(args.field) == bool(args.journals):
+        sys.exit("Podaj dokladnie jedno: --field (definicja 1) albo --journals (definicja 2).")
+    pattern, jids = None, None
+    if args.field:
+        with open(args.field, encoding="utf-8") as fh:
+            uis = [r["ui"] for r in csv.DictReader(fh) if r["ui"].strip()]
+        bad = [u for u in uis if not re.fullmatch(r"D\d+", u)]
+        if bad:
+            sys.exit(f"UI o nietypowym formacie: {bad[:5]}")
+        # granice separatora, bo UI nie maja stalej dlugosci (D019637 obok D000072228)
+        pattern = r"(?:^|\|)(?:" + "|".join(uis) + r")(?:\||$)"
+    else:
+        with open(args.journals, encoding="utf-8") as fh:
+            jids = {r["nlm_unique_id"].strip() for r in csv.DictReader(fh) if r["nlm_unique_id"].strip()}
 
     t0 = time.time()
+    reuse = set()
+    if args.reuse and Path(args.reuse).exists():
+        reuse = set(pd.read_parquet(args.reuse, columns=["pmid"])["pmid"])
+        print(f"ponowne uzycie: {len(reuse)} PMID-ow juz wyciagnietych", file=sys.stderr)
     pf = pq.ParquetFile(Path(args.parsed) / "analytic_index.parquet")
     by_src: dict[str, list[str]] = defaultdict(list)
     years: dict[str, int] = {}
     for g in range(pf.num_row_groups):
-        df = pf.read_row_group(g, columns=["pmid", "year", "mesh_ui", "_src"]).to_pandas()
+        df = pf.read_row_group(g, columns=["pmid", "year", "mesh_ui", "_src", "journal_nlm"]).to_pandas()
         yr = pd.to_numeric(df["year"], errors="coerce")
-        sel = (yr >= YEAR_MIN) & (yr <= YEAR_MAX) & df["mesh_ui"].str.contains(pattern, regex=True, na=False)
+        inb = (df["mesh_ui"].str.contains(pattern, regex=True, na=False) if pattern is not None
+               else df["journal_nlm"].isin(jids))
+        sel = (yr >= YEAR_MIN) & (yr <= YEAR_MAX) & inb
+        if reuse:
+            sel &= ~df["pmid"].isin(reuse)
         if not sel.any():
             continue
         sub = df.loc[sel, ["pmid", "_src"]]
