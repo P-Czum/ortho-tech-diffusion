@@ -37,3 +37,6 @@ docs/internal/
 # === System ===
 Thumbs.db
 .DS_Store
+
+# Briefy zamknietej pracy o myslnikach — przyjechaly przy migracji, maja wlasne repo
+docs/archiwum_myslniki/
