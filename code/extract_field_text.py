@@ -56,7 +56,20 @@ def worker(job: tuple[str, list[str]]) -> tuple[str, list[dict], str]:
                         abstract = " ".join(
                             (("%s: " % a.get("Label")) if a.get("Label") else "") + text_of(a)
                             for a in art.findall("./Abstract/AbstractText")) if art is not None else ""
-                        out.append({"pmid": pmid, "title": title, "abstract": abstract})
+                        # pierwszy autor: nazwisko + inicjaly. Potrzebne do osi koncentracji
+                        # autorskiej (§6). Bez dezambiguacji — "Kim J" sklei rozne osoby, co
+                        # ZANIZA koncentracje, wiec wysoka koncentracja mimo sklejania jest
+                        # tym mocniejszym sygnalem. Do ograniczen.
+                        a1 = art.find("./AuthorList/Author") if art is not None else None
+                        if a1 is not None:
+                            last = (a1.findtext("./LastName") or "").strip()
+                            init = (a1.findtext("./Initials") or "").strip()
+                            coll = (a1.findtext("./CollectiveName") or "").strip()
+                            author1 = f"{last} {init}".strip() or coll
+                        else:
+                            author1 = ""
+                        out.append({"pmid": pmid, "title": title, "abstract": abstract,
+                                    "author1": author1})
                 elem.clear()
     except Exception as exc:
         return (path.name, out, f"{type(exc).__name__}: {exc}")
