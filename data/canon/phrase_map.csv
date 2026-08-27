@@ -1,0 +1,56 @@
+source,target,kind,status,note
+three dimensional,3d,digitword,ok,po zamianie dywizu na spacje "three-dimensional" trafia tu
+two dimensional,2d,digitword,ok,
+four dimensional,4d,digitword,ok,
+3 d,3d,digitword,ok,po zamianie dywizu "3-d" rozpada sie na dwa tokeny
+2 d,2d,digitword,ok,
+4 d,4d,digitword,ok,
+three d,3d,digitword,ok,
+two d,2d,digitword,ok,
+tka,total knee arthroplasty,abbrev,ok,
+tkas,total knee arthroplasty,abbrev,ok,liczba mnoga skrotu nie jest lapana regula -s
+tkr,total knee replacement,abbrev,ok,
+tha,total hip arthroplasty,abbrev,ok,
+thas,total hip arthroplasty,abbrev,ok,
+thr,total hip replacement,abbrev,ok,
+tsa,total shoulder arthroplasty,abbrev,ok,
+rtsa,reverse total shoulder arthroplasty,abbrev,ok,
+uka,unicompartmental knee arthroplasty,abbrev,ok,
+ukr,unicompartmental knee replacement,abbrev,ok,
+acl,anterior cruciate ligament,abbrev,ok,
+aclr,anterior cruciate ligament reconstruction,abbrev,ok,
+pcl,posterior cruciate ligament,abbrev,ok,
+mcl,medial collateral ligament,abbrev,ok,
+lcl,lateral collateral ligament,abbrev,ok,
+mpfl,medial patellofemoral ligament,abbrev,ok,
+orif,open reduction internal fixation,abbrev,ok,
+mis,minimally invasive surgery,abbrev,ok,
+caos,computer assisted orthopedic surgery,abbrev,ok,wysoki stosunek skrot/pelna forma to preferencja dla skrotu a nie wieloznacznosc
+acdf,anterior cervical discectomy fusion,abbrev,ok,jw
+tlif,transforaminal lumbar interbody fusion,abbrev,ok,
+plif,posterior lumbar interbody fusion,abbrev,ok,
+alif,anterior lumbar interbody fusion,abbrev,ok,
+llif,lateral lumbar interbody fusion,abbrev,ok,
+avn,avascular necrosis,abbrev,ok,
+pji,periprosthetic joint infection,abbrev,ok,
+prp,platelet rich plasma,abbrev,ok,jw
+uhmwpe,ultra high molecular weight polyethylene,abbrev,ok,jw
+peek,polyetheretherketone,abbrev,ok,
+bmp,bone morphogenetic protein,abbrev,ok,
+msc,mesenchymal stem cell,abbrev,ok,
+ann,artificial neural network,abbrev,ok,
+cnn,convolutional neural network,abbrev,ok,
+llm,large language model,abbrev,ok,
+vr,virtual reality,abbrev,ok,
+artificial intelligence,artificial intelligence,abbrev,ok,wpis tozsamosciowy - blokuje ewentualne przyszle rozwijanie "ai"
+# --- USUNIETE: wieloznaczne w tym korpusie. Pomiar 2005-2010 w nawiasie. ---
+# ml,machine learning — mililitr (1249 trafien skrotu wobec 1 pelnej formy)
+# mr,mixed reality — magnetic resonance (419 wobec 0)
+# dl,deep learning — decylitr (181 wobec 0)
+# ha,hydroxyapatite — takze hyaluronic acid (259 trafien, obie formy realne)
+# rsa,reverse shoulder arthroplasty — takze radiostereometric analysis (114)
+# ar,augmented reality — takze aortic regurgitation (22)
+# xr,extended reality — takze x-ray (3)
+# --- USUNIETE 2026-08-27: tozsamosc pojec sporna, rozstrzyga ja osad reczny z sekcji 8 ---
+# psi,patient specific instrumentation — PSI to takze pounds per square inch (11 trafien 2005-2010); rozwiniecie kontaminowaloby rodzine CAOS, a przy regule max(theta,5x baseline) podnioslby prog wykrycia. Tozsamosc pojec rozstrzyga sekcja 8.
+# cas,computer assisted surgery — CAS to takze Chemical Abstracts Service (75 trafien); jw. Nierozwiniety 'cas' zostaje osobnym wierszem i idzie do osadu recznego.

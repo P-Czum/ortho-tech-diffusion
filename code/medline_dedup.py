@@ -120,6 +120,12 @@ def build(parsed: Path, sub: str, deleted: set[str], out_path: Path) -> dict:
             df = df[pd.to_numeric(df["pmid"], errors="coerce").isin(w)]
             if df.empty:
                 continue
+            # Ten sam PMID potrafi wystapic dwa razy w JEDNYM pliku (rekord poprawiony
+            # dwukrotnie w tej samej paczce aktualizacyjnej — zmierzone: 100 PMID-ow,
+            # 115 nadmiarowych wierszy na 45 mln). Przebieg 1 zwija je przez
+            # drop_duplicates(keep="last"), wiec przebieg 2 musi zrobic to samo:
+            # isin() dopuszcza oba wiersze, bo pyta tylko o przynaleznosc PMID.
+            df = df.drop_duplicates(subset="pmid", keep="last")
             df["_src"] = p.stem
             tbl = pa.Table.from_pandas(df, preserve_index=False)
             if writer is None:
