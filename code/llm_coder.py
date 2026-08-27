@@ -31,79 +31,12 @@ except ImportError:
 YEARS = list(range(2005, 2026))
 SEED = 20260827          # ziarno losowania podproby — czesc rejestracji
 
-SYSTEM = """Jesteś koderem w badaniu bibliometrycznym. Twoim zadaniem jest przypisanie terminowi jednej
-z pięciu kategorii według podanego niżej kodeksu.
-
-Zasada nadrzędna: rozstrzygasz WYŁĄCZNIE na podstawie materiału podanego w zapytaniu.
-Jeśli posiadasz wiedzę o danej technologii spoza tego materiału, NIE używaj jej jako podstawy
-rozstrzygnięcia. W uzasadnieniu wskaż konkretny element materiału, na którym się opierasz —
-tytuł, rok, kandydata na poprzednika. Jeśli materiał nie wystarcza do rozstrzygnięcia, wybierz
-kategorię, którą materiał najlepiej wspiera, i napisz w uzasadnieniu, czego zabrakło.
-
-Kodujesz DESYGNAT terminu (zdolność, urządzenie, praktykę), nie sam napis.
-
-PIĘĆ KATEGORII:
-
-novel concept — desygnat nie istniał w polu przed oknem wyłonienia pod żadną nazwą.
-  Warunki: tytuły z okolic roku wyłonienia opisują zdolność bez wcześniejszego odpowiednika;
-  brak kandydata na poprzednika, którego desygnat odpowiada desygnatowi terminu.
-  Pusta lista kandydatów to hipoteza domyślna, nie rozstrzygnięcie — poprzednik mógł istnieć
-  poniżej progu zliczania.
-
-renaming — desygnat identyczny z desygnatem poprzednika. Test podstawienia: zamiana terminu
-  na poprzednika w tytułach z okresu nakładania zachowuje sens W OBU KIERUNKACH.
-  Wspiera: występowanie obu terminów w tych samych tytułach, zapis typu "X (Y)".
-
-conceptual evolution — desygnat nowego terminu zawiera desygnat poprzednika PLUS element
-  konstytutywny, którego poprzednik nie miał. Test podstawienia przechodzi w jedną stronę,
-  a w drugą nie: każdy robot używa nawigacji, ale nie każda nawigacja jest robotem.
-
-measurement artifact — wyłonienie napędzane pomiarem, nie zjawiskiem: konwencją zapisu
-  (formuły dat, zwroty szablonu abstraktu, nazwy baz danych, elementy struktury streszczenia)
-  albo zmianą praktyk indeksowania. Wskazówka pomocnicza: rok wyłonienia 2020 lub późniejszy
-  przypada na okres opóźnienia indeksowania w tym korpusie.
-
-non-technological term — desygnat prawdziwy i wschodzący, ale niebędący technologią:
-  metodologia badań, statystyka, konwencja raportowania, organizacja opieki, temat kliniczny.
-  To NIE jest kategoria odpadowa — jej udział jest wynikiem badania.
-
-PROCEDURA — w tej kolejności, pierwszy pasujący krok kończy:
-  1. Czy wyłonienie jest artefaktem pomiaru? -> measurement artifact.
-  2. Czy desygnat jest technologią (urządzenie, materiał, technika obliczeniowa lub
-     operacyjna)? Jeśli NIE -> non-technological term.
-  3. Czy wśród kandydatów jest poprzednik o odpowiadającym desygnacie? Jeśli NIE ->
-     novel concept.
-  4. Test podstawienia z tym poprzednikiem: obustronny -> renaming; jednostronny ->
-     conceptual evolution. Jeśli test nie przechodzi w żadną stronę, przejdź do kolejnego
-     kandydata z listy; po wyczerpaniu listy -> novel concept.
-
-Odpowiadasz wyłącznie obiektem JSON o polach:
-  "kategoria"    — dokładnie jedna z pięciu nazw powyżej, po angielsku
-  "poprzednik"   — termin poprzednika przy renaming i conceptual evolution, w innych ""
-  "uzasadnienie" — jedno zdanie po polsku, wskazujące konkretny element materiału
-  "krok"         — numer kroku procedury, który zakończył rozstrzygnięcie (1-4)
-  "material_wystarczajacy" — true albo false"""
-
-USER = """TERMIN: {term}
-Rok wyłonienia: {y0}
-Udział w polu, rok po roku (2005-2025, w procentach):
-{seria}
-
-KANDYDACI NA POPRZEDNIKA (lift = ile razy częściej współwystępuje z terminem, niż wynikałoby
-z jego własnej częstości; lift jest podpowiedzią wyszukiwania, NIE dowodem):
-{kandydaci}
-
-TYTUŁY ZAWIERAJĄCE TERMIN, z okolic roku wyłonienia:
-{tytuly_y0}
-
-TYTUŁY ZAWIERAJĄCE TERMIN, z lat 2023-2025:
-{tytuly_pozne}
-
-TYTUŁY ZAWIERAJĄCE GŁÓWNEGO KANDYDATA NA POPRZEDNIKA ({poprzednik}), z okresu nakładania:
-{tytuly_poprzednika}
-
-TYTUŁY ZAWIERAJĄCE OBA TERMINY NARAZ:
-{tytuly_wspolne}"""
+PROMPT_DIR = Path(__file__).resolve().parent.parent / "docs" / "protocol"
+# Prompt zyje w plikach, nie w kodzie: to on jest materialem prerejestracyjnym i to jego
+# hash trafia do manifestu zamrozenia. Wbudowanie go w skrypt dawaloby dwa zrodla prawdy,
+# ktore moglyby sie rozejsc niezauwazenie.
+SYSTEM = (PROMPT_DIR / "prompt_system_v1.1.txt").read_text(encoding="utf-8")
+USER = (PROMPT_DIR / "prompt_user_v1.1.txt").read_text(encoding="utf-8")
 
 CATEGORIES = {"novel concept", "renaming", "conceptual evolution",
               "measurement artifact", "non-technological term"}

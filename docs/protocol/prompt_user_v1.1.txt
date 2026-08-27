@@ -1,0 +1,20 @@
+TERMIN: {term}
+Rok wyłonienia: {y0}
+Udział w polu, rok po roku (2005-2025, w procentach):
+{seria}
+
+KANDYDACI NA POPRZEDNIKA, w kolejności liftu (lift = ile razy częściej współwystępuje
+z terminem, niż wynikałoby z jego własnej częstości; podpowiedź wyszukiwania, NIE dowód):
+{kandydaci}
+
+TYTUŁY ZAWIERAJĄCE TERMIN, z okolic roku wyłonienia:
+{tytuly_y0}
+
+TYTUŁY ZAWIERAJĄCE TERMIN, z lat 2023-2025:
+{tytuly_pozne}
+
+TYTUŁY ZAWIERAJĄCE GŁÓWNEGO KANDYDATA ({poprzednik}), z okresu nakładania:
+{tytuly_poprzednika}
+
+TYTUŁY ZAWIERAJĄCE OBA TERMINY NARAZ:
+{tytuly_wspolne}
