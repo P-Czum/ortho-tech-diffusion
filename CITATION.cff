@@ -1,13 +1,17 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite it as below."
-title: "ortho-tech-diffusion: tooling for measuring technology research diffusion in orthopaedic literature"
+message: "If you use this software or the derived data, please cite the preregistration and this repository."
+title: "ortho-tech-diffusion: detecting and adjudicating concept emergence in the orthopaedic literature"
 abstract: >-
-  Pipeline for measuring the share of orthopaedic surgical literature devoted to
-  distinct technology families in MEDLINE/PubMed, 2005-2025. Provides a local mirror
-  of the PubMed baseline and update files with MD5 verification, a parallel parser
-  producing an analytic denominator table with explicit PubMed/MEDLINE status flags,
-  PMID deduplication honouring DeleteCitation, and programmatic expansion of MeSH
-  subtrees defining the clinical field. Study protocol in docs/protocol/.
+  Pipeline and protocol for a preregistered discovery study distinguishing the emergence of
+  terminology from the emergence of concepts in the procedural orthopaedic literature
+  (PubMed/MEDLINE, 2005-2025). Provides a locally verified mirror of the PubMed baseline and
+  update files, a parallel parser producing an analytic table with explicit PubMed/MEDLINE
+  status flags, PMID deduplication honouring DeleteCitation, programmatic expansion of the
+  MeSH subtree defining the field, n-gram canonicalisation, a take-off detector yielding a
+  year of emergence per term, strength axes based on concentration rather than counts, and
+  predecessor-candidate generation supporting a manual substitution test. Terms are coded
+  into five categories: novel concept, renaming, conceptual evolution, measurement artifact,
+  non-technological term. Protocol, coding manual and freeze manifest in docs/protocol/.
 type: software
 authors:
   - family-names: "Czuma"
@@ -15,14 +19,27 @@ authors:
     orcid: "https://orcid.org/0009-0009-8235-2053"
     email: "przemek.czuma@gmail.com"
     affiliation: "Department of Orthopedics and Traumatology, Piekary Śląskie, Poland; Polish Association for Artificial Intelligence in Medicine"
-version: "0.1.0"
-date-released: "2026-08-26"
-license: "CC-BY-4.0"
+version: "0.2.0"
+date-released: "2026-08-27"
+license: MIT
+repository-code: "https://github.com/P-Czum/ortho-tech-diffusion"
+identifiers:
+  - type: doi
+    value: "10.17605/OSF.IO/59BJ2"
+    description: "OSF preregistration (Secondary Data Preregistration)"
 keywords:
   - bibliometrics
+  - scientometrics
   - orthopaedics
-  - technology diffusion
   - MEDLINE
   - MeSH
-# repository-code celowo pominiete: repo nie ma jeszcze zdalnego adresu.
-# Wpisac dopiero po utworzeniu remote'a — nie zgadywac URL-a.
+  - terminology change
+  - emerging concepts
+  - preregistration
+references:
+  - type: database
+    title: "PubMed Annual Baseline 2026"
+    institution:
+      name: "U.S. National Library of Medicine"
+    url: "https://ftp.ncbi.nlm.nih.gov/pubmed/"
+    notes: "Courtesy of the U.S. National Library of Medicine. Accessed 2026-08-26/27."

@@ -123,14 +123,18 @@ subsample; any comparative pilot across models would use terms outside the subsa
 ```
 5bfc3d6a7add370d23c505dfcaa0020a6f1ec6d9f2fbb3b90d4e8328fdae46a1  coding_sheet_full.csv
 bf065aadc07350bd02117b3e86b714906e2fb21caefbaff7c0946861853f3588  coding_sheet_koder.csv
-<pending re-freeze>                                                coding_manual_v1.2.md
-<pending re-freeze>                                                prompt_system_v1.2_EN.txt
-<pending re-freeze>                                                prompt_user_v1.2_EN.txt
+d8adf778069ff5216e7928cddcd338dbe26c358e7063e7a09b678710f1867b83  coding_manual_v1.2.md
+6b709843f63af82b045ea45ad348ce32c138d6585e2509c2f68d87d9debfbd47  prompt_system_v1.2_EN.txt
+724398d6112026e8a8fde6d76c2d1dd37f464162b72617fac7741d50b582b294  prompt_user_v1.2_EN.txt
 ```
 
 The full manifest (12 files, including canonicalisation rule lists, the field definition of
 56 MeSH UIs, the list of 137 journals, and `emerging_core.json`) is
 `docs/protocol/freeze_manifest.txt` in the project repository.
+
+The combined prompt hash recorded in every row of the model output is `522edf5153f20fc6`.
+Superseded Polish-language versions of the manual and prompts remain in the repository as
+history but are excluded from the manifest: the manifest hashes what was actually used.
 
 ## 8. Deviations
 
