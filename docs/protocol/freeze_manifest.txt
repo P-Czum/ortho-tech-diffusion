@@ -1,14 +1,14 @@
 # Manifest zamrożenia — materiał prerejestracyjny
-# Zamrożono: 2026-08-27T13:11:27+00:00
+# Zamrożono: 2026-08-27T16:37:09+00:00
 #
 # Od tej chwili żaden z poniższych plików nie może się zmienić bez unieważnienia
 # rejestracji. Kodowanie rusza po złożeniu rejestracji.
 #
 5bfc3d6a7add370d23c505dfcaa0020a6f1ec6d9f2fbb3b90d4e8328fdae46a1  data/processed/coding_sheet_full.csv
 bf065aadc07350bd02117b3e86b714906e2fb21caefbaff7c0946861853f3588  data/processed/coding_sheet_koder.csv
-37a9f0b212a5af20d97e976883440d5177640e0f423fb20601d8cf89a645b3ba  docs/protocol/kodeks_kodowania_v1.1.md
-6d93683b3d298d7a2f5a6a2347ce89d3ad3e07d35418fffa9f581c3d17578bb1  docs/protocol/prompt_system_v1.1.txt
-f85019ebffa6e59135e397f3ad28d1ae506a37235cbbb3f71d83f3fd976b1a27  docs/protocol/prompt_user_v1.1.txt
+d8adf778069ff5216e7928cddcd338dbe26c358e7063e7a09b678710f1867b83  docs/protocol/coding_manual_v1.2.md
+6b709843f63af82b045ea45ad348ce32c138d6585e2509c2f68d87d9debfbd47  docs/protocol/prompt_system_v1.2_EN.txt
+724398d6112026e8a8fde6d76c2d1dd37f464162b72617fac7741d50b582b294  docs/protocol/prompt_user_v1.2_EN.txt
 d3e156100f7f4dff1ea03f5c2bc2a1ac35f5465f8c608ef372cfe7b95f2edf8b  data/canon/spelling_uk_us.csv
 989de7498d0c2fd34826301b6dea61bfb4867f09d3a4d45eec840168b99e8892  data/canon/irregular_plurals.csv
 ee7e427af757d27d7766cd9a7f933962397fa4c90cd1d6c9dba73e4fffbb5638  data/canon/phrase_map.csv

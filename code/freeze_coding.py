@@ -38,9 +38,11 @@ BLINDED = [
 IN_MANIFEST = [
     "data/processed/coding_sheet_full.csv",
     "data/processed/coding_sheet_koder.csv",
-    "docs/protocol/kodeks_kodowania_v1.1.md",
-    "docs/protocol/prompt_system_v1.1.txt",
-    "docs/protocol/prompt_user_v1.1.txt",
+    # Od 2026-08-27 material koderski jest po angielsku. Manifest haszuje to, czego
+    # FAKTYCZNIE uzyto — wersje polskie zostaja w repo jako historia, ale poza manifestem.
+    "docs/protocol/coding_manual_v1.2.md",
+    "docs/protocol/prompt_system_v1.2_EN.txt",
+    "docs/protocol/prompt_user_v1.2_EN.txt",
     "data/canon/spelling_uk_us.csv",
     "data/canon/irregular_plurals.csv",
     "data/canon/phrase_map.csv",

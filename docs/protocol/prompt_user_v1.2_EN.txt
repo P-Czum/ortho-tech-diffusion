@@ -1,0 +1,20 @@
+TERM: {term}
+Emergence year: {y0}
+Share of the field, year by year (2005-2025, per cent):
+{seria}
+
+PREDECESSOR CANDIDATES, in lift order (lift = how many times more often the candidate
+co-occurs with the term than its own frequency would predict; a search hint, NOT evidence):
+{kandydaci}
+
+TITLES CONTAINING THE TERM, from around the emergence year:
+{tytuly_y0}
+
+TITLES CONTAINING THE TERM, from 2023-2025:
+{tytuly_pozne}
+
+TITLES CONTAINING THE MAIN CANDIDATE ({poprzednik}), from the overlap period:
+{tytuly_poprzednika}
+
+TITLES CONTAINING BOTH TERMS:
+{tytuly_wspolne}

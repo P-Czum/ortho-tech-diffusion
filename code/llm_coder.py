@@ -1,6 +1,6 @@
-"""llm_coder.py — przebieg drugiego kodera (model jezykowy) wg promptu v1.1.
+"""llm_coder.py — przebieg drugiego kodera (model jezykowy) wg promptu v1.2 (EN).
 
-Prompt zrodlowy: docs/protocol/prompt_system_v1.1.txt + prompt_user_v1.1.txt — material
+Prompt zrodlowy: docs/protocol/prompt_system_v1.2_EN.txt + prompt_user_v1.2_EN.txt — material
 prerejestracyjny, zamrozony przed kodowaniem i zahaszowany w freeze_manifest.txt. Ten skrypt
 prompt WCZYTUJE, nie definiuje: dwie kopie moglyby sie rozejsc niezauwazenie.
 
@@ -35,11 +35,17 @@ PROMPT_DIR = Path(__file__).resolve().parent.parent / "docs" / "protocol"
 # Prompt zyje w plikach, nie w kodzie: to on jest materialem prerejestracyjnym i to jego
 # hash trafia do manifestu zamrozenia. Wbudowanie go w skrypt dawaloby dwa zrodla prawdy,
 # ktore moglyby sie rozejsc niezauwazenie.
-SYSTEM = (PROMPT_DIR / "prompt_system_v1.1.txt").read_text(encoding="utf-8")
-USER = (PROMPT_DIR / "prompt_user_v1.1.txt").read_text(encoding="utf-8")
+SYSTEM = (PROMPT_DIR / "prompt_system_v1.2_EN.txt").read_text(encoding="utf-8")
+USER = (PROMPT_DIR / "prompt_user_v1.2_EN.txt").read_text(encoding="utf-8")
 
 CATEGORIES = {"novel concept", "renaming", "conceptual evolution",
               "measurement artifact", "non-technological term"}
+
+# Klucze JSON po angielsku od v1.2: prompt i kodeks sa po angielsku, a te pola trafiaja
+# wprost do tabeli wynikow publikacyjnych. Polskie klucze przy angielskim promptcie byly
+# kolejnym miejscem, w ktorym dwa jezyki opisuja to samo.
+K_CAT, K_PRED, K_JUST = "category", "predecessor", "justification"
+K_STEP, K_SUFF = "step", "material_sufficient"
 
 # Dwaj dostawcy, bo identyfikatory modeli sie roznia: "gpt-5.6-sol" u OpenAI wobec
 # "openai/gpt-5.6-sol" w OpenRouter. Do rejestracji trafia dostawca I identyfikator,
@@ -167,19 +173,19 @@ def main() -> int:
                     err = ""
                 except Exception as exc:
                     txt, obj, err = "", {}, f"{type(exc).__name__}: {exc}"
-                cat = str(obj.get("kategoria", "")).strip()
+                cat = str(obj.get(K_CAT, "")).strip()
                 if cat and cat not in CATEGORIES:
                     err = err or f"kategoria spoza listy: {cat!r}"
                 raw.write(json.dumps({"run": run, "term": r["term"], "model": args.model,
                                       "provider": args.provider, "seed": args.seed,
-                                      "prompt_hash": prompt_hash, "raw": txt, "blad": err},
+                                      "prompt_hash": prompt_hash, "raw": txt, "error": err},
                                      ensure_ascii=False) + "\n")
                 rows.append({"run": run, "term": r["term"], "y0": r["y0"],
-                             "kategoria": cat, "poprzednik": obj.get("poprzednik", ""),
-                             "uzasadnienie": obj.get("uzasadnienie", ""),
-                             "krok": obj.get("krok", ""),
-                             "material_wystarczajacy": obj.get("material_wystarczajacy", ""),
-                             "blad": err})
+                             "category": cat, "predecessor": obj.get(K_PRED, ""),
+                             "justification": obj.get(K_JUST, ""),
+                             "step": obj.get(K_STEP, ""),
+                             "material_sufficient": obj.get(K_SUFF, ""),
+                             "error": err})
                 if i % 10 == 0:
                     print(f"  run {run}: {i}/{len(sub)} ({(time.time()-t0)/60:.1f} min)",
                           file=sys.stderr)
@@ -189,12 +195,12 @@ def main() -> int:
     out.insert(1, "model", args.model)
     out.insert(2, "prompt_hash", prompt_hash)
     out.to_csv(args.out, index=False, encoding="utf-8-sig")
-    n_err = int((out["blad"] != "").sum())
+    n_err = int((out["error"] != "").sum())
     print(f"\nzapisano {args.out}: {len(out)} wierszy, surowe -> {raw_path}", file=sys.stderr)
     print(f"  bledow: {n_err}", file=sys.stderr)
     if n_err == 0:
         print("  rozklad kategorii:", file=sys.stderr)
-        for k, v in out["kategoria"].value_counts().items():
+        for k, v in out["category"].value_counts().items():
             print(f"    {k:24s} {v}", file=sys.stderr)
     return 1 if n_err else 0
 
