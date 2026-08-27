@@ -84,6 +84,7 @@ def main() -> int:
     ycols = [f"y{y}" for y in years]
     cnt = em[ycols].to_numpy(float)
     den = json.loads(Path(args.denom).read_text(encoding="utf-8"))
+    den_by_year = {y: den["by_year"][str(y)] for y in years}
     dv = np.array([den["by_year"][str(y)] for y in years], float)
     sh = cnt / dv
     em = em.assign(early=sh[:, :5].mean(axis=1), late=sh[:, -5:].mean(axis=1))
@@ -178,6 +179,11 @@ def main() -> int:
                           for j in idx if ok[j])
         rows.append({
             "term": r["term"], "n": r["n"], "y0": int(r["y0"]),
+            # Roczny udzial w polu — arkusz musi byc SAMOWYSTARCZALNY, bo to jego zamrazamy
+            # i haszujemy do rejestracji. Bez ksztaltu krzywej koder nie rozpozna ani artefaktu
+            # pomiaru, ani okna nakladania z poprzednikiem.
+            **{f"udzial_{y}": round(100 * r[f"y{y}"] / den_by_year[y], 3)
+               for y in range(YEAR_MIN, YEAR_MAX + 1)},
             "peak_year": int(r["peak_year"]), "peak_share_pct": round(100 * r["peak_share"], 3),
             "prevalence_2021_2025_pct": round(100 * r["prevalence_2021_2025"], 3),
             "docs_total": int(r["docs_total"]),
