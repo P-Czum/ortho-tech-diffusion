@@ -52,9 +52,21 @@ def main() -> int:
     years = list(range(YEAR_MIN, YEAR_MAX + 1))
     ycols = [f"y{y}" for y in years]
 
-    # mianownik: liczba rekordow pola w danym roku, z tej samej podstawy co liczniki
-    txt = pd.read_parquet(args.text, columns=["year"])
-    denom = txt["year"].astype(int).value_counts().reindex(years).fillna(0).astype(int)
+    # Mianownik bierzemy z pliku zapisanego przez canonicalize.py, a NIE liczymy z tabeli
+    # tekstow: dla wariantow S2/S3 z §7 podstawa jest zawezona i mianownik musi byc ten sam
+    # co licznik. Wyliczanie go tutaj rozjechaloby oba dokladnie w wariantach, ktore maja
+    # ten rozjazd wykrywac.
+    dpath = Path(args.terms).with_suffix(".denom.json")
+    if dpath.exists():
+        meta = json.loads(dpath.read_text(encoding="utf-8"))
+        denom = pd.Series({int(k): v for k, v in meta["by_year"].items()}).reindex(years)
+        print(f"mianownik z {dpath.name}: wariant {meta['base']}, "
+              f"{meta['records']} rekordow", file=sys.stderr)
+    else:
+        txt = pd.read_parquet(args.text, columns=["year"])
+        denom = txt["year"].astype(int).value_counts().reindex(years).fillna(0).astype(int)
+        print("UWAGA: brak pliku mianownika, licze z tabeli tekstow", file=sys.stderr)
+    denom = denom.fillna(0).astype(int)
     if (denom == 0).any():
         sys.exit(f"Rok bez rekordow pola: {denom[denom == 0].index.tolist()}")
     print("mianownik (rekordy pola):", ", ".join(f"{y}:{denom[y]}" for y in years[:3]) + " ...",

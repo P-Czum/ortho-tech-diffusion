@@ -129,6 +129,9 @@ def main() -> int:
     ap.add_argument("--out", required=True)
     ap.add_argument("--min-occ", type=int, default=50, help="prog wejscia (plan §3)")
     ap.add_argument("--limit", type=int, help="tylko N rekordow (do testu)")
+    ap.add_argument("--base", default="primary",
+                    choices=["primary", "s1_title", "s2_abstract", "s3_english"],
+                    help="podstawa tekstowa wg planu §7")
     args = ap.parse_args()
 
     t0 = time.time()
@@ -136,19 +139,35 @@ def main() -> int:
     canon = make_canonicalizer(spell, irregular, phrases)
     print(f"listy zamkniete: {len(spell)} pisowni, {len(irregular)} nieregularnych, {len(phrases)} fraz", file=sys.stderr)
 
-    df = pd.read_parquet(args.text, columns=["pmid", "year", "title", "abstract"])
+    cols = ["pmid", "year", "title", "abstract"]
+    if args.base == "s3_english":
+        cols.append("language")
+    df = pd.read_parquet(args.text, columns=cols)
     df = df[(df["year"] >= YEAR_MIN) & (df["year"] <= YEAR_MAX)]
+    n_field = len(df)
+
+    # Warianty z §7. Kluczowe dla S2 i S3: zawezenie dotyczy LICZNIKA I MIANOWNIKA naraz,
+    # bo inaczej mierzymy tylko to, ze przybylo tekstu do przeszukania. Odsetek rekordow
+    # pola z abstraktem rosl z 86,4% (2005) do 99,9% (2025), a udzial angielskiego
+    # z 84,5% do 95,7% — bez tych wariantow czesc "wylonien" bylaby artefaktem dostepnosci.
+    if args.base == "s2_abstract":
+        df = df[df["abstract"].str.len() > 0]
+    elif args.base == "s3_english":
+        df = df[df["language"].str.contains("eng", case=False, na=False)]
+    title_only = args.base == "s1_title"
+
     if args.limit:
         df = df.head(args.limit)
     years = df["year"].astype(int).values
     n_rec = len(df)
-    print(f"rekordow: {n_rec}", file=sys.stderr)
+    print(f"wariant {args.base}: {n_rec} rekordow z {n_field} w polu "
+          f"({100*n_rec/n_field:.1f}%)", file=sys.stderr)
 
     # --- etap 1: unigramy
     uni = Counter()
     docs: list[list[str]] = []
     for title, abstract in zip(df["title"].values, df["abstract"].values):
-        toks = canon(f"{title} {abstract}")
+        toks = canon(title if title_only else f"{title} {abstract}")
         docs.append(toks)
         uni.update(toks)
     print(f"etap 1: {len(uni)} roznych unigramow, {sum(uni.values())} tokenow "
@@ -249,6 +268,17 @@ def main() -> int:
         })
     out = pd.DataFrame(rows).sort_values("docs_total", ascending=False)
     out.to_parquet(args.out, index=False)
+
+    # Mianownik zapisujemy JAWNIE, bo dla S2 i S3 nie jest nim cale pole. Detektor go czyta,
+    # zamiast wyliczac z tabeli tekstow — inaczej licznik i mianownik rozjechalyby sie
+    # dokladnie w wariantach, ktore maja ten rozjazd wykrywac. Idzie tez do diagramu przepływu.
+    import json as _json
+    denom = {str(y): int((years == y).sum()) for y in range(YEAR_MIN, YEAR_MAX + 1)}
+    dpath = Path(args.out).with_suffix(".denom.json")
+    dpath.write_text(_json.dumps({"base": args.base, "records": n_rec,
+                                  "field_records": n_field, "by_year": denom},
+                                 indent=1), encoding="utf-8")
+    print(f"mianownik -> {dpath}", file=sys.stderr)
 
     print(f"\nzapisano {args.out}: {len(out)} terminow", file=sys.stderr)
     print(f"  unigramow {int((out.n==1).sum())}, bigramow {int((out.n==2).sum())}, "
