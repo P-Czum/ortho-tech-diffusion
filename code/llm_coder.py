@@ -1,8 +1,8 @@
-"""llm_coder.py — przebieg drugiego kodera (model jezykowy) wg promptu v1.0.
+"""llm_coder.py — przebieg drugiego kodera (model jezykowy) wg promptu v1.1.
 
-Prompt zrodlowy: docs/protocol/prompt_kodera_v1.md — materiał prerejestracyjny, zamrozony
-przed kodowaniem. Ten skrypt go WYKONUJE, nie definiuje; tresc promptu jest tutaj wpisana
-doslownie i jej hash trafia do wyniku, zeby dalo sie sprawdzic zgodnosc z zarejestrowana wersja.
+Prompt zrodlowy: docs/protocol/prompt_system_v1.1.txt + prompt_user_v1.1.txt — material
+prerejestracyjny, zamrozony przed kodowaniem i zahaszowany w freeze_manifest.txt. Ten skrypt
+prompt WCZYTUJE, nie definiuje: dwie kopie moglyby sie rozejsc niezauwazenie.
 
 Co jest zaslepione. Model dostaje wylacznie pola z szablonu: termin, serie, rok wylonienia,
 kandydatow, cztery zestawy tytulow. NIE dostaje czasu podwojenia, osi koncentracji ani wynikow
@@ -41,6 +41,24 @@ USER = (PROMPT_DIR / "prompt_user_v1.1.txt").read_text(encoding="utf-8")
 CATEGORIES = {"novel concept", "renaming", "conceptual evolution",
               "measurement artifact", "non-technological term"}
 
+# Dwaj dostawcy, bo identyfikatory modeli sie roznia: "gpt-5.6-sol" u OpenAI wobec
+# "openai/gpt-5.6-sol" w OpenRouter. Do rejestracji trafia dostawca I identyfikator,
+# bo sam identyfikator nie wystarcza do odtworzenia przebiegu.
+BASE_URL = {"openai": None, "openrouter": "https://openrouter.ai/api/v1"}
+KEY_VAR = {"openai": "OPENAI_API_KEY", "openrouter": "OPENROUTER_API_KEY"}
+
+
+def key_var(provider: str) -> str:
+    return KEY_VAR[provider]
+
+
+def make_client(provider: str):
+    from openai import OpenAI
+    kw = {"api_key": os.environ.get(KEY_VAR[provider])}
+    if BASE_URL[provider]:
+        kw["base_url"] = BASE_URL[provider]
+    return OpenAI(**kw)
+
 
 def stratified(df: pd.DataFrame, n: int, seed: int) -> pd.DataFrame:
     """Losowanie warstwowe po epoce roku wylonienia. Warstwy: 2005-2012 / 2013-2019 / 2020+.
@@ -69,8 +87,12 @@ def fmt_series(row) -> str:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--sheet", required=True)
-    ap.add_argument("--model", required=True,
-                    help="nazwa modelu — podawana jawnie, trafia do wyniku i do rejestracji")
+    ap.add_argument("--model", help="nazwa modelu — trafia do wyniku i do rejestracji DOSLOWNIE")
+    ap.add_argument("--list-models", action="store_true",
+                    help="wypisz modele dostepne na tym koncie i wyjdz")
+    ap.add_argument("--provider", choices=["openai", "openrouter"], default="openai",
+                    help="dostawca API; identyfikatory modeli sie ROZNIA "
+                         "(gpt-5.6-sol vs openai/gpt-5.6-sol) i oba ida do rejestracji doslownie")
     ap.add_argument("--out", required=True)
     ap.add_argument("--n", type=int, default=60, help="rozmiar podproby (0 = wszystkie)")
     ap.add_argument("--runs", type=int, default=1, help=">1 pozwala zmierzyc zgodnosc wewnetrzna")
@@ -78,8 +100,21 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true", help="pokaz pierwszy prompt i wyjdz")
     args = ap.parse_args()
 
-    if not args.dry_run and not os.environ.get("OPENAI_API_KEY"):
-        sys.exit("Brak OPENAI_API_KEY w srodowisku.")
+    if args.list_models:
+        if not os.environ.get(key_var(args.provider)):
+            sys.exit(f"Brak {key_var(args.provider)} w srodowisku.")
+        ms = sorted(m.id for m in make_client(args.provider).models.list().data)
+        print(f"modeli dostepnych: {len(ms)}")
+        print()
+        for m in ms:
+            print(" ", m)
+        print()
+        print("Identyfikator wybranego modelu trafia do rejestracji doslownie.")
+        return 0
+    if not args.model:
+        sys.exit("Podaj --model (albo --list-models, zeby zobaczyc dostepne).")
+    if not args.dry_run and not os.environ.get(key_var(args.provider)):
+        sys.exit(f"Brak {key_var(args.provider)} w srodowisku.")
 
     sheet = pd.read_csv(args.sheet, encoding="utf-8-sig").fillna("")
     need = {"term", "y0", "kandydaci_na_poprzednika", "tytuly_okolo_y0",
@@ -110,8 +145,7 @@ def main() -> int:
         print(build(sub.iloc[0]))
         return 0
 
-    from openai import OpenAI
-    client = OpenAI()
+    client = make_client(args.provider)
     raw_path = Path(args.out).with_suffix(".raw.jsonl")
     rows, t0 = [], time.time()
     with open(raw_path, "a", encoding="utf-8") as raw:
@@ -133,6 +167,7 @@ def main() -> int:
                 if cat and cat not in CATEGORIES:
                     err = err or f"kategoria spoza listy: {cat!r}"
                 raw.write(json.dumps({"run": run, "term": r["term"], "model": args.model,
+                                      "provider": args.provider,
                                       "prompt_hash": prompt_hash, "raw": txt, "blad": err},
                                      ensure_ascii=False) + "\n")
                 rows.append({"run": run, "term": r["term"], "y0": r["y0"],
@@ -146,8 +181,9 @@ def main() -> int:
                           file=sys.stderr)
 
     out = pd.DataFrame(rows)
-    out.insert(0, "model", args.model)
-    out.insert(1, "prompt_hash", prompt_hash)
+    out.insert(0, "provider", args.provider)
+    out.insert(1, "model", args.model)
+    out.insert(2, "prompt_hash", prompt_hash)
     out.to_csv(args.out, index=False, encoding="utf-8-sig")
     n_err = int((out["blad"] != "").sum())
     print(f"\nzapisano {args.out}: {len(out)} wierszy, surowe -> {raw_path}", file=sys.stderr)
