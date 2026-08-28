@@ -48,6 +48,33 @@ Przykład, na którym to wyszło: `virtual reality` leży w remisie pozycji **15
 (`secondary analysis`, `virtual reality`, `to sport after` — każdy 292 prace w 2021–2025).
 Wiążąca jest pozycja **153** z zamrożonego arkusza.
 
+### Granica pięćdziesiątki nie pada w remisie — obie osie (2026-08-28)
+
+Pytanie pierwszorzędne przy jednej trzeciej rankingu nierozstrzygniętej przez dane: czy cięcie
+„50 najsilniejszych" wypada w środku bloku równych wartości. **Nie wypada, na żadnej z osi.**
+
+| oś | wierszy w remisach | wartość na pozycji 50 | granica |
+|---|---:|---|---|
+| prevalence (kolejność arkusza) | 51 nadmiarowych, 95 uwikłanych w 44 blokach | `limb threatening`, unikalna | ostra |
+| exceedance (rdzeń, sort. stabilne) | 11 nadmiarowych | `retrospective observational`, unikalna | ostra |
+
+Uwaga do sąsiedztwa granicy na osi prevalence: remis **jest** tuż obok, ale po właściwej stronie —
+pozycje 48 (`cone`) i 49 (`md`) mają bitowo równą wartość. Blok kończy się na 49, pozycja 50 jest
+jednoelementowa, więc tabela pięćdziesięciu nie zależy od stabilności sortowania.
+
+Oś exceedance remisuje znacznie rzadziej (276 wartości unikalnych z 287 wobec 236 na prevalence),
+bo jest ilorazem dwóch wielkości ciągłych, a nie liczbą prac przez wspólny mianownik.
+
+### Sformułowanie do metod
+
+> Ranking is defined as the row order of the frozen coding sheet. Because prevalence is a count
+> divided by a shared denominator, 95 of 287 terms fall into 44 exact ties; a re-run with a
+> different sort algorithm would permute neighbours within a tie. All positional statements in
+> this paper therefore refer to the frozen sheet, not to a recomputed ranking. On both selection
+> axes the boundary of the main table falls on a uniquely-valued position and is unaffected;
+> ties are far rarer on the exceedance axis (276 of 287 values unique), which is a ratio rather
+> than a count over a shared denominator.
+
 ## Pozycje wcześniej etykietowanych technologii (2026-08-28)
 
 **Nie do cytowania jako wynik** — etykiety „technologia" nadano ręcznie w Etapie 1, bez kodeksu
