@@ -180,6 +180,13 @@ próg". Termin o wysokiej bazie ma poprzeczkę wysoko i musi urosnąć proporcjo
 pięćdziesiątki mają **1 wspólny termin na 50**. Sam ranking po obecności dawał pięćdziesiątkę
 w 100% metodologiczną, z pierwszą technologią na pozycji 143.
 
+> **Korekta 2026-08-28.** Zdanie „pięćdziesiątka w 100% metodologiczna, pierwsza technologia
+> na pozycji 143" zostało policzone na pełnej liście 7 662 terminów wariantu `primary`,
+> a nie na zadeklarowanym rdzeniu 287. Na rdzeniu `robotic` zajmuje pozycję 28,
+> a `patient specific` 30 — obie wewnątrz pięćdziesiątki, więc twierdzenie jest fałszywe
+> na zbiorze, którego praca używa. Poprawna wielkość jest wynikiem kodowania, nie wejściem,
+> i zostanie policzona po jego zakończeniu.
+
 ## 6. Siła — trzy osie, raportowane obok siebie
 
 **Szerokość dyfuzji piśmienniczej** (nie „adopcji" — autor publikacji nie jest dowodem, że ktoś
