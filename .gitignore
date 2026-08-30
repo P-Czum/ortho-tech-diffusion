@@ -40,3 +40,6 @@ Thumbs.db
 
 # Briefy zamknietej pracy o myslnikach — przyjechaly przy migracji, maja wlasne repo
 docs/archiwum_myslniki/
+
+# Plik roboczy z kodowaniem — nie wersjonujemy, dopoki nie zapadnie decyzja
+coding_sheet_koder_CODED_*.csv
