@@ -97,3 +97,57 @@ pokazaniu, że rdzeń przesuwa technologie w górę.
 | 6809 | convolutional neural network | poza rdzeniem |
 
 Jedenaście z dwunastu przeżywa przejście do rdzenia.
+
+## Test przemianowania w kontekstach (2026-08-28)
+
+### Zakres okien — do diagramu przepływu
+
+Reguła generowania par wymaga czterech lat przed `y₀` i czterech od `y₀`, więc oba okna mieszczą
+się w obserwowanym zakresie 2005–2025 tylko dla **`y₀` w przedziale 2009–2022**. Odpada przez to
+**1 053 z 7 662** wyłonień wariantu `primary`; pozostaje **6 609**. Wolałem stracić skrajne
+roczniki niż porównywać okna różnej długości.
+
+Reguła daje **8 384 866** par, z czego **13** odrzuca wykluczenie zawierania (jeden termin jest
+ciągłym podciągiem tokenów drugiego) — zostaje **8 384 853**. Liczba wykluczeń policzona dwiema
+niezależnymi metodami, zgodna co do jednej pary.
+
+### Obserwacja post hoc: liczba wspólnych prac działa odwrotnie — NIEUŻYTA
+
+**Zauważona po zobaczeniu danych, więc jest hipotezą do osobnej walidacji, nie filtrem.**
+Nie została użyta do żadnego wyboru ani progu; zapisana, bo jest sprawdzalna na nowym materiale.
+
+W pięćdziesiątce najwyżej punktowanych par liczba prac zawierających oba terminy ma medianę **8**
+i zakres **0–331**. Wartości skrajnie wysokie mają pary, które przemianowaniami nie są:
+`question purpose` → `ci` **331**, → `95 ci` **315**, → `level iii` **268**. Pary z rodziny
+CLI → CLTI, czyli udokumentowanego przemianowania, mają **0–13**.
+
+Kierunek jest odwrotny do intuicyjnego i ma wyjaśnienie: przemianowanie daje wspólne prace **tylko
+w wąskim oknie przejściowym**, bo potem stara nazwa znika. Trwałe współwystępowanie w setkach prac
+znaczy, że oba terminy żyją obok siebie, czyli nie są tą samą rzeczą. Gdyby użyć liczby wspólnych
+prac jako potwierdzenia przemianowania, dostałoby się wynik odwrotny do zamierzonego.
+
+### Reguła grupowania w zdarzenia perkoluje poniżej ~0,40 (2026-08-28)
+
+Reguła: dwie pary należą do jednego zdarzenia, gdy dzielą token po stronie *A* **oraz** po stronie
+*B*; domknięcie przechodnie. Na 50 najwyżej punktowanych parach działa poprawnie (14 zdarzeń,
+dwie niezależne implementacje zgodne). **Na pełnym zbiorze powyżej 0,2719 załamuje się.**
+
+| próg | par | zdarzeń | największa składowa | rozpiętość A × B |
+|---:|---:|---:|---:|---|
+| 0,2719 | 10 562 | 767 | 8 899 (84,3%) | 669 × 1615 |
+| 0,31 | 3 299 | 423 | 2 309 (70,0%) | 288 × 581 |
+| 0,35 | 1 040 | 200 | 451 (43,4%) | 71 × 131 |
+| 0,40 | 292 | 65 | 122 (41,8%) | 18 × 21 |
+| 0,45 | 78 | 20 | 45 (57,7%) | 9 × 13 |
+
+Przy 0,2719 największa składowa obejmuje 669 terminów *A* i 1 615 *B* z `y₀` od 2009 do 2022,
+łącząc CLI/CLTI z metodyką przeglądów Cochrane, bazą NIS i płatnościami pakietowymi. Każde ogniwo
+łańcucha spełnia regułę z osobna; sklejka powstaje z domknięcia przechodniego.
+
+**Wskaźnikiem perkolacji jest rozpiętość składowej, nie jej udział w parach.** Udział spada do 34%
+przy 0,37 i potem rośnie, bo przy wysokich progach prawie wszystko, co zostaje, jest jednym
+prawdziwym zdarzeniem. Rozpiętość spada monotonicznie i przechodzi do rozmiaru wiarygodnego dla
+pojedynczego zdarzenia między 0,40 a 0,43.
+
+Konsekwencja: liczba zdarzeń przy niskim progu jest **dolnym oszacowaniem** — składowa połyka
+nieznaną liczbę odrębnych zdarzeń. Liczba par takiego zaniżenia nie ma i jest wiarygodna.

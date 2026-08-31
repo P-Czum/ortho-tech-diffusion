@@ -100,6 +100,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", required=True)
     ap.add_argument("--stats", required=True)
+    ap.add_argument("--dump-above", help="zrzuc wszystkie pary powyzej progu i zakoncz")
     args = ap.parse_args()
 
     print("wczytuje korpus...", flush=True)
@@ -119,7 +120,7 @@ def main():
     okB = em & (y0 >= Y0_MIN) & (y0 <= Y0_MAX)
     print(f"  B po warunku okien: {okB.sum()} z {em.sum()} wylonionych", flush=True)
 
-    all_sims, top = [], []
+    all_sims, top, above = [], [], []
     for yy in sorted(set(y0[okB].tolist())):
         cl = M[:, ix[yy]:ix[yy + 3] + 1].sum(1)
         ce = M[:, ix[yy - 4]:ix[yy - 1] + 1].sum(1)
@@ -155,6 +156,9 @@ def main():
 
         v = S[~np.isnan(S)]
         all_sims.append(v.astype(np.float32))
+        if args.dump_above:
+            for i, j in zip(*np.nonzero(np.nan_to_num(S, nan=-1) > LOSOWE_MAX)):
+                above.append((At[i], Bt[j], yy, float(S[i, j])))
         k = min(TOP_N, v.size)
         flat = np.where(np.isnan(S), -np.inf, S).ravel()
         for p in np.argpartition(-flat, k - 1)[:k]:
@@ -179,6 +183,16 @@ def main():
     for k_, v_ in stats.items():
         if not isinstance(v_, dict):
             print(f"  {k_}: {v_:,}" if isinstance(v_, int) else f"  {k_}: {v_}", flush=True)
+
+    if args.dump_above:
+        pd.DataFrame(above, columns=["poprzednik_A", "termin_B", "y0_B", "podobienstwo"]).sort_values(
+            "podobienstwo", ascending=False).to_csv(
+            args.dump_above, index=False, encoding="utf-8", lineterminator="\n")
+        print(f"zrzucone {len(above):,} par powyzej {LOSOWE_MAX} do {args.dump_above}")
+        Path(args.stats).parent.mkdir(parents=True, exist_ok=True)
+        Path(args.stats).write_text(json.dumps(stats, indent=2, ensure_ascii=False),
+                                    encoding="utf-8")
+        return
 
     top.sort(reverse=True)
     top = top[:TOP_N]
