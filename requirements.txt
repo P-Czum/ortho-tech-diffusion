@@ -5,3 +5,8 @@ numpy>=2.0
 
 # medline_fetch.py i mesh_tree.py korzystaja wylacznie z biblioteki standardowej.
 # medline_extract.py wymaga pandas + pyarrow; medline_dedup.py dodatkowo numpy.
+
+# Frazy rzeczownikowe (code/extract_noun_phrases.py) — wersje przypiete, parser jest
+# zaleznoscia zewnetrzna i wchodzi do odtwarzalnosci wyniku.
+spacy==3.8.16
+# model: python -m spacy download en_core_web_sm   (en_core_web_sm 3.8.0)
