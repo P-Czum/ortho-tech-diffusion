@@ -1,0 +1,126 @@
+skrot	pelna_forma
+clti	chronic limb threatening ischemia
+cli patient	chronic limb threatening ischemia
+clti patient	chronic limb threatening ischemia
+ssi	surgical site infection
+ssis	surgical site infection
+pad	peripheral artery disease
+asd	adult spinal deformity
+asd patient	adult spinal deformity
+asd surgery	adult spinal deformity surgery
+pjk	proximal junctional kyphosis
+pjis	periprosthetic joint infection
+fai	femoroacetabular impingement syndrome
+fais	femoroacetabular impingement syndrome
+femoroacetabular impingement fai	femoroacetabular impingement syndrome
+txa	tranexamic acid
+txa group	tranexamic acid
+daa	direct anterior approach
+olif	oblique lumbar interbody fusion
+pkp	percutaneous kyphoplasty
+ai	artificial intelligence
+psi	patient specific instrumentation
+fns	femoral neck system
+peld	percutaneous endoscopic lumbar discectomy
+owhto	open wedge high tibial osteotomy
+mowhto	open wedge high tibial osteotomy
+atsa	anatomic total shoulder arthroplasty
+acb	adductor canal block
+cbct	cone beam computed tomography
+cbct scan	cone beam computed tomography
+hu	hounsfield unit
+hu value	hounsfield unit
+lcea	lateral center edge angle
+jlca	joint line convergence angle
+tad	tip apex distance
+evt	endovascular therapy
+afs	amputation free survival
+mme	morphine milligram equivalent
+let	lateral extra articular tenodesis
+eras	enhanced recovery
+dfus	dfu
+sva	sagittal vertical axis
+pi	pelvic incidence
+ss	sacral slope
+mpta	medial proximal tibial angle
+pts	posterior tibial slope
+hka	hip knee ankle angle
+ldd	lumbar degenerative disease
+lia	local infiltration analgesia
+cda	cervical disc arthroplasty
+koo	osteoarthritis outcome score
+hoo	nonarthritic hip score
+ohs	oxford shoulder score
+oks	clinical outcome score
+mhh	modified harris hip score
+hhs	modified harris hip score
+ase	subjective shoulder value
+ssv	subjective shoulder value
+sane	single assessment numeric evaluation
+prwe	patient rated wrist evaluation
+ndi	clinical outcome score
+quickdash score	quickdash
+quick disability	quickdash
+hand dash	quickdash
+fjs	forgotten joint score
+fjs 12	forgotten joint score
+vas score	vas
+vas pain score	vas
+visual analog scale score	vas
+visual analogue scale score	vas
+visual analog scale pain score	vas
+postoperative vas score	vas
+eq vas	vas
+nrs	numeric rating scale
+numerical rating scale	numeric rating scale
+pro	patient reported outcome
+prom	patient reported outcome measure
+promis pf	promis
+koo jr	osteoarthritis outcome score
+odi score	odi
+ase score	subjective shoulder value
+tk	miara_kregoslupa
+liv	upper instrumented vertebra
+uiv	upper instrumented vertebra
+lla	coronal alignment
+tja	primary total joint arthroplasty
+primary tja	primary total joint arthroplasty
+rcr	arcr
+drf	distal radius fracture
+phf	proximal humerus fracture
+fnf	femoral neck fracture
+onfh	osteonecrosis of the femoral head
+koa	knee osteoarthritis
+ovcf	osteoporotic vertebral compression fracture
+ldh	lumbar disc herniation
+dls	degenerative lumbar spondylolisthesis
+ppf	periprosthetic fracture
+pjf	proximal junctional failure
+fri	fracture related infection
+olt	osteochondral lesion of the talus
+plp	phantom limb pain
+dfu	diabetic foot ulcer
+pfna	proximal femoral nail antirotation
+csa	critical shoulder angle
+mcs	mental component score
+esr	erythrocyte sedimentation rate
+mep	motor evoked potential
+fea	finite element analysis
+von mise stress	maximum stress
+maximum von mise	maximum stress
+lsi	limb symmetry index
+adi	area deprivation index
+asc	ambulatory surgery center
+ed visit	emergency department visit
+cci	charlson comorbidity index
+dm	diabetes mellitus
+ka	kinematic alignment
+mua	manipulation under anesthesia
+tea	total elbow arthroplasty
+taa	total ankle arthroplasty
+pao	periacetabular osteotomy
+dair	implant retention
+fnb	femoral nerve block
+dcb	drug coated balloon
+ihot 12	hip outcome score activity
+hos adl	hip outcome score activity

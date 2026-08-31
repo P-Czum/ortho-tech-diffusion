@@ -154,3 +154,77 @@ wygląda na nieświadomą istniejącego dorobku.
 - Przesiać tytuły Q1 (192), Q5 (118), Q11 (63), O2 (32), O7 (28).
 - Sprawdzić, czy nurt patentowy dyfuzji technologii ma odpowiednik dla technologii
   medycznych — zapytanie o patenty w ortopedii, jako kontrapunkt dla naszej miary.
+
+---
+
+# 2026-08-31 — rdzeń bez S1 i klasyfikacja fraz. Zapis decyzji projektowych
+
+Gałąź frazowa jest **eksploracyjna** — powstała po odstąpieniu od kodowania ręcznego i nie jest
+objęta rejestracją OSF. Dwunastka zamrożonych plików nietknięta. Poniższe decyzje trzeba mimo to
+zapisać, bo zapadły **po zobaczeniu wyników**, a nie przed.
+
+## D1. S1 (wariant tytułowy) przestaje współokreślać rdzeń
+
+**Było:** rdzeń = część wspólna czterech wariantów (primary ∩ S1 ∩ S2 ∩ S3) = **47 fraz**.
+**Jest:** rdzeń = primary ∩ S2 ∩ S3 = **813 fraz**; S1 raportowany jako czułość.
+
+**Powód.** S1 nie ocenia trwałości terminu, tylko obcina słownik. Tytuł daje 4,2 chunku,
+streszczenie 61,7. Przy niezmienionym progu ≥ 50 słownik S1 ma 1 882 frazy wobec 25 419
+w primary i wyłania 85 wobec 936. Część wspólna czterech wariantów nie może przekroczyć 85.
+S1 usuwał 94,2% rdzenia — mechanicznie, nie merytorycznie.
+
+**Koszt decyzji, zmierzony.** Rezygnacja z S1 wpuszcza z powrotem klasę śmieci, którą S1 odsiewał
+przy okazji: gołe liczebniki jako chunki (`0 0`, `10 1`, `13 9`) — 32 pozycje na 813 (3,9%),
+fraz z samodzielną liczbą 60 (7,4%). Zgłoszone przez VS Code w §6 briefu z 28.08.
+
+**Kontrola przeciwko naciąganiu.** Rozszerzenie rdzenia z 47 do 100 pozycji po rankingu **nie
+wpuszcza technologii** — pozycje 48–100 to `p value`, `iqr`, `hazard ratio`, `auc`,
+`propensity score matching`, `prisma guideline`, `google scholar`. Decyzja D1 nie została podjęta,
+żeby dołożyć technologie do listy; technologie leżą głęboko (3d printing 287, PSI 411, VR 513,
+AR 559) i wchodzą dopiero przez D2.
+
+## D2. Klasyfikacja fraz: model proponuje, ortopeda rozstrzyga
+
+Po odstąpieniu od kodowania ręcznego (287 terminów, kompletność załamała się) rola człowieka
+zmienia się z kodera na **rozjemcę**. Sesja Cowork przypisała kategorię wszystkim 813 frazom;
+ortopeda poprawia i to jego wersja jest zapisem. Narzędzie: `code/mapa_ui.html` (offline,
+dane wbudowane, eksport CSV).
+
+Kategorie i liczności propozycji:
+
+| kategoria | n | na mapie |
+|---|---:|:--:|
+| metoda badawcza / artefakt | 450 | nie |
+| skala, kwestionariusz, PROM | 67 | nie |
+| wynik, punkt końcowy | 46 | nie |
+| parametr radiologiczny | 42 | przełącznik |
+| czynnik pacjenta | 12 | przełącznik |
+| organizacja opieki | 28 | przełącznik |
+| niejasne (skróty wieloznaczne) | 10 | przełącznik |
+| **rozpoznanie** | **63** | tak |
+| **technika operacyjna** | **56** | tak |
+| **technologia** | **30** | tak |
+| **lek** | **9** | tak |
+
+Kryterium mapy postawione przez ortopedę: *nazwy badań, skal i metod badawczych wykluczone;
+zostają terminy medyczne i ortopedyczne — rozpoznanie, leczenie, technologia.*
+
+Skróty sklejone z pełnymi formami przez ręczną tabelę `data/processed/np_synonimy.tsv`
+(125 par: `clti` = chronic limb threatening ischemia, `txa` = tranexamic acid itd.).
+
+**Mapa kliniczna po odsianiu i sklejeniu: 96 pozycji** — 34 rozpoznania, 34 techniki,
+21 technologii, 7 leków.
+
+## D3. Obserwacja, która wymaga własnego sprawdzenia
+
+Trzy pozycje mapy tworzą jedną historię: `metal debris` (y₀ 2012), `adverse local tissue reaction`
+(y₀ 2014), `mom total hip arthroplasty` (y₀ 2014, prevalence 2021–25 = 0,018%). Metal-on-metal:
+technologia wchodzi, pojawiają się powikłania, technologia wypada. Detektor złapał wejście
+i wycofanie bez podpowiedzi. Jeśli to się potwierdzi na krzywych rocznych, jest to mocniejsze
+twierdzenie niż sama mapa nowości — metoda widzi **wycofania**, nie tylko wejścia.
+Do sprawdzenia przed użyciem w tekście.
+
+## Pliki
+
+`data/processed/core813_np_ranking.csv`, `np_kategorie_propozycja.tsv`, `np_synonimy.tsv`,
+`np_mapa_propozycja.csv`, `code/build_mapa_ui.py`, `code/mapa_ui.html`.

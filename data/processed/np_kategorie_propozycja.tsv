@@ -1,0 +1,369 @@
+term	kategoria
+vas	skala
+patient reported outcome	skala
+periprosthetic joint infection	rozpoznanie
+prom	skala
+patient reported outcome measure	skala
+operation time	wynik
+odi	skala
+readmission	wynik
+postoperative outcome	wynik
+intraoperative blood loss	wynik
+clinical efficacy	wynik
+revision rate	wynik
+surgical site infection	rozpoznanie
+reoperation rate	wynik
+koo	skala
+tja	technika
+pro	skala
+hhs	skala
+reverse total shoulder arthroplasty	technika
+asd	rozpoznanie
+chronic limb threatening ischemia	rozpoznanie
+ase	skala
+knee injury	rozpoznanie
+kss	skala
+clti	rozpoznanie
+joa	skala
+reverse shoulder arthroplasty	technika
+opioid consumption	organizacja
+oks	skala
+adult spinal deformity	rozpoznanie
+modified harris hip score	skala
+ssi	rozpoznanie
+charlson comorbidity index	czynnik
+tranexamic acid	lek
+primary anterior cruciate ligament reconstruction	technika
+opioid use	organizacja
+osteoarthritis outcome score	skala
+ll	parametr
+nrs	skala
+asa	czynnik
+odi score	skala
+pad	rozpoznanie
+direct anterior approach	technika
+ndi	skala
+pelvic tilt	parametr
+comorbidity	czynnik
+bmi	czynnik
+ovcf	rozpoznanie
+cone beam computed tomography	technologia
+txa	lek
+medicare	organizacja
+vas pain score	skala
+femoroacetabular impingement syndrome	rozpoznanie
+implant survivorship	wynik
+icc	metoda
+visual analog scale score	skala
+pelvic incidence	parametr
+cbct	technologia
+ldh	rozpoznanie
+peripheral artery disease	rozpoznanie
+eq 5d	skala
+pi	parametr
+90 day readmission	wynik
+daa	technika
+covid 19	rozpoznanie
+cci	czynnik
+enhanced recovery	organizacja
+cage subsidence	rozpoznanie
+medical complication	wynik
+lumbar degenerative disease	rozpoznanie
+forgotten joint score	skala
+readmission rate	wynik
+sva	parametr
+hka	parametr
+disparity	organizacja
+perioperative outcome	wynik
+ase score	skala
+proximal junctional kyphosis	rozpoznanie
+rts	wynik
+electronic medical record	technologia
+artificial intelligence	technologia
+lateral lumbar interbody fusion	technika
+mpta	parametr
+taa	technika
+numeric rating scale	skala
+olif	technika
+covid 19 pandemic	organizacja
+sagittal vertical axis	parametr
+esr	parametr
+percutaneous kyphoplasty	technika
+pkp	technika
+ss	parametr
+transfusion rate	wynik
+dm	rozpoznanie
+machine learning	technologia
+amputation free survival	wynik
+ai	technologia
+hip knee ankle angle	parametr
+mep	technologia
+mechanical complication	wynik
+all cause revision	wynik
+sacral slope	parametr
+posterior tibial slope	parametr
+frailty	rozpoznanie
+reintervention	wynik
+reduction quality	parametr
+ethnicity	organizacja
+medial proximal tibial angle	parametr
+pts	parametr
+discharge disposition	organizacja
+fjs	skala
+mcs	skala
+anatomic total shoulder arthroplasty	technika
+rtka	niejasne
+robotic assisted total knee arthroplasty	technologia
+healthcare system	organizacja
+pjis	rozpoznanie
+fnf	rozpoznanie
+pjk	rozpoznanie
+fais	rozpoznanie
+lateral center edge angle	parametr
+3d printing	technologia
+mental health	rozpoznanie
+30 day readmission	wynik
+mme	wynik
+30 day mortality	wynik
+psi	technologia
+retear	rozpoznanie
+medial unicompartmental knee arthroplasty	technika
+subjective shoulder value	skala
+numerical rating scale	skala
+aseptic revision	wynik
+cutoff value	metoda
+surgical duration	wynik
+pao	technika
+geriatric patient	czynnik
+quick disability	skala
+shared decision making	organizacja
+tobacco use	czynnik
+csa	parametr
+fai	rozpoznanie
+drf	rozpoznanie
+intraoperative bleeding	wynik
+primary hip arthroscopy	technika
+chronic kidney disease	rozpoznanie
+phf	rozpoznanie
+koa	rozpoznanie
+onfh	rozpoznanie
+ais patient	rozpoznanie
+ssis	rozpoznanie
+major adverse limb event	wynik
+acute kidney injury	rozpoznanie
+ka	technika
+fea	technologia
+asd surgery	technika
+sane	skala
+atsa	technika
+mid term outcome	wynik
+adult spinal deformity surgery	technika
+spinopelvic parameter	parametr
+ssv	skala
+endovascular therapy	technika
+ohs	skala
+rtha	niejasne
+knee joint function	skala
+robotic assistance	technologia
+medicaid service	organizacja
+reimbursement	organizacja
+maximum stress	parametr
+tegner activity scale	skala
+primary total joint arthroplasty	technika
+operative duration	wynik
+coronal alignment	parametr
+dexamethasone	lek
+rcr	technika
+dfu	rozpoznanie
+ar	niejasne
+mechanical alignment	technika
+uiv	parametr
+hospital readmission	wynik
+patient specific instrumentation	technologia
+hoo	skala
+implant retention	technika
+transfemoral amputation	technika
+adductor canal block	technika
+afs	wynik
+quickdash	skala
+oblique lumbar interbody fusion	technika
+latarjet procedure	technika
+owhto	technika
+single assessment numeric evaluation	skala
+promis	skala
+percutaneous endoscopic lumbar discectomy	technika
+postoperative complication rate	wynik
+virtual surgical planning	technologia
+elixhauser comorbidity index	czynnik
+machine learning model	technologia
+liv	parametr
+femoroacetabular impingement fai	rozpoznanie
+malnutrition	rozpoznanie
+modified macnab criterion	skala
+arcr	technika
+90 day complication	wynik
+1 year mortality	wynik
+fns	technologia
+hounsfield unit	parametr
+primary tja	technika
+retear rate	wynik
+upper instrumented vertebra	parametr
+postoperative hospital stay	wynik
+visual analog scale pain score	skala
+peld	technika
+cda	technika
+fjs 12	skala
+tk	parametr
+hu	parametr
+lateral extra articular tenodesis	technika
+multimodal analgesia	lek
+t nnis grade	skala
+revision risk	wynik
+volar locking plate	technologia
+mua	technika
+t1 slope	parametr
+prwe	skala
+minimum 10 year follow up	metoda
+pi ll	parametr
+same day discharge	organizacja
+distal femur fracture	rozpoznanie
+femoral neck system	technologia
+chronic periprosthetic joint infection	rozpoznanie
+dfus	rozpoznanie
+virtual reality	technologia
+emergency department visit	wynik
+sarcopenia	rozpoznanie
+chronic obstructive pulmonary disease	rozpoznanie
+graft type	technika
+eos	niejasne
+patient reported outcome score	skala
+tea	technika
+opioid prescription	organizacja
+white patient	organizacja
+lla	parametr
+bone cement leakage	rozpoznanie
+kinesiophobia	rozpoznanie
+early onset scoliosis	rozpoznanie
+pfna	technologia
+eras	organizacja
+open wedge high tibial osteotomy	technika
+open reduction internal fixation group	technika
+mowhto	technika
+ihot 12	skala
+cbct scan	technologia
+infection risk	wynik
+augmented reality	technologia
+morphine milligram equivalent	wynik
+limb symmetry index	skala
+acb	technika
+ppf	rozpoznanie
+dair	technika
+3d printing technology	technologia
+koo jr	skala
+cephalomedullary nail	technologia
+lcea	parametr
+fracture related infection	rozpoznanie
+short stem	technologia
+let	technika
+surgical accuracy	parametr
+ldfa	parametr
+healthcare cost	organizacja
+evt	technika
+black patient	organizacja
+clti patient	rozpoznanie
+scapular notching	rozpoznanie
+midterm outcome	wynik
+oxford shoulder score	skala
+eq vas	skala
+random forest	technologia
+cervical disc arthroplasty	technika
+biomarker	technologia
+targeted muscle reinnervation	technika
+coronal plane alignment	parametr
+mdo	niejasne
+arthroplasty surgeon	organizacja
+quickdash score	skala
+skilled nursing facility	organizacja
+ds	niejasne
+pain interference	skala
+90 day readmission rate	wynik
+pjf	rozpoznanie
+adi	organizacja
+hidden blood loss	wynik
+visual analogue scale score	skala
+endovascular revascularization	technika
+postoperative vas score	skala
+joint line convergence angle	parametr
+primary unilateral total knee arthroplasty	technika
+national joint registry	metoda
+kinematic alignment	technika
+jlca	parametr
+high bmi	czynnik
+fri	rozpoznanie
+proximal junctional failure	rozpoznanie
+vas leg	skala
+hip outcome score activity	skala
+oblique lateral interbody fusion	technika
+social determinant	organizacja
+elective total knee arthroplasty	technika
+chronic lateral ankle instability	rozpoznanie
+eq 5d 5l	skala
+major amputation rate	wynik
+hos adl	skala
+promis pf	skala
+asc	organizacja
+primary reverse total shoulder arthroplasty	technika
+tip apex distance	parametr
+30 day complication	wynik
+lsi	skala
+von mise stress	parametr
+ed visit	wynik
+vte prophylaxis	lek
+hba1c	czynnik
+insurance type	organizacja
+clinical outcome score	skala
+medicare patient	organizacja
+olt	rozpoznanie
+plp	rozpoznanie
+femoral neck shortening	rozpoznanie
+psychological readiness	czynnik
+joint line obliquity	parametr
+dls	rozpoznanie
+dh	niejasne
+prf	niejasne
+local infiltration analgesia	lek
+end stage ankle arthritis	rozpoznanie
+insurance status	organizacja
+tad	parametr
+cutibacterium acne	rozpoznanie
+preoperative opioid use	czynnik
+maximum von mise	parametr
+hu value	parametr
+overall revision rate	wynik
+radiologic parameter	metoda
+patient rated wrist evaluation	skala
+pain outcome	skala
+hand dash	skala
+postoperative length	wynik
+liposomal bupivacaine	lek
+lia	lek
+native knee	niejasne
+nonarthritic hip score	skala
+mcmaster university arthritis index	skala
+black race	organizacja
+pla	niejasne
+dcb	technologia
+dual mobility cup	technologia
+ldd	rozpoznanie
+unilateral anterior cruciate ligament reconstruction	technika
+anterolateral ligament	technika
+metal debris	rozpoznanie
+adverse local tissue reaction	rozpoznanie
+rivaroxaban	lek
+bundled payment	organizacja
+fnb	technika
+cli patient	rozpoznanie
+mom total hip arthroplasty	technologia
+all prom	skala
+mhh	skala
+vas score	skala

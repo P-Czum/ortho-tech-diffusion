@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ocena mapy — 47 fraz wschodzących</title>
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--ink:#1a1a18;--ink2:#4a4a46;--ink3:#78786f;--line:#e4e4df;
+ --accent:#3d6b8f;--soft:#e8f0f6;--ok:#2e6b4f;--warn:#8a5a1f;--bad:#8a3a3a}
+@media (prefers-color-scheme:dark){:root{--bg:#161614;--surface:#1e1e1c;--ink:#f0efec;--ink2:#c2c1bb;
+ --ink3:#8a8a82;--line:#33332f;--accent:#7fb0d4;--soft:#22323e;--ok:#7fc0a0;--warn:#d6a860;--bad:#d99a9a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 ui-sans-serif,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{position:sticky;top:0;z-index:5;background:var(--surface);border-bottom:1px solid var(--line);
+ padding:10px 16px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+h1{font-size:14px;margin:0;font-weight:600}
+main{max-width:1120px;margin:0 auto;padding:16px 16px 80px}
+button{font:inherit;border:1px solid var(--line);background:var(--surface);color:var(--ink);
+ padding:5px 10px;border-radius:7px;cursor:pointer}
+button:hover{border-color:var(--accent)}
+button.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+table{border-collapse:collapse;width:100%;background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+th,td{border-bottom:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+th{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink3);font-weight:600;
+ position:sticky;top:44px;background:var(--surface);z-index:2}
+td.num{text-align:right;color:var(--ink2);font-variant-numeric:tabular-nums;white-space:nowrap}
+.term{font-weight:600}
+.pick{display:flex;gap:3px;flex-wrap:wrap}
+.pick button{padding:3px 8px;font-size:12.5px;border-radius:6px}
+.pick button.on{color:#fff;border-color:transparent}
+.t1.on{background:var(--ok)} .t2.on{background:var(--warn)} .t3.on{background:var(--bad)}
+.k.on{background:var(--accent)}
+select,textarea,input[type=text]{font:inherit;background:var(--bg);color:var(--ink);
+ border:1px solid var(--line);border-radius:7px;padding:5px 8px}
+textarea{width:100%;min-height:90px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px;margin-top:16px}
+.muted{color:var(--ink3);font-size:13px}
+#drop{border:2px dashed var(--line);border-radius:10px;padding:34px;text-align:center;color:var(--ink3)}
+.bar{flex:1;min-width:120px;height:6px;background:var(--line);border-radius:3px;overflow:hidden}
+.bar>i{display:block;height:100%;background:var(--accent);width:0}
+</style></head><body>
+<header>
+  <h1>Ocena mapy — frazy wschodzące, ortopedia 2005–2025</h1>
+  <span class="muted" id="cnt">wczytaj plik</span>
+  <span class="bar"><i id="prog"></i></span>
+  <button id="save" class="primary">Zapisz CSV</button>
+</header>
+<main>
+  <div id="drop" class="card">
+    <p><b>Wczytaj</b> <code>data/processed/core_np_ranking.csv</code></p>
+    <input type="file" id="file" accept=".csv">
+    <p class="muted">Nic nie opuszcza tego komputera. Plik wejściowy nie jest modyfikowany.</p>
+  </div>
+
+  <div id="app" hidden>
+    <div class="card">
+      <h3 style="margin:0 0 6px;font-size:13px">Jak oceniać</h3>
+      <p class="muted" style="margin:0">
+      <b>Trafność</b> — czy ta pozycja należy do mapy tego, co wyłoniło się w ortopedii w latach
+      2005–2025. <b>trafna</b> = tak, rozpoznaję i rok się zgadza · <b>wątpliwa</b> = to istnieje,
+      ale nie nazwałbym tego wyłonieniem albo rok jest nie ten · <b>błędna</b> = nie ma czego tu szukać.<br>
+      <b>Rodzaj</b> — czym to jest. Ta kolumna odpowiada na pytanie, czy mapa pokazuje substancję,
+      czy konwencję pisania prac.</p>
+    </div>
+    <table id="tbl"></table>
+    <div class="card">
+      <h3 style="margin:0 0 6px;font-size:13px">Czego brakuje</h3>
+      <p class="muted" style="margin:0 0 8px">Co wyłoniło się w ortopedii w tym okresie, a nie ma tego na liście?
+      Jedna pozycja na linię, w miarę możliwości z przybliżonym rokiem.</p>
+      <textarea id="missing" placeholder="np. vancomycin powder — ok. 2014&#10;..."></textarea>
+    </div>
+  </div>
+</main>
+<script>
+"use strict";
+const TRAF=["trafna","wątpliwa","błędna"];
+const RODZ=["technologia","technika operacyjna","lek / substancja","jednostka kliniczna","miara wyniku","konwencja badawcza","inne"];
+let rows=[],cols=[];
+function parseCSV(t){if(t.charCodeAt(0)===0xFEFF)t=t.slice(1);const o=[];let r=[],f="",q=false;
+ for(let p=0;p<t.length;p++){const c=t[p];
+  if(q){if(c==='"'){if(t[p+1]==='"'){f+='"';p++}else q=false}else f+=c}
+  else if(c==='"')q=true; else if(c===','){r.push(f);f=""} else if(c==='\r'){}
+  else if(c==='\n'){r.push(f);f="";o.push(r);r=[]} else f+=c}
+ if(f.length||r.length){r.push(f);o.push(r)} return o.filter(x=>x.length>1||x[0]!=="")}
+const esc=v=>{v=v==null?"":String(v);return /[",\n\r]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v};
+const $=s=>document.querySelector(s);
+function stash(){try{localStorage.setItem("review_np",JSON.stringify({rows,m:$("#missing").value}))}catch(e){}}
+function draw(){
+ const h=`<tr><th>#</th><th>fraza</th><th class="num">y₀</th><th class="num">2021–25</th>
+  <th>trafność</th><th>rodzaj</th><th>uwaga</th></tr>`;
+ $("#tbl").innerHTML=h+rows.map((r,i)=>`<tr>
+   <td class="num">${r.pozycja||i+1}</td>
+   <td class="term">${r.term}</td>
+   <td class="num">${r.y0||""}</td>
+   <td class="num">${(+r.prevalence_2021_2025_pct).toFixed(2)}%</td>
+   <td><div class="pick">${TRAF.map((t,k)=>`<button class="t${k+1} ${r.trafnosc===t?"on":""}" data-i="${i}" data-f="trafnosc" data-v="${t}">${t}</button>`).join("")}</div></td>
+   <td><select data-i="${i}" data-f="rodzaj">${["",...RODZ].map(o=>`<option ${r.rodzaj===o?"selected":""}>${o}</option>`).join("")}</select></td>
+   <td><input type="text" data-i="${i}" data-f="uwaga" value="${(r.uwaga||"").replace(/"/g,"&quot;")}" style="width:150px"></td>
+ </tr>`).join("");
+ const d=rows.filter(r=>r.trafnosc).length;
+ $("#cnt").textContent=`${d} / ${rows.length} ocenionych`;
+ $("#prog").style.width=(100*d/rows.length)+"%";
+}
+document.addEventListener("click",e=>{const b=e.target.closest("button[data-f]");if(!b)return;
+ rows[+b.dataset.i][b.dataset.f]=rows[+b.dataset.i][b.dataset.f]===b.dataset.v?"":b.dataset.v;stash();draw()});
+document.addEventListener("change",e=>{const t=e.target;if(!t.dataset||!t.dataset.f)return;
+ rows[+t.dataset.i][t.dataset.f]=t.value;stash()});
+document.addEventListener("input",e=>{if(e.target.id==="missing")stash()});
+$("#file").addEventListener("change",e=>{const f=e.target.files[0];if(!f)return;const rd=new FileReader();
+ rd.onload=()=>{const t=parseCSV(rd.result);cols=t[0].map(s=>s.trim());
+  rows=t.slice(1).filter(r=>r.length>1).map(r=>{const o={};cols.forEach((c,k)=>o[c]=r[k]||"");
+   o.trafnosc="";o.rodzaj="";o.uwaga="";return o});
+  try{const s=JSON.parse(localStorage.getItem("review_np")||"null");
+   if(s&&s.rows){const by={};s.rows.forEach(x=>by[x.term]=x);
+    rows.forEach(r=>{const p=by[r.term];if(p){r.trafnosc=p.trafnosc||"";r.rodzaj=p.rodzaj||"";r.uwaga=p.uwaga||""}});
+    if(s.m)$("#missing").value=s.m}}catch(e){}
+  $("#drop").hidden=true;$("#app").hidden=false;draw()};
+ rd.readAsText(f,"utf-8")});
+$("#save").onclick=()=>{
+ const head=[...cols,"trafnosc","rodzaj","uwaga"];
+ let csv=head.join(",")+"\r\n"+rows.map(r=>head.map(c=>esc(r[c])).join(",")).join("\r\n")+"\r\n";
+ csv+="\r\n# BRAKUJACE\r\n"+($("#missing").value||"").split(/\n/).map(l=>esc(l)).join("\r\n")+"\r\n";
+ const b=new Blob(["﻿"+csv],{type:"text/csv;charset=utf-8"});
+ const a=document.createElement("a");a.href=URL.createObjectURL(b);
+ a.download="ocena_mapy_"+new Date().toISOString().slice(0,10)+".csv";a.click();
+ setTimeout(()=>URL.revokeObjectURL(a.href),2000)};
+</script></body></html>
