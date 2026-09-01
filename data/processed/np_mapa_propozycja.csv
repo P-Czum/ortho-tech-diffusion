@@ -1,814 +1,846 @@
-pozycja,term,kategoria,wariant_do,n,y0,peak_year,docs_total,prevalence_pct,peak_share_pct,w_rdzeniu_4,na_mapie
-1,ci,metoda,,1,2015,2025,11128,6.901,8.367,False,False
-2,systematic review,metoda,,2,2014,2025,9914,6.525,7.056,True,False
-3,vas,skala,,1,2021,2025,10185,6.031,6.749,False,False
-4,primary outcome,metoda,,2,2013,2025,6479,5.0,6.996,False,False
-5,meta analysis,metoda,,2,2014,2025,7393,4.775,5.291,True,False
-6,inclusion criterion,metoda,,2,2016,2025,7410,4.186,5.077,False,False
-7,pubmed,metoda,,1,2011,2025,5497,4.042,5.137,False,False
-8,95 ci,metoda,,2,2015,2025,6621,3.846,5.411,False,False
-9,embase,metoda,,1,2013,2025,5574,3.64,4.374,False,False
-10,cohort,metoda,,1,2022,2025,5523,3.444,4.033,False,False
-11,retrospective cohort study,metoda,,3,2017,2025,4265,3.292,4.374,True,False
-12,secondary outcome,metoda,,2,2013,2025,4143,3.29,4.889,False,False
-13,bmi,czynnik,,1,2016,2025,4512,3.037,3.766,False,False
-14,level iii,metoda,,2,2014,2024,4939,2.953,3.489,False,False
-15,odd ratio,metoda,,2,2017,2025,4200,2.485,2.762,False,False
-16,patient reported outcome,skala,,3,2010,2025,3023,2.447,3.204,True,False
-17,comorbidity,czynnik,,1,2019,2025,4111,2.4,3.01,False,False
-18,periprosthetic joint infection,rozpoznanie,,3,2011,2024,3099,2.344,2.578,True,True
-19,demographic,metoda,,1,2018,2025,3384,2.317,2.923,False,False
-20,science,metoda,,1,2014,2025,2611,2.224,3.01,False,False
-21,prom,skala,patient reported outcome measure,1,2013,2025,2078,2.058,2.595,False,False
-22,patient reported outcome measure,skala,,4,2011,2024,2158,2.042,2.646,True,False
-23,operation time,wynik,,2,2019,2023,3132,2.008,2.359,False,False
-24,web,metoda,,1,2013,2025,2281,1.999,2.836,False,False
-25,odi,skala,,1,2016,2025,3239,1.941,2.221,False,False
-26,or,metoda,,1,2019,2025,3082,1.928,2.287,False,False
-27,this systematic review,metoda,,3,2012,2025,2537,1.845,2.354,False,False
-28,vas score,skala,vas,2,2017,2024,2936,1.804,1.93,False,False
-29,patient demographic,metoda,,2,2013,2024,2751,1.789,2.119,False,False
-30,cochrane library,metoda,,2,2012,2025,2643,1.776,2.221,False,False
-31,medline,metoda,,1,2021,2023,3357,1.728,1.923,False,False
-32,readmission,wynik,,1,2016,2022,2418,1.63,1.819,True,False
-33,postoperative outcome,wynik,,2,2022,2025,2094,1.621,2.595,True,False
-34,intraoperative blood loss,wynik,,3,2017,2025,2117,1.574,2.04,False,False
-35,instruction,metoda,,1,2016,2017,2976,1.539,1.781,False,False
-36,independent risk factor,metoda,,3,2015,2025,2082,1.452,1.873,False,False
-37,clinical efficacy,wynik,,2,2020,2025,1833,1.4,2.027,True,False
-38,90 day,metoda,,2,2017,2025,1744,1.346,1.686,False,False
-39,scopus,metoda,,1,2014,2025,1410,1.338,2.194,False,False
-40,bias,metoda,,1,2013,2025,1942,1.332,1.565,False,False
-41,rct,metoda,,1,2015,2025,2378,1.331,1.558,False,False
-42,hr,metoda,,1,2014,2025,2033,1.319,1.772,False,False
-43,trial registration,metoda,,2,2011,2025,1882,1.302,1.806,False,False
-44,revision rate,wynik,,2,2020,2025,1990,1.262,1.538,False,False
-45,subgroup analysis,metoda,,2,2015,2025,1656,1.228,1.679,False,False
-46,exclusion criterion,metoda,,2,2016,2025,1895,1.225,1.485,False,False
-47,preferred reporting item,metoda,,3,2015,2024,1332,1.217,1.424,False,False
-48,surgical site infection,rozpoznanie,,3,2017,2025,2119,1.179,1.418,True,True
-49,p value,metoda,,2,2019,2025,1686,1.149,1.291,False,False
-50,los,metoda,,1,2019,2022,1823,1.131,1.266,False,False
-51,reoperation rate,wynik,,2,2020,2025,1662,1.128,1.371,False,False
-52,iqr,metoda,,1,2016,2025,1367,1.128,1.612,False,False
-53,minimal clinically important difference,metoda,,4,2016,2024,1155,1.116,1.336,False,False
-54,hazard ratio,metoda,,2,2022,2025,1859,1.085,1.538,False,False
-55,mcid,metoda,,1,2016,2025,1107,1.082,1.304,False,False
-56,auc,metoda,,1,2014,2025,1135,1.078,1.645,False,False
-57,logistic regression analysis,metoda,,3,2020,2025,1601,1.074,1.405,False,False
-58,koo,skala,osteoarthritis outcome score,1,2013,2025,1647,1.04,1.251,False,False
-59,univariate analysis,metoda,,2,2018,2025,1591,1.026,1.17,False,False
-60,included study,metoda,,2,2012,2025,1421,0.964,1.11,False,False
-61,propensity score matching,metoda,,3,2016,2025,976,0.963,1.605,False,False
-62,md,metoda,,1,2010,2025,1446,0.95,1.157,True,False
-63,lower rate,metoda,,2,2021,2024,1405,0.916,1.08,False,False
-64,tja,technika,primary total joint arthroplasty,1,2015,2022,1354,0.912,0.982,False,True
-65,this retrospective cohort study,metoda,,4,2015,2025,1009,0.911,1.726,False,False
-66,pro,skala,patient reported outcome,1,2017,2025,1109,0.882,1.057,False,False
-67,inception,metoda,,1,2013,2025,1029,0.881,1.084,False,False
-68,rr,metoda,,1,2015,2025,1620,0.863,1.284,False,False
-69,prisma guideline,metoda,,2,2016,2025,856,0.861,1.284,False,False
-70,this meta analysis,metoda,,3,2013,2025,1436,0.852,1.043,False,False
-71,independent predictor,metoda,,2,2018,2025,1413,0.846,1.344,False,False
-72,hhs,skala,modified harris hip score,1,2020,2025,1425,0.818,1.023,False,False
-73,reverse total shoulder arthroplasty,technika,,4,2013,2025,1151,0.806,1.057,True,True
-74,asd,rozpoznanie,adult spinal deformity,1,2014,2024,1199,0.789,0.938,False,True
-75,chronic limb threatening ischemia,rozpoznanie,,4,2019,2025,656,0.76,0.977,True,True
-76,ase,skala,subjective shoulder value,1,2020,2022,1208,0.738,0.823,False,False
-77,knee injury,rozpoznanie,,2,2018,2024,1142,0.734,1.012,False,True
-78,kss,skala,,1,2013,2022,1328,0.726,0.789,False,False
-79,threshold,metoda,,1,2020,2025,1054,0.719,0.997,False,False
-80,multivariable analysis,metoda,,2,2015,2025,929,0.716,0.97,False,False
-81,clti,rozpoznanie,chronic limb threatening ischemia,1,2019,2025,611,0.7,0.863,False,True
-82,single center,metoda,,2,2020,2025,1004,0.693,0.769,False,False
-83,joa,skala,,1,2016,2024,1332,0.681,0.736,False,False
-84,lower risk,metoda,,2,2019,2025,1020,0.674,0.856,False,False
-85,random effect model,metoda,,3,2015,2025,910,0.673,1.137,False,False
-86,receiver operating characteristic curve,metoda,,4,2020,2024,791,0.657,0.81,False,False
-87,baseline characteristic,metoda,,2,2016,2025,836,0.653,1.144,False,False
-88,descriptive statistic,metoda,,2,2017,2025,881,0.623,0.836,False,False
-89,reverse shoulder arthroplasty,technika,,3,2011,2024,1090,0.617,0.79,True,True
-90,opioid consumption,organizacja,,2,2013,2025,866,0.609,0.716,False,False
-91,google scholar,metoda,,2,2012,2025,816,0.6,0.716,False,False
-92,oks,skala,clinical outcome score,1,2012,2025,878,0.594,0.629,False,False
-93,adult spinal deformity,rozpoznanie,,3,2017,2025,828,0.594,0.742,True,True
-94,modified harris hip score,skala,,4,2016,2021,924,0.593,0.718,False,False
-95,systematic search,metoda,,2,2011,2025,834,0.593,0.977,False,False
-96,ssi,rozpoznanie,surgical site infection,1,2018,2024,1067,0.589,0.655,False,True
-97,older age,metoda,,2,2019,2025,994,0.587,0.729,False,False
-98,literature search,metoda,,2,2019,2024,1005,0.586,0.641,False,False
-99,case presentation,metoda,,2,2014,2025,938,0.582,0.716,False,False
-100,final analysis,metoda,,2,2017,2025,786,0.576,0.709,False,False
-101,all study,metoda,,2,2015,2023,1008,0.567,0.639,False,False
-102,charlson comorbidity index,czynnik,,3,2013,2025,722,0.566,0.662,False,False
-103,editorial commentary,metoda,,2,2015,2024,867,0.564,0.911,True,False
-104,tranexamic acid,lek,,2,2015,2021,1194,0.557,0.768,True,True
-105,primary anterior cruciate ligament reconstruction,technika,,5,2018,2025,906,0.556,0.742,False,True
-106,meta analysis guideline,metoda,,3,2016,2025,562,0.553,0.716,False,False
-107,opioid use,organizacja,,2,2017,2025,747,0.552,0.682,False,False
-108,multivariable logistic regression,metoda,,3,2017,2025,610,0.544,0.816,False,False
-109,osteoarthritis outcome score,skala,,3,2016,2024,815,0.537,0.729,False,False
-110,ll,parametr,,1,2013,2022,730,0.537,0.643,False,False
-111,nrs,skala,numeric rating scale,1,2016,2024,723,0.532,0.675,False,False
-112,asa,czynnik,,1,2016,2022,940,0.528,0.602,False,False
-113,current evidence,metoda,,2,2012,2025,947,0.523,0.582,False,False
-114,odi score,skala,odi,2,2018,2025,834,0.522,0.682,False,False
-115,therapeutic level iii,metoda,,3,2017,2019,871,0.519,0.619,False,False
-116,pass,metoda,,1,2019,2025,517,0.51,0.696,False,False
-117,cross sectional study,metoda,,3,2018,2025,903,0.508,0.629,True,False
-118,pad,rozpoznanie,peripheral artery disease,1,2023,2024,786,0.504,0.567,False,True
-119,primary aim,metoda,,2,2017,2024,772,0.5,0.56,False,False
-120,significantly higher rate,metoda,,3,2022,2025,760,0.5,0.609,False,False
-121,direct anterior approach,technika,,3,2015,2023,716,0.498,0.533,True,True
-122,prospectively collected data,metoda,,3,2013,2017,936,0.487,0.57,False,False
-123,interquartile range,metoda,,2,2017,2023,734,0.487,0.563,False,False
-124,ndi,skala,clinical outcome score,1,2022,2022,891,0.48,0.546,False,False
-125,potential risk factor,metoda,,3,2018,2025,792,0.477,0.582,False,False
-126,multivariate logistic regression analysis,metoda,,4,2014,2025,686,0.477,0.582,False,False
-127,i2,metoda,,1,2017,2025,507,0.477,0.669,False,False
-128,mhh,skala,modified harris hip score,1,2014,2025,666,0.476,0.562,False,False
-129,pelvic tilt,parametr,,2,2015,2022,811,0.474,0.533,False,False
-130,female sex,metoda,,2,2018,2025,688,0.473,0.535,False,False
-131,cinahl,metoda,,1,2018,2023,904,0.47,0.601,False,False
-132,covariate,metoda,,1,2022,2025,653,0.47,0.609,False,False
-133,continuous variable,metoda,,2,2017,2025,611,0.461,0.662,False,False
-134,ovcf,rozpoznanie,osteoporotic vertebral compression fracture,1,2016,2025,600,0.461,0.629,False,True
-135,cone beam computed tomography,technologia,,4,2010,2025,845,0.457,0.629,False,True
-136,txa,lek,tranexamic acid,1,2013,2019,849,0.454,0.606,False,True
-137,medicare,organizacja,,1,2016,2025,833,0.45,0.548,False,False
-138,demographic characteristic,metoda,,2,2019,2025,611,0.45,0.562,False,False
-139,male sex,metoda,,2,2018,2025,683,0.447,0.528,False,False
-140,vas pain score,skala,vas,3,2014,2025,831,0.446,0.495,False,False
-141,china,metoda,,1,2015,2025,636,0.442,0.562,False,False
-142,two cohort,metoda,,2,2021,2024,610,0.442,0.493,False,False
-143,femoroacetabular impingement syndrome,rozpoznanie,,3,2018,2022,453,0.442,0.477,True,True
-144,patient acceptable symptom state,metoda,,4,2020,2025,382,0.442,0.635,False,False
-145,primary objective,metoda,,2,2023,2025,697,0.438,0.515,False,False
-146,implant survivorship,wynik,,2,2016,2023,606,0.435,0.533,False,False
-147,data extraction,metoda,,2,2015,2025,678,0.434,0.582,False,False
-148,icc,metoda,,1,2015,2025,800,0.432,0.615,False,False
-149,visual analog scale score,skala,vas,4,2017,2025,791,0.432,0.488,False,False
-150,pelvic incidence,parametr,,2,2014,2022,678,0.431,0.47,False,False
-151,cbct,technologia,cone beam computed tomography,1,2010,2025,693,0.427,0.495,False,True
-152,2 0,metoda,,2,2016,2021,709,0.416,0.449,False,False
-153,cs,metoda,,1,2020,2025,680,0.413,0.475,False,False
-154,ldh,rozpoznanie,lumbar disc herniation,1,2017,2024,551,0.412,0.533,False,True
-155,peripheral artery disease,rozpoznanie,,3,2014,2025,566,0.411,0.522,True,True
-156,eq 5d,skala,,2,2011,2019,824,0.408,0.497,False,False
-157,secondary aim,metoda,,2,2014,2024,556,0.407,0.432,False,False
-158,risk ratio,metoda,,2,2012,2025,755,0.402,0.615,False,False
-159,pi,parametr,pelvic incidence,1,2014,2025,590,0.4,0.495,False,False
-160,journal,metoda,,1,2019,2023,562,0.398,0.473,False,False
-161,english,metoda,,1,2016,2024,680,0.393,0.466,False,False
-162,90 day readmission,wynik,,3,2017,2022,420,0.393,0.45,False,False
-163,12 month follow up,metoda,,4,2017,2025,766,0.39,0.488,False,False
-164,intervention group,metoda,,2,2022,2025,613,0.387,0.582,False,False
-165,daa,technika,direct anterior approach,1,2015,2024,482,0.385,0.445,False,True
-166,mann whitney u test,metoda,,4,2022,2025,590,0.382,0.508,False,False
-167,covid 19,rozpoznanie,,2,2020,2020,422,0.382,0.839,True,True
-168,cci,czynnik,charlson comorbidity index,1,2015,2024,466,0.381,0.493,False,False
-169,enhanced recovery,organizacja,,2,2018,2025,427,0.381,0.468,True,False
-170,comprehensive search,metoda,,2,2014,2025,456,0.374,0.716,False,False
-171,cage subsidence,rozpoznanie,,2,2021,2025,444,0.373,0.535,False,True
-172,adjusted odd ratio,metoda,,3,2017,2025,536,0.371,0.441,False,False
-173,medical complication,wynik,,2,2023,2025,550,0.37,0.488,False,False
-174,smoking status,metoda,,2,2017,2025,565,0.368,0.401,False,False
-175,lumbar degenerative disease,rozpoznanie,,3,2019,2023,505,0.368,0.421,True,True
-176,forgotten joint score,skala,,3,2019,2025,373,0.368,0.515,False,False
-177,prospero,metoda,,1,2019,2025,359,0.368,0.515,False,False
-178,retrospective observational study,metoda,,3,2015,2025,465,0.366,0.428,False,False
-179,radiological parameter,metoda,,2,2020,2025,519,0.364,0.441,False,False
-180,smd,metoda,,1,2014,2025,504,0.363,0.575,False,False
-181,limited data,metoda,,2,2023,2024,630,0.359,0.472,False,False
-182,secondary analysis,metoda,,2,2020,2025,464,0.359,0.515,True,False
-183,readmission rate,wynik,,2,2013,2020,623,0.358,0.434,False,False
-184,sva,parametr,sagittal vertical axis,1,2014,2020,591,0.358,0.464,False,False
-185,hka,parametr,hip knee ankle angle,1,2019,2025,393,0.358,0.475,False,False
-186,cis,metoda,,1,2013,2025,507,0.356,0.515,False,False
-187,disparity,organizacja,,1,2022,2024,444,0.353,0.418,False,False
-188,similar outcome,metoda,,2,2020,2023,601,0.349,0.436,False,False
-189,categorical variable,metoda,,2,2016,2025,454,0.349,0.615,False,False
-190,perioperative outcome,wynik,,2,2017,2025,525,0.348,0.515,False,False
-191,existing literature,metoda,,2,2022,2025,479,0.348,0.495,False,False
-192,ase score,skala,subjective shoulder value,2,2016,2023,558,0.347,0.391,False,False
-193,secondary objective,metoda,,2,2018,2023,514,0.347,0.383,False,False
-194,pod,metoda,,1,2021,2025,525,0.345,0.528,False,False
-195,proximal junctional kyphosis,rozpoznanie,,3,2016,2025,491,0.345,0.401,True,True
-196,linear regression,metoda,,2,2017,2025,559,0.344,0.401,False,False
-197,both cohort,metoda,,2,2022,2025,506,0.344,0.408,False,False
-198,rts,wynik,,1,2018,2025,379,0.344,0.435,False,False
-199,electronic medical record,technologia,,3,2013,2024,484,0.343,0.412,False,True
-200,artificial intelligence,technologia,,2,2021,2025,275,0.343,0.582,True,True
-201,t0,metoda,,1,2021,2023,530,0.341,0.421,False,False
-202,lateral lumbar interbody fusion,technika,,4,2014,2023,456,0.34,0.398,False,True
-203,higher odd,metoda,,2,2017,2025,402,0.337,0.441,False,False
-204,mpta,parametr,medial proximal tibial angle,1,2018,2025,344,0.337,0.441,False,False
-205,taa,technika,total ankle arthroplasty,1,2015,2023,516,0.336,0.496,False,True
-206,numeric rating scale,skala,,3,2014,2025,511,0.336,0.395,False,False
-207,olif,technika,oblique lumbar interbody fusion,1,2019,2022,344,0.336,0.401,False,True
-208,confounder,metoda,,1,2015,2025,433,0.333,0.408,False,False
-209,ors,metoda,,1,2015,2025,480,0.332,0.462,False,False
-210,provider,metoda,,1,2018,2020,648,0.329,0.434,False,False
-211,similar rate,metoda,,2,2021,2024,441,0.329,0.405,False,False
-212,covid 19 pandemic,organizacja,,3,2020,2021,323,0.329,0.506,True,False
-213,all participant,metoda,,2,2016,2025,555,0.328,0.421,False,False
-214,sagittal vertical axis,parametr,,3,2014,2020,547,0.328,0.422,False,False
-215,esr,parametr,erythrocyte sedimentation rate,1,2017,2022,553,0.326,0.36,False,False
-216,quality assessment,metoda,,2,2014,2025,458,0.326,0.415,False,False
-217,percutaneous kyphoplasty,technika,,2,2016,2024,477,0.325,0.364,True,True
-218,pkp,technika,percutaneous kyphoplasty,1,2016,2024,431,0.325,0.364,False,True
-219,ss,parametr,sacral slope,1,2020,2022,493,0.324,0.436,False,False
-220,prognostic level iii,metoda,,3,2016,2024,431,0.324,0.412,False,False
-221,transfusion rate,wynik,,2,2015,2019,767,0.322,0.535,False,False
-222,correlation analysis,metoda,,2,2020,2025,487,0.322,0.475,False,False
-223,dm,rozpoznanie,diabetes mellitus,1,2015,2025,477,0.322,0.361,False,True
-224,machine learning,technologia,,2,2019,2023,285,0.322,0.391,True,True
-225,retrospective case control study,metoda,,4,2015,2024,530,0.321,0.378,False,False
-226,amputation free survival,wynik,,3,2015,2025,571,0.319,0.428,False,False
-227,ai,technologia,artificial intelligence,1,2019,2025,357,0.319,0.528,False,True
-228,hip knee ankle angle,parametr,,4,2019,2024,384,0.318,0.412,False,False
-229,two reviewer,metoda,,2,2017,2023,597,0.317,0.391,False,False
-230,mep,technologia,motor evoked potential,1,2013,2025,587,0.317,0.354,False,True
-231,secondary outcome measure,metoda,,3,2014,2020,692,0.315,0.422,False,False
-232,minimum clinically important difference,metoda,,4,2017,2023,397,0.315,0.428,False,False
-233,secondary endpoint,metoda,,2,2014,2025,544,0.311,0.488,False,False
-234,mechanical complication,wynik,,2,2021,2025,403,0.311,0.441,False,False
-235,all cause revision,wynik,,3,2019,2025,304,0.311,0.448,False,False
-236,sacral slope,parametr,,2,2015,2025,490,0.31,0.348,False,False
-237,posterior tibial slope,parametr,,3,2021,2025,434,0.31,0.415,False,False
-238,newcastle ottawa scale,metoda,,3,2015,2025,351,0.31,0.475,False,False
-239,frailty,rozpoznanie,,1,2020,2025,303,0.31,0.441,True,True
-240,reintervention,wynik,,1,2016,2025,474,0.309,0.462,False,False
-241,shorter operative time,metoda,,3,2022,2025,437,0.309,0.522,False,False
-242,roc curve,metoda,,2,2021,2023,404,0.309,0.368,False,False
-243,trial registration number,metoda,,3,2016,2025,405,0.307,0.435,False,False
-244,reduction quality,parametr,,2,2021,2025,364,0.307,0.381,False,False
-245,ethnicity,organizacja,,1,2022,2024,400,0.305,0.385,False,False
-246,medial proximal tibial angle,parametr,,4,2021,2024,334,0.303,0.371,False,False
-247,lesson,metoda,,1,2017,2018,698,0.302,0.605,False,False
-248,sa,metoda,,1,2021,2023,432,0.3,0.338,False,False
-249,international classification,metoda,,2,2011,2017,638,0.299,0.383,False,False
-250,pts,parametr,posterior tibial slope,1,2017,2025,350,0.299,0.468,False,False
-251,mean body mass index,metoda,,4,2017,2025,474,0.298,0.361,False,False
-252,keyword,metoda,,1,2015,2025,442,0.298,0.354,False,False
-253,network meta analysis,metoda,,3,2017,2024,349,0.298,0.412,True,False
-254,study protocol,metoda,,2,2019,2025,471,0.296,0.388,True,False
-255,discharge disposition,organizacja,,2,2015,2022,461,0.295,0.346,False,False
-256,fjs,skala,forgotten joint score,1,2020,2025,286,0.295,0.415,False,False
-257,mcs,skala,mental component score,1,2016,2025,482,0.292,0.348,False,False
-258,anatomic total shoulder arthroplasty,technika,,4,2017,2023,400,0.292,0.338,True,True
-259,rtka,niejasne,,1,2019,2025,301,0.292,0.334,False,False
-260,robotic assisted total knee arthroplasty,technologia,,5,2021,2025,244,0.292,0.609,True,True
-261,matched cohort,metoda,,2,2016,2023,444,0.291,0.353,False,False
-262,5 0,metoda,,2,2017,2025,487,0.287,0.388,False,False
-263,mid term follow up,metoda,,4,2013,2021,499,0.286,0.35,False,False
-264,healthcare system,organizacja,,2,2020,2024,401,0.284,0.337,False,False
-265,eligibility criterion,metoda,,2,2015,2022,477,0.283,0.36,False,False
-266,narrative review,metoda,,2,2019,2025,316,0.283,0.348,True,False
-267,pjis,rozpoznanie,periprosthetic joint infection,1,2018,2024,338,0.281,0.344,False,True
-268,fnf,rozpoznanie,femoral neck fracture,1,2018,2024,331,0.281,0.351,False,True
-269,multivariate regression analysis,metoda,,3,2014,2019,459,0.28,0.342,False,False
-270,pjk,rozpoznanie,proximal junctional kyphosis,1,2016,2025,357,0.279,0.328,False,True
-271,fais,rozpoznanie,femoroacetabular impingement syndrome,1,2019,2023,258,0.277,0.308,False,True
-272,aor,metoda,,1,2019,2024,306,0.276,0.331,False,False
-273,substantial clinical benefit,metoda,,3,2020,2025,276,0.276,0.381,False,False
-274,standardized mean difference,metoda,,3,2014,2025,385,0.275,0.375,False,False
-275,independent sample t test,metoda,,4,2021,2025,371,0.275,0.341,False,False
-276,demographic information,metoda,,2,2018,2023,397,0.273,0.338,False,False
-277,increased odd,metoda,,2,2016,2025,363,0.273,0.308,False,False
-278,cochrane database,metoda,,2,2016,2019,496,0.269,0.303,False,False
-279,scoping review,metoda,,2,2021,2025,237,0.269,0.408,True,False
-280,methodological index,metoda,,2,2018,2025,313,0.268,0.334,False,False
-281,observation group,metoda,,2,2019,2025,279,0.268,0.314,False,False
-282,included patient,metoda,,2,2017,2024,321,0.266,0.297,False,False
-283,1 1 ratio,metoda,,3,2019,2025,320,0.266,0.428,False,False
-284,receiver operating characteristic roc curve,metoda,,5,2019,2025,297,0.266,0.328,False,False
-285,cnki,metoda,,1,2015,2024,364,0.265,0.358,False,False
-286,lateral center edge angle,parametr,,4,2015,2023,363,0.265,0.353,False,False
-287,3d printing,technologia,,2,2016,2025,358,0.265,0.328,False,True
-288,mental health,rozpoznanie,,2,2023,2025,407,0.264,0.375,False,True
-289,two independent reviewer,metoda,,3,2021,2025,381,0.262,0.308,False,False
-290,30 day readmission,wynik,,3,2015,2020,447,0.261,0.321,False,False
-291,mme,wynik,morphine milligram equivalent,1,2019,2025,253,0.261,0.314,False,False
-292,30 day mortality,wynik,,3,2017,2021,476,0.26,0.343,False,False
-293,psi,technologia,patient specific instrumentation,1,2013,2025,458,0.26,0.341,False,True
-294,retear,rozpoznanie,,1,2018,2024,425,0.26,0.337,False,True
-295,medial unicompartmental knee arthroplasty,technika,,4,2014,2025,410,0.26,0.321,False,True
-296,subjective shoulder value,skala,,3,2018,2021,400,0.26,0.3,False,False
-297,numerical rating scale,skala,numeric rating scale,3,2017,2025,361,0.26,0.334,False,False
-298,significantly lower rate,metoda,,3,2023,2025,336,0.26,0.388,False,False
-299,aseptic revision,wynik,,2,2017,2023,328,0.26,0.323,False,False
-300,2 test,metoda,,2,2013,2022,373,0.257,0.297,False,False
-301,cutoff value,metoda,,2,2016,2024,337,0.257,0.29,False,False
-302,patient quality,metoda,,2,2023,2025,414,0.256,0.334,False,False
-303,eligible study,metoda,,2,2021,2025,371,0.256,0.475,False,False
-304,surgical duration,wynik,,2,2018,2025,302,0.256,0.508,False,False
-305,pao,technika,periacetabular osteotomy,1,2012,2024,398,0.254,0.337,False,True
-306,geriatric patient,czynnik,,2,2022,2024,390,0.254,0.304,False,False
-307,quick disability,skala,quickdash,2,2015,2025,364,0.254,0.328,False,False
-308,predictive model,metoda,,2,2018,2025,319,0.254,0.375,False,False
-309,shared decision making,organizacja,,3,2019,2022,306,0.254,0.291,False,False
-310,national database,metoda,,2,2017,2023,348,0.253,0.361,False,False
-311,mean bmi,metoda,,2,2018,2025,329,0.253,0.354,False,False
-312,tobacco use,czynnik,,2,2022,2024,372,0.252,0.324,False,False
-313,systematic literature search,metoda,,3,2018,2025,346,0.25,0.341,False,False
-314,csa,parametr,critical shoulder angle,1,2015,2025,376,0.249,0.354,False,False
-315,cumulative incidence,metoda,,2,2017,2025,373,0.249,0.314,False,False
-316,nine study,metoda,,2,2017,2025,358,0.249,0.294,False,False
-317,cms,metoda,,1,2015,2025,376,0.247,0.308,False,False
-318,video,metoda,,1,2021,2021,394,0.245,0.281,False,False
-319,fai,rozpoznanie,femoroacetabular impingement syndrome,1,2012,2021,572,0.242,0.375,False,True
-320,dissemination,metoda,,1,2017,2025,386,0.242,0.388,False,False
-321,drf,rozpoznanie,distal radius fracture,1,2017,2023,342,0.241,0.316,False,True
-322,intraoperative bleeding,wynik,,2,2020,2023,323,0.241,0.361,False,False
-323,primary hip arthroscopy,technika,,3,2019,2021,256,0.241,0.275,False,True
-324,current procedural terminology code,metoda,,4,2017,2024,376,0.239,0.331,False,False
-325,2 cohort,metoda,,2,2015,2023,362,0.239,0.308,False,False
-326,chronic kidney disease,rozpoznanie,,3,2016,2025,348,0.239,0.348,False,True
-327,phf,rozpoznanie,proximal humerus fracture,1,2019,2025,273,0.239,0.314,False,True
-328,koa,rozpoznanie,knee osteoarthritis,1,2021,2024,236,0.239,0.344,False,True
-329,onfh,rozpoznanie,osteonecrosis of the femoral head,1,2018,2025,386,0.238,0.314,False,True
-330,ais patient,rozpoznanie,,2,2016,2025,348,0.238,0.354,False,True
-331,ssis,rozpoznanie,surgical site infection,1,2015,2025,467,0.237,0.334,False,True
-332,shorter operation time,metoda,,3,2019,2019,387,0.237,0.271,False,False
-333,multivariable logistic regression analysis,metoda,,4,2016,2024,336,0.237,0.324,False,False
-334,larger sample size,metoda,,3,2022,2025,332,0.237,0.388,False,False
-335,major adverse limb event,wynik,,4,2017,2025,317,0.237,0.381,False,False
-336,acute kidney injury,rozpoznanie,,3,2017,2025,278,0.237,0.448,False,True
-337,n s,metoda,,2,2010,2018,606,0.235,0.382,False,False
-338,surgical factor,metoda,,2,2012,2025,376,0.235,0.268,False,False
-339,certainty,metoda,,1,2021,2025,246,0.235,0.314,False,False
-340,9 3,metoda,,2,2018,2023,473,0.234,0.278,False,False
-341,ka,technika,kinematic alignment,1,2016,2025,296,0.234,0.314,False,True
-342,each cohort,metoda,,2,2018,2025,290,0.232,0.288,False,False
-343,four study,metoda,,2,2017,2024,396,0.231,0.263,False,False
-344,relevant study,metoda,,2,2015,2024,392,0.231,0.277,False,False
-345,fea,technologia,finite element analysis,1,2020,2025,293,0.231,0.334,False,True
-346,asd surgery,technika,adult spinal deformity surgery,2,2017,2025,271,0.231,0.348,False,True
-347,calibration,metoda,,1,2020,2023,261,0.231,0.27,False,False
-348,six study,metoda,,2,2013,2025,381,0.23,0.261,False,False
-349,ethic,metoda,,1,2017,2025,328,0.23,0.375,False,False
-350,sane,skala,single assessment numeric evaluation,1,2019,2025,296,0.228,0.241,False,False
-351,surgical detail,metoda,,2,2021,2025,288,0.228,0.448,False,False
-352,valuable insight,metoda,,2,2023,2025,199,0.228,0.528,False,False
-353,five study,metoda,,2,2013,2022,398,0.226,0.277,False,False
-354,seven study,metoda,,2,2016,2025,358,0.226,0.241,False,False
-355,atsa,technika,anatomic total shoulder arthroplasty,1,2022,2025,210,0.224,0.361,False,True
-356,mid term outcome,wynik,,3,2016,2025,340,0.223,0.288,True,False
-357,independent factor,metoda,,2,2016,2024,338,0.223,0.243,False,False
-358,higher bmi,metoda,,2,2016,2025,302,0.223,0.381,False,False
-359,adult spinal deformity surgery,technika,,4,2016,2025,288,0.223,0.288,True,True
-360,three study,metoda,,2,2014,2022,347,0.222,0.263,False,False
-361,incidence and risk factor,metoda,,4,2014,2018,400,0.22,0.264,False,False
-362,comparable outcome,metoda,,2,2020,2025,298,0.22,0.375,False,False
-363,spinopelvic parameter,parametr,,2,2018,2025,263,0.22,0.261,False,False
-364,independent t test,metoda,,3,2016,2025,324,0.219,0.294,False,False
-365,ssv,skala,subjective shoulder value,1,2019,2025,292,0.219,0.247,False,False
-366,eight study,metoda,,2,2017,2025,338,0.218,0.288,False,False
-367,cochrane risk,metoda,,2,2020,2025,238,0.218,0.348,False,False
-368,endovascular therapy,technika,,2,2015,2025,386,0.216,0.288,False,True
-369,cut off value,metoda,,3,2016,2023,298,0.216,0.285,False,False
-370,ohs,skala,oxford shoulder score,1,2012,2022,389,0.215,0.277,False,False
-371,title,metoda,,1,2015,2022,336,0.215,0.249,False,False
-372,rtha,niejasne,,1,2020,2025,216,0.215,0.288,False,False
-373,nomogram,metoda,,1,2021,2025,200,0.215,0.348,False,False
-374,knee joint function,skala,,3,2020,2024,258,0.213,0.263,False,False
-375,robotic assistance,technologia,,2,2021,2025,204,0.213,0.301,False,True
-376,clinical question,metoda,,2,2011,2023,444,0.211,0.353,False,False
-377,medicaid service,organizacja,,2,2016,2025,344,0.211,0.334,False,False
-378,0 0,metoda,,2,2016,2024,306,0.211,0.256,False,False
-379,chi squared test,metoda,,3,2018,2025,299,0.209,0.294,False,False
-380,baseline demographic,metoda,,2,2019,2022,251,0.209,0.284,False,False
-381,demographic variable,metoda,,2,2017,2025,311,0.208,0.301,False,False
-382,multivariable regression analysis,metoda,,3,2018,2024,264,0.208,0.297,False,False
-383,prediction model,metoda,,2,2021,2024,229,0.208,0.27,False,False
-384,reimbursement,organizacja,,1,2016,2017,408,0.207,0.25,False,False
-385,maximum stress,parametr,,2,2020,2022,269,0.207,0.235,False,False
-386,non randomized study,metoda,,3,2019,2025,240,0.207,0.247,False,False
-387,decision curve analysis,metoda,,3,2021,2025,170,0.207,0.294,False,False
-388,risk stratification,metoda,,2,2022,2025,309,0.205,0.375,False,False
-389,higher body mass index,metoda,,4,2020,2025,279,0.205,0.308,False,False
-390,large cohort,metoda,,2,2017,2019,378,0.204,0.264,False,False
-391,tegner activity scale,skala,,3,2012,2024,368,0.204,0.256,False,False
-392,25 0,metoda,,2,2020,2025,318,0.204,0.314,False,False
-393,primary total joint arthroplasty,technika,,4,2017,2022,309,0.204,0.242,False,True
-394,operative duration,wynik,,2,2020,2025,269,0.204,0.341,False,False
-395,surgical orthopedic,metoda,,2,2019,2025,216,0.204,0.247,False,False
-396,all prom,skala,,2,2021,2024,187,0.204,0.263,False,False
-397,coronal alignment,parametr,,2,2020,2025,341,0.203,0.268,False,False
-398,inferior outcome,metoda,,2,2014,2024,328,0.203,0.236,False,False
-399,dexamethasone,lek,,1,2016,2025,317,0.203,0.261,False,True
-400,all outcome,metoda,,2,2017,2024,313,0.203,0.243,False,False
-401,ao ota,metoda,,2,2021,2025,296,0.203,0.268,False,False
-402,rcr,technika,arcr,1,2018,2022,262,0.203,0.228,False,True
-403,dfu,rozpoznanie,diabetic foot ulcer,1,2020,2022,260,0.203,0.263,False,True
-404,scb,metoda,,1,2021,2025,203,0.203,0.341,False,False
-405,ar,niejasne,,1,2019,2023,270,0.201,0.255,False,False
-406,mechanical alignment,technika,,2,2018,2025,298,0.2,0.281,False,True
-407,study quality,metoda,,2,2019,2025,277,0.2,0.301,False,False
-408,uiv,parametr,upper instrumented vertebra,1,2017,2025,262,0.2,0.241,False,False
-409,hospital readmission,wynik,,2,2014,2022,368,0.198,0.284,False,False
-410,single center retrospective study,metoda,,4,2020,2025,223,0.198,0.241,False,False
-411,patient specific instrumentation,technologia,,3,2013,2025,344,0.196,0.281,False,True
-412,hoo,skala,nonarthritic hip score,1,2016,2025,305,0.196,0.214,False,False
-413,ovid medline,metoda,,2,2018,2023,279,0.196,0.233,False,False
-414,implant retention,technika,,2,2019,2025,255,0.196,0.288,False,True
-415,transfemoral amputation,technika,,2,2015,2025,327,0.194,0.227,False,True
-416,eligible patient,metoda,,2,2021,2025,274,0.194,0.254,False,False
-417,surgical data,metoda,,2,2018,2022,255,0.194,0.249,False,False
-418,bias tool,metoda,,2,2019,2025,236,0.194,0.234,False,False
-419,lower odd,metoda,,2,2019,2025,221,0.194,0.288,False,False
-420,longer length,metoda,,2,2017,2024,315,0.193,0.229,False,False
-421,ovid,metoda,,1,2011,2022,360,0.192,0.221,False,False
-422,adductor canal block,technika,,3,2016,2019,288,0.192,0.226,True,True
-423,afs,wynik,amputation free survival,1,2020,2024,283,0.192,0.283,False,False
-424,purpose hypothesis,metoda,,2,2019,2019,269,0.192,0.264,False,False
-425,postoperative clinical outcome,metoda,,3,2017,2025,269,0.192,0.241,False,False
-426,quickdash,skala,,1,2014,2021,313,0.19,0.219,False,False
-427,oblique lumbar interbody fusion,technika,,4,2019,2024,199,0.19,0.223,True,True
-428,latarjet procedure,technika,,2,2020,2024,326,0.189,0.283,False,True
-429,owhto,technika,open wedge high tibial osteotomy,1,2017,2019,282,0.189,0.245,False,True
-430,modifiable risk factor,metoda,,3,2018,2025,279,0.189,0.247,False,False
-431,single assessment numeric evaluation,skala,,4,2018,2024,251,0.189,0.236,False,False
-432,surgery duration,metoda,,2,2018,2025,240,0.189,0.381,False,False
-433,promis,skala,,1,2019,2025,217,0.189,0.227,False,False
-434,therefore this study,metoda,,3,2022,2025,175,0.189,0.328,False,False
-435,calibration curve,metoda,,2,2022,2025,149,0.189,0.321,False,False
-436,primary outcome variable,metoda,,3,2022,2024,337,0.188,0.223,False,False
-437,percutaneous endoscopic lumbar discectomy,technika,,4,2016,2018,323,0.188,0.25,True,True
-438,postoperative complication rate,wynik,,3,2014,2025,297,0.188,0.254,False,False
-439,virtual surgical planning,technologia,,3,2016,2025,272,0.188,0.241,False,True
-440,retrospective cohort analysis,metoda,,3,2021,2024,235,0.188,0.27,False,False
-441,elixhauser comorbidity index,czynnik,,3,2022,2024,171,0.188,0.304,False,False
-442,machine learning model,technologia,,3,2022,2024,151,0.188,0.297,False,True
-443,research question,metoda,,2,2018,2018,287,0.186,0.285,False,False
-444,pearldiver database,metoda,,2,2022,2022,197,0.186,0.235,False,False
-445,mean sd,metoda,,2,2011,2020,424,0.185,0.256,False,False
-446,potential confounder,metoda,,2,2014,2025,298,0.185,0.294,False,False
-447,liv,parametr,upper instrumented vertebra,1,2020,2025,261,0.185,0.234,False,False
-448,femoroacetabular impingement fai,rozpoznanie,femoroacetabular impingement syndrome,3,2012,2016,451,0.184,0.266,False,True
-449,malnutrition,rozpoznanie,,1,2018,2025,262,0.184,0.227,False,True
-450,modified macnab criterion,skala,,3,2018,2025,260,0.184,0.268,False,False
-451,metric,metoda,,1,2018,2024,242,0.184,0.243,False,False
-452,arcr,technika,,1,2020,2024,208,0.184,0.25,False,True
-453,90 day complication,wynik,,3,2020,2024,198,0.184,0.243,False,False
-454,10 1,metoda,,2,2018,2025,321,0.182,0.261,False,False
-455,these risk factor,metoda,,3,2020,2024,302,0.182,0.209,False,False
-456,1 year mortality,wynik,,3,2016,2025,277,0.182,0.314,False,False
-457,10 0,metoda,,2,2022,2025,311,0.181,0.227,False,False
-458,pubmed medline,metoda,,2,2016,2024,288,0.181,0.229,False,False
-459,pooled analysis,metoda,,2,2018,2021,270,0.181,0.237,False,False
-460,predictor variable,metoda,,2,2023,2025,265,0.181,0.247,False,False
-461,roc analysis,metoda,,2,2022,2025,209,0.181,0.375,False,False
-462,fns,technologia,femoral neck system,1,2021,2024,142,0.181,0.25,False,True
-463,wmd,metoda,,1,2015,2025,348,0.179,0.221,False,False
-464,mean sd age,metoda,,3,2016,2025,302,0.179,0.294,False,False
-465,hounsfield unit,parametr,,2,2022,2025,231,0.179,0.254,False,False
-466,3 month follow up,metoda,,4,2016,2025,375,0.178,0.268,False,False
-467,8 0,metoda,,2,2013,2025,344,0.178,0.221,False,False
-468,other outcome,metoda,,2,2019,2024,275,0.178,0.202,False,False
-469,clinical impact,metoda,,2,2021,2025,262,0.178,0.214,False,False
-470,primary tja,technika,primary total joint arthroplasty,2,2018,2024,238,0.178,0.209,False,True
-471,retear rate,wynik,,2,2017,2023,288,0.177,0.255,False,False
-472,radiological and clinical outcome,metoda,,4,2018,2024,272,0.177,0.236,False,False
-473,upper instrumented vertebra,parametr,,3,2020,2025,255,0.177,0.221,False,False
-474,postoperative hospital stay,wynik,,3,2023,2023,225,0.177,0.233,False,False
-475,visual analog scale pain score,skala,vas,5,2017,2025,322,0.175,0.227,False,False
-476,peld,technika,percutaneous endoscopic lumbar discectomy,1,2016,2018,301,0.175,0.222,False,True
-477,cox regression,metoda,,2,2023,2025,277,0.175,0.288,False,False
-478,cda,technika,cervical disc arthroplasty,1,2016,2023,263,0.175,0.24,False,True
-479,cl,metoda,,1,2020,2024,234,0.175,0.216,False,False
-480,fjs 12,skala,forgotten joint score,2,2021,2025,185,0.175,0.254,False,False
-481,clinicaltrial gov,metoda,,2,2017,2025,284,0.174,0.241,False,False
-482,tk,parametr,miara_kregoslupa,1,2017,2022,265,0.174,0.201,False,False
-483,this cross sectional study,metoda,,4,2021,2025,245,0.174,0.207,False,False
-484,hu,parametr,hounsfield unit,1,2022,2025,205,0.174,0.348,False,False
-485,lateral extra articular tenodesis,technika,,4,2020,2025,178,0.174,0.254,False,True
-486,bone joint j,metoda,,3,2016,2017,635,0.173,1.155,False,False
-487,bivariate analysis,metoda,,2,2017,2022,293,0.173,0.208,False,False
-488,multimodal analgesia,lek,,2,2021,2025,271,0.173,0.241,False,True
-489,adjusted hazard ratio,metoda,,3,2018,2025,251,0.173,0.268,False,False
-490,t nnis grade,skala,,3,2017,2021,247,0.173,0.2,False,False
-491,revision risk,wynik,,2,2019,2025,233,0.173,0.268,False,False
-492,embase database,metoda,,2,2020,2022,222,0.173,0.208,False,False
-493,chinese clinical trial registry,metoda,,4,2021,2025,158,0.173,0.268,False,False
-494,volar locking plate,technologia,,3,2016,2024,363,0.171,0.202,False,True
-495,elevated risk,metoda,,2,2023,2025,240,0.171,0.328,False,False
-496,mua,technika,manipulation under anesthesia,1,2022,2022,239,0.171,0.249,False,True
-497,t1 slope,parametr,,2,2018,2025,231,0.171,0.227,False,False
-498,adverse reaction,metoda,,2,2011,2018,384,0.17,0.243,False,False
-499,prwe,skala,patient rated wrist evaluation,1,2018,2023,246,0.17,0.21,False,False
-500,minimum 10 year follow up,metoda,,5,2022,2024,221,0.17,0.223,False,False
-501,pi ll,parametr,,2,2022,2024,207,0.17,0.216,False,False
-502,same day discharge,organizacja,,3,2020,2025,180,0.17,0.201,False,False
-503,psm,metoda,,1,2023,2025,155,0.17,0.395,False,False
-504,distal femur fracture,rozpoznanie,,3,2021,2025,264,0.169,0.227,False,True
-505,greater proportion,metoda,,2,2020,2022,242,0.169,0.214,False,False
-506,protective factor,metoda,,2,2023,2025,197,0.169,0.268,False,False
-507,femoral neck system,technologia,,3,2022,2024,124,0.167,0.256,True,True
-508,lp,metoda,,1,2021,2025,231,0.166,0.207,False,False
-509,chronic periprosthetic joint infection,rozpoznanie,,4,2021,2022,185,0.166,0.187,False,True
-510,13 9,metoda,,2,2014,2022,289,0.165,0.214,False,False
-511,multivariable logistic regression model,metoda,,4,2020,2024,218,0.165,0.236,False,False
-512,dfus,rozpoznanie,dfu,1,2021,2025,206,0.165,0.201,False,True
-513,virtual reality,technologia,,2,2020,2025,194,0.165,0.268,False,True
-514,emergency department visit,wynik,,3,2022,2025,184,0.165,0.281,False,False
-515,sarcopenia,rozpoznanie,,1,2022,2024,154,0.165,0.229,False,True
-516,chronic obstructive pulmonary disease,rozpoznanie,,4,2017,2019,316,0.163,0.213,False,True
-517,mean standard deviation,metoda,,3,2017,2017,315,0.163,0.223,False,False
-518,graft type,technika,,2,2018,2025,313,0.163,0.268,False,True
-519,eos,niejasne,,1,2018,2020,275,0.163,0.226,False,False
-520,patient reported outcome score,skala,,4,2016,2018,273,0.163,0.202,False,False
-521,future work,metoda,,2,2019,2023,245,0.163,0.225,False,False
-522,tea,technika,total elbow arthroplasty,1,2014,2025,313,0.162,0.201,False,True
-523,search term,metoda,,2,2014,2021,284,0.162,0.187,False,False
-524,aa,metoda,,1,2019,2023,257,0.162,0.225,False,False
-525,receiver operating characteristic curve analysis,metoda,,5,2019,2023,229,0.162,0.225,False,False
-526,operation duration,metoda,,2,2020,2021,224,0.162,0.194,False,False
-527,opioid prescription,organizacja,,2,2018,2020,218,0.162,0.214,False,False
-528,white patient,organizacja,,2,2022,2023,215,0.162,0.233,False,False
-529,dataset,metoda,,1,2021,2025,209,0.162,0.281,False,False
-530,lla,parametr,coronal alignment,1,2020,2023,200,0.162,0.21,False,False
-531,asd patient,metoda,adult spinal deformity,2,2022,2025,181,0.162,0.221,False,False
-532,9 0,metoda,,2,2016,2024,295,0.16,0.25,False,False
-533,23 3,metoda,,2,2021,2024,253,0.16,0.196,False,False
-534,bone cement leakage,rozpoznanie,,3,2019,2025,208,0.16,0.194,False,True
-535,kinesiophobia,rozpoznanie,,1,2022,2025,194,0.16,0.268,False,True
-536,early onset scoliosis,rozpoznanie,,3,2013,2020,357,0.159,0.268,True,True
-537,pfna,technologia,proximal femoral nail antirotation,1,2011,2025,308,0.159,0.214,False,True
-538,12 6,metoda,,2,2017,2025,297,0.159,0.181,False,False
-539,surgical characteristic,metoda,,2,2022,2025,199,0.159,0.207,False,False
-540,rs,metoda,,1,2021,2024,231,0.158,0.189,False,False
-541,each model,metoda,,2,2023,2024,219,0.158,0.196,False,False
-542,ten study,metoda,,2,2020,2023,214,0.158,0.21,False,False
-543,all model,metoda,,2,2020,2024,211,0.158,0.202,False,False
-544,model performance,metoda,,2,2022,2025,140,0.158,0.254,False,False
-545,associated factor,metoda,,2,2022,2025,213,0.156,0.241,False,False
-546,eras,organizacja,enhanced recovery,1,2021,2025,177,0.156,0.194,False,False
-547,open wedge high tibial osteotomy,technika,,5,2016,2019,307,0.155,0.206,True,True
-548,open reduction internal fixation group,technika,,5,2019,2021,245,0.155,0.175,False,True
-549,mowhto,technika,open wedge high tibial osteotomy,1,2019,2024,171,0.155,0.209,False,True
-550,ihot 12,skala,hip outcome score activity,2,2021,2021,153,0.155,0.175,False,False
-551,cbct scan,technologia,cone beam computed tomography,2,2019,2025,253,0.154,0.227,False,True
-552,institutional database,metoda,,2,2018,2025,248,0.154,0.214,False,False
-553,control cohort,metoda,,2,2022,2022,243,0.154,0.214,False,False
-554,infection risk,wynik,,2,2022,2025,231,0.154,0.268,False,False
-555,50 0,metoda,,2,2017,2025,256,0.152,0.207,False,False
-556,each outcome,metoda,,2,2019,2025,220,0.152,0.181,False,False
-557,surgical variable,metoda,,2,2022,2022,216,0.152,0.214,False,False
-558,patient specific factor,metoda,,3,2022,2025,178,0.152,0.301,False,False
-559,augmented reality,technologia,,2,2022,2023,155,0.152,0.225,False,True
-560,morphine milligram equivalent,wynik,,3,2020,2023,150,0.152,0.188,False,False
-561,median follow up time,metoda,,4,2017,2023,257,0.151,0.165,False,False
-562,limb symmetry index,skala,,3,2020,2024,191,0.151,0.202,False,False
-563,external validation,metoda,,2,2021,2024,156,0.151,0.175,False,False
-564,study selection,metoda,,2,2019,2019,283,0.15,0.174,False,False
-565,preoperative factor,metoda,,2,2019,2023,263,0.15,0.188,False,False
-566,20 5,metoda,,2,2020,2025,259,0.15,0.194,False,False
-567,tt,metoda,,1,2019,2023,247,0.15,0.173,False,False
-568,hrs,metoda,,1,2017,2025,239,0.15,0.227,False,False
-569,acb,technika,adductor canal block,1,2019,2022,235,0.15,0.18,False,True
-570,patient cohort,metoda,,2,2020,2021,220,0.15,0.212,False,False
-571,ppf,rozpoznanie,periprosthetic fracture,1,2023,2025,175,0.15,0.214,False,True
-572,single academic institution,metoda,,3,2022,2025,164,0.15,0.221,False,False
-573,this narrative review,metoda,,3,2022,2025,163,0.15,0.214,False,False
-574,dair,technika,implant retention,1,2023,2025,163,0.15,0.214,False,True
-575,95 cis,metoda,,2,2015,2025,234,0.148,0.194,False,False
-576,question purpose,metoda,,2,2019,2021,233,0.148,0.219,False,False
-577,nah,metoda,,1,2020,2021,229,0.148,0.206,False,False
-578,3d printing technology,technologia,,3,2017,2019,221,0.148,0.193,False,True
-579,10 study,metoda,,2,2019,2024,203,0.148,0.169,False,False
-580,review manager,metoda,,2,2021,2023,184,0.148,0.188,False,False
-581,koo jr,skala,osteoarthritis outcome score,2,2022,2025,127,0.148,0.254,False,False
-582,higher revision rate,metoda,,3,2019,2023,268,0.147,0.188,False,False
-583,fao,metoda,,1,2018,2025,235,0.147,0.187,False,False
-584,cephalomedullary nail,technologia,,2,2021,2025,213,0.147,0.167,False,True
-585,lcea,parametr,lateral center edge angle,1,2021,2024,173,0.147,0.175,False,False
-586,large national database,metoda,,3,2022,2023,147,0.147,0.301,False,False
-587,fracture related infection,rozpoznanie,,3,2022,2025,121,0.147,0.241,False,True
-588,short stem,technologia,,2,2015,2021,252,0.145,0.187,False,True
-589,descriptive analysis,metoda,,2,2022,2025,229,0.145,0.187,False,False
-590,semi structured interview,metoda,,3,2019,2024,211,0.145,0.189,False,False
-591,sl,metoda,,1,2020,2022,208,0.145,0.159,False,False
-592,11 study,metoda,,2,2021,2025,198,0.145,0.214,False,False
-593,let,technika,lateral extra articular tenodesis,1,2021,2025,139,0.145,0.194,False,True
-594,16 5,metoda,,2,2023,2025,258,0.144,0.221,False,False
-595,inclusion and exclusion criterion,metoda,,4,2019,2025,246,0.144,0.174,False,False
-596,procedure type,metoda,,2,2019,2025,233,0.144,0.174,False,False
-597,this cohort study,metoda,,3,2021,2025,215,0.144,0.201,False,False
-598,retrospective single center study,metoda,,4,2022,2024,179,0.144,0.216,False,False
-599,surgical accuracy,parametr,,2,2023,2025,174,0.144,0.288,False,False
-600,final cohort,metoda,,2,2022,2025,170,0.144,0.227,False,False
-601,ldfa,parametr,,1,2023,2025,133,0.144,0.241,False,False
-602,12 4,metoda,,2,2018,2025,274,0.143,0.201,False,False
-603,any cause,metoda,,2,2016,2022,266,0.143,0.187,False,False
-604,paired sample t test,metoda,,4,2018,2024,222,0.143,0.189,False,False
-605,binary logistic regression analysis,metoda,,4,2021,2024,176,0.143,0.189,False,False
-606,29 4,metoda,,2,2022,2019,251,0.141,0.174,False,False
-607,healthcare cost,organizacja,,2,2016,2025,242,0.141,0.227,False,False
-608,evt,technika,endovascular therapy,1,2022,2025,184,0.141,0.174,False,True
-609,black patient,organizacja,,2,2022,2024,173,0.141,0.209,False,False
-610,greater odd,metoda,,2,2020,2023,172,0.141,0.195,False,False
-611,patient acceptable symptomatic state,metoda,,4,2019,2021,165,0.141,0.225,False,False
-612,clti patient,rozpoznanie,chronic limb threatening ischemia,2,2021,2021,123,0.141,0.175,False,True
-613,scapular notching,rozpoznanie,,2,2013,2024,285,0.14,0.169,False,True
-614,midterm outcome,wynik,,2,2015,2022,279,0.14,0.201,False,False
-615,14 2,metoda,,2,2018,2024,268,0.14,0.175,False,False
-616,oxford shoulder score,skala,,3,2015,2022,241,0.14,0.166,False,False
-617,less intraoperative blood loss,metoda,,4,2022,2023,192,0.14,0.18,False,False
-618,injury characteristic,metoda,,2,2021,2025,186,0.14,0.161,False,False
-619,eq vas,skala,vas,2,2021,2023,173,0.14,0.173,False,False
-620,imaging data,metoda,,2,2022,2024,170,0.14,0.209,False,False
-621,random forest,technologia,,2,2023,2025,119,0.14,0.241,False,True
-622,cervical disc arthroplasty,technika,,3,2016,2023,310,0.139,0.203,False,True
-623,biomarker,technologia,,1,2020,2021,247,0.139,0.212,False,True
-624,registry data,metoda,,2,2018,2023,235,0.139,0.165,False,False
-625,healthcare professional,metoda,,2,2023,2025,189,0.139,0.221,False,False
-626,4 study,metoda,,2,2021,2023,187,0.139,0.15,False,False
-627,targeted muscle reinnervation,technika,,3,2021,2023,152,0.139,0.195,False,True
-628,coronal plane alignment,parametr,,3,2023,2025,138,0.139,0.281,False,False
-629,stata,metoda,,1,2017,2018,220,0.137,0.208,False,False
-630,propensity matching,metoda,,2,2023,2025,163,0.137,0.234,False,False
-631,fi,metoda,,1,2023,2025,147,0.137,0.207,False,False
-632,peer reviewed journal,metoda,,3,2018,2025,235,0.136,0.234,False,False
-633,25 5,metoda,,2,2020,2022,216,0.136,0.152,False,False
-634,surgery type,metoda,,2,2022,2024,215,0.136,0.169,False,False
-635,linear mixed model,metoda,,3,2019,2025,204,0.136,0.247,False,False
-636,mdo,niejasne,,1,2021,2025,190,0.136,0.147,False,False
-637,continuous data,metoda,,2,2021,2025,187,0.136,0.174,False,False
-638,arthroplasty surgeon,organizacja,,2,2022,2025,178,0.136,0.187,False,False
-639,this scoping review,metoda,,3,2023,2025,114,0.136,0.247,False,False
-640,12 0,metoda,,2,2020,2025,233,0.135,0.161,False,False
-641,quickdash score,skala,quickdash,2,2019,2023,216,0.135,0.15,False,False
-642,21 9,metoda,,2,2020,2025,202,0.135,0.154,False,False
-643,eleven study,metoda,,2,2022,2024,192,0.135,0.169,False,False
-644,bias assessment,metoda,,2,2019,2022,184,0.135,0.152,False,False
-645,adjusted analysis,metoda,,2,2022,2025,183,0.135,0.214,False,False
-646,china national knowledge infrastructure,metoda,,4,2020,2024,167,0.135,0.182,False,False
-647,skilled nursing facility,organizacja,,3,2016,2020,254,0.133,0.196,False,False
-648,15 1,metoda,,2,2020,2024,236,0.133,0.182,False,False
-649,ds,niejasne,,1,2018,2021,227,0.133,0.156,False,False
-650,clinical trial registration,metoda,,3,2022,2024,195,0.133,0.209,False,False
-651,pain interference,skala,,2,2022,2025,173,0.133,0.167,False,False
-652,generalizability,metoda,,1,2023,2025,169,0.133,0.247,False,False
-653,90 day readmission rate,wynik,,4,2019,2024,157,0.133,0.162,False,False
-654,pjf,rozpoznanie,proximal junctional failure,1,2022,2023,140,0.133,0.18,False,True
-655,adi,organizacja,area deprivation index,1,2023,2024,126,0.133,0.256,False,False
-656,hidden blood loss,wynik,,3,2015,2020,256,0.132,0.202,False,False
-657,visual analogue scale score,skala,vas,4,2013,2014,250,0.132,0.149,False,False
-658,longer hospital stay,metoda,,3,2021,2025,249,0.132,0.154,False,False
-659,endovascular revascularization,technika,,2,2021,2024,200,0.132,0.155,False,True
-660,postoperative vas score,skala,vas,3,2022,2025,199,0.132,0.167,False,False
-661,kaplan meier estimate,metoda,,3,2019,2024,191,0.132,0.175,False,False
-662,roc curve analysis,metoda,,3,2023,2025,161,0.132,0.227,False,False
-663,joint line convergence angle,parametr,,4,2023,2025,136,0.132,0.174,False,False
-664,primary unilateral total knee arthroplasty,technika,,5,2015,2016,270,0.131,0.173,False,True
-665,national joint registry,metoda,,3,2017,2012,258,0.131,0.174,False,False
-666,15 0,metoda,,2,2021,2025,207,0.131,0.174,False,False
-667,tertiary hospital,metoda,,2,2023,2025,197,0.131,0.221,False,False
-668,kinematic alignment,technika,,2,2022,2025,164,0.131,0.181,False,True
-669,jlca,parametr,joint line convergence angle,1,2023,2025,130,0.131,0.181,False,False
-670,randomized control trial,metoda,,3,2022,2022,187,0.129,0.235,False,False
-671,high bmi,czynnik,,2,2021,2024,186,0.129,0.142,False,False
-672,12 study,metoda,,2,2022,2023,185,0.129,0.173,False,False
-673,fri,rozpoznanie,fracture related infection,1,2023,2025,110,0.129,0.221,False,True
-674,txa group,metoda,tranexamic acid,2,2015,2019,227,0.128,0.168,False,False
-675,all adult patient,metoda,,3,2020,2024,190,0.128,0.155,False,False
-676,proximal junctional failure,rozpoznanie,,3,2021,2025,151,0.128,0.154,False,True
-677,vas leg,skala,,2,2022,2023,124,0.128,0.203,False,False
-678,17 2,metoda,,2,2014,2022,249,0.126,0.187,False,False
-679,30 kg m2,metoda,,3,2018,2022,197,0.126,0.187,False,False
-680,hip outcome score activity,skala,,4,2022,2025,187,0.126,0.161,False,False
-681,oblique lateral interbody fusion,technika,,4,2020,2022,140,0.126,0.187,False,True
-682,social determinant,organizacja,,2,2023,2024,100,0.126,0.202,False,False
-683,funding,metoda,,1,2014,2023,290,0.125,0.188,False,False
-684,duplicate,metoda,,1,2017,2021,214,0.125,0.15,False,False
-685,78 6,metoda,,2,2022,2023,207,0.125,0.15,False,False
-686,elective total knee arthroplasty,technika,,4,2022,2022,200,0.125,0.152,False,True
-687,chronic lateral ankle instability,rozpoznanie,,4,2023,2025,192,0.125,0.194,False,True
-688,eq 5d 5l,skala,,3,2022,2023,122,0.125,0.165,False,False
-689,major amputation rate,wynik,,3,2019,2024,209,0.124,0.196,False,False
-690,28 5,metoda,,2,2021,2024,206,0.124,0.155,False,False
-691,hos adl,skala,hip outcome score activity,2,2019,2021,192,0.124,0.137,False,False
-692,inconsistency,metoda,,1,2021,2025,190,0.124,0.147,False,False
-693,database inception,metoda,,2,2022,2023,137,0.124,0.18,False,False
-694,promis pf,skala,promis,2,2022,2023,127,0.124,0.158,False,False
-695,31 3,metoda,,2,2022,2022,208,0.122,0.159,False,False
-696,asc,organizacja,ambulatory surgery center,1,2023,2024,169,0.122,0.202,False,False
-697,primary reverse total shoulder arthroplasty,technika,,5,2021,2025,141,0.122,0.161,False,True
-698,tip apex distance,parametr,,3,2017,2023,239,0.121,0.143,False,False
-699,30 day complication,wynik,,3,2022,2019,192,0.121,0.181,False,False
-700,lsi,skala,limb symmetry index,1,2021,2025,168,0.121,0.167,False,False
-701,von mise stress,parametr,maximum stress,3,2022,2023,154,0.121,0.135,False,False
-702,ed visit,wynik,emergency department visit,2,2023,2025,138,0.121,0.154,False,False
-703,vte prophylaxis,lek,,2,2012,2012,264,0.12,0.166,False,True
-704,hba1c,czynnik,,1,2023,2024,190,0.12,0.169,False,False
-705,insurance type,organizacja,,2,2022,2023,159,0.12,0.143,False,False
-706,clinical outcome score,skala,,3,2013,2020,287,0.118,0.202,False,False
-707,medicare patient,organizacja,,2,2018,2022,225,0.118,0.166,False,False
-708,olt,rozpoznanie,osteochondral lesion of the talus,1,2023,2024,173,0.118,0.148,False,True
-709,plp,rozpoznanie,phantom limb pain,1,2023,2023,161,0.118,0.165,False,True
-710,femoral neck shortening,rozpoznanie,,3,2023,2024,136,0.118,0.135,False,True
-711,following question,metoda,,2,2013,2021,258,0.117,0.156,False,False
-712,patient comorbidity,metoda,,2,2017,2025,235,0.117,0.161,False,False
-713,data synthesis,metoda,,2,2019,2021,216,0.117,0.15,False,False
-714,full text,metoda,,2,2021,2023,182,0.117,0.143,False,False
-715,theme,metoda,,1,2022,2022,167,0.117,0.138,False,False
-716,worse clinical outcome,metoda,,3,2022,2022,166,0.117,0.18,False,False
-717,fracture characteristic,metoda,,2,2023,2025,157,0.117,0.181,False,False
-718,psychological readiness,czynnik,,2,2022,2025,116,0.117,0.154,False,False
-719,joint line obliquity,parametr,,3,2023,2025,100,0.117,0.201,False,False
-720,18 1,metoda,,2,2020,2025,196,0.116,0.127,False,False
-721,multivariable model,metoda,,2,2017,2018,188,0.116,0.153,False,False
-722,dls,rozpoznanie,degenerative lumbar spondylolisthesis,1,2022,2023,156,0.116,0.135,False,True
-723,dh,niejasne,,1,2022,2023,155,0.116,0.135,False,False
-724,predictive ability,metoda,,2,2023,2025,149,0.116,0.147,False,False
-725,patient concern,metoda,,2,2017,2019,217,0.114,0.232,False,False
-726,prf,niejasne,,1,2023,2025,196,0.114,0.154,False,False
-727,16 0,metoda,,2,2022,2023,169,0.114,0.15,False,False
-728,multiple database,metoda,,2,2023,2025,164,0.114,0.221,False,False
-729,competing risk,metoda,,2,2021,2023,154,0.114,0.128,False,False
-730,8 study,metoda,,2,2021,2024,147,0.114,0.128,False,False
-731,evidence iii,metoda,,2,2023,2025,132,0.114,0.147,False,False
-732,mcid achievement,metoda,,2,2022,2023,90,0.114,0.15,False,False
-733,local infiltration analgesia,lek,,3,2017,2020,255,0.113,0.19,False,True
-734,end stage ankle arthritis,rozpoznanie,,4,2019,2020,232,0.113,0.149,False,True
-735,21 8,metoda,,2,2023,2021,200,0.113,0.137,False,False
-736,cochrane library database,metoda,,3,2021,2023,161,0.113,0.158,False,False
-737,patient demographic characteristic,metoda,,3,2021,2022,159,0.113,0.145,False,False
-738,22 8,metoda,,2,2023,2023,197,0.111,0.158,False,False
-739,insurance status,organizacja,,2,2022,2025,189,0.111,0.134,False,False
-740,tad,parametr,tip apex distance,1,2023,2025,188,0.111,0.147,False,False
-741,pm,metoda,,1,2022,2025,150,0.111,0.147,False,False
-742,univariable analysis,metoda,,2,2023,2025,128,0.111,0.161,False,False
-743,cutibacterium acne,rozpoznanie,,2,2019,2022,127,0.111,0.145,False,True
-744,high heterogeneity,metoda,,2,2022,2025,119,0.111,0.14,False,False
-745,gold standard treatment,metoda,,3,2023,2024,195,0.11,0.155,False,False
-746,preoperative opioid use,czynnik,,3,2018,2020,180,0.11,0.19,False,False
-747,twelve study,metoda,,2,2021,2023,174,0.11,0.135,False,False
-748,cor,metoda,,1,2022,2024,172,0.11,0.209,False,False
-749,categorical data,metoda,,2,2023,2024,140,0.11,0.175,False,False
-750,maximum von mise,parametr,maximum stress,3,2022,2023,130,0.11,0.128,False,False
-751,hu value,parametr,hounsfield unit,2,2023,2025,106,0.11,0.167,False,False
-752,pubmed database,metoda,,2,2014,2018,251,0.109,0.195,False,False
-753,overall revision rate,wynik,,3,2023,2021,162,0.109,0.125,False,False
-754,more comorbidity,metoda,,2,2021,2022,161,0.109,0.138,False,False
-755,sb,metoda,,1,2011,2012,261,0.107,0.157,False,False
-756,internal validation,metoda,,2,2022,2023,106,0.107,0.158,False,False
-757,training set,metoda,,2,2023,2025,99,0.107,0.194,False,False
-758,radiologic parameter,metoda,,2,2023,2023,172,0.106,0.135,False,False
-759,7 study,metoda,,2,2020,2021,163,0.106,0.131,False,False
-760,patient rated wrist evaluation,skala,,4,2022,2025,153,0.106,0.127,False,False
-761,pain outcome,skala,,2,2023,2025,140,0.106,0.174,False,False
-762,four database,metoda,,2,2023,2023,105,0.106,0.158,False,False
-763,electronic search,metoda,,2,2017,2022,215,0.105,0.131,False,False
-764,hand dash,skala,quickdash,2,2014,2017,255,0.103,0.181,False,False
-765,lb,metoda,,1,2023,2023,192,0.103,0.135,False,False
-766,28 3,metoda,,2,2020,2024,182,0.103,0.121,False,False
-767,postoperative length,wynik,,2,2022,2024,173,0.103,0.142,False,False
-768,ethical approval,metoda,,2,2019,2025,138,0.103,0.134,False,False
-769,dca,metoda,,1,2023,2025,82,0.102,0.201,False,False
-770,liposomal bupivacaine,lek,,2,2015,2017,216,0.101,0.209,False,True
-771,lia,lek,local infiltration analgesia,1,2015,2020,214,0.101,0.173,False,True
-772,native knee,niejasne,,2,2015,2019,215,0.099,0.155,False,False
-773,prospectively collected database,metoda,,3,2018,2023,213,0.099,0.135,False,False
-774,acs nsqip,metoda,,2,2016,2019,206,0.099,0.168,False,False
-775,nonarthritic hip score,skala,,3,2020,2021,150,0.098,0.15,False,False
-776,pooled data,metoda,,2,2015,2019,247,0.097,0.187,False,False
-777,mcmaster university arthritis index,skala,,4,2015,2016,195,0.097,0.165,False,False
-778,existing evidence,metoda,,2,2022,2024,150,0.097,0.121,False,False
-779,multivariate model,metoda,,2,2018,2020,217,0.095,0.161,False,False
-780,pooled result,metoda,,2,2016,2020,211,0.095,0.149,False,False
-781,significantly lower risk,metoda,,3,2023,2025,141,0.095,0.154,False,False
-782,selection bias,metoda,,2,2023,2020,207,0.094,0.143,False,False
-783,each follow up,metoda,,3,2020,2020,174,0.094,0.131,False,False
-784,multivariable linear regression,metoda,,3,2023,2024,115,0.094,0.135,False,False
-785,black race,organizacja,,2,2022,2022,114,0.094,0.131,False,False
-786,30 day readmission rate,metoda,,4,2015,2016,180,0.092,0.151,False,False
-787,sciencedirect,metoda,,1,2016,2017,176,0.092,0.181,False,False
-788,increasing trend,metoda,,2,2020,2022,152,0.091,0.125,False,False
-789,all article,metoda,,2,2021,2019,191,0.09,0.116,False,False
-790,pla,niejasne,,1,2023,2024,118,0.09,0.128,False,False
-791,dcb,technologia,drug coated balloon,1,2023,2024,101,0.09,0.148,False,True
-792,dual mobility cup,technologia,,3,2016,2020,221,0.088,0.178,False,True
-793,ldd,rozpoznanie,lumbar degenerative disease,1,2023,2025,88,0.087,0.12,False,True
-794,unilateral anterior cruciate ligament reconstruction,technika,,5,2017,2018,185,0.086,0.188,False,True
-795,anterolateral ligament,technika,,2,2016,2017,159,0.084,0.153,False,True
-796,metal debris,rozpoznanie,,2,2012,2014,301,0.076,0.216,False,True
-797,adverse local tissue reaction,rozpoznanie,,4,2014,2016,219,0.076,0.216,False,True
-798,player,metoda,,1,2017,2018,200,0.076,0.153,False,False
-799,anterior cervical discectomy fusion group,metoda,,5,2015,2015,189,0.072,0.133,False,False
-800,rivaroxaban,lek,,1,2008,2012,355,0.071,0.315,True,True
-801,no previous study,metoda,,3,2018,2020,184,0.064,0.113,False,False
-802,bundled payment,organizacja,,2,2016,2019,195,0.056,0.245,False,False
-803,fnb,technika,femoral nerve block,1,2014,2016,183,0.052,0.194,False,True
-804,n a,metoda,,2,2013,2014,202,0.049,0.32,False,False
-805,ninth revision,metoda,,2,2014,2017,202,0.045,0.195,False,False
-806,cli patient,rozpoznanie,chronic limb threatening ischemia,2,2015,2016,166,0.023,0.129,False,True
-807,mom total hip arthroplasty,technologia,,4,2014,2018,118,0.018,0.132,False,True
-808,clinical article,metoda,,2,2012,2013,90,0.001,0.217,True,False
-809,wiley periodical,metoda,,2,2015,2016,395,0.0,0.712,False,False
-810,orthopedic research society,metoda,,3,2016,2019,265,0.0,0.516,False,False
-811,electronic supplementary material,metoda,,3,2018,2018,262,0.0,0.764,False,False
-812,these slide,metoda,,2,2018,2018,262,0.0,0.764,False,False
-813,inc j orthop res,metoda,,4,2016,2019,121,0.0,0.322,False,False
+pozycja,term,n,y0,peak_year,docs_total,prevalence_pct,peak_share_pct,kategoria,wariant_do,na_mapie,w_rdzeniu_4
+1,ci,1,2015,2025,10135,6.711,8.107,metoda,,False,False
+2,systematic review,2,2014,2025,9343,6.552,7.045,metoda,,False,True
+3,vas,1,2021,2025,10135,6.399,7.182,skala,,False,False
+4,primary outcome,2,2013,2025,5937,4.841,6.708,metoda,,False,False
+5,meta analysis,2,2013,2025,6936,4.77,5.316,metoda,,False,True
+6,inclusion criterion,2,2016,2025,7032,4.225,5.151,metoda,,False,False
+7,pubmed,1,2011,2025,5223,4.062,5.166,metoda,,False,False
+8,embase,1,2013,2025,5289,3.663,4.362,metoda,,False,False
+9,95 ci,2,2014,2025,5991,3.638,5.072,metoda,,False,False
+10,cohort,1,2021,2025,5186,3.453,4.032,metoda,,False,False
+11,retrospective cohort study,3,2017,2025,3977,3.308,4.326,metoda,,False,True
+12,secondary outcome,2,2013,2025,3821,3.231,4.714,metoda,,False,False
+13,bmi,1,2015,2025,4427,3.183,3.989,czynnik,,False,False
+14,level iii,2,2014,2024,4919,3.139,3.716,metoda,,False,False
+15,body mass index,3,2022,2024,5204,3.126,3.549,,,False,False
+16,patient reported outcome,3,2010,2025,2991,2.578,3.372,skala,,False,True
+17,periprosthetic joint infection,3,2011,2024,3098,2.501,2.762,rozpoznanie,,True,True
+18,odd ratio,2,2016,2025,3912,2.482,2.726,metoda,,False,False
+19,demographic,1,2017,2025,3172,2.328,2.927,metoda,,False,False
+20,comorbidity,1,2017,2025,3685,2.279,2.827,czynnik,,False,False
+21,science,1,2014,2025,2456,2.209,2.949,metoda,,False,False
+22,prom,1,2013,2025,2054,2.17,2.755,skala,patient reported outcome measure,False,False
+23,patient reported outcome measure,4,2011,2024,2129,2.156,2.798,skala,,False,True
+24,operation time,2,2019,2023,3090,2.112,2.486,wynik,,False,False
+25,odi,1,2016,2025,3231,2.064,2.382,skala,,False,False
+26,web,1,2013,2025,2137,1.98,2.777,metoda,,False,False
+27,or,1,2018,2025,2865,1.922,2.267,metoda,,False,False
+28,vas score,2,2017,2024,2925,1.919,2.06,skala,vas,False,False
+29,patient demographic,2,2013,2024,2621,1.829,2.161,metoda,,False,False
+30,this systematic review,3,2012,2025,2351,1.821,2.31,metoda,,False,False
+31,cochrane library,2,2012,2025,2505,1.784,2.224,metoda,,False,False
+32,medline,1,2021,2023,3169,1.719,1.911,metoda,,False,False
+33,readmission,1,2014,2022,2332,1.68,1.876,wynik,,False,True
+34,intraoperative blood loss,3,2017,2025,2072,1.655,2.16,wynik,,False,False
+35,postoperative outcome,2,2020,2025,1991,1.651,2.647,wynik,,False,True
+36,instruction,1,2016,2017,2960,1.629,1.882,metoda,,False,False
+37,clinical efficacy,2,2020,2025,1792,1.475,2.145,wynik,,False,True
+38,independent risk factor,3,2014,2025,1922,1.443,1.901,metoda,,False,False
+39,90 day,2,2016,2025,1693,1.407,1.758,metoda,,False,False
+40,revision rate,2,2020,2025,1980,1.342,1.65,wynik,,False,False
+41,trial registration,2,2011,2025,1829,1.339,1.844,metoda,,False,False
+42,rct,1,2015,2025,2245,1.335,1.586,metoda,,False,False
+43,scopus,1,2015,2025,1280,1.306,2.152,metoda,,False,False
+44,bias,1,2015,2025,1743,1.271,1.499,metoda,,False,False
+45,preferred reporting item,3,2015,2024,1274,1.239,1.46,metoda,,False,False
+46,exclusion criterion,2,2016,2025,1803,1.233,1.449,metoda,,False,False
+47,surgical site infection,3,2017,2025,2053,1.2,1.435,rozpoznanie,,True,True
+48,minimal clinically important difference,4,2016,2024,1154,1.191,1.431,metoda,,False,False
+49,subgroup analysis,2,2014,2025,1512,1.188,1.6,metoda,,False,False
+50,reoperation rate,2,2020,2025,1644,1.187,1.421,wynik,,False,False
+51,los,1,2019,2022,1775,1.179,1.332,metoda,,False,False
+52,mcid,1,2016,2025,1107,1.155,1.399,metoda,,False,False
+53,database,1,2021,2022,1968,1.126,1.295,,,False,False
+54,iqr,1,2014,2025,1275,1.121,1.607,metoda,,False,False
+55,koo,1,2012,2025,1647,1.11,1.342,skala,osteoarthritis outcome score,False,False
+56,p value,2,2016,2023,1538,1.104,1.207,metoda,,False,False
+57,logistic regression analysis,3,2020,2025,1530,1.094,1.428,metoda,,False,False
+58,auc,1,2013,2025,1080,1.087,1.665,metoda,,False,False
+59,hr,1,2014,2025,1523,1.06,1.442,metoda,,False,False
+60,univariate analysis,2,2016,2025,1460,1.031,1.198,metoda,,False,False
+61,tja,1,2015,2022,1354,0.973,1.045,technika,primary total joint arthroplasty,True,False
+62,patient characteristic,2,2022,2024,1557,0.971,1.106,,,False,False
+63,md,1,2010,2025,1395,0.971,1.184,metoda,,False,True
+64,included study,2,2012,2025,1331,0.956,1.091,metoda,,False,False
+65,pro,1,2017,2025,1100,0.94,1.134,skala,patient reported outcome,False,False
+66,propensity score matching,3,2017,2025,874,0.917,1.535,metoda,,False,False
+67,lower rate,2,2021,2024,1307,0.91,1.092,metoda,,False,False
+68,inception,1,2013,2025,983,0.892,1.119,metoda,,False,False
+69,prisma guideline,2,2016,2025,817,0.878,1.291,metoda,,False,False
+70,hhs,1,2020,2025,1424,0.873,1.098,skala,modified harris hip score,False,False
+71,this retrospective cohort study,4,2015,2025,893,0.863,1.614,metoda,,False,False
+72,this meta analysis,3,2013,2025,1372,0.86,1.076,metoda,,False,False
+73,reverse total shoulder arthroplasty,4,2013,2025,1151,0.86,1.134,technika,,True,True
+74,asd,1,2014,2024,1199,0.841,1.005,rozpoznanie,adult spinal deformity,True,False
+75,hazard ratio,2,2015,2025,1343,0.831,1.126,metoda,,False,False
+76,rr,1,2014,2025,1478,0.825,1.277,metoda,,False,False
+77,ase,1,2020,2022,1208,0.788,0.876,skala,subjective shoulder value,False,False
+78,knee injury,2,2018,2024,1142,0.783,1.084,rozpoznanie,,True,False
+79,kss,1,2013,2022,1328,0.775,0.839,skala,,False,False
+80,independent predictor,2,2015,2025,1149,0.754,1.27,metoda,,False,False
+81,paucity,1,2019,2022,1288,0.746,0.787,,,False,False
+82,threshold,1,2018,2025,1016,0.741,1.026,metoda,,False,False
+83,joa,1,2016,2024,1332,0.727,0.788,skala,,False,False
+84,single center,2,2018,2025,921,0.669,0.746,metoda,,False,False
+85,receiver operating characteristic curve,4,2018,2023,751,0.663,0.831,metoda,,False,False
+86,multivariable analysis,2,2013,2025,771,0.66,0.868,metoda,,False,False
+87,reverse shoulder arthroplasty,3,2011,2024,1090,0.659,0.846,technika,,True,True
+88,lower risk,2,2019,2025,938,0.653,0.818,metoda,,False,False
+89,random effect model,3,2016,2025,832,0.65,1.119,metoda,,False,False
+90,opioid consumption,2,2013,2025,861,0.646,0.746,organizacja,,False,False
+91,race,1,2022,2024,913,0.635,0.824,,,False,False
+92,oks,1,2012,2025,878,0.634,0.674,skala,clinical outcome score,False,False
+93,adult spinal deformity,3,2017,2025,828,0.634,0.796,rozpoznanie,,True,True
+94,modified harris hip score,4,2016,2021,924,0.633,0.764,skala,,False,False
+95,all p,2,2019,2025,789,0.619,0.89,,,False,False
+96,baseline characteristic,2,2014,2025,737,0.606,1.119,metoda,,False,False
+97,ssi,1,2018,2024,1040,0.605,0.672,rozpoznanie,surgical site infection,True,False
+98,editorial commentary,2,2015,2024,867,0.602,0.976,metoda,,False,True
+99,final analysis,2,2017,2025,761,0.598,0.725,metoda,,False,False
+100,case presentation,2,2014,2025,903,0.596,0.739,metoda,,False,False
+101,descriptive statistic,2,2018,2025,797,0.596,0.768,metoda,,False,False
+102,primary anterior cruciate ligament reconstruction,5,2018,2025,906,0.593,0.796,technika,,True,False
+103,google scholar,2,2012,2025,765,0.59,0.703,metoda,,False,False
+104,charlson comorbidity index,3,2013,2025,704,0.59,0.703,czynnik,,False,False
+105,literature search,2,2019,2024,964,0.589,0.643,metoda,,False,False
+106,older age,2,2019,2025,938,0.589,0.732,metoda,,False,False
+107,tranexamic acid,2,2015,2021,1173,0.583,0.804,lek,,True,True
+108,systematic search,2,2011,2025,772,0.582,0.94,metoda,,False,False
+109,opioid use,2,2017,2025,735,0.574,0.717,organizacja,,False,False
+110,meta analysis guideline,3,2017,2024,547,0.574,0.737,metoda,,False,False
+111,osteoarthritis outcome score,3,2016,2024,815,0.573,0.781,skala,,False,False
+112,significant risk factor,3,2022,2025,927,0.572,0.775,,,False,False
+113,ll,1,2013,2022,725,0.569,0.684,parametr,,False,False
+114,all study,2,2015,2023,949,0.563,0.648,metoda,,False,False
+115,nrs,1,2016,2024,718,0.561,0.708,skala,numeric rating scale,False,False
+116,odi score,2,2018,2025,834,0.557,0.732,skala,odi,False,False
+117,asa,1,2016,2022,920,0.553,0.625,czynnik,,False,False
+118,therapeutic level iii,3,2016,2019,867,0.55,0.655,metoda,,False,False
+119,pass,1,2019,2025,511,0.544,0.746,metoda,,False,False
+120,direct anterior approach,3,2014,2023,716,0.531,0.568,technika,,True,True
+121,current evidence,2,2012,2025,901,0.524,0.574,metoda,,False,False
+122,multivariable logistic regression,3,2017,2025,549,0.524,0.804,metoda,,False,False
+123,ndi,1,2016,2022,891,0.512,0.581,skala,clinical outcome score,False,False
+124,primary aim,2,2017,2024,741,0.511,0.571,metoda,,False,False
+125,prospectively collected data,3,2013,2017,917,0.508,0.595,metoda,,False,False
+126,mhh,1,2014,2025,666,0.508,0.603,skala,modified harris hip score,False,False
+127,pelvic tilt,2,2015,2022,811,0.506,0.567,parametr,,False,False
+128,significantly higher rate,3,2022,2025,712,0.506,0.595,metoda,,False,False
+129,cross sectional study,3,2018,2025,848,0.503,0.631,metoda,,False,True
+130,ovcf,1,2011,2025,600,0.492,0.674,rozpoznanie,osteoporotic vertebral compression fracture,True,False
+131,multivariate logistic regression analysis,4,2014,2025,660,0.487,0.603,metoda,,False,False
+132,potential risk factor,3,2017,2025,761,0.486,0.595,metoda,,False,False
+133,2 3,2,2023,2025,833,0.483,0.538,,,False,False
+134,txa,1,2013,2019,840,0.477,0.641,lek,tranexamic acid,True,False
+135,vas pain score,3,2014,2025,828,0.476,0.531,skala,vas,False,False
+136,cinahl,1,2019,2023,859,0.474,0.6,metoda,,False,False
+137,femoroacetabular impingement syndrome,3,2018,2022,453,0.471,0.508,rozpoznanie,,True,True
+138,patient acceptable symptom state,4,2019,2025,382,0.471,0.682,metoda,,False,False
+139,continuous variable,2,2016,2025,576,0.466,0.66,metoda,,False,False
+140,implant survivorship,2,2016,2023,606,0.464,0.568,wynik,,False,False
+141,medicare,1,2015,2019,796,0.461,0.559,organizacja,,False,False
+142,female sex,2,2017,2025,639,0.461,0.531,metoda,,False,False
+143,visual analog scale score,4,2017,2025,789,0.46,0.524,skala,vas,False,False
+144,pelvic incidence,2,2014,2022,678,0.46,0.5,parametr,,False,False
+145,interquartile range,2,2018,2023,658,0.46,0.544,metoda,,False,False
+146,i2,1,2017,2025,458,0.46,0.631,metoda,,False,False
+147,demographic characteristic,2,2019,2025,578,0.457,0.574,metoda,,False,False
+148,two cohort,2,2021,2025,582,0.45,0.502,metoda,,False,False
+149,primary objective,2,2021,2025,671,0.447,0.517,metoda,,False,False
+150,china,1,2015,2025,591,0.445,0.595,metoda,,False,False
+151,icc,1,2015,2025,772,0.438,0.631,metoda,,False,False
+152,ldh,1,2015,2024,549,0.438,0.571,rozpoznanie,lumbar disc herniation,True,False
+153,eq 5d,2,2011,2019,818,0.435,0.518,skala,,False,False
+154,2 0,2,2016,2024,679,0.429,0.47,metoda,,False,False
+155,pi,1,2014,2025,582,0.425,0.531,parametr,pelvic incidence,False,False
+156,4 3,2,2022,2022,767,0.424,0.552,,,False,False
+157,data extraction,2,2015,2025,626,0.424,0.56,metoda,,False,False
+158,male sex,2,2018,2025,622,0.424,0.495,metoda,,False,False
+159,90 day readmission,3,2017,2022,418,0.418,0.478,wynik,,False,False
+160,1 0,2,2020,2025,666,0.416,0.524,,,False,False
+161,secondary aim,2,2014,2021,532,0.416,0.452,metoda,,False,False
+162,cs,1,2020,2025,639,0.411,0.459,metoda,,False,False
+163,journal,1,2019,2023,542,0.411,0.496,metoda,,False,False
+164,daa,1,2015,2024,482,0.411,0.477,technika,direct anterior approach,True,False
+165,covariate,1,2022,2024,558,0.402,0.492,metoda,,False,False
+166,intervention group,2,2022,2025,590,0.399,0.61,metoda,,False,False
+167,cci,1,2015,2024,459,0.399,0.513,czynnik,charlson comorbidity index,False,False
+168,cage subsidence,2,2021,2025,444,0.398,0.574,rozpoznanie,,True,False
+169,12 month follow up,4,2016,2025,713,0.396,0.488,metoda,,False,False
+170,medical complication,2,2023,2025,546,0.393,0.524,wynik,,False,False
+171,lumbar degenerative disease,3,2018,2023,505,0.393,0.448,rozpoznanie,,True,True
+172,forgotten joint score,3,2019,2025,373,0.393,0.552,skala,,False,False
+173,mean follow up duration,4,2023,2025,654,0.39,0.509,,,False,False
+174,radiological parameter,2,2020,2025,518,0.389,0.474,metoda,,False,False
+175,english,1,2017,2024,626,0.386,0.463,metoda,,False,False
+176,enhanced recovery,2,2017,2025,413,0.386,0.481,organizacja,,False,True
+177,risk ratio,2,2014,2025,688,0.383,0.588,metoda,,False,False
+178,hka,1,2019,2025,393,0.382,0.509,parametr,hip knee ankle angle,False,False
+179,sva,1,2014,2020,589,0.38,0.492,parametr,sagittal vertical axis,False,False
+180,mann whitney u test,4,2022,2025,546,0.38,0.481,metoda,,False,False
+181,smd,1,2014,2025,492,0.376,0.603,metoda,,False,False
+182,comprehensive search,2,2014,2025,437,0.376,0.717,metoda,,False,False
+183,smoking status,2,2015,2024,530,0.374,0.405,metoda,,False,False
+184,ase score,2,2016,2023,558,0.37,0.416,skala,subjective shoulder value,False,False
+185,imn,1,2020,2025,508,0.368,0.445,,,False,False
+186,proximal junctional kyphosis,3,2016,2025,491,0.368,0.43,rozpoznanie,,True,True
+187,readmission rate,2,2013,2020,602,0.367,0.46,wynik,,False,False
+188,rts,1,2018,2025,377,0.366,0.466,wynik,,False,False
+189,retrospective observational study,3,2015,2025,432,0.364,0.43,metoda,,False,False
+190,lateral lumbar interbody fusion,4,2013,2023,456,0.363,0.424,technika,,True,False
+191,secondary analysis,2,2019,2025,442,0.363,0.509,metoda,,False,True
+192,pod,1,2021,2025,504,0.36,0.567,metoda,,False,False
+193,mpta,1,2018,2025,344,0.36,0.474,parametr,medial proximal tibial angle,False,False
+194,taa,1,2015,2023,515,0.358,0.528,technika,total ankle arthroplasty,True,False
+195,numeric rating scale,3,2014,2025,510,0.358,0.423,skala,,False,False
+196,olif,1,2018,2022,344,0.358,0.427,technika,oblique lumbar interbody fusion,True,False
+197,linear regression,2,2014,2025,536,0.357,0.416,metoda,,False,False
+198,similar outcome,2,2020,2023,567,0.354,0.448,metoda,,False,False
+199,prospero,1,2020,2025,313,0.353,0.474,metoda,,False,False
+200,existing literature,2,2022,2025,456,0.351,0.509,metoda,,False,False
+201,limited data,2,2023,2024,581,0.35,0.455,metoda,,False,False
+202,sagittal vertical axis,3,2014,2020,547,0.35,0.448,parametr,,False,False
+203,both cohort,2,2019,2025,490,0.35,0.402,metoda,,False,False
+204,secondary objective,2,2018,2023,488,0.348,0.376,metoda,,False,False
+205,cis,1,2013,2025,462,0.348,0.509,metoda,,False,False
+206,perioperative outcome,2,2014,2025,496,0.347,0.502,wynik,,False,False
+207,percutaneous kyphoplasty,2,2016,2024,477,0.347,0.39,technika,,True,True
+208,pkp,1,2016,2024,431,0.347,0.39,technika,percutaneous kyphoplasty,True,False
+209,categorical variable,2,2019,2025,419,0.345,0.595,metoda,,False,False
+210,prognostic level iii,3,2016,2024,429,0.344,0.441,metoda,,False,False
+211,ss,1,2020,2022,487,0.339,0.464,parametr,sacral slope,False,False
+212,adjusted odd ratio,3,2017,2025,471,0.339,0.38,metoda,,False,False
+213,hip knee ankle angle,4,2019,2024,384,0.339,0.441,parametr,,False,False
+214,transfusion rate,2,2015,2019,763,0.338,0.566,wynik,,False,False
+215,mep,1,2013,2025,587,0.338,0.38,technologia,motor evoked potential,True,False
+216,minimum clinically important difference,4,2017,2023,397,0.337,0.456,metoda,,False,False
+217,covid 19,2,2020,2020,365,0.337,0.838,rozpoznanie,,True,True
+218,esr,1,2017,2021,536,0.335,0.379,parametr,erythrocyte sedimentation rate,False,False
+219,higher odd,2,2018,2025,375,0.334,0.445,metoda,,False,False
+220,retrospective case control study,4,2015,2024,518,0.332,0.39,metoda,,False,False
+221,ors,1,2017,2025,448,0.332,0.452,metoda,,False,False
+222,similar rate,2,2021,2024,407,0.332,0.412,metoda,,False,False
+223,all cause revision,3,2019,2025,304,0.332,0.481,wynik,,False,False
+224,sacral slope,2,2015,2025,490,0.331,0.373,parametr,,False,False
+225,electronic medical record,3,2013,2024,441,0.331,0.398,technologia,,True,False
+226,posterior tibial slope,3,2021,2025,434,0.331,0.445,parametr,,False,False
+227,artificial intelligence,2,2021,2025,250,0.331,0.552,technologia,,True,True
+228,lld,1,2023,2023,432,0.329,0.4,,,False,False
+229,mechanical complication,2,2021,2025,399,0.329,0.474,wynik,,False,False
+230,all participant,2,2015,2025,517,0.328,0.409,metoda,,False,False
+231,shorter operative time,3,2022,2025,433,0.328,0.56,metoda,,False,False
+232,quality assessment,2,2014,2025,426,0.328,0.402,metoda,,False,False
+233,reduction quality,2,2021,2025,364,0.328,0.409,parametr,,False,False
+234,confounder,1,2015,2025,394,0.326,0.416,metoda,,False,False
+235,medial proximal tibial angle,4,2019,2024,334,0.324,0.398,parametr,,False,False
+236,machine learning,2,2019,2023,270,0.324,0.384,technologia,,True,True
+237,provider,1,2018,2020,609,0.321,0.448,metoda,,False,False
+238,secondary outcome measure,3,2014,2020,659,0.319,0.435,metoda,,False,False
+239,correlation analysis,2,2020,2025,454,0.319,0.495,metoda,,False,False
+240,pts,1,2017,2025,347,0.318,0.502,parametr,posterior tibial slope,False,False
+241,two reviewer,2,2017,2023,564,0.316,0.384,metoda,,False,False
+242,trial registration number,3,2015,2025,389,0.316,0.43,metoda,,False,False
+243,roc curve,2,2021,2023,384,0.316,0.376,metoda,,False,False
+244,fjs,1,2019,2025,286,0.315,0.445,skala,forgotten joint score,False,False
+245,lesson,1,2017,2018,674,0.313,0.617,metoda,,False,False
+246,discharge disposition,2,2015,2024,454,0.313,0.369,organizacja,,False,False
+247,mean body mass index,4,2017,2025,466,0.312,0.387,metoda,,False,False
+248,anatomic total shoulder arthroplasty,4,2017,2023,400,0.312,0.36,technika,,True,True
+249,rtka,1,2019,2025,301,0.312,0.359,niejasne,,False,False
+250,robotic assisted total knee arthroplasty,5,2021,2025,244,0.312,0.653,technologia,,True,True
+251,disparity,1,2022,2024,369,0.31,0.405,organizacja,,False,False
+252,mcs,1,2015,2025,474,0.309,0.366,skala,mental component score,False,False
+253,sa,1,2016,2024,404,0.308,0.354,metoda,,False,False
+254,newcastle ottawa scale,3,2019,2025,321,0.308,0.481,metoda,,False,False
+255,covid 19 pandemic,3,2020,2020,289,0.308,0.485,organizacja,,False,True
+256,ai,1,2019,2025,324,0.306,0.517,technologia,artificial intelligence,True,False
+257,study protocol,2,2015,2025,445,0.302,0.38,metoda,,False,True
+258,network meta analysis,3,2017,2024,332,0.302,0.412,metoda,,False,True
+259,pjis,1,2018,2024,338,0.3,0.369,rozpoznanie,periprosthetic joint infection,True,False
+260,fnf,1,2018,2024,331,0.3,0.376,rozpoznanie,femoral neck fracture,True,False
+261,mid term follow up,4,2013,2021,494,0.299,0.359,metoda,,False,False
+262,pjk,1,2016,2025,357,0.297,0.352,rozpoznanie,proximal junctional kyphosis,True,False
+263,fais,1,2019,2023,258,0.296,0.328,rozpoznanie,femoroacetabular impingement syndrome,True,False
+264,substantial clinical benefit,3,2019,2025,276,0.295,0.409,metoda,,False,False
+265,5 0,2,2023,2025,457,0.293,0.387,metoda,,False,False
+266,international classification,2,2011,2017,597,0.292,0.39,metoda,,False,False
+267,keyword,1,2015,2024,409,0.29,0.318,metoda,,False,False
+268,healthcare system,2,2019,2024,377,0.289,0.361,organizacja,,False,False
+269,multivariate regression analysis,3,2014,2019,435,0.287,0.341,metoda,,False,False
+270,demographic information,2,2018,2023,383,0.287,0.36,metoda,,False,False
+271,matched cohort,2,2016,2023,415,0.284,0.352,metoda,,False,False
+272,standardized mean difference,3,2014,2025,373,0.283,0.395,metoda,,False,False
+273,lateral center edge angle,4,2015,2023,363,0.283,0.376,parametr,,False,False
+274,methodological index,2,2017,2025,303,0.283,0.359,metoda,,False,False
+275,observation group,2,2019,2025,275,0.283,0.337,metoda,,False,False
+276,frailty,1,2021,2025,257,0.281,0.395,rozpoznanie,,True,True
+277,independent sample t test,4,2021,2025,350,0.28,0.352,metoda,,False,False
+278,cnki,1,2015,2024,358,0.279,0.369,metoda,,False,False
+279,increased odd,2,2016,2022,348,0.279,0.316,metoda,,False,False
+280,1 1 ratio,3,2019,2025,309,0.279,0.452,metoda,,False,False
+281,retear,1,2018,2024,425,0.277,0.361,rozpoznanie,,True,False
+282,medial unicompartmental knee arthroplasty,4,2014,2025,410,0.277,0.344,technika,,True,False
+283,subjective shoulder value,3,2018,2021,400,0.277,0.319,skala,,False,False
+284,ethnicity,1,2022,2024,337,0.277,0.333,organizacja,,False,False
+285,aseptic revision,2,2017,2023,328,0.277,0.344,wynik,,False,False
+286,narrative review,2,2019,2025,292,0.277,0.337,metoda,,False,True
+287,mental health,2,2023,2025,398,0.276,0.38,rozpoznanie,,True,False
+288,included patient,2,2017,2024,310,0.276,0.311,metoda,,False,False
+289,receiver operating characteristic roc curve,5,2018,2025,287,0.276,0.337,metoda,,False,False
+290,3d printing,2,2017,2025,336,0.273,0.344,technologia,,True,False
+291,pao,1,2012,2024,398,0.271,0.361,technika,periacetabular osteotomy,True,False
+292,quick disability,2,2015,2025,363,0.271,0.352,skala,quickdash,False,False
+293,mme,1,2019,2025,248,0.271,0.323,wynik,morphine milligram equivalent,False,False
+294,registry,1,2019,2024,485,0.27,0.296,,,False,False
+295,numerical rating scale,3,2017,2025,355,0.27,0.352,skala,numeric rating scale,False,False
+296,surgical duration,2,2017,2025,298,0.27,0.538,wynik,,False,False
+297,cochrane database,2,2017,2021,466,0.268,0.305,metoda,,False,False
+298,eligibility criterion,2,2015,2022,435,0.268,0.346,metoda,,False,False
+299,national database,2,2017,2023,343,0.268,0.384,metoda,,False,False
+300,cutoff value,2,2016,2024,325,0.268,0.304,metoda,,False,False
+301,mean bmi,2,2018,2025,325,0.267,0.38,metoda,,False,False
+302,geriatric patient,2,2022,2024,383,0.265,0.318,czynnik,,False,False
+303,30 day readmission,3,2015,2023,420,0.264,0.32,wynik,,False,False
+304,cms,1,2015,2025,372,0.264,0.33,metoda,,False,False
+305,fai,1,2012,2021,572,0.258,0.398,rozpoznanie,femoroacetabular impingement syndrome,True,False
+306,cbct,1,2012,2023,360,0.258,0.296,technologia,cone beam computed tomography,True,False
+307,predictive model,2,2018,2024,304,0.258,0.39,metoda,,False,False
+308,csa,1,2019,2025,359,0.257,0.373,parametr,critical shoulder angle,False,False
+309,two independent reviewer,3,2021,2025,357,0.257,0.287,metoda,,False,False
+310,primary hip arthroscopy,3,2019,2021,256,0.257,0.292,technika,,True,False
+311,psi,1,2013,2025,437,0.255,0.352,technologia,patient specific instrumentation,True,False
+312,drf,1,2017,2023,341,0.255,0.336,rozpoznanie,distal radius fracture,True,False
+313,significantly lower rate,3,2023,2025,310,0.255,0.373,metoda,,False,False
+314,phf,1,2019,2025,273,0.255,0.337,rozpoznanie,proximal humerus fracture,True,False
+315,koa,1,2020,2024,236,0.255,0.369,rozpoznanie,knee osteoarthritis,True,False
+316,onfh,1,2018,2025,386,0.254,0.337,rozpoznanie,osteonecrosis of the femoral head,True,False
+317,ais patient,2,2016,2025,348,0.254,0.38,rozpoznanie,,True,False
+318,patient quality,2,2018,2025,380,0.252,0.352,metoda,,False,False
+319,n s,2,2010,2018,605,0.251,0.404,metoda,,False,False
+320,shorter operation time,3,2019,2022,386,0.251,0.287,metoda,,False,False
+321,tobacco use,2,2018,2024,343,0.251,0.34,czynnik,,False,False
+322,nine study,2,2017,2025,337,0.251,0.301,metoda,,False,False
+323,systematic literature search,3,2018,2025,328,0.251,0.33,metoda,,False,False
+324,2 cohort,2,2015,2023,352,0.25,0.328,metoda,,False,False
+325,ka,1,2016,2025,296,0.25,0.337,technika,kinematic alignment,True,False
+326,scoping review,2,2021,2025,210,0.25,0.344,metoda,,False,True
+327,dm,1,2016,2025,318,0.248,0.287,rozpoznanie,diabetes mellitus,True,False
+328,eligible study,2,2021,2025,342,0.247,0.474,metoda,,False,False
+329,asd surgery,2,2017,2025,271,0.247,0.373,technika,adult spinal deformity surgery,True,False
+330,surgical factor,2,2012,2025,368,0.245,0.287,metoda,,False,False
+331,cumulative incidence,2,2017,2025,341,0.245,0.301,metoda,,False,False
+332,intraoperative bleeding,2,2023,2023,306,0.245,0.384,wynik,,False,False
+333,current procedural terminology code,4,2017,2024,360,0.244,0.34,metoda,,False,False
+334,sane,1,2019,2025,296,0.244,0.258,skala,single assessment numeric evaluation,False,False
+335,ssis,1,2015,2025,452,0.242,0.337,rozpoznanie,surgical site infection,True,False
+336,dissemination,1,2016,2025,368,0.242,0.373,metoda,,False,False
+337,multivariable logistic regression analysis,4,2016,2024,321,0.242,0.318,metoda,,False,False
+338,cone beam computed tomography,4,2012,2025,411,0.241,0.323,technologia,,True,False
+339,each cohort,2,2018,2025,283,0.241,0.294,metoda,,False,False
+340,shared decision making,3,2019,2022,279,0.241,0.28,organizacja,,False,False
+341,atsa,1,2020,2025,210,0.239,0.387,technika,anatomic total shoulder arthroplasty,True,False
+342,adult spinal deformity surgery,4,2016,2025,288,0.238,0.309,technika,,True,True
+343,aor,1,2019,2025,255,0.238,0.294,metoda,,False,False
+344,significantly higher risk,3,2022,2025,351,0.236,0.344,,,False,False
+345,larger sample size,3,2022,2025,311,0.236,0.395,metoda,,False,False
+346,fea,1,2021,2025,280,0.236,0.352,technologia,finite element analysis,True,False
+347,surgical detail,2,2021,2025,278,0.236,0.459,metoda,,False,False
+348,2 test,2,2014,2022,324,0.235,0.287,metoda,,False,False
+349,higher bmi,2,2015,2025,299,0.235,0.409,metoda,,False,False
+350,spinopelvic parameter,2,2018,2025,263,0.235,0.28,parametr,,False,False
+351,9 3,2,2018,2023,441,0.234,0.28,metoda,,False,False
+352,ssv,1,2017,2025,288,0.234,0.265,skala,subjective shoulder value,False,False
+353,calibration,1,2021,2023,247,0.234,0.28,metoda,,False,False
+354,six study,2,2013,2025,358,0.232,0.258,metoda,,False,False
+355,ethic,1,2017,2025,312,0.231,0.359,metoda,,False,False
+356,acute kidney injury,3,2017,2025,257,0.231,0.43,rozpoznanie,,True,False
+357,incidence and risk factor,4,2014,2022,390,0.229,0.28,metoda,,False,False
+358,ohs,1,2012,2022,388,0.229,0.294,skala,oxford shoulder score,False,False
+359,five study,2,2014,2024,369,0.229,0.275,metoda,,False,False
+360,rtha,1,2020,2025,216,0.229,0.309,niejasne,,False,False
+361,valuable insight,2,2023,2025,187,0.229,0.538,metoda,,False,False
+362,relevant study,2,2015,2024,369,0.228,0.275,metoda,,False,False
+363,knee joint function,3,2020,2024,258,0.228,0.282,skala,,False,False
+364,four study,2,2017,2024,367,0.226,0.253,metoda,,False,False
+365,robotic assistance,2,2021,2025,203,0.226,0.316,technologia,,True,False
+366,mid term outcome,3,2016,2025,321,0.225,0.287,wynik,,False,True
+367,cochrane risk,2,2020,2025,228,0.223,0.352,metoda,,False,False
+368,secondary endpoint,2,2014,2025,403,0.222,0.373,metoda,,False,False
+369,seven study,2,2015,2025,340,0.222,0.23,metoda,,False,False
+370,medicaid service,2,2016,2025,336,0.222,0.359,organizacja,,False,False
+371,three study,2,2015,2022,321,0.222,0.265,metoda,,False,False
+372,reimbursement,1,2016,2025,400,0.221,0.258,organizacja,,False,False
+373,eight study,2,2017,2025,317,0.221,0.287,metoda,,False,False
+374,independent factor,2,2016,2024,304,0.221,0.239,metoda,,False,False
+375,18 2,2,2022,2024,349,0.219,0.26,,,False,False
+376,cut off value,3,2017,2023,286,0.219,0.28,metoda,,False,False
+377,tegner activity scale,3,2012,2024,368,0.218,0.275,skala,,False,False
+378,primary total joint arthroplasty,4,2017,2022,309,0.218,0.258,technika,,True,False
+379,higher body mass index,4,2020,2025,275,0.218,0.33,metoda,,False,False
+380,certainty,1,2021,2025,218,0.218,0.287,metoda,,False,False
+381,surgical orthopedic,2,2019,2025,216,0.218,0.265,metoda,,False,False
+382,all prom,2,2021,2024,187,0.218,0.282,skala,,False,False
+383,coronal alignment,2,2020,2025,341,0.216,0.287,parametr,,False,False
+384,ao ota,2,2021,2025,296,0.216,0.287,metoda,,False,False
+385,comparable outcome,2,2020,2025,276,0.216,0.352,metoda,,False,False
+386,maximum stress,2,2020,2022,265,0.216,0.25,parametr,,False,False
+387,rcr,1,2018,2022,262,0.216,0.243,technika,arcr,True,False
+388,nomogram,1,2020,2025,190,0.216,0.352,metoda,,False,False
+389,cox proportional hazard model,4,2020,2025,334,0.215,0.287,,,False,False
+390,demographic variable,2,2018,2025,294,0.215,0.309,metoda,,False,False
+391,mechanical alignment,2,2018,2025,298,0.213,0.301,technika,,True,False
+392,operative duration,2,2020,2025,266,0.213,0.352,wynik,,False,False
+393,uiv,1,2017,2025,262,0.213,0.258,parametr,upper instrumented vertebra,False,False
+394,fracture healing time,3,2016,2025,320,0.212,0.287,,,False,False
+395,inferior outcome,2,2014,2024,318,0.212,0.246,metoda,,False,False
+396,univariate and multivariate analysis,4,2019,2025,309,0.212,0.273,,,False,False
+397,ar,1,2019,2023,259,0.212,0.272,niejasne,,False,False
+398,scb,1,2020,2025,199,0.212,0.352,metoda,,False,False
+399,decision curve analysis,3,2021,2025,164,0.212,0.301,metoda,,False,False
+400,patient specific instrumentation,3,2013,2025,344,0.209,0.301,technologia,,True,False
+401,dexamethasone,1,2020,2025,305,0.209,0.258,lek,,True,False
+402,0 0,2,2016,2024,285,0.209,0.26,metoda,,False,False
+403,multivariable regression analysis,3,2018,2024,248,0.209,0.304,metoda,,False,False
+404,baseline demographic,2,2019,2022,228,0.209,0.28,metoda,,False,False
+405,non randomized study,3,2020,2025,222,0.209,0.251,metoda,,False,False
+406,large cohort,2,2017,2019,357,0.207,0.273,metoda,,False,False
+407,title,1,2016,2022,307,0.207,0.235,metoda,,False,False
+408,hoo,1,2014,2025,304,0.207,0.23,skala,nonarthritic hip score,False,False
+409,implant retention,2,2018,2025,254,0.207,0.309,technika,,True,False
+410,surgical data,2,2018,2022,253,0.206,0.265,metoda,,False,False
+411,independent t test,3,2016,2025,293,0.205,0.301,metoda,,False,False
+412,adductor canal block,3,2016,2021,288,0.205,0.239,technika,,True,True
+413,purpose hypothesis,2,2019,2019,269,0.205,0.28,metoda,,False,False
+414,quickdash,1,2014,2021,313,0.203,0.232,skala,,False,False
+415,25 0,2,2020,2025,298,0.203,0.323,metoda,,False,False
+416,postoperative clinical outcome,3,2017,2025,268,0.203,0.251,metoda,,False,False
+417,study quality,2,2019,2025,263,0.203,0.301,metoda,,False,False
+418,oblique lumbar interbody fusion,4,2019,2024,199,0.203,0.239,technika,,True,True
+419,latarjet procedure,2,2018,2024,326,0.202,0.304,technika,,True,False
+420,all outcome,2,2017,2023,290,0.202,0.24,metoda,,False,False
+421,owhto,1,2017,2019,282,0.202,0.259,technika,open wedge high tibial osteotomy,True,False
+422,single assessment numeric evaluation,4,2018,2024,251,0.202,0.253,skala,,False,False
+423,promis,1,2019,2025,216,0.202,0.244,skala,,False,False
+424,percutaneous endoscopic lumbar discectomy,4,2016,2018,323,0.2,0.264,technika,,True,True
+425,bias tool,2,2019,2025,226,0.2,0.244,metoda,,False,False
+426,elixhauser comorbidity index,3,2022,2024,171,0.2,0.325,czynnik,,False,False
+427,pearldiver database,2,2022,2022,197,0.199,0.25,metoda,,False,False
+428,ovid,1,2011,2022,347,0.197,0.221,metoda,,False,False
+429,this prospective cohort study,4,2017,2025,342,0.197,0.258,,,False,False
+430,postoperative complication rate,3,2014,2025,291,0.197,0.273,wynik,,False,False
+431,eligible patient,2,2021,2025,262,0.197,0.251,metoda,,False,False
+432,liv,1,2020,2025,261,0.197,0.251,parametr,upper instrumented vertebra,False,False
+433,ovid medline,2,2018,2024,257,0.197,0.246,metoda,,False,False
+434,femoroacetabular impingement fai,3,2012,2016,451,0.196,0.281,rozpoznanie,femoroacetabular impingement syndrome,True,False
+435,longer length,2,2017,2024,299,0.196,0.231,metoda,,False,False
+436,modified macnab criterion,3,2017,2025,260,0.196,0.287,skala,,False,False
+437,arcr,1,2020,2024,208,0.196,0.267,technika,,True,False
+438,prediction model,2,2019,2024,204,0.196,0.253,metoda,,False,False
+439,lower odd,2,2019,2025,206,0.194,0.301,metoda,,False,False
+440,90 day complication,3,2020,2024,196,0.193,0.26,wynik,,False,False
+441,fns,1,2021,2024,142,0.193,0.267,technologia,femoral neck system,True,False
+442,hospital readmission,2,2014,2022,348,0.191,0.302,wynik,,False,False
+443,calibration curve,2,2022,2025,141,0.191,0.323,metoda,,False,False
+444,30 day mortality,3,2012,2021,336,0.19,0.259,wynik,,False,False
+445,transfemoral amputation,2,2013,2025,295,0.19,0.215,technika,,True,False
+446,modifiable risk factor,3,2018,2025,267,0.19,0.244,metoda,,False,False
+447,primary tja,2,2018,2024,238,0.19,0.224,technika,primary total joint arthroplasty,True,False
+448,surgery duration,2,2018,2025,228,0.19,0.402,metoda,,False,False
+449,single center retrospective study,4,2020,2025,204,0.19,0.237,metoda,,False,False
+450,retear rate,2,2017,2023,288,0.189,0.272,wynik,,False,False
+451,research question,2,2018,2018,276,0.189,0.287,metoda,,False,False
+452,radiological and clinical outcome,4,2018,2024,272,0.189,0.253,metoda,,False,False
+453,upper instrumented vertebra,3,2020,2025,255,0.189,0.237,parametr,,False,False
+454,metric,1,2018,2024,237,0.189,0.26,metoda,,False,False
+455,hounsfield unit,2,2022,2025,220,0.189,0.265,parametr,,False,False
+456,3 month follow up,4,2016,2025,371,0.187,0.28,metoda,,False,False
+457,visual analog scale pain score,5,2017,2025,322,0.187,0.244,skala,vas,False,False
+458,peld,1,2016,2018,301,0.187,0.235,technika,percutaneous endoscopic lumbar discectomy,True,False
+459,cda,1,2016,2023,263,0.187,0.256,technika,cervical disc arthroplasty,True,False
+460,retrospective cohort analysis,3,2021,2025,216,0.187,0.287,metoda,,False,False
+461,fjs 12,2,2020,2025,185,0.187,0.273,skala,forgotten joint score,False,False
+462,therefore this study,3,2023,2025,163,0.187,0.337,metoda,,False,False
+463,machine learning model,3,2022,2024,142,0.187,0.289,technologia,,True,False
+464,wmd,1,2015,2019,336,0.186,0.225,metoda,,False,False
+465,tk,1,2017,2022,264,0.186,0.213,parametr,miara_kregoslupa,False,False
+466,lateral extra articular tenodesis,4,2020,2025,178,0.186,0.273,technika,,True,False
+467,bone joint j,3,2016,2017,634,0.184,1.213,metoda,,False,False
+468,mean sd,2,2011,2020,405,0.184,0.265,metoda,,False,False
+469,multimodal analgesia,2,2021,2025,271,0.184,0.258,lek,,True,False
+470,t nnis grade,3,2017,2021,247,0.184,0.212,skala,,False,False
+471,volar locking plate,3,2016,2024,363,0.183,0.217,technologia,,True,False
+472,mua,1,2022,2022,239,0.183,0.265,technika,manipulation under anesthesia,True,False
+473,t1 slope,2,2018,2025,231,0.183,0.244,parametr,,False,False
+474,revision risk,2,2019,2025,231,0.183,0.28,wynik,,False,False
+475,postoperative hospital stay,3,2023,2023,216,0.183,0.24,wynik,,False,False
+476,roc analysis,2,2022,2025,200,0.183,0.373,metoda,,False,False
+477,hu,1,2022,2025,197,0.183,0.373,parametr,hounsfield unit,False,False
+478,10 0,2,2022,2025,285,0.181,0.222,metoda,,False,False
+479,prwe,1,2018,2023,246,0.181,0.224,skala,patient rated wrist evaluation,False,False
+480,cl,1,2020,2024,224,0.181,0.224,metoda,,False,False
+481,pi ll,2,2022,2024,207,0.181,0.231,parametr,,False,False
+482,adverse reaction,2,2011,2025,379,0.18,0.244,metoda,,False,False
+483,10 1,2,2018,2025,298,0.18,0.258,metoda,,False,False
+484,mean sd age,3,2018,2025,286,0.18,0.309,metoda,,False,False
+485,distal femur fracture,3,2014,2025,264,0.18,0.244,rozpoznanie,,True,False
+486,minimum 10 year follow up,5,2022,2024,220,0.18,0.239,metoda,,False,False
+487,same day discharge,3,2020,2025,177,0.178,0.201,organizacja,,False,False
+488,chinese clinical trial registry,4,2021,2025,153,0.178,0.273,metoda,,False,False
+489,femoral neck system,3,2022,2024,124,0.178,0.275,technologia,,True,True
+490,these risk factor,3,2016,2024,279,0.177,0.195,metoda,,False,False
+491,pooled analysis,2,2018,2021,251,0.177,0.246,metoda,,False,False
+492,embase database,2,2020,2022,209,0.177,0.213,metoda,,False,False
+493,chronic periprosthetic joint infection,4,2020,2022,185,0.177,0.199,rozpoznanie,,True,False
+494,potential confounder,2,2018,2025,275,0.176,0.28,metoda,,False,False
+495,clinicaltrial gov,2,2018,2019,269,0.176,0.232,metoda,,False,False
+496,lp,1,2021,2025,229,0.176,0.215,metoda,,False,False
+497,eos,1,2016,2020,275,0.174,0.24,niejasne,,False,False
+498,patient reported outcome score,4,2016,2018,273,0.174,0.213,skala,,False,False
+499,malnutrition,1,2018,2025,237,0.174,0.23,rozpoznanie,,True,False
+500,emergency department visit,3,2022,2025,181,0.174,0.301,wynik,,False,False
+501,clinical question,2,2011,2023,357,0.173,0.264,metoda,,False,False
+502,pubmed medline,2,2016,2024,263,0.173,0.231,metoda,,False,False
+503,greater proportion,2,2020,2022,229,0.173,0.213,metoda,,False,False
+504,discrimination,1,2022,2022,198,0.173,0.258,,,False,False
+505,virtual reality,2,2020,2025,187,0.173,0.28,technologia,,True,False
+506,asd patient,2,2021,2025,181,0.173,0.237,metoda,adult spinal deformity,False,False
+507,8 0,2,2017,2025,317,0.171,0.222,metoda,,False,False
+508,tea,1,2013,2025,312,0.171,0.215,technika,total elbow arthroplasty,True,False
+509,graft type,2,2018,2025,305,0.171,0.273,technika,,True,False
+510,hv,1,2023,2025,226,0.171,0.258,,,False,False
+511,bone cement leakage,3,2019,2025,208,0.171,0.208,rozpoznanie,,True,False
+512,kinesiophobia,1,2022,2025,194,0.171,0.287,rozpoznanie,,True,False
+513,early onset scoliosis,3,2011,2020,357,0.17,0.284,rozpoznanie,,True,True
+514,pfna,1,2011,2025,308,0.17,0.23,technologia,proximal femoral nail antirotation,True,False
+515,bivariate analysis,2,2016,2020,268,0.17,0.202,metoda,,False,False
+516,aa,1,2019,2023,249,0.17,0.24,metoda,,False,False
+517,opioid prescription,2,2018,2020,216,0.17,0.227,organizacja,,False,False
+518,surgical characteristic,2,2022,2025,197,0.17,0.222,metoda,,False,False
+519,this cross sectional study,4,2021,2025,222,0.168,0.208,metoda,,False,False
+520,operation duration,2,2020,2021,221,0.168,0.206,metoda,,False,False
+521,other outcome,2,2019,2024,255,0.167,0.188,metoda,,False,False
+522,receiver operating characteristic curve analysis,5,2019,2023,221,0.167,0.232,metoda,,False,False
+523,multivariable logistic regression model,4,2020,2024,202,0.167,0.253,metoda,,False,False
+524,binary logistic regression,3,2022,2025,186,0.167,0.316,,,False,False
+525,open wedge high tibial osteotomy,5,2016,2019,307,0.165,0.218,technika,,True,True
+526,open reduction internal fixation group,5,2019,2021,245,0.165,0.186,technika,,True,False
+527,rs,1,2021,2024,225,0.165,0.202,metoda,,False,False
+528,elevated risk,2,2023,2025,219,0.165,0.316,metoda,,False,False
+529,mowhto,1,2019,2024,171,0.165,0.224,technika,open wedge high tibial osteotomy,True,False
+530,ihot 12,2,2021,2025,153,0.165,0.187,skala,hip outcome score activity,False,False
+531,future work,2,2019,2023,233,0.164,0.232,metoda,,False,False
+532,mean standard deviation,3,2017,2017,292,0.162,0.235,metoda,,False,False
+533,13 9,2,2014,2022,265,0.162,0.213,metoda,,False,False
+534,search term,2,2014,2021,265,0.162,0.186,metoda,,False,False
+535,chronic kidney disease,3,2019,2025,212,0.162,0.237,rozpoznanie,,True,False
+536,all model,2,2020,2024,200,0.162,0.217,metoda,,False,False
+537,protective factor,2,2023,2025,181,0.162,0.265,metoda,,False,False
+538,eras,1,2021,2025,172,0.162,0.201,organizacja,enhanced recovery,False,False
+539,control cohort,2,2018,2022,237,0.161,0.221,metoda,,False,False
+540,surgical variable,2,2022,2022,215,0.161,0.228,metoda,,False,False
+541,limb symmetry index,3,2020,2024,191,0.161,0.217,skala,,False,False
+542,augmented reality,2,2022,2023,148,0.161,0.24,technologia,,True,False
+543,model performance,2,2022,2025,134,0.161,0.265,metoda,,False,False
+544,9 0,2,2016,2024,272,0.16,0.239,metoda,,False,False
+545,institutional database,2,2018,2025,242,0.16,0.222,metoda,,False,False
+546,ppf,1,2021,2025,173,0.16,0.23,rozpoznanie,periprosthetic fracture,True,False
+547,dair,1,2022,2025,163,0.16,0.23,technika,implant retention,True,False
+548,single academic institution,3,2022,2025,161,0.16,0.237,metoda,,False,False
+549,acb,1,2019,2022,234,0.158,0.191,technika,adductor canal block,True,False
+550,question purpose,2,2019,2021,233,0.158,0.232,metoda,,False,False
+551,nah,1,2020,2021,229,0.158,0.219,metoda,,False,False
+552,each model,2,2020,2024,199,0.158,0.202,metoda,,False,False
+553,morphine milligram equivalent,3,2020,2023,147,0.158,0.2,wynik,,False,False
+554,psm,1,2023,2025,133,0.158,0.366,metoda,,False,False
+555,koo jr,2,2022,2025,127,0.158,0.273,skala,osteoarthritis outcome score,False,False
+556,preoperative factor,2,2019,2023,255,0.157,0.2,metoda,,False,False
+557,treatment success,2,2023,2025,237,0.157,0.201,,,False,False
+558,fao,1,2018,2025,233,0.157,0.201,metoda,,False,False
+559,infection risk,2,2017,2025,226,0.157,0.273,wynik,,False,False
+560,cephalomedullary nail,2,2021,2025,213,0.157,0.179,technologia,,True,False
+561,associated factor,2,2022,2025,196,0.157,0.258,metoda,,False,False
+562,lcea,1,2021,2024,173,0.157,0.188,parametr,lateral center edge angle,False,False
+563,patient specific factor,3,2022,2025,171,0.157,0.309,metoda,,False,False
+564,fracture related infection,3,2022,2025,121,0.157,0.258,rozpoznanie,,True,False
+565,higher revision rate,3,2018,2023,267,0.155,0.2,metoda,,False,False
+566,short stem,2,2015,2021,252,0.155,0.199,technologia,,True,False
+567,large national database,3,2022,2023,146,0.155,0.32,metoda,,False,False
+568,let,1,2021,2025,139,0.155,0.208,technika,lateral extra articular tenodesis,True,False
+569,tt,1,2019,2023,238,0.154,0.184,metoda,,False,False
+570,perioperative data,2,2021,2024,213,0.154,0.181,,,False,False
+571,review manager,2,2021,2023,178,0.154,0.192,metoda,,False,False
+572,ldfa,1,2022,2025,133,0.154,0.258,parametr,,False,False
+573,23 3,2,2021,2024,229,0.152,0.181,metoda,,False,False
+574,ten study,2,2020,2023,195,0.152,0.208,metoda,,False,False
+575,sarcopenia,1,2022,2024,134,0.152,0.21,rozpoznanie,,True,False
+576,50 0,2,2017,2025,234,0.151,0.194,metoda,,False,False
+577,10 study,2,2021,2021,189,0.151,0.179,metoda,,False,False
+578,patient acceptable symptomatic state,4,2019,2021,165,0.151,0.239,metoda,,False,False
+579,scapular notching,2,2013,2024,285,0.149,0.181,rozpoznanie,,True,False
+580,oxford shoulder score,3,2015,2022,241,0.149,0.177,skala,,False,False
+581,1 year mortality,3,2021,2025,234,0.149,0.244,wynik,,False,False
+582,3d printing technology,3,2017,2019,212,0.149,0.205,technologia,,True,False
+583,sl,1,2019,2022,201,0.149,0.162,metoda,,False,False
+584,less intraoperative blood loss,4,2022,2023,192,0.149,0.192,metoda,,False,False
+585,dataset,1,2022,2025,186,0.149,0.265,metoda,,False,False
+586,imaging data,2,2022,2024,169,0.149,0.224,metoda,,False,False
+587,cervical disc arthroplasty,3,2016,2023,310,0.148,0.216,technika,,True,False
+588,registry data,2,2018,2023,231,0.148,0.176,metoda,,False,False
+589,injury characteristic,2,2021,2025,184,0.148,0.172,metoda,,False,False
+590,eq vas,2,2021,2023,170,0.148,0.184,skala,vas,False,False
+591,significant postoperative improvement,3,2022,2025,168,0.148,0.323,,,False,False
+592,coronal plane alignment,3,2023,2025,138,0.148,0.301,parametr,,False,False
+593,23 1,2,2022,2023,260,0.147,0.184,,,False,False
+594,fragility fracture,2,2021,2022,235,0.147,0.162,,,False,False
+595,median follow up time,4,2017,2023,234,0.147,0.176,metoda,,False,False
+596,patient cohort,2,2020,2021,204,0.147,0.212,metoda,,False,False
+597,white patient,2,2022,2023,178,0.147,0.2,organizacja,,False,False
+598,external validation,2,2021,2025,143,0.147,0.172,metoda,,False,False
+599,21 4,2,2018,2025,272,0.145,0.201,,,False,False
+600,inclusion and exclusion criterion,4,2019,2025,233,0.145,0.187,metoda,,False,False
+601,descriptive analysis,2,2022,2025,214,0.145,0.194,metoda,,False,False
+602,each outcome,2,2019,2025,202,0.145,0.179,metoda,,False,False
+603,mdo,1,2021,2025,190,0.145,0.158,niejasne,,False,False
+604,arthroplasty surgeon,2,2022,2025,178,0.145,0.201,organizacja,,False,False
+605,this narrative review,3,2022,2025,151,0.145,0.215,metoda,,False,False
+606,targeted muscle reinnervation,3,2021,2023,150,0.145,0.2,technika,,True,False
+607,quickdash score,2,2019,2023,216,0.144,0.16,skala,quickdash,False,False
+608,2 study,2,2021,2022,213,0.144,0.177,,,False,False
+609,procedure type,2,2019,2022,208,0.144,0.169,metoda,,False,False
+610,greater odd,2,2020,2023,163,0.144,0.2,metoda,,False,False
+611,final cohort,2,2022,2025,163,0.144,0.208,metoda,,False,False
+612,fi,1,2022,2025,144,0.144,0.222,metoda,,False,False
+613,20 5,2,2020,2025,238,0.142,0.194,metoda,,False,False
+614,pain interference,2,2022,2025,170,0.142,0.179,skala,,False,False
+615,binary logistic regression analysis,4,2021,2024,166,0.142,0.181,metoda,,False,False
+616,pjf,1,2022,2023,140,0.142,0.192,rozpoznanie,proximal junctional failure,True,False
+617,chronic obstructive pulmonary disease,4,2018,2019,258,0.141,0.191,rozpoznanie,,True,False
+618,12 4,2,2019,2019,256,0.141,0.198,metoda,,False,False
+619,hidden blood loss,3,2015,2020,255,0.141,0.208,wynik,,False,False
+620,visual analogue scale score,4,2012,2014,247,0.141,0.157,skala,vas,False,False
+621,29 4,2,2022,2025,235,0.141,0.187,metoda,,False,False
+622,stata,1,2017,2018,211,0.141,0.206,metoda,,False,False
+623,increased likelihood,2,2021,2022,211,0.141,0.177,,,False,False
+624,postoperative vas score,3,2022,2025,199,0.141,0.179,skala,vas,False,False
+625,anterior cruciate ligament reconstruction group,5,2018,2025,196,0.141,0.179,,,False,False
+626,11 study,2,2021,2025,185,0.141,0.215,metoda,,False,False
+627,90 day readmission rate,4,2019,2024,155,0.141,0.173,wynik,,False,False
+628,joint line convergence angle,4,2021,2025,136,0.141,0.187,parametr,,False,False
+629,primary unilateral total knee arthroplasty,5,2015,2016,270,0.139,0.182,technika,,True,False
+630,national joint registry,3,2017,2012,258,0.139,0.183,metoda,,False,False
+631,significantly increased risk,3,2016,2025,258,0.139,0.201,,,False,False
+632,peer reviewed journal,3,2018,2025,228,0.139,0.222,metoda,,False,False
+633,hrs,1,2022,2025,211,0.139,0.222,metoda,,False,False
+634,paired sample t test,4,2018,2024,204,0.139,0.181,metoda,,False,False
+635,continuous data,2,2021,2025,178,0.139,0.179,metoda,,False,False
+636,kinematic alignment,2,2022,2025,164,0.139,0.194,technika,,True,False
+637,china national knowledge infrastructure,4,2020,2024,163,0.139,0.195,metoda,,False,False
+638,retrospective single center study,4,2022,2024,159,0.139,0.217,metoda,,False,False
+639,nonhome discharge,2,2022,2024,138,0.139,0.181,,,False,False
+640,jlca,1,2021,2025,130,0.139,0.194,parametr,joint line convergence angle,False,False
+641,random forest,2,2023,2025,112,0.139,0.244,technologia,,True,False
+642,midterm outcome,2,2015,2022,254,0.138,0.191,wynik,,False,False
+643,biomarker,1,2020,2021,225,0.138,0.206,technologia,,True,False
+644,surgery type,2,2020,2024,201,0.138,0.166,metoda,,False,False
+645,4 study,2,2019,2023,175,0.138,0.152,metoda,,False,False
+646,complication profile,2,2023,2025,145,0.138,0.251,,,False,False
+647,longer hospital stay,3,2021,2025,237,0.136,0.158,metoda,,False,False
+648,healthcare cost,2,2022,2025,221,0.136,0.201,organizacja,,False,False
+649,95 cis,2,2015,2025,216,0.136,0.187,metoda,,False,False
+650,high bmi,2,2021,2024,183,0.136,0.145,czynnik,,False,False
+651,proximal junctional failure,3,2021,2025,151,0.136,0.165,rozpoznanie,,True,False
+652,revision surgery rate,3,2022,2025,150,0.136,0.258,,,False,False
+653,vas leg,2,2022,2023,124,0.136,0.216,skala,,False,False
+654,hip outcome score activity,4,2019,2025,187,0.135,0.172,skala,,False,False
+655,lla,1,2020,2023,153,0.135,0.2,parametr,coronal alignment,False,False
+656,oblique lateral interbody fusion,4,2020,2022,140,0.135,0.199,technika,,True,False
+657,skilled nursing facility,3,2016,2020,237,0.133,0.202,organizacja,,False,False
+658,cox regression,2,2023,2025,218,0.133,0.208,metoda,,False,False
+659,elective total knee arthroplasty,4,2022,2022,200,0.133,0.162,technika,,True,False
+660,chronic lateral ankle instability,4,2023,2025,192,0.133,0.208,rozpoznanie,,True,False
+661,tja patient,2,2022,2025,168,0.133,0.244,,,False,False
+662,roc curve analysis,3,2023,2025,153,0.133,0.222,metoda,,False,False
+663,any cause,2,2017,2022,248,0.132,0.184,metoda,,False,False
+664,14 2,2,2018,2024,245,0.132,0.173,metoda,,False,False
+665,30 kg m2,3,2018,2022,193,0.132,0.199,metoda,,False,False
+666,hos adl,2,2019,2021,192,0.132,0.146,skala,hip outcome score activity,False,False
+667,80 0,2,2022,2025,186,0.132,0.165,,,False,False
+668,clinical trial registration,3,2023,2024,178,0.132,0.202,metoda,,False,False
+669,12 study,2,2022,2023,170,0.132,0.176,metoda,,False,False
+670,rod fracture,2,2021,2024,150,0.132,0.166,,,False,False
+671,promis pf,2,2022,2023,127,0.132,0.168,skala,promis,False,False
+672,eq 5d 5l,3,2021,2023,120,0.132,0.176,skala,,False,False
+673,adi,1,2023,2024,118,0.132,0.26,organizacja,area deprivation index,False,False
+674,fri,1,2023,2025,106,0.132,0.237,rozpoznanie,fracture related infection,True,False
+675,txa group,2,2015,2019,221,0.131,0.177,metoda,tranexamic acid,False,False
+676,15 0,2,2021,2025,192,0.131,0.172,metoda,,False,False
+677,21 9,2,2019,2025,189,0.131,0.158,metoda,,False,False
+678,semi structured interview,3,2019,2025,185,0.131,0.187,metoda,,False,False
+679,all adult patient,3,2020,2024,182,0.131,0.166,metoda,,False,False
+680,randomized control trial,3,2022,2022,181,0.131,0.235,metoda,,False,False
+681,primary reverse total shoulder arthroplasty,5,2021,2025,141,0.131,0.172,technika,,True,False
+682,database inception,2,2022,2023,133,0.131,0.192,metoda,,False,False
+683,anterior cruciate ligament return,4,2023,2025,131,0.131,0.201,,,False,False
+684,tip apex distance,3,2017,2023,239,0.129,0.152,parametr,,False,False
+685,healthcare provider,2,2017,2019,211,0.129,0.198,,,False,False
+686,this cohort study,3,2021,2025,192,0.129,0.172,metoda,,False,False
+687,lsi,1,2021,2025,168,0.129,0.179,skala,limb symmetry index,False,False
+688,von mise stress,3,2022,2023,149,0.129,0.144,parametr,maximum stress,False,False
+689,this scoping review,3,2023,2025,102,0.129,0.222,metoda,,False,False
+690,vte prophylaxis,2,2012,2012,264,0.128,0.175,lek,,True,False
+691,eleven study,2,2022,2023,174,0.128,0.16,metoda,,False,False
+692,black patient,2,2022,2024,139,0.128,0.202,organizacja,,False,False
+693,ed visit,2,2023,2023,137,0.128,0.16,wynik,emergency department visit,False,False
+694,clinical outcome score,3,2013,2020,287,0.126,0.214,skala,,False,False
+695,inconsistency,1,2021,2025,180,0.126,0.151,metoda,,False,False
+696,olt,1,2023,2024,172,0.126,0.159,rozpoznanie,osteochondral lesion of the talus,True,False
+697,asc,1,2023,2024,164,0.126,0.21,organizacja,ambulatory surgery center,False,False
+698,generalizability,1,2023,2025,155,0.126,0.208,metoda,,False,False
+699,femoral neck shortening,3,2023,2024,136,0.126,0.145,rozpoznanie,,True,False
+700,17 2,2,2014,2022,230,0.125,0.177,metoda,,False,False
+701,12 0,2,2021,2025,206,0.125,0.143,metoda,,False,False
+702,25 5,2,2020,2022,193,0.125,0.14,metoda,,False,False
+703,healthcare professional,2,2023,2025,166,0.125,0.201,metoda,,False,False
+704,fracture characteristic,2,2022,2025,157,0.125,0.194,metoda,,False,False
+705,plp,1,2023,2023,155,0.125,0.168,rozpoznanie,phantom limb pain,True,False
+706,psychological readiness,2,2022,2025,116,0.125,0.165,czynnik,,False,False
+707,joint line obliquity,3,2023,2025,100,0.125,0.215,parametr,,False,False
+708,deep surgical site infection,4,2021,2021,182,0.123,0.173,,,False,False
+709,bias assessment,2,2022,2023,162,0.123,0.152,metoda,,False,False
+710,dls,1,2021,2023,155,0.123,0.144,rozpoznanie,degenerative lumbar spondylolisthesis,True,False
+711,insurance type,2,2022,2025,153,0.123,0.151,organizacja,,False,False
+712,dh,1,2022,2023,153,0.123,0.144,niejasne,,False,False
+713,funding,1,2012,2023,265,0.122,0.184,metoda,,False,False
+714,ds,1,2018,2019,206,0.122,0.157,niejasne,,False,False
+715,31 3,2,2020,2022,190,0.122,0.169,metoda,,False,False
+716,30 day complication,3,2022,2019,183,0.122,0.184,wynik,,False,False
+717,longer operation time,3,2022,2022,175,0.122,0.14,,,False,False
+718,ra total knee arthroplasty,4,2023,2025,91,0.122,0.222,,,False,False
+719,mcid achievement,2,2022,2023,90,0.122,0.16,metoda,,False,False
+720,local infiltration analgesia,3,2017,2020,255,0.12,0.202,lek,,True,False
+721,following question,2,2013,2021,254,0.12,0.159,metoda,,False,False
+722,end stage ankle arthritis,4,2015,2020,232,0.12,0.158,rozpoznanie,,True,False
+723,data synthesis,2,2019,2021,211,0.12,0.159,metoda,,False,False
+724,tertiary hospital,2,2023,2025,175,0.12,0.194,metoda,,False,False
+725,25 9,2,2021,2021,170,0.12,0.139,,,False,False
+726,patient concern,2,2017,2019,213,0.119,0.246,metoda,,False,False
+727,full text,2,2021,2023,172,0.119,0.152,metoda,,False,False
+728,patient demographic characteristic,3,2021,2022,154,0.119,0.155,metoda,,False,False
+729,pm,1,2022,2025,148,0.119,0.158,metoda,,False,False
+730,cutibacterium acne,2,2019,2022,127,0.119,0.155,rozpoznanie,,True,False
+731,social determinant,2,2023,2024,88,0.119,0.195,organizacja,,False,False
+732,11 0,2,2023,2025,203,0.118,0.151,,,False,False
+733,18 1,2,2020,2025,184,0.118,0.136,metoda,,False,False
+734,tad,1,2023,2025,182,0.118,0.158,parametr,tip apex distance,False,False
+735,preoperative opioid use,3,2018,2020,180,0.118,0.202,czynnik,,False,False
+736,cor,1,2022,2024,171,0.118,0.224,metoda,,False,False
+737,ambulatory surgery center,3,2023,2024,155,0.118,0.173,,,False,False
+738,8 study,2,2021,2024,142,0.118,0.137,metoda,,False,False
+739,mechanical lateral distal femoral angle,5,2021,2021,125,0.118,0.126,,,False,False
+740,hu value,2,2023,2025,105,0.118,0.179,parametr,hounsfield unit,False,False
+741,searche,1,2023,2025,196,0.116,0.172,,,False,False
+742,predictor variable,2,2023,2023,161,0.116,0.16,metoda,,False,False
+743,fracture morphology,2,2023,2025,154,0.116,0.158,,,False,False
+744,reliance,1,2023,2025,152,0.116,0.265,,,False,False
+745,maximum von mise,3,2022,2023,126,0.116,0.136,parametr,maximum stress,False,False
+746,medicare patient,2,2018,2022,207,0.115,0.177,organizacja,,False,False
+747,gold standard treatment,3,2023,2024,188,0.115,0.152,metoda,,False,False
+748,depuy synthe,2,2018,2020,161,0.115,0.158,,,False,False
+749,overall revision rate,3,2023,2021,161,0.115,0.133,wynik,,False,False
+750,worse clinical outcome,3,2022,2022,155,0.115,0.191,metoda,,False,False
+751,mjoa,1,2022,2025,137,0.115,0.158,,,False,False
+752,evidence iii,2,2023,2025,127,0.115,0.151,metoda,,False,False
+753,rts rate,2,2022,2025,106,0.115,0.179,,,False,False
+754,78 6,2,2022,2022,186,0.113,0.147,metoda,,False,False
+755,insurance status,2,2022,2022,176,0.113,0.132,organizacja,,False,False
+756,radiologic parameter,2,2023,2023,172,0.113,0.144,metoda,,False,False
+757,patient rated wrist evaluation,4,2022,2025,153,0.113,0.136,skala,,False,False
+758,cochrane library database,3,2021,2023,151,0.113,0.144,metoda,,False,False
+759,categorical data,2,2023,2024,135,0.113,0.181,metoda,,False,False
+760,total knee arthroplasty procedure,4,2019,2025,171,0.112,0.136,,,False,False
+761,twelve study,2,2021,2023,168,0.112,0.144,metoda,,False,False
+762,theme,1,2022,2022,154,0.112,0.125,metoda,,False,False
+763,multiple database,2,2023,2025,151,0.112,0.194,metoda,,False,False
+764,sf 12 pcs,3,2022,2022,143,0.112,0.132,,,False,False
+765,hand dash,2,2014,2017,255,0.11,0.191,skala,quickdash,False,False
+766,22 8,2,2023,2023,183,0.11,0.168,metoda,,False,False
+767,foot and ankle outcome score,5,2018,2018,182,0.11,0.169,,,False,False
+768,hbl,1,2020,2022,134,0.11,0.125,,,False,False
+769,predictive ability,2,2023,2025,130,0.11,0.151,metoda,,False,False
+770,training set,2,2023,2025,96,0.11,0.194,metoda,,False,False
+771,sb,1,2011,2012,255,0.109,0.166,metoda,,False,False
+772,pubmed database,2,2014,2018,235,0.109,0.191,metoda,,False,False
+773,lb,1,2023,2023,190,0.109,0.144,metoda,,False,False
+774,16 0,2,2022,2023,150,0.109,0.152,metoda,,False,False
+775,revision hip arthroscopy,3,2023,2021,139,0.109,0.12,,,False,False
+776,pain outcome,2,2023,2025,137,0.109,0.172,skala,,False,False
+777,lia,1,2015,2020,214,0.107,0.183,lek,local infiltration analgesia,True,False
+778,24 1,2,2023,2025,186,0.107,0.143,,,False,False
+779,postoperative length,2,2022,2024,169,0.107,0.145,wynik,,False,False
+780,sagittal parameter,2,2019,2024,144,0.107,0.137,,,False,False
+781,daa total hip arthroplasty,4,2023,2025,113,0.107,0.136,,,False,False
+782,four database,2,2023,2023,99,0.107,0.168,metoda,,False,False
+783,native knee,2,2015,2019,215,0.106,0.164,niejasne,,False,False
+784,prolonged length,2,2022,2024,159,0.106,0.152,,,False,False
+785,vas and odi score,4,2021,2023,143,0.106,0.12,,,False,False
+786,univariable analysis,2,2023,2024,115,0.106,0.137,metoda,,False,False
+787,internal validation,2,2022,2023,97,0.106,0.144,metoda,,False,False
+788,prospectively collected database,3,2018,2023,206,0.104,0.144,metoda,,False,False
+789,multivariable model,2,2018,2018,159,0.104,0.14,metoda,,False,False
+790,masquelet technique,2,2023,2017,155,0.104,0.118,,,False,False
+791,nonarthritic hip score,3,2020,2021,150,0.104,0.159,skala,,False,False
+792,mc,1,2023,2025,150,0.104,0.143,,,False,False
+793,t score,2,2023,2023,145,0.104,0.136,,,False,False
+794,dca,1,2023,2025,79,0.104,0.201,metoda,,False,False
+795,mcmaster university arthritis index,4,2015,2016,195,0.103,0.175,skala,,False,False
+796,7 study,2,2020,2020,156,0.103,0.139,metoda,,False,False
+797,high heterogeneity,2,2022,2024,105,0.103,0.137,metoda,,False,False
+798,liposomal bupivacaine,2,2015,2017,210,0.102,0.221,lek,,True,False
+799,acs nsqip,2,2015,2019,199,0.102,0.171,metoda,,False,False
+800,26 9,2,2021,2022,167,0.102,0.118,,,False,False
+801,no impact,2,2020,2020,191,0.1,0.113,,,False,False
+802,additional benefit,2,2020,2021,184,0.1,0.126,,,False,False
+803,each follow up,3,2020,2020,173,0.1,0.139,metoda,,False,False
+804,post hoc analysis,3,2023,2014,172,0.1,0.126,,,False,False
+805,risk assessment,2,2023,2025,140,0.1,0.165,,,False,False
+806,faam,1,2023,2024,129,0.1,0.116,,,False,False
+807,ethical approval,2,2019,2025,127,0.1,0.115,metoda,,False,False
+808,multivariable linear regression,3,2023,2024,113,0.1,0.145,metoda,,False,False
+809,pooled result,2,2016,2020,204,0.099,0.158,metoda,,False,False
+810,more comorbidity,2,2021,2021,141,0.099,0.12,metoda,,False,False
+811,anesthesiologist classification,2,2023,2020,140,0.099,0.139,,,False,False
+812,pooled data,2,2014,2019,235,0.097,0.184,metoda,,False,False
+813,vbq,1,2023,2025,68,0.097,0.23,,,False,False
+814,30 day readmission rate,4,2015,2016,175,0.096,0.16,metoda,,False,False
+815,dual mobility cup,3,2016,2020,221,0.094,0.189,technologia,,True,False
+816,multivariate model,2,2019,2020,197,0.094,0.151,metoda,,False,False
+817,complication and revision rate,4,2023,2023,99,0.094,0.12,,,False,False
+818,non home discharge,3,2023,2024,95,0.094,0.152,,,False,False
+819,all article,2,2021,2021,179,0.093,0.12,metoda,,False,False
+820,sciencedirect,1,2016,2017,169,0.093,0.191,metoda,,False,False
+821,18 6,2,2023,2025,167,0.093,0.136,,,False,False
+822,pla,1,2023,2024,113,0.093,0.123,niejasne,,False,False
+823,ldd,1,2023,2025,88,0.093,0.129,rozpoznanie,lumbar degenerative disease,True,False
+824,unilateral anterior cruciate ligament reconstruction,5,2017,2018,185,0.091,0.198,technika,,True,False
+825,anterolateral ligament,2,2016,2017,159,0.09,0.162,technika,,True,False
+826,index level,2,2016,2013,230,0.083,0.158,,,False,False
+827,metal debris,2,2012,2014,301,0.081,0.228,rozpoznanie,,True,False
+828,adverse local tissue reaction,4,2014,2016,219,0.081,0.228,rozpoznanie,,True,False
+829,player,1,2017,2018,200,0.081,0.162,metoda,,False,False
+830,40 kg m2,3,2020,2021,109,0.078,0.126,,,False,False
+831,anterior cervical discectomy fusion group,5,2015,2015,189,0.077,0.14,metoda,,False,False
+832,rivaroxaban,1,2008,2012,345,0.067,0.332,lek,,True,True
+833,bundled payment,2,2015,2019,194,0.059,0.259,organizacja,,False,False
+834,comprehensive care,2,2017,2019,118,0.058,0.136,,,False,False
+835,fnb,1,2014,2016,183,0.055,0.205,technika,femoral nerve block,True,False
+836,n a,2,2013,2014,202,0.052,0.338,metoda,,False,False
+837,mat,1,2018,2018,122,0.051,0.118,,,False,False
+838,ninth revision,2,2014,2017,194,0.046,0.206,metoda,,False,False
+839,mom total hip arthroplasty,4,2014,2018,118,0.019,0.14,technologia,,True,False
+840,clinical article,2,2012,2013,90,0.001,0.229,metoda,,False,True
+841,wiley periodical,2,2015,2016,389,0.0,0.729,metoda,,False,False
+842,orthopedic research society,3,2016,2019,265,0.0,0.546,metoda,,False,False
+843,these slide,2,2018,2018,262,0.0,0.808,metoda,,False,False
+844,electronic supplementary material,3,2018,2018,262,0.0,0.808,metoda,,False,False
+845,inc j orthop res,4,2016,2019,121,0.0,0.341,metoda,,False,False
