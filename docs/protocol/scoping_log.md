@@ -228,3 +228,88 @@ Do sprawdzenia przed użyciem w tekście.
 
 `data/processed/core813_np_ranking.csv`, `np_kategorie_propozycja.tsv`, `np_synonimy.tsv`,
 `np_mapa_propozycja.csv`, `code/build_mapa_ui.py`, `code/mapa_ui.html`.
+
+---
+
+# 2026-08-31, wieczorem — chirurgia naczyniowa w polu ortopedycznym. Defekt definicji D1
+
+Zauważone przez ortopedę przy oglądaniu list: nieproporcjonalnie dużo terminów dotyczy
+niedokrwienia kończyn — `chronic limb threatening ischemia` stała na **13. pozycji rdzenia 47**,
+`peripheral artery disease` na 21. To jest chirurgia naczyniowa, nie ortopedia.
+
+## Mechanizm — pole dziedziczy strukturę MeSH razem z jej granicami
+
+Definicja pola (def1) to `Orthopedic Procedures` (D019637) i potomkowie — 56 deskryptorów.
+Wśród nich MeSH umieszcza **`Amputation, Surgical` (D000671, E04.555.080)** i
+**`Limb Salvage` (D023821, E04.555.400)**. Tymi dwoma wrotami wchodzi całe piśmiennictwo
+o ratowaniu kończyny niedokrwionej.
+
+| | rekordów 2005–2025 | udział pola |
+|---|---:|---:|
+| pole ogółem | 268 383 | 100% |
+| z deskryptorem amputacyjnym/limb salvage | 17 137 | 6,39% |
+| **wchodzące wyłącznie przez nie** | **15 899** | **5,92%** |
+
+Rozbicie tych 15 899 po współwystępujących deskryptorach: naczyniowe lub cukrzycowe **7 135
+(44,9%)**, onkologiczne **1 306 (8,2%)**, urazowe 183 (1,2%), żadne z powyższych 7 361 (46,3%).
+
+## Pomiar rozdzielczości — separacja jest zupełna
+
+Udział dokumentów danego terminu, które leżą w podzbiorze wchodzącym wyłącznie przez amputację
+lub limb salvage:
+
+| termin | dok. | w podzbiorze |
+|---|---:|---:|
+| chronic limb threatening ischemia | 688 | **100,0%** |
+| clti | 628 | **100,0%** |
+| major amputation rate | 148 | **100,0%** |
+| drug coated balloon | 90 | **100,0%** |
+| amputation free survival | 724 | 99,7% |
+| endovascular revascularization | 308 | 99,4% |
+| peripheral artery disease | 670 | 97,6% |
+| diabetic foot ulcer | 380 | 97,4% |
+| — kontrola ortopedyczna — | | |
+| 3d printing | 639 | 2,0% |
+| periprosthetic joint infection | 2 360 | 0,5% |
+| tranexamic acid | 1 443 | 0,2% |
+| direct anterior approach | 786 | **0,0%** |
+| robotic assisted total knee arthroplasty | 162 | **0,0%** |
+| latarjet procedure | 464 | **0,0%** |
+
+Nie ma tu strefy przejściowej. To dwa rozłączne piśmiennictwa w jednym worku.
+
+## Reguła naprawcza (D4) — wąska, nie szeroka
+
+Odrzucenie wszystkich 15 899 usunęłoby **ortopedię onkologiczną** — limb salvage w mięsakach
+kości, hemipelwektomia (233 rekordy) — czyli materiał bezspornie ortopedyczny.
+
+> **D4.** Rekord jest wyłączony z pola, jeżeli jego jedynymi deskryptorami pola są
+> `Amputation, Surgical`, `Limb Salvage`, `Disarticulation` lub `Hemipelvectomy`
+> **i jednocześnie** niesie deskryptor naczyniowy lub cukrzycowy (D058729, D016491, D007511,
+> D017719, D014652, D001157, D003920, D048909).
+
+Usuwa **7 135 rekordów = 2,66% pola**. Skuteczność zmierzona: 92–99% dokumentów każdego terminu
+naczyniowego, przy 0,0–2,0% dla terminów ortopedycznych. `limb salvage` jako termin spada
+z 81,4% do 46,9% — czyli reguła zabiera połowę naczyniową, a zostawia onkologiczną, i o to
+chodziło.
+
+Jeden termin reguła omija: `transfemoral amputation` (6,7% wąską regułą, 90,3% szeroką).
+To piśmiennictwo protetyczno-rehabilitacyjne, nie naczyniowe. Zostaje świadomie.
+
+## Co trzeba przeliczyć
+
+Ekstrakcji fraz nie trzeba powtarzać — `noun_chunks.parquet` jest per-PMID. Powtórki wymaga
+zliczanie i detekcja wyłonienia, bo **zmienia się mianownik**: udziały rosną o ok. 2,7%
+względnie, a terminy naczyniowe powinny wypaść z list wyłonień w całości.
+
+## Do zaraportowania niezależnie od naprawy
+
+To jest **ograniczenie metody, nie tylko usterka tego przebiegu**. Definicja pola oparta
+na poddrzewie MeSH dziedziczy granice, które MeSH wytyczył do innych celów. Amputacja jest
+procedurą ortopedyczną w sensie anatomicznym i procedurą naczyniową w sensie wskazania;
+poddrzewo nie odróżnia jednego od drugiego. Każde badanie definiujące dziedzinę kliniczną
+przez poddrzewo MeSH ma ten problem i większość go nie sprawdza. Zmierzyliśmy go, więc idzie
+do Ograniczeń wraz z liczbą.
+
+Pliki: `data/processed/pmid_tylko_naczyniowe.csv` (15 899),
+`data/processed/pmid_naczyniowe_scisle.csv` (7 135).

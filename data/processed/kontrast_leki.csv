@@ -1,0 +1,8 @@
+pozycja,term,kategoria,wariant_do,n,y0,peak_year,docs_total,prevalence_pct,peak_share_pct,w_rdzeniu_4,na_mapie
+104,tranexamic acid,lek,,2,2015,2021,1194,0.557,0.768,True,True
+399,dexamethasone,lek,,1,2016,2025,317,0.203,0.261,False,True
+488,multimodal analgesia,lek,,2,2021,2025,271,0.173,0.241,False,True
+703,vte prophylaxis,lek,,2,2012,2012,264,0.12,0.166,False,True
+733,local infiltration analgesia,lek,,3,2017,2020,255,0.113,0.19,False,True
+770,liposomal bupivacaine,lek,,2,2015,2017,216,0.101,0.209,False,True
+800,rivaroxaban,lek,,1,2008,2012,355,0.071,0.315,True,True

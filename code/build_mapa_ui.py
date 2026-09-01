@@ -67,6 +67,8 @@ textarea{width:100%;min-height:90px}
   <label class="muted"><input type="checkbox" id="hidevar" checked> ukryj skroty i warianty tego samego pojecia</label>
   <label class="muted"><input type="checkbox" id="lim100" checked> pokaz tylko 100 pierwszych</label>
   <span class="muted" style="margin-left:10px">dolacz:</span>
+  <label class="muted"><input type="checkbox" id="opt-lek"> leki (kontrast)</label>
+  <label class="muted"><input type="checkbox" id="opt-rozpoznanie"> rozpoznania (druga praca)</label>
   <label class="muted"><input type="checkbox" id="opt-parametr"> parametry radiologiczne</label>
   <label class="muted"><input type="checkbox" id="opt-czynnik"> czynniki pacjenta</label>
   <label class="muted"><input type="checkbox" id="opt-organizacja"> organizacja opieki</label>
@@ -99,8 +101,8 @@ textarea{width:100%;min-height:90px}
 "use strict";
 var ROWS = __ROWS__;
 var KAT = ["rozpoznanie","technika","technologia","lek","parametr","czynnik","organizacja","niejasne","skala","wynik","metoda","artefakt"];
-var RDZEN = {rozpoznanie:1,technika:1,technologia:1,lek:1};
-var OPCJE = ["parametr","czynnik","organizacja","niejasne"];
+var RDZEN = {technika:1,technologia:1};
+var OPCJE = ["lek","rozpoznanie","parametr","czynnik","organizacja","niejasne"];
 function MAPAset(){ var m={}; Object.keys(RDZEN).forEach(function(k){m[k]=1});
  OPCJE.forEach(function(k){ var c=document.getElementById("opt-"+k); if(c&&c.checked) m[k]=1; });
  return m; }
