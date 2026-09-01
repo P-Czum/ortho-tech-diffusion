@@ -51,6 +51,8 @@ def main() -> int:
     ap.add_argument("--limit", type=int, help="tylko N rekordow (do pomiaru czasu)")
     ap.add_argument("--procs", type=int, default=8)
     ap.add_argument("--batch", type=int, default=200)
+    ap.add_argument("--year-min", type=int, default=YEAR_MIN)
+    ap.add_argument("--year-max", type=int, default=YEAR_MAX)
     args = ap.parse_args()
 
     import spacy
@@ -59,7 +61,7 @@ def main() -> int:
     print(f"parser: spacy {ver['spacy']}, {MODEL} {ver[MODEL]}", file=sys.stderr)
 
     df = pd.read_parquet(args.text, columns=["pmid", "year", "title", "abstract", "language"])
-    df = df[(df["year"] >= YEAR_MIN) & (df["year"] <= YEAR_MAX)].reset_index(drop=True)
+    df = df[(df["year"] >= args.year_min) & (df["year"] <= args.year_max)].reset_index(drop=True)
     if args.limit:
         df = df.head(args.limit)
     print(f"rekordow: {len(df)}", file=sys.stderr)

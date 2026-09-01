@@ -67,6 +67,8 @@ def main() -> int:
     ap.add_argument("--out", required=True)
     ap.add_argument("--min-occ", type=int, default=50)
     ap.add_argument("--exclude", help="CSV z kolumna pmid — rekordy wylaczone z pola (D4)")
+    ap.add_argument("--year-min", type=int, default=YEAR_MIN)
+    ap.add_argument("--year-max", type=int, default=YEAR_MAX)
     ap.add_argument("--base", default="primary",
                     choices=["primary", "s1_title", "s2_abstract", "s3_english"])
     args = ap.parse_args()
@@ -78,6 +80,7 @@ def main() -> int:
           f"{len(phrases)} fraz", file=sys.stderr)
 
     df = pd.read_parquet(args.chunks)
+    df = df[(df["year"] >= args.year_min) & (df["year"] <= args.year_max)]
     if args.exclude:
         wyl = set(pd.read_csv(args.exclude, dtype=str)["pmid"])
         przed = len(df)
@@ -140,12 +143,12 @@ def main() -> int:
 
     rows = [{
         "term": " ".join(k), "n": len(k), "occurrences": occ[k], "docs_total": dt,
-        **{f"y{y}": per_year[k].get(y, 0) for y in range(YEAR_MIN, YEAR_MAX + 1)},
+        **{f"y{y}": per_year[k].get(y, 0) for y in range(args.year_min, args.year_max + 1)},
     } for k, dt in doc_total.items() if k not in drop]
     out = pd.DataFrame(rows).sort_values("docs_total", ascending=False)
     out.to_parquet(args.out, index=False)
 
-    denom = {str(y): int((years == y).sum()) for y in range(YEAR_MIN, YEAR_MAX + 1)}
+    denom = {str(y): int((years == y).sum()) for y in range(args.year_min, args.year_max + 1)}
     Path(args.out).with_suffix(".denom.json").write_text(
         json.dumps({"base": args.base, "records": n_rec, "field_records": n_field,
                     "by_year": denom}, indent=1), encoding="utf-8")

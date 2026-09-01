@@ -47,9 +47,13 @@ def main() -> int:
     ap.add_argument("--text", required=True)
     ap.add_argument("--out", required=True)
     ap.add_argument("--top", type=int, default=50)
+    ap.add_argument("--year-min", type=int, default=YEAR_MIN)
+    ap.add_argument("--year-max", type=int, default=YEAR_MAX)
+    ap.add_argument("--base-from", type=int, default=BASE_FROM)
+    ap.add_argument("--base-to", type=int, default=BASE_TO)
     args = ap.parse_args()
 
-    years = list(range(YEAR_MIN, YEAR_MAX + 1))
+    years = list(range(args.year_min, args.year_max + 1))
     ycols = [f"y{y}" for y in years]
 
     # Mianownik bierzemy z pliku zapisanego przez canonicalize.py, a NIE liczymy z tabeli
@@ -89,7 +93,7 @@ def main() -> int:
     # "albo baseline < THETA/5" jest przypadkiem szczegolnym, bo wtedy RATIO*baseline < THETA
     # i max() wynosi dokladnie THETA. Stary warunek ilorazowy jest przez to subsumowany
     # i nie wystepuje juz osobno.
-    bi = [years.index(BASE_FROM), years.index(BASE_TO)]
+    bi = [years.index(args.base_from), years.index(args.base_to)]
     baseline = s[:, bi[0]:bi[1] + 1].mean(axis=1)
     thr = np.maximum(THETA, RATIO * baseline)
 

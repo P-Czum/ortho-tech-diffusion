@@ -85,6 +85,8 @@ def main() -> int:
     ap.add_argument("--reuse", help="parquet z juz wyciagnietym tekstem — te PMID-y pomijamy")
     ap.add_argument("--out", required=True)
     ap.add_argument("--workers", type=int, default=8)
+    ap.add_argument("--year-min", type=int, default=YEAR_MIN)
+    ap.add_argument("--year-max", type=int, default=YEAR_MAX)
     args = ap.parse_args()
 
     if bool(args.field) == bool(args.journals):
@@ -115,7 +117,7 @@ def main() -> int:
         yr = pd.to_numeric(df["year"], errors="coerce")
         inb = (df["mesh_ui"].str.contains(pattern, regex=True, na=False) if pattern is not None
                else df["journal_nlm"].isin(jids))
-        sel = (yr >= YEAR_MIN) & (yr <= YEAR_MAX) & inb
+        sel = (yr >= args.year_min) & (yr <= args.year_max) & inb
         if reuse:
             sel &= ~df["pmid"].isin(reuse)
         if not sel.any():
@@ -126,7 +128,7 @@ def main() -> int:
         for p, y in zip(sub["pmid"], yr[sel].astype(int)):
             years[p] = int(y)
     n_target = sum(len(v) for v in by_src.values())
-    print(f"pole {YEAR_MIN}-{YEAR_MAX}: {n_target} rekordow w {len(by_src)} plikach", file=sys.stderr)
+    print(f"pole {args.year_min}-{args.year_max}: {n_target} rekordow w {len(by_src)} plikach", file=sys.stderr)
 
     src = Path(args.src)
     jobs = []
