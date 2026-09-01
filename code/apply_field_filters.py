@@ -64,6 +64,8 @@ def main() -> int:
     ap.add_argument("--field", required=True)
     ap.add_argument("--desc", required=True)
     ap.add_argument("--out", required=True)
+    ap.add_argument("--pole", help="parquet z kolumna pmid definiujacy pole "
+                                   "(domyslnie field_canon.parquet)")
     args = ap.parse_args()
 
     P = Path(args.parsed)
@@ -80,7 +82,8 @@ def main() -> int:
     C06_12_11 = {u for u, ts in ui2trees.items() if any(t.startswith(D5C_TREES) for t in ts)}
     print(f"A14+C07: {len(A14C07)} | C06+C12+C11: {len(C06_12_11)}", file=sys.stderr)
 
-    pole = set(pd.read_parquet(P / "field_canon.parquet", columns=["pmid"])["pmid"])
+    pole = set(pd.read_parquet(args.pole or (P / "field_canon.parquet"),
+                               columns=["pmid"])["pmid"])
     print(f"pole przed filtrami: {len(pole):,}", file=sys.stderr)
 
     t0 = time.time()
