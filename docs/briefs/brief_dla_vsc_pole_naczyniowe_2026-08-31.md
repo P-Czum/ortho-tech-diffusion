@@ -76,3 +76,75 @@ wypisz dosłownie, które z dziewięciu terminów kontrolnych zniknęły, a któ
 
 Git z mostka Coworku zostawia `.git/index.lock` (brak tożsamości git w tej maszynie, brak prawa
 usuwania). Nie ruszam go stamtąd. Do posprzątania: `_to_delete/` i `git gc`.
+
+---
+
+# UZUPEŁNIENIE tego samego wieczoru — audyt pozostałych 55 deskryptorów. Trzy kolejne wycieki
+
+Pełne liczby: `docs/protocol/scoping_log.md`, wpis „audyt pozostałych 55 deskryptorów", D5a–D5e.
+**Zrób to w tym samym przebiegu co D4 — nie ma sensu przeliczać pola dwa razy.**
+
+## Z5. Reguła D5a — stomatologia, strukturalna
+
+Pięć deskryptorów pola leży też w E06 lub E04.545: **D056948, D059546, D019340, D059229, D064728**.
+
+```
+(mesh_ui ∩ FIELD) ⊆ {D056948, D059546, D019340, D059229, D064728}   →  wyłącz
+```
+
+Oczekiwane: **6 178 rekordów (2,30%)**. Zgłoś, jeśli wyjdzie inaczej.
+
+Regułę wyprowadź **z drzew, nie z listy** — `any(t.startswith("E06") or t.startswith("E04.545")
+for t in trees)` — żeby przeżyła zmianę wersji MeSH i żeby dało się ją zapisać jednym zdaniem
+w Metodach.
+
+## Z6. Reguła D5b — dwa deskryptory mieszane, DO ZMIERZENIA, nie do przyjęcia w ciemno
+
+`Osteogenesis, Distraction` (D019857) i `Bone Transplantation` (D016025) mieszczą materiał
+ortopedyczny i twarzoczaszkowy. Moje liczby (49,5% i 26,1% twarzoczaszki) pochodzą z **sond
+słownych na tytułach** i są dolnym oszacowaniem, nie pomiarem — 45% i 66% próbek nie trafiło
+w żadną sondę.
+
+Proponowana reguła, **do zmierzenia przed przyjęciem**:
+
+```
+(mesh_ui ∩ FIELD) ⊆ {D019857, D016025}
+        AND
+mesh_ui zawiera deskryptor z poddrzewa A14 (Stomatognathic System)
+        lub C07 (Stomatognathic Diseases)
+```
+
+UI rozwiń sam z `desc2026.xml` — masz go, ja nie. **Zmierz rozdzielczość tak jak przy D4**:
+udział dokumentów kilku terminów kontrolnych w podzbiorze objętym regułą. Terminy do kontroli:
+`mandibular distraction osteogenesis`, `pierre robin sequence`, `dental implant`, `alveolar bone
+graft` po stronie obcej; `limb lengthening`, `nonunion`, `spinal fusion`, `bone graft` po
+stronie ortopedycznej. **Jeśli separacja nie wychodzi tak czysto jak przy D4 (obca ≥ 90%,
+ortopedyczna ≤ 5%) — nie wdrażaj, zgłoś liczby.**
+
+## Z7. Reguła D5c — homonim `Traction`, priorytet niski
+
+`Traction` (D014143) w MeSH oznacza fizyczne pojęcie wyciągu. 400 z 2 008 rekordów wchodzących
+wyłącznie tędy dotyczy narządów poza układem ruchu (`endoscopic submucosal dissection` 103
+na próbie, choroba Peyroniego 30).
+
+```
+(mesh_ui ∩ FIELD) = {D014143}
+        AND
+mesh_ui zawiera deskryptor z C06 (Digestive), C12 (Urogenital) lub C11 (Eye)
+```
+
+~0,15% pola. Zrób, jeśli tanie; jeśli nie — zgłoś jako nienaprawione i idziemy dalej.
+
+## Z8. Czego NIE ruszać
+
+- `Manipulation, Orthopedic` — 6,9% chiropraktyki, poniżej progu działania. Zostaje.
+- Pozostałe 30 deskryptorów ogona — sprawdzone, bez zastrzeżeń. Zostają.
+- **def2 zostaje bez zmian.** 3 czasopisma ze 137 są wątpliwe (`Head & face medicine`,
+  `Gait & posture`, `Journal of clinical densitometry`). Nie wycinaj ich — def2 ma być
+  **niezależną** definicją, a przycinanie jej pod def1 niszczy jej wartość jako kontroli.
+  Odnotuj w raporcie.
+
+## Kontrola łączna po D4 + D5a
+
+Pole 2005–2025: **268 383 → ok. 255 070** (−7 135 −6 178, minus ewentualne nakładanie się reguł
+— podaj dokładną liczbę i wielkość części wspólnej).

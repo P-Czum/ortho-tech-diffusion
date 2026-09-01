@@ -66,6 +66,7 @@ def main() -> int:
     ap.add_argument("--canon", required=True)
     ap.add_argument("--out", required=True)
     ap.add_argument("--min-occ", type=int, default=50)
+    ap.add_argument("--exclude", help="CSV z kolumna pmid — rekordy wylaczone z pola (D4)")
     ap.add_argument("--base", default="primary",
                     choices=["primary", "s1_title", "s2_abstract", "s3_english"])
     args = ap.parse_args()
@@ -77,6 +78,11 @@ def main() -> int:
           f"{len(phrases)} fraz", file=sys.stderr)
 
     df = pd.read_parquet(args.chunks)
+    if args.exclude:
+        wyl = set(pd.read_csv(args.exclude, dtype=str)["pmid"])
+        przed = len(df)
+        df = df[~df["pmid"].isin(wyl)]
+        print(f"D4: wylaczono {przed - len(df)} rekordow z {przed}", file=sys.stderr)
     n_field = len(df)
     if args.base == "s2_abstract":
         df = df[df["has_abstract"]]
