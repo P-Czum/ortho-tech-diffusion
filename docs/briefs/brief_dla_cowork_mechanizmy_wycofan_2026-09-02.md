@@ -86,3 +86,40 @@ martwe pole okna i trzeba je nazwać osobno.
 
 Manifest **12/12**. Materiał **76 grup**, zamknięty. Trzynaście wycofań sklasyfikowanych,
 zero nieprzypisanych.
+
+---
+
+# UZUPEŁNIENIE — korekta ortopedy: mechanizm a poziom, na którym działa
+
+Dopisane 2026-09-02 po uwadze: *„blokada udowa jest przyjęta, wyparcie dotyczy zainteresowania
+w literaturze"*.
+
+**Korekta sięga dalej niż jedna pozycja i osłabia nazewnictwo całej taksonomii.** Etykiety
+„porzucenie" i „wyparcie" brzmią jak fakty kliniczne, a praca deklaruje wprost, że mierzy
+**uwagę piśmienniczą, nie adopcję kliniczną**. Dodana kolumna `poziom`:
+
+| poziom | n | średnia trwałość 2021–22 | zakres |
+|---|---:|---:|---|
+| **praktyka** | **2** | 0,14 | 0,10–0,17 |
+| **piśmiennictwo** | **11** | 0,38 | 0,20–0,61 |
+
+**Tylko `mom total hip arthroplasty` i `hip resurfacing` są wycofaniami z praktyki** — implanty
+zniknęły z rynku. Pozostałe jedenaście to przesunięcia uwagi przy zachowanej praktyce: blokada
+udowa jest wykonywana, kifoplastyka ma 1 263 prace, metoda Ponsetiego jest standardem,
+panewka dwumobilna klinicznie rośnie.
+
+**Skutek dla tekstu, i jest korzystny.** Zdanie „trzynaście technologii wycofano" byłoby fałszywe
+i łatwe do obalenia jednym kontrprzykładem. Zdanie *„w trzynastu przypadkach uwaga piśmiennicza
+opadła, ale tylko w dwóch odpowiada to wycofaniu z praktyki; w pozostałych oznacza ustanie sporu,
+wchłonięcie przez następcę albo przejście do rutyny"* jest prawdziwe i mocniejsze.
+
+**Do dyskusji nasuwa się z tego obserwacja, której nie planowaliśmy:** spadek uwagi bywa oznaką
+sukcesu technologii, nie porażki. `ponseti method` (0,57) i `dual mobility cup` (0,61) mają
+najwyższą trwałość z całej trzynastki i obie wygrały — pisze się o nich mało właśnie dlatego,
+że nikt ich już nie kwestionuje.
+
+**Poziom rozdziela się też liczbowo, bez zachodzenia**: praktyka poniżej 0,20, piśmiennictwo
+powyżej. **Przy dwóch pozycjach po jednej stronie to nie waży nic** i tak trzeba to napisać —
+hipoteza do sprawdzenia na większym materiale, nie próg do stosowania. Ale ma wyjaśnienie:
+technologia znikająca z praktyki gaśnie do zera, bo nie ma czego badać; trwająca zostawia stały
+strumień kazuistyki, rejestrów i długich obserwacji, więc krzywa siada na plateau.
