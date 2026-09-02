@@ -153,6 +153,14 @@ def main() -> int:
         if (i + 1) % 50000 == 0:
             print(f"  {i+1:,}/{len(df):,} ({(time.time()-t0)/60:.1f} min)", file=sys.stderr)
 
+    # tlo: rozklad krajow w CALYM polu, rok po roku. Bez tego "90% Chiny" jest
+    # nieinterpretowalne — nie wiadomo, czy to koncentracja terminu, czy zwyczaj
+    # publikacyjny pola. Liczymy nadreprezentacje wzgledem tla z tych samych lat.
+    tlo = defaultdict(Counter)
+    for i in range(len(df)):
+        if kraj[i]:
+            tlo[yr[i]][kraj[i]] += 1
+
     den = json.loads(Path(args.denom).read_text(encoding="utf-8"))["by_year"]
     dv = np.array([den[str(y)] for y in YEARS], float)
     wyn = {g: wylonienie(cnt[gid[g]].astype(float), dv) for g in klucze}
@@ -185,15 +193,39 @@ def main() -> int:
         j_top, j_eff, _, j_name = concentration(cj[j])
         s = w.pop("_s")
         slope = dbl = float("nan")
+        powod = ""
         if w["y0"]:
             i0, ipk = YEARS.index(w["y0"]), YEARS.index(w["rok_szczytu"])
-            if ipk - i0 >= 2:
+            if ipk - i0 < 2:
+                powod = "szczyt < 2 lata po y0"
+            else:
                 xs, ys = np.arange(i0, ipk + 1), s[i0:ipk + 1]
                 m = ys > 0
-                if m.sum() >= 3:
+                if m.sum() < 3:
+                    powod = "mniej niz 3 lata dodatnie"
+                else:
                     slope = float(np.polyfit(xs[m], np.log(ys[m]), 1)[0])
                     if slope > 0:
                         dbl = float(np.log(2) / slope)
+                    else:
+                        powod = "nachylenie niedodatnie"
+            # Koncentracja wzgledna raportowana jako SAM ILORAZ nadreprezentacji kraju czolowego.
+        # Probowalem tez efektywnej liczby krajow wazonej nadreprezentacja, ale waga
+        # udzial * nadreprezentacja = p^2 / p_tla jest kwadratowa w udziale obserwowanym,
+        # wiec mierzy koncentracje podwojnie wazona, nie wzgledna, i zbiega do 1. Wycofane.
+        tlo_k = Counter()
+        if w["y0"]:
+            for y in range(w["y0"], YEARS[-1] + 1):
+                tlo_k.update(tlo.get(y, {}))
+        n_tlo = sum(tlo_k.values())
+        nadr = top_nadr = float("nan")
+        if n_tlo and ck[j]:
+            n_g = sum(ck[j].values())
+            udz = {c: v / n_g for c, v in ck[j].items()}
+            baz = {c: tlo_k.get(c, 0) / n_tlo for c in udz}
+            nadr = {c: (udz[c] / baz[c]) if baz[c] else float("nan") for c in udz}
+            top_nadr = float(nadr.get(k_name, float("nan")))
+
         rows.append({"grupa": g, "czlonow": len(czlonkowie[g]),
                      "czlony": " | ".join(czlonkowie[g]) if len(czlonkowie[g]) > 1 else "",
                      **w, "prac_od_y0": int(a_n),
@@ -203,7 +235,10 @@ def main() -> int:
                      "kraj_brak_pct": round(100 * brak[j] / max(k_n + brak[j], 1), 1),
                      "czasopismo_top_nlm": j_name, "czasopismo_top_pct": round(100 * j_top, 1),
                      "czasopismo_eff_n": round(j_eff, 1),
-                     "czas_podwojenia_lat": round(dbl, 1) if dbl == dbl else ""})
+                     "czas_podwojenia_lat": round(dbl, 1) if dbl == dbl else "",
+                     "powod_braku_podwojenia": powod,
+                     "kraj_tlo_pct": round(100 * tlo_k.get(k_name, 0) / n_tlo, 1) if n_tlo else "",
+                     "kraj_nadreprezentacja": round(top_nadr, 2) if top_nadr == top_nadr else ""})
 
     out = pd.DataFrame(rows).sort_values("prevalence_2021_2025_pct", ascending=False)
     out.to_csv(args.out, index=False, encoding="utf-8-sig", lineterminator="\n")

@@ -130,14 +130,26 @@ the part that cannot be verified; what is verifiable is already in the group.
 Canonicalisation expands abbreviations from a dictionary but cannot detect that the same string
 means something else elsewhere. The core holds 163 such abbreviations, 21 of them in the material.
 
-**Known risk of this rule, to be measured before the material is frozen.** Dropping an
-abbreviation is conservative for a term's presence but is *not* neutral for its `y₀` if the
-abbreviation's share of the term's documents changed over the observation window. If authors
-increasingly wrote "AI" rather than "artificial intelligence" as the field matured, dropping the
-abbreviation removes disproportionately many late documents and flattens the growth curve,
-biasing `y₀` late and the doubling time long. The abbreviation-only share must therefore be
-reported by year for every term this rule touches; if it is stable, the rule is safe, and if it
-trends, the affected terms need the abbreviation restored with its ambiguity declared.
+**An abbreviation may not remain a separate material item.** It enters merged with its full
+form, or it is excluded — never as a row of its own beside the full form. Measured reason: the
+share of a term's documents that use only the abbreviation *changes over the window*, from
+−5.3 to +3.0 percentage points per year across the abbreviations tested. Splitting the two forms
+therefore gives each an incomplete series whose `y₀` and doubling time drift in opposite
+directions. Eight abbreviations in the material are affected: `cda` (cervical disc arthroplasty)
+rises from 0.0% to 33.3% of that term's documents, `tdr` (total disc replacement) from 28.8% to
+50.2%, and `rcr`, `aci`, `psi`, `daa`, `taa`, `pkp` less steeply. Left as separate rows,
+`cervical disc arthroplasty` would lose a third of its recent documents and `total disc
+replacement` half. The synonym dictionary is therefore a safeguard on the primary quantities,
+not a cosmetic merge.
+
+**Risk of exclusion, measured and closed.** Dropping an abbreviation would bias `y₀` late and the
+doubling time long if the abbreviation's share grew over the window. Measured for every excluded
+abbreviation, it does not: `ai` falls 79.2% → 14.5% (−5.27 pp/year), `ka` 57.5% → 49.7%, `cr`
+flat. The `ai` fall has a substantive explanation — early "AI" in orthopaedics denoted
+*acetabular index*, and authors switched to the full form as artificial intelligence became a
+topic — so excluding it removes early foreign documents rather than late genuine ones. `ha` does
+rise (+2.95 pp/year), but neither hydroxyapatite nor hyaluronic acid is in the material, so no
+`y₀` is at stake. The rule is safe for every case it actually touches.
 
 ## 5. Decision tree (revised)
 

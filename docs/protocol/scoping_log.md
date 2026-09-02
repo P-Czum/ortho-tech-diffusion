@@ -313,3 +313,189 @@ do Ograniczeń wraz z liczbą.
 
 Pliki: `data/processed/pmid_tylko_naczyniowe.csv` (15 899),
 `data/processed/pmid_naczyniowe_scisle.csv` (7 135).
+
+---
+
+# 2026-08-31, dalej — audyt pozostałych 55 deskryptorów pola. Trzy kolejne wycieki (D5)
+
+Po wykryciu wycieku naczyniowego (D4) sprawdzono wszystkie 56 deskryptorów def1: ile rekordów
+wchodzi do pola **wyłącznie** przez każdy z nich, i o czym te rekordy są (najczęstsze frazy
+tytułowe oraz sondy słowne na próbach).
+
+## D5a. Stomatologia i chirurgia szczękowo-twarzowa — sygnał strukturalny, nie słowny
+
+Pięć deskryptorów pola należy **jednocześnie do poddrzewa stomatologicznego** — E06 (Dentistry)
+lub E04.545 (Oral Surgical Procedures):
+
+| deskryptor | drzewa |
+|---|---|
+| Orthognathic Surgical Procedures | E04.545.562; E04.555.580.289; **E06.645.562** |
+| Sinus Floor Augmentation | E04.545.668; E04.555.130.550; **E06.645.668** |
+| Osteotomy, Le Fort | E04.545.575; E04.555.580.580; **E06.645.575** |
+| Osteotomy, Sagittal Split Ramus | E04.545.637; E04.555.580.790; **E06.645.637** |
+| Alveolar Bone Grafting | E04.545.562.500; E04.555.580.289.500; **E06.645.562.124** |
+
+Są w poddrzewie ortopedycznym dlatego, że osteotomia i przeszczep kości to procedury wspólne
+anatomicznie — nie dlatego, że to ortopedia.
+
+**8 230 rekordów (3,07%) niesie któryś z nich; 6 178 (2,30%) wchodzi wyłącznie przez nie.**
+
+Potwierdzenie w tytułach: `Orthognathic Surgical Procedures` — `orthognathic surgery` (837 na
+próbie 2 516). `Sinus Floor Augmentation` — `maxillary sinus augmentation`, `sinus floor
+elevation`, `dental implants`. To implantologia stomatologiczna.
+
+## D5b. Ten sam wyciek bocznymi drzwiami — dwa deskryptory mieszane
+
+Nie da się ich rozstrzygnąć strukturalnie, bo mieszczą materiał ortopedyczny i twarzoczaszkowy:
+
+| deskryptor | wyłącznie tędy | twarzoczaszka | kończyny / ortopedia |
+|---|---:|---:|---:|
+| Osteogenesis, Distraction | 2 469 | **1 221 (49,5%)** | 136 (5,5%) |
+| Bone Transplantation | 10 104 | **2 641 (26,1%)** | 792 (7,8%) |
+
+`Osteogenesis, Distraction` to w połowie **dystrakcja żuchwy** i sekwencja Pierre'a Robina —
+`mandibular distraction osteogenesis` 235, `pierre robin sequence` 82 na próbie. Wydłużanie
+kończyn, czyli sens ortopedyczny, to 5,5%.
+
+**Ostrzeżenie metodologiczne:** te dwie liczby pochodzą z sond słownych na tytułach, nie
+z deskryptorów. Reszta (45,1% i 66,3%) nie trafiła w żadną sondę. To są **dolne oszacowania**,
+nie pomiary. Regułę trzeba oprzeć na współwystępowaniu deskryptorów (A14 / C07), a nie na
+słowach, i zmierzyć ją tak, jak zmierzono D4.
+
+## D5c. `Traction` — homonim, nie wyciek dziedzinowy
+
+MeSH `Traction` (D014143, E04.555.720) to **fizyczne pojęcie wyciągu**, nie wyciąg ortopedyczny.
+Na 2 008 rekordów wchodzących wyłącznie tędy:
+
+- **400 (19,9%)** dotyczy narządów poza układem ruchu — `endoscopic submucosal dissection`
+  (103 na próbie), choroba Peyroniego (30), zabiegi przełykowe, okulistyczne;
+- 347 (17,3%) to układ ruchu.
+
+**Terminów naczyniowych to nie tłumaczy, ale tłumaczy klasę śmieci innego rodzaju.** W skali pola
+to 0,15%, więc priorytet niski — ale jest to jedyny znaleziony przypadek, w którym deskryptor
+pola oznacza w MeSH co innego, niż zakłada nazwa dziedziny.
+
+## D5d. Sprawdzone i pozostawione bez zmian
+
+`Manipulation, Orthopedic` — 827 wyłącznie tędy, z tego **57 (6,9%)** to terapia manualna,
+chiropraktyka i osteopatia. Poniżej progu działania; odnotowane.
+
+Pozostałe 30 deskryptorów z ogona (Kyphoplasty, Tenotomy, Laminoplasty, Meniscectomy,
+Viscosupplementation, Acetabuloplasty i dalej) — łącznie poniżej 4% pola, każdy poniżej 0,4%,
+żaden nie wykazuje obcej dziedziny w tytułach. Bez zastrzeżeń.
+
+## D5e. Definicja alternatywna (def2, 137 czasopism) — praktycznie czysta
+
+Przesiew tytułów: 118 ze 137 zawiera słowo ortopedyczne. Z pozostałych 19 szesnaście to
+ortopedia w innym języku (`Acta ortopédica mexicana`, `Chirurgia narządów ruchu i ortopedia
+polska`, `Nihon Seikeigeka Gakkai zasshi`). Wątpliwe trzy:
+
+- **`Head & face medicine`** — chirurgia szczękowo-twarzowa. Ten sam wyciek co D5a, tą samą
+  drogą, w drugiej definicji. To wzmacnia D5a: nie jest artefaktem jednej definicji, tylko
+  granicą, którą obie odziedziczyły.
+- `Gait & posture` — biomechanika chodu, na pograniczu neurologii.
+- `Journal of clinical densitometry` — densytometria, bliżej endokrynologii.
+
+Trzy na 137 to 2,2% listy czasopism. Bez działania; do odnotowania w Ograniczeniach.
+
+## Skala łączna
+
+| wyciek | rekordów | % pola |
+|---|---:|---:|
+| naczyniowy (D4, reguła zmierzona) | 7 135 | 2,66% |
+| stomatologiczny strukturalny (D5a) | 6 178 | 2,30% |
+| stomatologiczny bocznymi drzwiami (D5b, dolne oszacowanie) | ≥ 3 862 | ≥ 1,44% |
+| homonim `Traction` (D5c) | ~400 | 0,15% |
+| **razem** | **≥ 17 575** | **≥ 6,5%** |
+
+Co najmniej jeden na piętnaście rekordów pola nie jest ortopedią. Po naprawie liczba idzie
+do Metod jako charakterystyka pola, a mechanizm — do Ograniczeń.
+
+---
+
+# 2026-09-02 — D6 (weterynaria), reguła skrótów, martwe pole detektora, MTIX zamknięty
+
+## D6. Piśmiennictwo weterynaryjne — największa z reguł pola
+
+Znalezione ubocznie przez VS Code przy pytaniu o narzędzia badawcze w materiale:
+**`tibial plateau leveling osteotomy` miało 66% prac o psach.** TPLO to zabieg na więzadło
+krzyżowe u psów; u ludzi się go nie wykonuje. Siedziało w materiale.
+
+> **D6.** Rekord wyłączony, jeżeli `mesh_ui` zawiera `Animals` (D000818) i **nie zawiera**
+> `Humans` (D006801).
+
+**11 749 rekordów, 3,95% pola — więcej niż D4 (2,62%) i D5a (2,15%).** Nakładanie się
+z pozostałymi regułami minimalne (D4 16, D5a 144, D5c 13).
+
+Walidacja: `cranial cruciate ligament` 97,1% w podzbiorze, `tplo` 94,9%, `tibial tuberosity
+advancement` 94,6% — wobec `total knee arthroplasty` 0,2% i `reverse shoulder arthroplasty` 0,0%.
+Trzy przekroczenia po stronie ortopedycznej (`polyetheretherketone` 10,2%, `spinal fusion` 10,8%,
+`locking plate` 5,1%) **nie są błędami reguły**, tylko prawdziwym udziałem badań zwierzęcych
+w tych tematach; reguła usuwa zwierzęcy ułamek terminu, nie termin.
+
+W odróżnieniu od D4 i D5b, D6 **nie wymagał testu progowego**, bo używa własnych znaczników
+kontrolnych NLM zamiast heurystyki współwystępowania.
+
+Skutek uboczny: `micro computed tomography` ma 61,4% prac zwierzęcych i wypada pod D6 — nie było
+więc pozycją do rozstrzygnięcia „czy warsztat badawczy wchodzi w zakres".
+
+## D7. Skróty dwu- i trzyliterowe — czwarte wystąpienie tego samego błędu
+
+Po `ml` = mililitry (Etap 1): `ha` (960 prac, brak dominanty — hydroksyapatyt 17,7%, kwas
+hialuronowy 14,3%, hip arthroplasty 28,6%), `cr` (21,9%), `ka` (31,5%), `ai` (41,1%, przy
+`acetabular index` 27,3%). `let` z 93,5% zostaje.
+
+Reguła spisana jako **§4a kodeksu v1.4**. Uzasadnienie odrzucenia jest lepsze niż pierwotne:
+grupa liczy dokumenty zawierające dowolny człon, więc skrót wnosi **wyłącznie** prace używające
+samego skrótu (67–93% jego dokumentów). Część weryfikowalna jest już w grupie; odrzucamy
+nieodzyskiwalną.
+
+**Skutek dla liczb podanych wcześniej: grupa AI/ML była zawyżona.** W rdzeniu 163 takie skróty,
+21 w materiale.
+
+**Ryzyko tej reguły, zgłoszone i jeszcze niezmierzone:** odrzucenie skrótu jest zachowawcze dla
+obecności terminu, ale nie jest neutralne dla `y₀`, jeżeli udział skrótu zmieniał się w czasie.
+Do zamknięcia przed zamrożeniem materiału (§4a v1.4).
+
+## Martwe pole detektora — nazwane, nie naprawione
+
+Przy rozstrzygnięciu, że biotechnologia wchodzi w zakres, okazało się, że nie wpuszcza to nic
+nowego, ale odsłania mechanizm:
+
+- **`platelet rich plasma`** — baza 2000–02 0,151%, próg 0,756%, szczyt 0,386% (2024).
+  Wzrosło dwukrotnie w dwadzieścia lat i weszło na plateau. **Detektor wykrywa starty, nie wzrost
+  stopniowy.**
+- **`bone morphogenetic protein`** — pełna krzywa wycofania (0,43% w 2010 → 0,09% w 2025,
+  −79%, zgodnie z kontrowersjami wokół INFUSE po 2011), ale nie wyłania się, bo **rosło przed
+  rokiem 2000**.
+
+To ten sam mechanizm co przy `hip resurfacing`, przesunięty o jedno okno. Zdanie do Metod,
+mocniejsze niż samo „okno zaczyna się w 2000": **przesuwanie okna przesuwa martwe pole,
+nie usuwa go.**
+
+## MTIX-2022 — sprawdzony, oś rankingu zostaje
+
+Nieciągłość jest realna i duża. Odsetek rekordów PubMedu z jakimkolwiek MeSH: 93,4% (2003) →
+56,4% (2025). Deskryptorów na rekord pola: stabilnie ~13 przez osiemnaście lat, **załamanie do
+8,70 w 2022**, powrót do 12,48 w 2025. Skład deskryptorów przesunął się systematycznie
+z ogólnych na szczegółowe (`Orthopedic Procedures` −2,94 pp, `Arthroplasty, Replacement, Knee`
++1,19 pp).
+
+**Ale przesunięcie nie przekłada się na ranking.** Korelacja ekspozycji terminu na zyskujące
+deskryptory z jego odchyleniem od trendu: Spearman 0,143 (p = 0,36), Pearson 0,126 (p = 0,42),
+n = 43. Korelacja osi obecności z osią przekroczenia progu rośnie po przejściu (0,862 → 0,916),
+więc zmiana osi niczego by nie naprawiła.
+
+**Oś i mianownik bez zmian; całość idzie do Ograniczeń z liczbami.** Zastrzeżenie VS Code przyjęte:
+43 terminy to mała moc i „nie zmierzyliśmy skrzywienia" nie znaczy „skrzywienia nie ma".
+
+## Sprostowanie
+
+Liczebników w 506 nowych frazach jest **72**, nie 86. Różnica to 14 fraz zawierających liczbę
+obok słowa, w większości prawdziwych terminów (`srs 22`, `sf 12`, `l4 5`, `95 confidence
+interval`, `minimum 2 year follow up`). Do tekstu idzie 72.
+
+## Materiał po D6
+
+132 kandydatów z obu ocen ortopedy → 110 po wyłączeniach → 82 po słowniku synonimów →
+**75 grup po scaleniu wariantów.**
