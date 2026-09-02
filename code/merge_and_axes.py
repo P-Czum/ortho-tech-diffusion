@@ -41,13 +41,16 @@ from detect_emergence import (  # noqa: E402
 from strength_axes import concentration, institution  # noqa: E402
 from affil_country import make_matcher  # noqa: E402
 
-YEARS = list(range(YEAR_MIN, YEAR_MAX + 1))
+# zakres i baza sa parametrami, bo skrypt biega na dwoch oknach (2005-2025 i 2000-2025);
+# import stalych dawalby ciche policzenie y0 na niewlasciwej bazie
+YEARS: list[int] = []
+BAZA: tuple[int, int] = (BASE_FROM, BASE_TO)
 
 
 def wylonienie(cnt: np.ndarray, den: np.ndarray) -> dict:
     """regula detektora na pojedynczym szeregu, bez zmian wobec detect_emergence.py"""
     s = cnt / den
-    baseline = float(s[YEARS.index(BASE_FROM):YEARS.index(BASE_TO) + 1].mean())
+    baseline = float(s[YEARS.index(BAZA[0]):YEARS.index(BAZA[1]) + 1].mean())
     thr = max(THETA, RATIO * baseline)
     above = (s >= thr) & (cnt >= MIN_PAPERS)
     y0 = None
@@ -72,7 +75,15 @@ def main() -> int:
               "--auth", "--denom", "--out"):
         ap.add_argument(a, required=True)
     ap.add_argument("--exclude")
+    ap.add_argument("--year-min", type=int, default=YEAR_MIN)
+    ap.add_argument("--year-max", type=int, default=YEAR_MAX)
+    ap.add_argument("--base-from", type=int, default=BASE_FROM)
+    ap.add_argument("--base-to", type=int, default=BASE_TO)
     args = ap.parse_args()
+    global YEARS, BAZA
+    YEARS = list(range(args.year_min, args.year_max + 1))
+    BAZA = (args.base_from, args.base_to)
+    print(f"okno {args.year_min}-{args.year_max}, baza {BAZA[0]}-{BAZA[1]}", file=sys.stderr)
 
     t0 = time.time()
     tab = pd.read_csv(args.terms, encoding="utf-8-sig")

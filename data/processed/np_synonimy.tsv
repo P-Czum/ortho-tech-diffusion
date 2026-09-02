@@ -124,3 +124,46 @@ fnb	femoral nerve block
 dcb	drug coated balloon
 ihot 12	hip outcome score activity
 hos adl	hip outcome score activity
+aci	autologous chondrocyte implantation
+tdr	total disc replacement
+pso	pedicle subtraction osteotomy
+pvp	vertebral augmentation
+psf	posterior lumbar fusion
+tplo	tibial plateau leveling osteotomy
+tjr	primary total joint arthroplasty
+tar	total ankle arthroplasty
+lcp	locking plate
+locking plate fixation	locking plate
+locked plating	locking plate
+ct image	ct imaging
+postoperative ct scan	ct imaging
+3d ct	ct imaging
+microcomputed tomography	micro computed tomography
+hip resurfacing arthroplasty	hip resurfacing
+vegf	vascular endothelial growth factor
+computer assisted navigation	computer navigation
+balloon kyphoplasty	kyphoplasty
+conventional total knee arthroplasty	primary total knee arthroplasty
+total hip arthroplasty surgery	primary total joint arthroplasty
+total hip and knee arthroplasty	primary total joint arthroplasty
+anterior cruciate ligament reconstruction surgery	primary anterior cruciate ligament reconstruction
+anatomic anterior cruciate ligament reconstruction	primary anterior cruciate ligament reconstruction
+oswestry disability index score	oswestry disability index
+visual analog score	visual analog scale
+visual analogue scale	visual analog scale
+mean vas score	visual analog scale
+dash score	dash
+hand score	dash
+aofas score	aofas
+tegner activity score	tegner score
+international knee documentation committee score	ikdc
+international knee documentation committee	ikdc
+american shoulder	american society
+sst	simple shoulder test
+hrqol	qol
+knee rom	rom
+postoperative rom	rom
+knee range	rom
+morbidly obese patient	morbid obesity
+obese patient	obesity
+female gender	female

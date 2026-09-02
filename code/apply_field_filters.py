@@ -9,6 +9,7 @@ Reguly sa filtrami NA REKORDACH. Poddrzewa 56 deskryptorow zadna nie zmienia.
   D5a stomatologia (mesh ∩ FIELD) ⊆ {deskryptory pola lezace tez w E06 lub E04.545}
   D5b mieszane     (mesh ∩ FIELD) ⊆ {D019857, D016025}  AND  mesh ∩ (A14 ∪ C07)
   D5c homonim      (mesh ∩ FIELD) == {D014143}          AND  mesh ∩ (C06 ∪ C12 ∪ C11)
+  D6  weterynaria  Animals (D000818) w mesh  AND  Humans (D006801) NIE w mesh
 
 D5a wyprowadzana Z DRZEW, nie z listy UI — przezyje zmiane wersji MeSH i zapisuje sie
 jednym zdaniem w Metodach.
@@ -37,6 +38,7 @@ D5B_BRAMA = {"D019857", "D016025"}
 D5B_TREES = ("A14", "C07")
 D5C_BRAMA = {"D014143"}
 D5C_TREES = ("C06", "C12", "C11")
+D6_HUMANS, D6_ANIMALS = "D006801", "D000818"
 
 
 def ui_by_tree(desc: Path, cache: Path) -> dict:
@@ -88,7 +90,7 @@ def main() -> int:
 
     t0 = time.time()
     f = pq.ParquetFile(P / "analytic_index.parquet")
-    hits = {"D4": [], "D5a": [], "D5b": [], "D5c": []}
+    hits = {"D4": [], "D5a": [], "D5b": [], "D5c": [], "D6": []}
     widziane = 0
     for g in range(f.metadata.num_row_groups):
         d = f.read_row_group(g, columns=["pmid", "mesh_ui"]).to_pandas()
@@ -107,16 +109,18 @@ def main() -> int:
                 hits["D5b"].append(pmid)
             if wf == D5C_BRAMA and (s & C06_12_11):
                 hits["D5c"].append(pmid)
+            if D6_ANIMALS in s and D6_HUMANS not in s:
+                hits["D6"].append(pmid)
         if (g + 1) % 400 == 0:
             print(f"  grupa {g+1}/{f.metadata.num_row_groups} "
                   f"({(time.time()-t0)/60:.1f} min)", file=sys.stderr)
 
     print(f"\nrekordow pola w indeksie: {widziane:,} z {len(pole):,}", file=sys.stderr)
     S = {k: set(v) for k, v in hits.items()}
-    for k in ["D4", "D5a", "D5b", "D5c"]:
+    for k in ["D4", "D5a", "D5b", "D5c", "D6"]:
         print(f"  {k}: {len(S[k]):,} ({100*len(S[k])/len(pole):.2f}% pola)", file=sys.stderr)
     print("\nczesci wspolne:", file=sys.stderr)
-    ks = ["D4", "D5a", "D5b", "D5c"]
+    ks = ["D4", "D5a", "D5b", "D5c", "D6"]
     for i, a in enumerate(ks):
         for b in ks[i+1:]:
             n = len(S[a] & S[b])

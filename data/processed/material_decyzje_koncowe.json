@@ -1,0 +1,24 @@
+{
+ "wieloznaczne_skroty": [
+  "ha",
+  "cr",
+  "ka",
+  "ai"
+ ],
+ "powiklania": [
+  "armd",
+  "squeaking"
+ ],
+ "warsztat_badawczy": [
+  "finite element analysis",
+  "fea"
+ ],
+ "dodane_propozycja_vsc": {
+  "microfracture": "technika",
+  "mimic software": "technologia",
+  "mesenchymal stem cell": "technologia"
+ },
+ "synonim_dodany": {
+  "cervical arthroplasty": "cervical disc arthroplasty"
+ }
+}

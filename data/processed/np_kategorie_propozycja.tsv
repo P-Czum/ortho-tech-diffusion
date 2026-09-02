@@ -367,3 +367,278 @@ mom total hip arthroplasty	technologia
 all prom	skala
 mhh	skala
 vas score	skala
+sex	czynnik
+visual analog scale	skala
+stay	wynik
+rom	parametr
+visual analogue scale	skala
+primary total knee arthroplasty	technika
+higher rate	wynik
+higher risk	wynik
+oswestry disability index	skala
+complete description	artefakt
+open reduction internal fixation	technika
+female	czynnik
+anterior cervical discectomy fusion	technika
+adverse event	wynik
+unicompartmental knee arthroplasty	technika
+knee osteoarthritis	rozpoznanie
+hip arthroscopy	technika
+finite element analysis	technologia
+obesity	czynnik
+utilization	organizacja
+aofas	skala
+clinical and radiological outcome	wynik
+american society	skala
+ikdc	skala
+surgical time	wynik
+ais	rozpoznanie
+surgical complication	wynik
+transforaminal lumbar interbody fusion	technika
+oxford knee score	skala
+rsa	niejasne
+anesthesiologist	organizacja
+clinical effect	wynik
+arthroscopic rotator cuff repair	technika
+pt	niejasne
+osteoporotic vertebral compression fracture	rozpoznanie
+surgical fixation	technika
+implant survival	wynik
+decision making	organizacja
+prosthetic joint infection	rozpoznanie
+anxiety	rozpoznanie
+joa score	skala
+psf	technika
+neck disability index	skala
+emergency department	organizacja
+locking plate	technologia
+american shoulder	skala
+aofas score	skala
+older adult	czynnik
+proximal humerus fracture	rozpoznanie
+constant murley score	skala
+elbow surgeon	organizacja
+ucla	skala
+international knee documentation committee	skala
+adverse outcome	wynik
+knee range	parametr
+ct image	technologia
+clinical decision making	organizacja
+adjacent segment disease	rozpoznanie
+incision length	wynik
+clinical and functional outcome	wynik
+obese patient	czynnik
+pvp	technika
+dash	skala
+qol	skala
+greater improvement	wynik
+incidence rate	wynik
+worse outcome	wynik
+dysphagia	rozpoznanie
+total hip and knee arthroplasty	technika
+barrier	organizacja
+total blood loss	wynik
+adjacent segment degeneration	rozpoznanie
+pcs	skala
+oxford hip score	skala
+tegner score	skala
+mayo elbow performance score	skala
+adoption	organizacja
+ps	niejasne
+robotic	technologia
+excellent and good rate	wynik
+medical comorbidity	czynnik
+knee stability	wynik
+revision anterior cruciate ligament reconstruction	technika
+womac score	skala
+lumbar fusion surgery	technika
+harris score	skala
+longer operative time	wynik
+satisfactory clinical outcome	wynik
+radiographic and clinical outcome	wynik
+superior outcome	wynik
+forward flexion	parametr
+cement leakage	rozpoznanie
+implant positioning	parametr
+hva	parametr
+biomechanical performance	wynik
+von mise	parametr
+ima	parametr
+better clinical outcome	wynik
+dash score	skala
+patient safety	organizacja
+postoperative delirium	rozpoznanie
+anterior cruciate ligament reconstruction surgery	technika
+anemia	rozpoznanie
+kyphoplasty	technika
+intraoperative fluoroscopy	technologia
+video	artefakt
+femoroacetabular impingement	rozpoznanie
+micro	artefakt
+surgery time	wynik
+hrqol	skala
+respectively p	artefakt
+clinical effectiveness	wynik
+favorable clinical outcome	wynik
+glenoid bone loss	rozpoznanie
+lss	rozpoznanie
+ebl	wynik
+postoperative improvement	wynik
+prescription	organizacja
+postoperative pain score	skala
+conventional total knee arthroplasty	technika
+implant related complication	wynik
+surgeon experience	organizacja
+postoperative ct scan	technologia
+tar	technika
+similar improvement	wynik
+polyetheretherketone	technologia
+fatty infiltration	rozpoznanie
+hand score	skala
+pf	skala
+definitive fixation	technika
+simple shoulder test	skala
+corrective surgery	technika
+functional outcome score	skala
+t0	artefakt
+sst	skala
+ir	niejasne
+forward elevation	parametr
+tegner activity score	skala
+rib fracture	rozpoznanie
+laterality	czynnik
+devastating complication	wynik
+labral repair	technika
+implant position	parametr
+ct imaging	technologia
+similar clinical outcome	wynik
+er	parametr
+lcp	technologia
+end stage osteoarthritis	rozpoznanie
+patient experience	organizacja
+back and leg pain	rozpoznanie
+female gender	czynnik
+pff	rozpoznanie
+socioeconomic status	organizacja
+knee flexion angle	parametr
+increased cost	organizacja
+increased complication	wynik
+qaly	organizacja
+mean vas score	skala
+pso	technika
+excellent clinical outcome	wynik
+visual analog score	skala
+decreased risk	wynik
+mean operation time	wynik
+glenohumeral osteoarthritis	rozpoznanie
+pivot shift test	parametr
+preoperative imaging	technologia
+component positioning	parametr
+improved clinical outcome	wynik
+average operation time	wynik
+quality adjusted life year	organizacja
+hip joint function	wynik
+clavicle fracture	rozpoznanie
+vertebral augmentation	technika
+higher likelihood	wynik
+veteran	organizacja
+white	organizacja
+ht	niejasne
+postoperative imaging	technologia
+noise	artefakt
+functional and radiological outcome	wynik
+weight loss	wynik
+inflammatory marker	parametr
+any revision	wynik
+cta	technologia
+usual care	organizacja
+pelvic fixation	technika
+increased age	czynnik
+fe	artefakt
+short term clinical outcome	wynik
+tplo	technika
+oswestry disability index score	skala
+lower limb alignment	parametr
+perioperative care	organizacja
+morbid obesity	czynnik
+postoperative rom	parametr
+non surgical treatment	technika
+degenerative lumbar disease	rozpoznanie
+poor clinical outcome	wynik
+national institute	organizacja
+specialty	organizacja
+asia	organizacja
+any reoperation	wynik
+incremental cost effectiveness ratio	organizacja
+resource utilization	organizacja
+patient comorbidity	czynnik
+alpha angle	parametr
+knee rom	parametr
+3d ct	technologia
+total hip arthroplasty surgery	technika
+outpatient surgery	organizacja
+postoperative dysphagia	rozpoznanie
+medial patellofemoral ligament reconstruction	technika
+acromiohumeral distance	parametr
+implant size	parametr
+pedicle subtraction osteotomy	technika
+pl	artefakt
+varus knee	rozpoznanie
+total knee arthroplasty outcome	wynik
+foot and ankle surgery	organizacja
+international knee documentation committee score	skala
+surgical training	organizacja
+pauwel	parametr
+posterior lumbar fusion	technika
+minimally invasive plate osteosynthesis	technika
+play	artefakt
+highly cross linked polyethylene	technologia
+computer navigation	technologia
+lt	artefakt
+blood transfusion rate	wynik
+recurrent anterior shoulder instability	rozpoznanie
+tpa	parametr
+cg	artefakt
+micro computed tomography	technologia
+locking plate fixation	technika
+ultrasound guidance	technologia
+augment	artefakt
+balloon kyphoplasty	technika
+tendon healing	wynik
+distal humerus fracture	rozpoznanie
+computer assisted navigation	technologia
+ponseti method	technika
+payer	organizacja
+malreduction	rozpoznanie
+morbidly obese patient	czynnik
+sagittal imbalance	rozpoznanie
+posterior malleolar fracture	rozpoznanie
+mris	technologia
+tibial plateau leveling osteotomy	technika
+conventional instrumentation	technologia
+institutional review board approval	organizacja
+tjr	technika
+autologous chondrocyte implantation	technika
+vcf	rozpoznanie
+am	artefakt
+cartilage injury	rozpoznanie
+footprint	parametr
+wale	artefakt
+hip resurfacing	technika
+tdr	technika
+component alignment	parametr
+hip resurfacing arthroplasty	technika
+aci	technika
+ddd	rozpoznanie
+pseudotumor	rozpoznanie
+direct cost	organizacja
+vegf	technologia
+anatomic anterior cruciate ligament reconstruction	technika
+total disc replacement	technika
+vascular endothelial growth factor	technologia
+microcomputed tomography	technologia
+locked plating	technika
+single bundle	technika
+double bundle reconstruction	technika
+dabigatran	lek
+january	artefakt
