@@ -1,0 +1,20 @@
+{
+  "ai":  ["artificial intelligence","machine learning","machine learning model","deep learning","random forest"],
+  "ka":  ["kinematic alignment"],
+  "ha":  ["hydroxyapatite","hyaluronic acid"],
+  "cr":  ["cruciate retaining"],
+  "let": ["lateral extra articular tenodesis"],
+  "psi": ["patient specific instrumentation"],
+  "daa": ["direct anterior approach"],
+  "pkp": ["percutaneous kyphoplasty"],
+  "aci": ["autologous chondrocyte implantation"],
+  "tdr": ["total disc replacement"],
+  "lcp": ["locking plate"],
+  "cda": ["cervical disc arthroplasty"],
+  "taa": ["total ankle arthroplasty"],
+  "rcr": ["arthroscopic rotator cuff repair"],
+  "acb": ["adductor canal block"],
+  "fnb": ["femoral nerve block"],
+  "olif":["oblique lumbar interbody fusion"],
+  "peld":["percutaneous endoscopic lumbar discectomy"]
+}
