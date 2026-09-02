@@ -66,6 +66,13 @@ def wylonienie(cnt: np.ndarray, den: np.ndarray) -> dict:
             "prevalence_2021_2025_pct": round(100 * cnt[sel].sum() / den[sel].sum(), 3),
             "docs_total": int(cnt.sum()),
             "trwalosc_2025_do_szczytu": round(float(s[-1] / s[ipk]), 2) if s[ipk] else None,
+            # Odpornosc na cienkie lata indeksowania: spadek przed przejsciem na MTIX
+            # (2021-2022) kontra po nim (2023-2025). Jesli wycofanie widac tylko po,
+            # moze mierzyc indeksowanie, nie technologie.
+            "trwalosc_2021_2022": round(float(s[YEARS.index(2021):YEARS.index(2022) + 1].mean()
+                                              / s[ipk]), 2) if s[ipk] else None,
+            "trwalosc_2023_2025": round(float(s[YEARS.index(2023):YEARS.index(2025) + 1].mean()
+                                              / s[ipk]), 2) if s[ipk] else None,
             "_s": s}
 
 

@@ -9,10 +9,7 @@
   "armd",
   "squeaking"
  ],
- "warsztat_badawczy": [
-  "finite element analysis",
-  "fea"
- ],
+ "warsztat_badawczy": [],
  "dodane_propozycja_vsc": {
   "microfracture": "technika",
   "mimic software": "technologia",
@@ -20,5 +17,12 @@
  },
  "synonim_dodany": {
   "cervical arthroplasty": "cervical disc arthroplasty"
+ },
+ "fea_przywrocone": {
+  "powod": "decyzja Przemka 2026-09-02: badamy technologie w ortopedii, FEA spelnia ten warunek jako metoda obliczeniowa (kodeks v1.3)",
+  "terminy": [
+   "finite element analysis",
+   "fea"
+  ]
  }
 }
