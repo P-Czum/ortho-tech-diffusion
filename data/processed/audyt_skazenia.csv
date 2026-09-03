@@ -1,0 +1,61 @@
+﻿grupa,prac,stomatologia,trawienny,moczowoplciowy,oko,sercowonaczyniowy,nerwowy,nowotwory,zwierzeta_bez_ludzi,max_obca,dziedzina_max,max_obca_scisle,dziedzina_scisle
+mimic software,165,11.5,0.0,0.0,0.0,0.6,6.1,0.6,0.0,11.5,stomatologia,11.5,stomatologia
+anterior cervical discectomy fusion,1928,1.1,8.6,0.1,0.2,1.2,26.5,0.3,0.0,26.5,nerwowy,8.6,trawienny
+3d printing,476,8.2,0.0,0.4,0.4,0.0,3.8,8.0,0.0,8.2,stomatologia,8.2,stomatologia
+finite element analysis,1504,7.7,0.0,0.1,0.0,0.1,4.1,1.3,0.0,7.7,stomatologia,7.7,stomatologia
+mesenchymal stem cell,473,7.4,0.0,0.0,0.0,0.2,2.1,2.1,0.0,7.4,stomatologia,7.4,stomatologia
+augmented reality,148,6.1,0.0,0.0,0.0,0.0,3.4,0.7,0.0,6.1,stomatologia,6.1,stomatologia
+dual mobility cup,221,5.4,0.0,0.0,0.0,0.5,2.3,2.3,0.0,5.4,stomatologia,5.4,stomatologia
+short stem,258,5.0,0.4,0.0,0.0,0.4,0.0,1.2,0.0,5.0,stomatologia,5.0,stomatologia
+direct anterior approach,783,0.1,3.4,0.0,0.0,1.5,4.1,0.3,0.0,4.1,nerwowy,3.4,trawienny
+hip resurfacing,794,3.3,0.0,0.1,0.0,1.6,0.9,1.0,0.0,3.3,stomatologia,3.3,stomatologia
+cervical disc arthroplasty,384,1.0,2.3,0.0,0.0,0.3,16.4,0.3,0.0,16.4,nerwowy,2.3,trawienny
+highly cross linked polyethylene,256,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,stomatologia,2.0,stomatologia
+computer navigation,684,1.9,0.0,0.0,0.0,1.2,1.0,2.9,0.0,2.9,nowotwory,1.9,stomatologia
+adult spinal deformity surgery,440,0.0,1.6,0.7,0.0,2.0,3.0,0.0,0.0,3.0,nerwowy,1.6,trawienny
+electronic medical record,439,1.4,0.5,1.6,0.0,4.3,7.5,3.9,0.0,7.5,nerwowy,1.6,moczowoplciowy
+polyetheretherketone,326,0.9,1.5,0.0,0.3,0.3,6.1,3.1,0.0,6.1,nerwowy,1.5,trawienny
+kyphoplasty,1263,1.3,0.4,1.3,0.0,7.5,4.2,13.7,0.0,13.7,nowotwory,1.3,stomatologia
+unicompartmental knee arthroplasty,2051,1.3,0.0,0.0,0.0,1.3,0.4,0.2,0.0,1.3,stomatologia,1.3,stomatologia
+total elbow arthroplasty,321,1.2,0.3,0.3,0.0,2.5,2.2,0.3,0.0,2.5,sercowonaczyniowy,1.2,stomatologia
+patient specific instrumentation,569,1.2,0.0,0.2,0.0,0.7,0.4,2.1,0.0,2.1,nowotwory,1.2,stomatologia
+adductor canal block,332,1.2,0.0,0.3,0.0,0.9,3.3,0.0,0.0,3.3,nerwowy,1.2,stomatologia
+femoral nerve block,188,1.1,0.0,0.5,0.0,1.1,4.3,0.0,0.0,4.3,nerwowy,1.1,stomatologia
+artificial intelligence / machine learning,618,1.1,0.0,0.6,0.0,1.1,2.4,1.0,0.0,2.4,nerwowy,1.1,stomatologia
+oblique lumbar interbody fusion,402,0.0,0.2,1.0,0.0,3.0,3.5,0.7,0.0,3.5,nerwowy,1.0,moczowoplciowy
+total disc replacement,438,0.0,0.9,0.2,0.2,1.4,7.1,0.2,0.0,7.1,nerwowy,0.9,trawienny
+manipulation under anesthesia,242,0.8,0.4,0.4,0.0,1.7,2.1,1.2,0.0,2.1,nerwowy,0.8,stomatologia
+mom total hip arthroplasty,119,0.8,0.0,0.0,0.0,2.5,1.7,0.8,0.0,2.5,sercowonaczyniowy,0.8,stomatologia
+vertebral augmentation,886,0.2,0.1,0.7,0.0,5.5,3.5,15.7,0.0,15.7,nowotwory,0.7,moczowoplciowy
+locking plate,1574,0.7,0.0,0.4,0.0,0.3,2.1,1.5,0.0,2.1,nerwowy,0.7,stomatologia
+robotic assistance,679,0.6,0.0,0.1,0.0,0.3,1.0,0.1,0.0,1.0,nerwowy,0.6,stomatologia
+ultrasound guidance,194,0.5,0.0,0.5,0.0,2.6,10.3,3.1,0.0,10.3,nerwowy,0.5,stomatologia
+percutaneous kyphoplasty,573,0.3,0.3,0.5,0.2,3.8,3.3,5.1,0.0,5.1,nowotwory,0.5,moczowoplciowy
+cephalomedullary nail,216,0.0,0.0,0.5,0.0,0.0,0.0,0.9,0.0,0.9,nowotwory,0.5,moczowoplciowy
+lateral extra articular tenodesis,213,0.5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.5,stomatologia,0.5,stomatologia
+hip arthroscopy,2101,0.0,0.0,0.4,0.0,1.6,2.1,1.5,0.0,2.1,nerwowy,0.4,moczowoplciowy
+lateral lumbar interbody fusion,455,0.0,0.4,0.0,0.0,2.2,6.8,0.9,0.0,6.8,nerwowy,0.4,trawienny
+minimally invasive plate osteosynthesis,273,0.0,0.0,0.4,0.0,1.5,6.6,0.7,0.0,6.6,nerwowy,0.4,moczowoplciowy
+pedicle subtraction osteotomy,465,0.2,0.4,0.2,0.0,0.9,6.7,1.7,0.0,6.7,nerwowy,0.4,trawienny
+reverse shoulder arthroplasty,2069,0.3,0.0,0.1,0.0,0.7,2.9,1.1,0.0,2.9,nerwowy,0.3,stomatologia
+ponseti method,324,0.3,0.0,0.3,0.3,0.3,3.4,0.0,0.0,3.4,nerwowy,0.3,stomatologia
+motor evoked potential,592,0.3,0.0,0.3,0.0,0.3,10.0,1.2,0.0,10.0,nerwowy,0.3,stomatologia
+percutaneous endoscopic lumbar discectomy,383,0.0,0.3,0.3,0.0,0.5,9.1,1.3,0.0,9.1,nerwowy,0.3,trawienny
+transforaminal lumbar interbody fusion,1234,0.0,0.2,0.1,0.1,0.8,6.6,0.4,0.0,6.6,nerwowy,0.2,trawienny
+periacetabular osteotomy,404,0.0,0.0,0.2,0.0,0.5,3.0,1.2,0.0,3.0,nerwowy,0.2,moczowoplciowy
+total ankle arthroplasty,853,0.1,0.1,0.2,0.1,0.7,0.8,1.5,0.0,1.5,nowotwory,0.2,moczowoplciowy
+arthroscopic rotator cuff repair,1390,0.1,0.1,0.1,0.0,1.2,3.7,0.6,0.0,3.7,nerwowy,0.1,stomatologia
+targeted muscle reinnervation,146,0.0,0.0,0.0,0.0,1.4,46.6,34.9,0.0,46.6,nerwowy,0.0,stomatologia
+latarjet procedure,327,0.0,0.0,0.0,0.0,0.6,5.5,0.6,0.0,5.5,nerwowy,0.0,stomatologia
+labral repair,324,0.0,0.0,0.0,0.0,0.6,2.5,3.7,0.0,3.7,nowotwory,0.0,stomatologia
+volar locking plate,363,0.0,0.0,0.0,0.0,0.0,2.8,0.3,0.0,2.8,nerwowy,0.0,stomatologia
+proximal femoral nail antirotation,308,0.0,0.0,0.0,0.0,1.6,1.0,0.3,0.0,1.6,sercowonaczyniowy,0.0,stomatologia
+microfracture,388,0.0,0.0,0.0,0.0,0.3,0.5,1.8,0.0,1.8,nowotwory,0.0,stomatologia
+open wedge high tibial osteotomy,600,0.0,0.0,0.0,0.0,1.2,0.3,0.0,0.0,1.2,sercowonaczyniowy,0.0,stomatologia
+revision anterior cruciate ligament reconstruction,457,0.0,0.0,0.0,0.0,0.7,0.2,0.2,0.0,0.7,sercowonaczyniowy,0.0,stomatologia
+autologous chondrocyte implantation,402,0.0,0.0,0.0,0.0,0.0,0.2,0.7,0.0,0.7,nowotwory,0.0,stomatologia
+femoral neck system,156,0.0,0.0,0.0,0.0,0.0,0.6,0.0,0.0,0.6,nerwowy,0.0,stomatologia
+medial patellofemoral ligament reconstruction,253,0.0,0.0,0.0,0.0,0.0,0.4,0.0,0.0,0.4,nerwowy,0.0,stomatologia
+anterolateral ligament,158,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,stomatologia,0.0,stomatologia
+kinematic alignment,164,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,stomatologia,0.0,stomatologia
+double bundle reconstruction,139,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,stomatologia,0.0,stomatologia
