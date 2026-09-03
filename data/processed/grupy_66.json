@@ -1,0 +1,231 @@
+{
+ "reverse shoulder arthroplasty": [
+  "reverse total shoulder arthroplasty",
+  "reverse shoulder arthroplasty",
+  "primary reverse total shoulder arthroplasty"
+ ],
+ "direct anterior approach": [
+  "direct anterior approach",
+  "daa"
+ ],
+ "lateral lumbar interbody fusion": [
+  "lateral lumbar interbody fusion"
+ ],
+ "total ankle arthroplasty": [
+  "taa",
+  "tar"
+ ],
+ "oblique lumbar interbody fusion": [
+  "olif",
+  "oblique lumbar interbody fusion"
+ ],
+ "percutaneous kyphoplasty": [
+  "percutaneous kyphoplasty",
+  "pkp"
+ ],
+ "motor evoked potential": [
+  "mep"
+ ],
+ "electronic medical record": [
+  "electronic medical record"
+ ],
+ "artificial intelligence / machine learning": [
+  "artificial intelligence",
+  "machine learning",
+  "machine learning model",
+  "random forest"
+ ],
+ "robotic assistance": [
+  "robotic assisted total knee arthroplasty",
+  "robotic assistance"
+ ],
+ "medial unicompartmental knee arthroplasty": [
+  "medial unicompartmental knee arthroplasty"
+ ],
+ "3d printing": [
+  "3d printing",
+  "3d printing technology"
+ ],
+ "periacetabular osteotomy": [
+  "pao"
+ ],
+ "cone beam computed tomography": [
+  "cbct",
+  "cone beam computed tomography"
+ ],
+ "primary hip arthroscopy": [
+  "primary hip arthroscopy"
+ ],
+ "patient specific instrumentation": [
+  "psi",
+  "patient specific instrumentation"
+ ],
+ "adult spinal deformity surgery": [
+  "asd surgery",
+  "adult spinal deformity surgery"
+ ],
+ "adductor canal block": [
+  "adductor canal block",
+  "acb"
+ ],
+ "latarjet procedure": [
+  "latarjet procedure"
+ ],
+ "open wedge high tibial osteotomy": [
+  "owhto",
+  "open wedge high tibial osteotomy",
+  "mowhto"
+ ],
+ "percutaneous endoscopic lumbar discectomy": [
+  "percutaneous endoscopic lumbar discectomy",
+  "peld"
+ ],
+ "femoral neck system": [
+  "fns",
+  "femoral neck system"
+ ],
+ "cervical disc arthroplasty": [
+  "cda",
+  "cervical disc arthroplasty"
+ ],
+ "lateral extra articular tenodesis": [
+  "lateral extra articular tenodesis",
+  "let"
+ ],
+ "volar locking plate": [
+  "volar locking plate"
+ ],
+ "manipulation under anesthesia": [
+  "mua"
+ ],
+ "total elbow arthroplasty": [
+  "tea"
+ ],
+ "proximal femoral nail antirotation": [
+  "pfna"
+ ],
+ "augmented reality": [
+  "augmented reality"
+ ],
+ "cephalomedullary nail": [
+  "cephalomedullary nail"
+ ],
+ "short stem": [
+  "short stem"
+ ],
+ "targeted muscle reinnervation": [
+  "targeted muscle reinnervation"
+ ],
+ "kinematic alignment": [
+  "kinematic alignment"
+ ],
+ "oblique lateral interbody fusion": [
+  "oblique lateral interbody fusion"
+ ],
+ "dual mobility cup": [
+  "dual mobility cup"
+ ],
+ "anterolateral ligament": [
+  "anterolateral ligament"
+ ],
+ "femoral nerve block": [
+  "fnb"
+ ],
+ "mom total hip arthroplasty": [
+  "mom total hip arthroplasty"
+ ],
+ "anterior cervical discectomy fusion": [
+  "anterior cervical discectomy fusion"
+ ],
+ "unicompartmental knee arthroplasty": [
+  "unicompartmental knee arthroplasty"
+ ],
+ "hip arthroscopy": [
+  "hip arthroscopy"
+ ],
+ "transforaminal lumbar interbody fusion": [
+  "transforaminal lumbar interbody fusion"
+ ],
+ "arthroscopic rotator cuff repair": [
+  "arthroscopic rotator cuff repair"
+ ],
+ "locking plate": [
+  "locking plate",
+  "lcp",
+  "locked plating"
+ ],
+ "vertebral augmentation": [
+  "pvp",
+  "vertebral augmentation"
+ ],
+ "robotic": [
+  "robotic"
+ ],
+ "revision anterior cruciate ligament reconstruction": [
+  "revision anterior cruciate ligament reconstruction"
+ ],
+ "kyphoplasty": [
+  "kyphoplasty",
+  "balloon kyphoplasty"
+ ],
+ "polyetheretherketone": [
+  "polyetheretherketone"
+ ],
+ "labral repair": [
+  "labral repair"
+ ],
+ "pedicle subtraction osteotomy": [
+  "pso",
+  "pedicle subtraction osteotomy"
+ ],
+ "cta": [
+  "cta"
+ ],
+ "medial patellofemoral ligament reconstruction": [
+  "medial patellofemoral ligament reconstruction"
+ ],
+ "minimally invasive plate osteosynthesis": [
+  "minimally invasive plate osteosynthesis"
+ ],
+ "highly cross linked polyethylene": [
+  "highly cross linked polyethylene"
+ ],
+ "computer navigation": [
+  "computer navigation",
+  "computer assisted navigation"
+ ],
+ "ultrasound guidance": [
+  "ultrasound guidance"
+ ],
+ "ponseti method": [
+  "ponseti method"
+ ],
+ "autologous chondrocyte implantation": [
+  "autologous chondrocyte implantation",
+  "aci"
+ ],
+ "hip resurfacing": [
+  "hip resurfacing",
+  "hip resurfacing arthroplasty"
+ ],
+ "total disc replacement": [
+  "tdr",
+  "total disc replacement"
+ ],
+ "double bundle reconstruction": [
+  "double bundle reconstruction"
+ ],
+ "microfracture": [
+  "microfracture"
+ ],
+ "mimic software": [
+  "mimic software"
+ ],
+ "mesenchymal stem cell": [
+  "mesenchymal stem cell"
+ ],
+ "finite element analysis": [
+  "finite element analysis",
+  "fea"
+ ]
+}

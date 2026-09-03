@@ -1,0 +1,229 @@
+﻿grupa,rok_szczytu,powiklanie,y0_powiklania,wyprzedzenie_lat,wyprzedza,prac_grupy,prac_powiklania,wspolnych,krotnosc,pasmo
+adult spinal deformity surgery,2025,adult spinal deformity,2013,-12,True,440,833,286,211.7,bez zaniku
+adult spinal deformity surgery,2025,pjf,2021,-4,True,440,140,44,193.8,bez zaniku
+adult spinal deformity surgery,2025,proximal junctional failure,2021,-4,True,440,150,44,180.9,bez zaniku
+adult spinal deformity surgery,2025,pjk,2016,-9,True,440,354,85,148.1,bez zaniku
+adult spinal deformity surgery,2025,proximal junctional kyphosis,2015,-10,True,440,488,98,123.8,bez zaniku
+adult spinal deformity surgery,2025,asd,2013,-12,True,440,1202,212,108.8,bez zaniku
+adult spinal deformity surgery,2025,frailty,2021,-4,True,440,259,16,38.1,bez zaniku
+adult spinal deformity surgery,2025,sagittal imbalance,2018,-7,True,440,253,6,14.6,bez zaniku
+anatomic total shoulder arthroplasty,2025,glenohumeral osteoarthritis,2020,-5,True,496,232,54,127.3,bez zaniku
+anatomic total shoulder arthroplasty,2025,glenoid bone loss,2014,-11,True,496,319,7,12.0,bez zaniku
+anatomic total shoulder arthroplasty,2025,scapular notching,2013,-12,True,496,285,5,9.6,bez zaniku
+anterior cervical discectomy fusion,2025,postoperative dysphagia,2021,-4,True,1928,192,98,71.8,bez zaniku
+anterior cervical discectomy fusion,2025,dysphagia,2016,-9,True,1928,651,245,53.0,bez zaniku
+anterior cervical discectomy fusion,2025,adjacent segment degeneration,2004,-21,True,1928,682,142,29.3,bez zaniku
+anterior cervical discectomy fusion,2025,adjacent segment disease,2010,-15,True,1928,640,99,21.8,bez zaniku
+anterior cervical discectomy fusion,2025,cage subsidence,2017,-8,True,1928,446,66,20.8,bez zaniku
+anterior cervical discectomy fusion,2025,ddd,2014,-11,True,1928,206,29,19.8,bez zaniku
+anterior cervical discectomy fusion,2025,asd,2013,-12,True,1928,1202,136,15.9,bez zaniku
+anterolateral ligament,2017,knee injury,2016,-1,True,158,1153,5,7.4,bez zaniku
+arcr,2024,retear,2011,-13,True,466,429,64,86.9,bez zaniku
+arcr,2024,fatty infiltration,2012,-12,True,466,327,18,32.1,bez zaniku
+arcr,2024,anxiety,2019,-5,True,466,800,9,6.6,bez zaniku
+arthroscopic rotator cuff repair,2024,retear,2011,-13,True,1198,429,152,80.2,bez zaniku
+arthroscopic rotator cuff repair,2024,fatty infiltration,2012,-12,True,1198,327,58,40.2,bez zaniku
+arthroscopic rotator cuff repair,2024,kinesiophobia,2022,-2,True,1198,194,5,5.8,bez zaniku
+artificial intelligence / machine learning,2025,fais,2019,-6,True,618,258,6,10.2,bez zaniku
+artificial intelligence / machine learning,2025,femoroacetabular impingement syndrome,2018,-7,True,618,453,9,8.7,bez zaniku
+artificial intelligence / machine learning,2025,ovcf,2011,-14,True,618,601,11,8.0,bez zaniku
+artificial intelligence / machine learning,2025,anemia,2018,-7,True,618,387,7,7.9,bez zaniku
+artificial intelligence / machine learning,2025,osteoporotic vertebral compression fracture,2016,-9,True,618,928,11,5.2,bez zaniku
+autologous chondrocyte implantation,2010,olt,2023,13,False,402,179,8,30.2,3. BRAK przekonujacych dowodow
+autologous chondrocyte implantation,2010,knee injury,2016,6,False,402,1153,18,10.5,3. BRAK przekonujacych dowodow
+cephalomedullary nail,2025,malreduction,2017,-8,True,216,213,5,29.5,bez zaniku
+cervical disc arthroplasty,2023,adjacent segment degeneration,2004,-19,True,384,682,64,66.3,bez zaniku
+cervical disc arthroplasty,2023,adjacent segment disease,2010,-13,True,384,640,39,43.1,bez zaniku
+cervical disc arthroplasty,2023,ddd,2014,-9,True,384,206,11,37.7,bez zaniku
+cervical disc arthroplasty,2023,dysphagia,2016,-7,True,384,651,22,23.9,bez zaniku
+cervical disc arthroplasty,2023,asd,2013,-10,True,384,1202,36,21.2,bez zaniku
+computer navigation,2007,varus knee,2020,13,False,684,237,8,13.4,4. dowody ZA + DALSZY ROZWOJ (wchloniecie)
+cta,2023,glenohumeral osteoarthritis,2020,-3,True,234,232,7,35.0,bez zaniku
+cta,2023,scapular notching,2013,-10,True,234,285,6,24.4,bez zaniku
+direct anterior approach,2024,fnf,2018,-6,True,783,329,13,13.7,bez zaniku
+dual mobility cup,2020,fnf,2018,-2,True,221,329,9,33.6,5. dowody ZA + RUTYNA
+electronic medical record,2024,ssis,2014,-10,True,439,456,6,8.1,bez zaniku
+electronic medical record,2024,ssi,2007,-17,True,439,1013,12,7.3,bez zaniku
+electronic medical record,2024,surgical site infection,2012,-12,True,439,2013,17,5.2,bez zaniku
+femoral neck system,2024,femoral neck shortening,2023,-1,True,156,136,46,588.3,bez zaniku
+femoral neck system,2024,fnf,2018,-6,True,156,329,22,116.3,bez zaniku
+finite element analysis,2024,femoral neck shortening,2023,-1,True,1504,136,11,14.6,bez zaniku
+finite element analysis,2024,adjacent segment degeneration,2004,-20,True,1504,682,28,7.4,bez zaniku
+finite element analysis,2024,posterior malleolar fracture,2020,-4,True,1504,129,5,7.0,bez zaniku
+finite element analysis,2024,cage subsidence,2017,-7,True,1504,446,13,5.3,bez zaniku
+hip arthroscopy,2021,femoroacetabular impingement syndrome,2018,-3,True,2034,453,305,89.8,bez zaniku
+hip arthroscopy,2021,fais,2019,-2,True,2034,258,169,87.4,bez zaniku
+hip arthroscopy,2021,femoroacetabular impingement,2007,-14,True,2034,546,270,66.0,bez zaniku
+hip arthroscopy,2021,femoroacetabular impingement fai,2010,-11,True,2034,449,219,65.1,bez zaniku
+hip arthroscopy,2021,fai,2010,-11,True,2034,571,265,61.9,bez zaniku
+hip resurfacing,2011,metal debris,2012,1,False,794,302,41,46.4,1. dowody PRZECIW
+hip resurfacing,2011,adverse local tissue reaction,2014,3,False,794,218,18,28.2,1. dowody PRZECIW
+hip resurfacing,2011,pseudotumor,2011,0,False,794,191,15,26.8,1. dowody PRZECIW
+kinematic alignment,2025,knee injury,2016,-9,True,164,1153,6,8.6,bez zaniku
+kyphoplasty,2011,vcf,2005,-6,True,1263,312,159,109.5,5. dowody ZA + RUTYNA
+kyphoplasty,2011,osteoporotic vertebral compression fracture,2016,5,False,1263,928,248,57.4,5. dowody ZA + RUTYNA
+kyphoplasty,2011,cement leakage,2009,-2,True,1263,646,165,54.9,5. dowody ZA + RUTYNA
+kyphoplasty,2011,ovcf,2011,0,False,1263,601,102,36.5,5. dowody ZA + RUTYNA
+kyphoplasty,2011,bone cement leakage,2019,8,False,1263,207,30,31.1,5. dowody ZA + RUTYNA
+labral repair,2019,femoroacetabular impingement syndrome,2018,-1,True,324,453,36,66.6,bez zaniku
+labral repair,2019,femoroacetabular impingement,2007,-12,True,324,546,42,64.4,bez zaniku
+labral repair,2019,fais,2019,0,False,324,258,19,61.7,bez zaniku
+labral repair,2019,femoroacetabular impingement fai,2010,-9,True,324,449,29,54.1,bez zaniku
+labral repair,2019,fai,2010,-9,True,324,571,30,44.0,bez zaniku
+latarjet procedure,2024,recurrent anterior shoulder instability,2018,-6,True,327,216,52,199.8,bez zaniku
+latarjet procedure,2024,glenoid bone loss,2014,-10,True,327,319,58,150.9,bez zaniku
+latarjet procedure,2024,glenohumeral osteoarthritis,2020,-4,True,327,232,5,17.9,bez zaniku
+lateral extra articular tenodesis,2025,knee injury,2016,-9,True,213,1153,9,9.9,bez zaniku
+lateral lumbar interbody fusion,2023,cage subsidence,2017,-6,True,455,446,33,44.1,bez zaniku
+lateral lumbar interbody fusion,2023,ldd,2023,0,False,455,87,5,34.3,bez zaniku
+lateral lumbar interbody fusion,2023,degenerative lumbar disease,2015,-8,True,455,259,13,29.9,bez zaniku
+lateral lumbar interbody fusion,2023,adult spinal deformity,2013,-10,True,455,833,38,27.2,bez zaniku
+lateral lumbar interbody fusion,2023,lumbar degenerative disease,2012,-11,True,455,511,23,26.8,bez zaniku
+lateral lumbar interbody fusion,2023,adjacent segment disease,2010,-13,True,455,640,22,20.5,bez zaniku
+lateral lumbar interbody fusion,2023,asd,2013,-10,True,455,1202,41,20.3,bez zaniku
+lateral lumbar interbody fusion,2023,back and leg pain,2010,-13,True,455,358,8,13.3,bez zaniku
+lateral lumbar interbody fusion,2023,sagittal imbalance,2018,-5,True,455,253,5,11.8,bez zaniku
+lateral lumbar interbody fusion,2023,proximal junctional kyphosis,2015,-8,True,455,488,6,7.3,bez zaniku
+lateral lumbar interbody fusion,2023,adjacent segment degeneration,2004,-19,True,455,682,6,5.2,bez zaniku
+locking plate,2014,phf,2019,5,False,1574,274,45,28.3,bez zaniku
+locking plate,2014,proximal humerus fracture,2022,8,False,1574,767,124,27.9,bez zaniku
+locking plate,2014,ppf,2021,7,False,1574,170,7,7.1,bez zaniku
+locking plate,2014,distal humerus fracture,2022,8,False,1574,219,8,6.3,bez zaniku
+locking plate,2014,clavicle fracture,2015,1,False,1574,309,10,5.6,bez zaniku
+locking plate,2014,pff,2020,6,False,1574,192,6,5.4,bez zaniku
+manipulation under anesthesia,2022,periprosthetic joint infection,2010,-12,True,242,3086,17,6.2,bez zaniku
+mechanical alignment,2025,varus knee,2020,-5,True,301,237,6,22.8,bez zaniku
+mechanical alignment,2025,knee injury,2016,-9,True,301,1153,12,9.4,bez zaniku
+mechanical alignment,2025,knee osteoarthritis,2015,-10,True,301,1991,12,5.4,bez zaniku
+medial unicompartmental knee arthroplasty,2025,knee injury,2016,-9,True,417,1153,13,7.3,bez zaniku
+mesenchymal stem cell,2013,onfh,2015,2,False,473,386,8,11.9,3. BRAK przekonujacych dowodow
+microfracture,2012,olt,2023,11,False,388,179,20,78.1,3. BRAK przekonujacych dowodow
+microfracture,2012,femoroacetabular impingement,2007,-5,True,388,546,9,11.5,3. BRAK przekonujacych dowodow
+microfracture,2012,femoroacetabular impingement fai,2010,-2,True,388,449,7,10.9,3. BRAK przekonujacych dowodow
+microfracture,2012,knee injury,2016,4,False,388,1153,16,9.7,3. BRAK przekonujacych dowodow
+microfracture,2012,fai,2010,-2,True,388,571,7,8.6,3. BRAK przekonujacych dowodow
+microfracture,2012,femoroacetabular impingement syndrome,2018,6,False,388,453,5,7.7,3. BRAK przekonujacych dowodow
+minimally invasive plate osteosynthesis,2015,proximal humerus fracture,2022,7,False,273,767,15,19.4,bez zaniku
+minimally invasive plate osteosynthesis,2015,clavicle fracture,2015,0,False,273,309,6,19.3,bez zaniku
+mom total hip arthroplasty,2018,pseudotumor,2011,-7,True,119,191,16,191.0,1. dowody PRZECIW
+mom total hip arthroplasty,2018,metal debris,2012,-6,True,119,302,23,173.7,1. dowody PRZECIW
+mom total hip arthroplasty,2018,adverse local tissue reaction,2014,-4,True,119,218,14,146.4,1. dowody PRZECIW
+motor evoked potential,2025,distal humerus fracture,2022,-3,True,592,219,23,48.1,bez zaniku
+oblique lateral interbody fusion,2022,cage subsidence,2017,-5,True,139,446,26,113.8,bez zaniku
+oblique lateral interbody fusion,2022,degenerative lumbar disease,2015,-7,True,139,259,15,113.1,bez zaniku
+oblique lateral interbody fusion,2022,dls,2021,-1,True,139,152,6,77.1,bez zaniku
+oblique lateral interbody fusion,2022,lumbar degenerative disease,2012,-10,True,139,511,19,72.6,bez zaniku
+oblique lateral interbody fusion,2022,adjacent segment disease,2010,-12,True,139,640,5,15.3,bez zaniku
+oblique lateral interbody fusion,2022,asd,2013,-9,True,139,1202,6,9.7,bez zaniku
+oblique lumbar interbody fusion,2022,cage subsidence,2017,-5,True,375,446,71,115.2,bez zaniku
+oblique lumbar interbody fusion,2022,ldd,2023,1,False,375,87,10,83.2,bez zaniku
+oblique lumbar interbody fusion,2022,degenerative lumbar disease,2015,-7,True,375,259,26,72.6,bez zaniku
+oblique lumbar interbody fusion,2022,dls,2021,-1,True,375,152,14,66.6,bez zaniku
+oblique lumbar interbody fusion,2022,lumbar degenerative disease,2012,-10,True,375,511,47,66.5,bez zaniku
+oblique lumbar interbody fusion,2022,back and leg pain,2010,-12,True,375,358,9,18.2,bez zaniku
+oblique lumbar interbody fusion,2022,sagittal imbalance,2018,-4,True,375,253,5,14.3,bez zaniku
+oblique lumbar interbody fusion,2022,adjacent segment disease,2010,-12,True,375,640,12,13.6,bez zaniku
+oblique lumbar interbody fusion,2022,asd,2013,-9,True,375,1202,22,13.2,bez zaniku
+oblique lumbar interbody fusion,2022,lss,2018,-4,True,375,340,6,12.8,bez zaniku
+oblique lumbar interbody fusion,2022,adjacent segment degeneration,2004,-18,True,375,682,9,9.5,bez zaniku
+oblique lumbar interbody fusion,2022,adult spinal deformity,2013,-9,True,375,833,8,6.9,bez zaniku
+open wedge high tibial osteotomy,2022,koa,2020,-2,True,600,234,16,30.9,bez zaniku
+open wedge high tibial osteotomy,2022,varus knee,2020,-2,True,600,237,12,22.9,bez zaniku
+open wedge high tibial osteotomy,2022,knee injury,2016,-6,True,600,1153,32,12.6,bez zaniku
+open wedge high tibial osteotomy,2022,knee osteoarthritis,2015,-7,True,600,1991,41,9.3,bez zaniku
+patient specific instrumentation,2025,glenoid bone loss,2014,-11,True,569,319,5,7.5,bez zaniku
+patient specific instrumentation,2025,ais,2014,-11,True,569,1328,15,5.4,bez zaniku
+pedicle subtraction osteotomy,2014,sagittal imbalance,2018,4,False,465,253,52,119.9,bez zaniku
+pedicle subtraction osteotomy,2014,adult spinal deformity,2013,-1,True,465,833,61,42.7,bez zaniku
+pedicle subtraction osteotomy,2014,asd,2013,-1,True,465,1202,48,23.3,bez zaniku
+pedicle subtraction osteotomy,2014,proximal junctional failure,2021,7,False,465,150,5,19.5,bez zaniku
+pedicle subtraction osteotomy,2014,proximal junctional kyphosis,2015,1,False,465,488,15,17.9,bez zaniku
+pedicle subtraction osteotomy,2014,pjk,2016,2,False,465,354,10,16.5,bez zaniku
+pelvic fixation,2025,adult spinal deformity,2013,-12,True,199,833,37,60.6,bez zaniku
+pelvic fixation,2025,asd,2013,-12,True,199,1202,27,30.6,bez zaniku
+pelvic fixation,2025,pjk,2016,-9,True,199,354,7,27.0,bez zaniku
+pelvic fixation,2025,proximal junctional kyphosis,2015,-10,True,199,488,9,25.1,bez zaniku
+percutaneous endoscopic lumbar discectomy,2018,ldh,2015,-3,True,383,551,110,141.4,bez zaniku
+percutaneous endoscopic lumbar discectomy,2018,back and leg pain,2010,-8,True,383,358,24,47.5,bez zaniku
+percutaneous endoscopic lumbar discectomy,2018,lumbar degenerative disease,2012,-6,True,383,511,5,6.9,bez zaniku
+percutaneous kyphoplasty,2024,bone cement leakage,2019,-5,True,573,207,84,192.2,bez zaniku
+percutaneous kyphoplasty,2024,ovcf,2011,-13,True,573,601,237,186.7,bez zaniku
+percutaneous kyphoplasty,2024,osteoporotic vertebral compression fracture,2016,-8,True,573,928,264,134.7,bez zaniku
+percutaneous kyphoplasty,2024,cement leakage,2009,-15,True,573,646,118,86.5,bez zaniku
+percutaneous kyphoplasty,2024,vcf,2005,-19,True,573,312,25,37.9,bez zaniku
+percutaneous kyphoplasty,2024,sarcopenia,2022,-2,True,573,134,8,28.3,bez zaniku
+periacetabular osteotomy,2024,fai,2010,-14,True,404,571,14,16.5,bez zaniku
+periacetabular osteotomy,2024,femoroacetabular impingement fai,2010,-14,True,404,449,11,16.5,bez zaniku
+periacetabular osteotomy,2024,femoroacetabular impingement,2007,-17,True,404,546,8,9.8,bez zaniku
+polyetheretherketone,2025,cage subsidence,2017,-8,True,326,446,28,52.3,bez zaniku
+polyetheretherketone,2025,adjacent segment degeneration,2004,-21,True,326,682,11,13.4,bez zaniku
+polyetheretherketone,2025,dysphagia,2016,-9,True,326,651,9,11.5,bez zaniku
+posterior lumbar fusion,2025,ais patient,2016,-9,True,791,349,69,67.8,bez zaniku
+posterior lumbar fusion,2025,ais,2014,-11,True,791,1328,223,57.6,bez zaniku
+posterior lumbar fusion,2025,pjk,2016,-9,True,791,354,19,18.4,bez zaniku
+posterior lumbar fusion,2025,proximal junctional kyphosis,2015,-10,True,791,488,21,14.8,bez zaniku
+posterior lumbar fusion,2025,pjf,2021,-4,True,791,140,6,14.7,bez zaniku
+posterior lumbar fusion,2025,proximal junctional failure,2021,-4,True,791,150,5,11.4,bez zaniku
+posterior lumbar fusion,2025,early onset scoliosis,2011,-14,True,791,351,11,10.8,bez zaniku
+posterior lumbar fusion,2025,asd,2013,-12,True,791,1202,35,10.0,bez zaniku
+posterior lumbar fusion,2025,ssi,2007,-18,True,791,1013,28,9.5,bez zaniku
+posterior lumbar fusion,2025,acute kidney injury,2017,-8,True,791,256,7,9.4,bez zaniku
+posterior lumbar fusion,2025,adult spinal deformity,2013,-12,True,791,833,21,8.6,bez zaniku
+posterior lumbar fusion,2025,adjacent segment disease,2010,-15,True,791,640,13,7.0,bez zaniku
+posterior lumbar fusion,2025,ssis,2014,-11,True,791,456,9,6.8,bez zaniku
+posterior lumbar fusion,2025,degenerative lumbar disease,2015,-10,True,791,259,5,6.6,bez zaniku
+posterior lumbar fusion,2025,surgical site infection,2012,-13,True,791,2013,38,6.5,bez zaniku
+posterior lumbar fusion,2025,adjacent segment degeneration,2004,-21,True,791,682,11,5.5,bez zaniku
+primary anterior cruciate ligament reconstruction,2025,knee injury,2016,-9,True,1391,1153,85,14.4,bez zaniku
+primary anterior cruciate ligament reconstruction,2025,kinesiophobia,2022,-3,True,1391,194,13,13.1,bez zaniku
+primary anterior cruciate ligament reconstruction,2025,retear,2011,-14,True,1391,429,11,5.0,bez zaniku
+primary hip arthroscopy,2021,fais,2019,-2,True,256,258,86,353.3,bez zaniku
+primary hip arthroscopy,2021,femoroacetabular impingement syndrome,2018,-3,True,256,453,112,262.0,bez zaniku
+primary hip arthroscopy,2021,femoroacetabular impingement fai,2010,-11,True,256,449,36,85.0,bez zaniku
+primary hip arthroscopy,2021,fai,2010,-11,True,256,571,37,68.7,bez zaniku
+primary hip arthroscopy,2021,femoroacetabular impingement,2007,-14,True,256,546,34,66.0,bez zaniku
+primary unilateral total knee arthroplasty,2016,knee osteoarthritis,2015,-1,True,272,1991,16,8.0,bez zaniku
+primary unilateral total knee arthroplasty,2016,knee injury,2016,0,False,272,1153,9,7.8,bez zaniku
+reverse shoulder arthroplasty,2025,scapular notching,2013,-12,True,2069,285,232,106.8,bez zaniku
+reverse shoulder arthroplasty,2025,phf,2019,-6,True,2069,274,90,43.1,bez zaniku
+reverse shoulder arthroplasty,2025,glenohumeral osteoarthritis,2020,-5,True,2069,232,51,28.8,bez zaniku
+reverse shoulder arthroplasty,2025,proximal humerus fracture,2022,-3,True,2069,767,152,26.0,bez zaniku
+reverse shoulder arthroplasty,2025,glenoid bone loss,2014,-11,True,2069,319,37,15.2,bez zaniku
+reverse shoulder arthroplasty,2025,cutibacterium acne,2019,-6,True,2069,127,8,8.3,bez zaniku
+reverse shoulder arthroplasty,2025,fatty infiltration,2012,-13,True,2069,327,19,7.6,bez zaniku
+revision anterior cruciate ligament reconstruction,2023,knee injury,2016,-7,True,457,1153,47,24.2,bez zaniku
+robotic assistance,2025,varus knee,2020,-5,True,424,237,9,24.3,bez zaniku
+robotic assistance,2025,end stage osteoarthritis,2014,-11,True,424,295,5,10.8,bez zaniku
+short stem,2021,onfh,2015,-6,True,258,386,7,19.1,bez zaniku
+targeted muscle reinnervation,2023,plp,2023,0,False,146,161,22,253.9,bez zaniku
+total ankle arthroplasty,2023,end stage ankle arthritis,2015,-8,True,853,236,104,140.2,bez zaniku
+total ankle arthroplasty,2023,end stage osteoarthritis,2014,-9,True,853,295,11,11.9,bez zaniku
+total disc replacement,2015,ddd,2014,-1,True,438,206,33,99.2,3. BRAK przekonujacych dowodow
+total disc replacement,2015,adjacent segment degeneration,2004,-11,True,438,682,34,30.9,3. BRAK przekonujacych dowodow
+total disc replacement,2015,adjacent segment disease,2010,-5,True,438,640,21,20.3,3. BRAK przekonujacych dowodow
+total disc replacement,2015,asd,2013,-2,True,438,1202,17,8.8,3. BRAK przekonujacych dowodow
+total disc replacement,2015,dysphagia,2016,1,False,438,651,6,5.7,3. BRAK przekonujacych dowodow
+total elbow arthroplasty,2025,distal humerus fracture,2022,-3,True,321,219,24,92.6,bez zaniku
+transforaminal lumbar interbody fusion,2024,lumbar degenerative disease,2012,-12,True,1234,511,87,37.4,bez zaniku
+transforaminal lumbar interbody fusion,2024,degenerative lumbar disease,2015,-9,True,1234,259,39,33.1,bez zaniku
+transforaminal lumbar interbody fusion,2024,ldd,2023,-1,True,1234,87,11,27.8,bez zaniku
+transforaminal lumbar interbody fusion,2024,cage subsidence,2017,-7,True,1234,446,55,27.1,bez zaniku
+transforaminal lumbar interbody fusion,2024,back and leg pain,2010,-14,True,1234,358,36,22.1,bez zaniku
+transforaminal lumbar interbody fusion,2024,dls,2021,-3,True,1234,152,13,18.8,bez zaniku
+transforaminal lumbar interbody fusion,2024,ddd,2014,-10,True,1234,206,14,14.9,bez zaniku
+transforaminal lumbar interbody fusion,2024,adjacent segment degeneration,2004,-20,True,1234,682,41,13.2,bez zaniku
+transforaminal lumbar interbody fusion,2024,adjacent segment disease,2010,-14,True,1234,640,38,13.1,bez zaniku
+transforaminal lumbar interbody fusion,2024,asd,2013,-11,True,1234,1202,55,10.1,bez zaniku
+transforaminal lumbar interbody fusion,2024,lss,2018,-6,True,1234,340,9,5.8,bez zaniku
+unicompartmental knee arthroplasty,2024,koa,2020,-4,True,2005,234,27,15.6,bez zaniku
+unicompartmental knee arthroplasty,2024,varus knee,2020,-4,True,2005,237,11,6.3,bez zaniku
+unicompartmental knee arthroplasty,2024,knee osteoarthritis,2015,-9,True,2005,1991,85,5.8,bez zaniku
+unilateral anterior cruciate ligament reconstruction,2018,knee injury,2016,-2,True,175,1153,12,16.1,bez zaniku
+unilateral anterior cruciate ligament reconstruction,2018,knee osteoarthritis,2015,-3,True,175,1991,9,7.0,bez zaniku
+vertebral augmentation,2025,ovcf,2011,-14,True,886,601,232,118.2,bez zaniku
+vertebral augmentation,2025,bone cement leakage,2019,-6,True,886,207,72,106.5,bez zaniku
+vertebral augmentation,2025,osteoporotic vertebral compression fracture,2016,-9,True,886,928,295,97.4,bez zaniku
+vertebral augmentation,2025,vcf,2005,-20,True,886,312,78,76.6,bez zaniku
+vertebral augmentation,2025,cement leakage,2009,-16,True,886,646,157,74.4,bez zaniku
+vertebral augmentation,2025,chronic obstructive pulmonary disease,2015,-10,True,886,262,5,5.8,bez zaniku
+volar locking plate,2024,drf,2017,-7,True,363,343,71,154.7,bez zaniku
