@@ -1,0 +1,23 @@
+﻿termin,trwalosc_terminu,rok_szczytu,grupa,trwalosc_grupy,grupa_tez_zanika,los_po_scaleniu,pozostali_czlonowie
+locked plating,0.142,2012,locking plate,0.51,False,usuniety: grupa nie zanika,locking plate | lcp
+owhto,0.388,2019,open wedge high tibial osteotomy,0.79,False,usuniety: grupa nie zanika,open wedge high tibial osteotomy | mowhto
+pedicle subtraction osteotomy,0.396,2014,pedicle subtraction osteotomy,0.58,False,usuniety: grupa nie zanika,pso
+lcp,0.422,2009,locking plate,0.51,False,usuniety: grupa nie zanika,locking plate | locked plating
+open wedge high tibial osteotomy,0.428,2019,open wedge high tibial osteotomy,0.79,False,usuniety: grupa nie zanika,owhto | mowhto
+total disc replacement,0.066,2005,total disc replacement,0.23,True,zostaje: wpis grupy,tdr
+autologous chondrocyte implantation,0.09,2013,autologous chondrocyte implantation,0.13,True,zostaje: wpis grupy,aci
+hip resurfacing,0.101,2008,hip resurfacing,0.15,True,zostaje: wpis grupy,hip resurfacing arthroplasty
+mom total hip arthroplasty,0.103,2018,mom total hip arthroplasty,0.1,True,zostaje: wpis grupy,
+aci,0.117,2013,autologous chondrocyte implantation,0.13,True,usuniety: druga nazwa tej samej zanikajacej grupy,autologous chondrocyte implantation
+double bundle reconstruction,0.156,2010,double bundle reconstruction,0.16,True,zostaje: wpis grupy,
+hip resurfacing arthroplasty,0.195,2011,hip resurfacing,0.15,True,usuniety: druga nazwa tej samej zanikajacej grupy,hip resurfacing
+ponseti method,0.211,2009,ponseti method,0.21,True,zostaje: wpis grupy,
+tdr,0.243,2015,total disc replacement,0.23,True,usuniety: druga nazwa tej samej zanikajacej grupy,total disc replacement
+computer navigation,0.256,2007,computer navigation,0.27,True,zostaje: wpis grupy,computer assisted navigation
+computer assisted navigation,0.274,2007,computer navigation,0.27,True,usuniety: druga nazwa tej samej zanikajacej grupy,computer navigation
+fnb,0.279,2016,femoral nerve block,0.28,True,zostaje: wpis grupy,
+balloon kyphoplasty,0.3,2011,kyphoplasty,0.39,True,usuniety: druga nazwa tej samej zanikajacej grupy,kyphoplasty
+mesenchymal stem cell,0.307,2013,mesenchymal stem cell,0.31,True,zostaje: wpis grupy,
+kyphoplasty,0.341,2009,kyphoplasty,0.39,True,zostaje: wpis grupy,balloon kyphoplasty
+dual mobility cup,0.381,2020,dual mobility cup,0.38,True,zostaje: wpis grupy,
+microfracture,0.429,2012,microfracture,0.43,True,zostaje: wpis grupy,
