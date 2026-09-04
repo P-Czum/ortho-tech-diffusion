@@ -1,0 +1,21 @@
+{
+ "zamrozone": "2026-09-03",
+ "zrodlo": "brief Cowork 2026-09-03 §4",
+ "podstawa": "material 60 (osie_60.csv), przypisanie z nazw, bez patrzenia na osie",
+ "plik": "data/processed/klasy_60.csv",
+ "sha256": "3c08fafbead14c16510d2bd7fdda9d8ab7b8a99c7b8e8620170a2637544ef77e",
+ "liczebnosci": {
+  "I. implant i material": 10,
+  "II. endoprotezoplastyka": 7,
+  "III. technika operacyjna": 24,
+  "IV. narzedzie wspomagajace": 9,
+  "V. postepowanie okolozabiegowe": 3,
+  "VI. terapia biologiczna": 3
+ },
+ "poza_klasami": {
+  "adult spinal deformity surgery": "do usuniecia (§2)",
+  "revision anterior cruciate ligament reconstruction": "do usuniecia (§2)",
+  "electronic medical record": "do usuniecia (§2)",
+  "anterolateral ligament": "warunkowa (§2)"
+ }
+}
