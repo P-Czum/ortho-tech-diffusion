@@ -499,3 +499,174 @@ interval`, `minimum 2 year follow up`). Do tekstu idzie 72.
 
 132 kandydatów z obu ocen ortopedy → 110 po wyłączeniach → 82 po słowniku synonimów →
 **75 grup po scaleniu wariantów.**
+
+---
+
+# 2026-09-03 — zaniki uwagi wyjaśnione stanem dowodów. Koniec liczenia
+
+Źródło: `brief_dla_cowork_gradient_dowodow_2026-09-03.md` (zastępuje osiem mechanizmów
+z briefu z 2026-09-02, które zachodziły na siebie, bo mieszały wymiar epistemiczny ze
+strukturalnym).
+
+## Wynik: trwałość uwagi porządkuje się według stanu pytania, nie losu technologii
+
+Rama ortopedy: skoro mierzymy uwagę, jej spadek bierze się stąd, że pytanie się zamknęło.
+Trzynaście zaników z materiału na pięciu stanach dowodów, trwałość 2021–22 / szczyt:
+
+| stan dowodów | n | trwałość |
+|---|---:|---|
+| przeciw stosowaniu (MoM, resurfacing) | 2 | 0,10–0,17 |
+| za alternatywą | 1 | 0,23 |
+| brak rozstrzygnięcia | 6 | 0,20–0,39 |
+| za + wchłonięcie przez następcę (nawigacja → robotyka) | 1 | 0,39 |
+| za + rutyna (Ponseti, kyphoplasty) | 3 | 0,43–0,61 |
+
+Trzy główne stany **nie zachodzą na siebie** (0,17 | 0,20 … 0,39 | 0,43). Wykładnia: gdy dowody
+mówią „nie", piśmiennictwo umiera; gdy pytanie otwarte, tli się; gdy dowody mówią „tak",
+technologia wchodzi do rutyny i generuje stały strumień prac. **Hipoteza na trzynastu
+przypadkach** — postawiona tak, by dała się obalić na nowym materiale; tak ma być przedstawiona.
+
+To rozstrzyga zastrzeżenie z 2026-09-02, że iloraz 2025/szczyt miesza trzy zjawiska: miesza,
+i właśnie dlatego trzeba go czytać przez stan dowodów, a nie jako jedną oś.
+
+## Cztery korekty VS Code na sobie — i zasada, która z nich wynika
+
+1. Kolumna koncentracji względnej **wycofana**: waga `p²/p_tła` mierzyła koncentrację
+   podwójnie ważoną, nie względną, i zbiegała do 1,0.
+2. „Odpływ badań podstawowych" przy chondrocytach — błędny; ACI i mikrozłamania były kliniczne
+   od początku okna (53% → 55%, 55% → 73%). Pasuje wyłącznie do MSC (10% → 41%).
+3. „Szczyt współwystępowania jako sygnatura zastąpienia" — artefakt mianownika (udział liczony
+   w pracach rosnącego następcy). Współwystępowanie **nie odróżnia** zastąpienia od rywalizacji.
+4. Nazwy klas twierdziły o praktyce („jedna wygrywa"), gdy nic nie wygrało klinicznie — blokada
+   udowa ma nadal 54 prace w 2022–25 wobec 105 o blokadzie kanału. Przesunęła się proporcja uwagi.
+
+Cztery razy w jednej sesji obserwacja o piśmiennictwie została przebrana za wniosek o medycynie
+i cztery razy korekta przyszła od ortopedy, nie z kontroli. **Zasada do Metod, nie siedem
+ostrożności: pomiar pokazuje wzorzec uwagi; rozstrzyga rzecz.**
+
+## Współwystępowanie po korekcie na przypadek
+
+Krotność obserwacji do oczekiwania `nA·nB/pole`: pęczki ACL **458×** (warianty jednej operacji,
+porównywane head-to-head), blokady 170×, chrząstka 92×, nawigacja/robotyka **12×**. Stabilne
+w dwóch oknach. Miara odróżnia wyłącznie wchłonięcie (składnik przestaje być nazywany) od
+reszty. Rozróżnienie wariant/metoda postawił ortopeda; liczba je potwierdza, nie zastępuje.
+
+## Dwa nowe ograniczenia
+
+- **Uwaga miesza wartość kliniczną z dostępnością.** ACI kosztowne, regulowane, w nielicznych
+  ośrodkach — trwałość 0,13; mikrozłamania robi każdy artroskopista — 0,43; obie techniki
+  w użyciu. Dotyczy każdej kosztownej lub skoncentrowanej technologii, więc łączy się z osią
+  koncentracji.
+- **Odpływ tematu z pola nieodróżnialny od zaniku tematu.** Definicja przez poddrzewo MeSH
+  widzi tylko wnętrze pola. Co najmniej MSC (31% prac usuwa D6, udział klinicznych rośnie).
+
+## Pęczki ACL
+
+Spór nie wygasł: współwystępowanie single/double 20–38% do 2025, recentne tytuły to porównania.
+Równolegle rosną LET (6 → 146) i ALL (8 → 77) — obserwacja współbieżna, wyparcia nie ustalono.
+
+## Stan
+
+Materiał **76 grup** (FEA przywrócone). Trzynaście zaników z przyczyną, klasą, poziomem
+i adnotacją: `data/processed/wycofania_mechanizmy.csv`. **Po stronie liczenia nic otwartego.**
+
+---
+
+# 2026-09-03 — D8: retronimy i generyki w materiale. 76 → 66
+
+Zauważone przez ortopedę przy czytaniu Wyników: `mechanical alignment` (y₀ 2018) nie jest nową
+technologią, tylko czterdziestoletnim standardem osiowania, który dostał nazwę, gdy pojawiło się
+`kinematic alignment`. **Retronim** — detektor złapał zdarzenie nazewnicze, nie technologiczne.
+Zgodne z tym, że leży wśród „światowych" (12,7 kraju): jest domyślne wszędzie.
+
+## Ta sama klasa, ten sam mechanizm
+
+| retronim | y₀ | nazwany w kontraście do | y₀ rywala |
+|---|---:|---|---:|
+| mechanical alignment | 2018 | kinematic alignment | 2022 (w rdzeniu wcześniej) |
+| single bundle | 2010 | double bundle reconstruction | 2007 |
+| anatomic total shoulder arthroplasty | 2015 | reverse shoulder arthroplasty | 2007 |
+
+`single bundle` był wśród 13 zaników — „zanik" standardu, który nie zanikł. Wypada z tabeli 3.
+
+## Generyki — ogólne określenia ustalonych zabiegów, nie technologie
+
+`primary anterior cruciate ligament reconstruction`, `unilateral anterior cruciate ligament
+reconstruction`, `primary unilateral total knee arthroplasty`, `elective total knee arthroplasty`,
+`posterior lumbar fusion`, `pelvic fixation`, `arcr`.
+
+`arcr` oznaczone jako wątpliwe w drugą stronę: artroskopowa naprawa stożka w latach 2010.
+mogła być realnym przesunięciem kosztem naprawy otwartej. Wypada z ortopedą do potwierdzenia;
+wraca, jeśli ortopeda tak rozstrzygnie.
+
+## Decyzja
+
+Wszystkie dziesięć poza materiałem. **Materiał 76 → 66.** Zaniki 13 → 12.
+
+Do Metod jedno zdanie: pojawienie się rywala nadaje nazwę dotychczasowemu standardowi,
+a detektor widzi to jako wyłonienie; trzy takie przypadki usunięto po przeglądzie klinicznym.
+To jest zmierzona własność metody, nie usterka — i zarazem powód, dla którego przegląd przez
+specjalistę nie jest opcjonalny.
+
+Osie do przeliczenia na 66 (VS Code, brief z 2026-09-03).
+
+---
+
+# 2026-09-03 — słownictwo powikłań nie zapowiada upadku. Wynik ujemny, zamknięty
+
+Hipoteza (Cowork, potwierdzona przez ortopedę): frazy powikłań wyłaniają się przed szczytem
+technologii, która potem upada (MoM: `pseudotumor` −7 lat, `metal debris` −6, ALTR −4).
+Przypadek próbny postawiony z góry: `cement leakage` −2 lata przed szczytem `kyphoplasty`,
+która **nie** upadła.
+
+Test VS Code na 228 parach powikłanie–technologia, 61 grup, szczyt ≤ 2022 (żeby wyprzedzenie
+nie było trywialne przy technologiach wciąż rosnących — pierwszy przebieg był tym obciążony
+i sam go sprostował):
+
+| pasmo | wyprzedza szczyt |
+|---|---:|
+| dowody przeciw | 50% |
+| brak dowodów | 50% |
+| dowody za + rutyna | 50% |
+
+**Dokładnie po równo.** Kifoplastyka łamie wzorzec także po odsianiu wskazań (`vcf`, `ovcf`
+to powody zabiegu, nie powikłania — kategoria `rozpoznanie` ich nie odróżnia, co jest
+ograniczeniem testu, ale nie zmienia wyniku).
+
+Do Dyskusji: **wyłonienie słownictwa powikłań jest cechą cyklu życia technologii, nie zapowiedzią
+jej upadku.** Zdanie o „wczesnym ostrzeżeniu" usunięte ze szkieletu (Clinical relevance).
+
+Uboczne: krotności współwystępowania technologia–powikłanie są ogromne i selektywne (146–191×
+przy triadzie MoM). Powiązanie jest wykrywalne; jego chronologia nie niesie informacji o losie.
+Możliwe zastosowanie — automatyczne wskazywanie par do przeglądu — poza zakresem tej pracy.
+
+---
+
+# 2026-09-03 — gradient dowodów upada; zostaje podział binarny. Materiał 66
+
+**Błąd wychwycony przez ortopedę:** trwałość liczona w oknach kalendarzowych (2021–22, 2023–25)
+porównywała technologię 14 lat po szczycie (nawigacja, szczyt 2007) z technologią 2 lata po
+szczycie (dual mobility, 2020) jako jedną miarę. Stąd „separacja w 2021–22 i jej brak w 2023–25"
+— to nie była zagadka, tylko artefakt.
+
+Poprawnie: trwałość **względem własnego szczytu**, okna +1..3, +3..5, +5..7 lat.
+
+| okno | odrzucona (n=2) | nieodrzucona (n=10) |
+|---|---|---|
+| +1..3 | 0,27–0,48 | 0,50–0,87 |
+| +3..5 | 0,17–0,25 | 0,35–0,73 |
+| +5..7 | 0,11–0,17 | 0,26–0,72 |
+
+**Przeżyło:** odrzucona vs nieodrzucona — czysto we wszystkich trzech oknach.
+**Nie przeżyło:** pięć pasm. „Brak dowodów" (0,35–0,73 w +3..5) pokrywa całe pasmo rutyny.
+
+Do Wyników: piśmiennictwo odróżnia technologię odrzuconą od nieodrzuconej; dalszych stopni nie
+odróżnia. Przy n = 2 po stronie odrzuconych — obserwacja, nie reguła.
+
+Potwierdzenia uboczne: MSC 0,73 w +3..5 (temat wracający), nawigacja 0,66 (wchłonięcie).
+`double bundle` przepisane: technika, wobec której ukuto retronim — klasa „warianty bez
+zwycięzcy" upada razem z `single bundle`.
+
+Zliczenia na 66: y₀ 2000–09: 11, 2010–19: 42, 2020–25: 13; kraj_eff ≤ 2,5: 13 grup, wyłącznie
+Chiny (7) i USA (6); ≥ 9: 12 grup; bez czasu podwojenia 11; szczyt 2025: 19.
+`arcr`: 466 prac, y₀ 2017, USA 44% — do decyzji ortopedy.

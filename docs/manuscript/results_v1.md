@@ -39,36 +39,22 @@ Doubling time of attention could be computed for 61 technologies. The fastest we
 
 ## Why attention fades
 
-Thirteen technologies lost more than half of their peak attention by 2025 (Table 3, Figure 3). Their persistence — share in 2021–2022 as a fraction of peak — was ordered by the state of clinical evidence, with no overlap between the three main states.
+Twelve technologies lost more than half of their peak attention (Table 3, Figure 3). Because they peaked in different years — computer navigation in 2007, dual-mobility cups in 2020 — persistence was measured relative to each technology's own peak, at 1–3, 3–5, and 5–7 years after it.
 
-Where evidence turned against use, attention collapsed: metal-on-metal bearings (0.17) and hip resurfacing (0.10). Where the clinical question remained open, attention declined to between a fifth and two fifths of peak: double-bundle ACL reconstruction (0.20), autologous chondrocyte implantation (0.30), total disc replacement (0.33), mesenchymal stem cells (0.37), single-bundle reconstruction and microfracture (0.39 each). Where evidence favoured the technology and it entered routine care, attention fell least: kyphoplasty (0.43), the Ponseti method (0.57), dual-mobility cups (0.61). Two cases fell between: femoral nerve block (0.23), displaced by the adductor canal block; and computer navigation (0.39), absorbed into robotic systems.
+The two technologies whose evidence turned against use fell faster and deeper than all ten others, in every window: metal-on-metal bearings and hip resurfacing retained 0.27–0.48 of peak attention at 1–3 years, 0.17–0.25 at 3–5, and 0.11–0.17 at 5–7, against 0.50–0.87, 0.35–0.73, and 0.26–0.72 for the rest. Within the ten, the state of evidence did not separate: technologies with an unresolved question (double-bundle ACL reconstruction, autologous chondrocyte implantation, total disc replacement, microfracture) overlapped entirely with those adopted into routine care (kyphoplasty, the Ponseti method, dual-mobility cups). Two cases illustrate why attention can fall without rejection: computer navigation retained 0.66 of peak at 3–5 years as it was absorbed into robotic systems, and mesenchymal stem cells 0.73 as the topic moved and returned.
 
-The ordering was not robust to the persistence window. Measured on 2023–2025 instead of 2021–2022, the Ponseti method fell to 0.29 and microfracture rose to 0.48, and the bands overlapped. The result rests on 13 cases and one definition of persistence, and is reported as a hypothesis.
+Eleven of 24 technologies initially identified as declining were changes of name rather than of practice — kyphoplasty and balloon kyphoplasty, autologous chondrocyte implantation and its abbreviation — and one, single-bundle ACL reconstruction, was a retronym: a name coined for the existing standard when double-bundle reconstruction appeared. They were removed before analysis.
 
-Eleven of 24 technologies initially identified as declining were changes of name rather than of practice — kyphoplasty and balloon kyphoplasty, autologous chondrocyte implantation and its abbreviation, cervical disc arthroplasty and its abbreviation — and disappeared from the list once variants were merged.
+**Table 3.** Technologies whose attention fell below half of peak. Persistence = share in the window ÷ peak share, windows relative to each technology's own peak year. ⟨fill from `wycofania_66.csv` / `trwalosc_wzgledna.csv`⟩
 
-**Table 3.** Technologies whose attention fell below half of peak, by evidence state. Persistence = share in 2021–2022 ÷ peak share; sensitivity = share in 2023–2025 ÷ peak.
-
-| Evidence state | Technology | Peak year | Persistence | Sensitivity |
-|---|---|---:|---:|---:|
-| Against use | Hip resurfacing | 2011 | 0.10 | 0.13 |
-| | Metal-on-metal THA | 2018 | 0.17 | 0.11 |
-| For an alternative | Femoral nerve block | 2016 | 0.23 | 0.29 |
-| Unresolved | Double-bundle ACL reconstruction | 2010 | 0.20 | 0.16 |
-| | Autologous chondrocyte implantation | 2010 | 0.30 | 0.36 |
-| | Total disc replacement | 2015 | 0.33 | 0.26 |
-| | Mesenchymal stem cell | 2013 | 0.37 | 0.35 |
-| | Single-bundle ACL reconstruction | 2012 | 0.39 | 0.21 |
-| | Microfracture | 2012 | 0.39 | 0.48 |
-| For use, absorbed into successor | Computer navigation | 2007 | 0.39 | 0.32 |
-| For use, routine | Kyphoplasty | 2011 | 0.43 | 0.36 |
-| | Ponseti method | 2009 | 0.57 | 0.29 |
-| | Dual-mobility cup | 2020 | 0.61 | 0.42 |
-
----
+| Evidence state | Technology | Peak | +1–3 y | +3–5 y | +5–7 y |
+|---|---|---:|---:|---:|---:|
+| Against use | Hip resurfacing | 2011 | ⟨⟩ | ⟨⟩ | ⟨⟩ |
+| | Metal-on-metal THA | 2018 | ⟨⟩ | ⟨⟩ | ⟨⟩ |
+| Not against use (10) | … | | | | |
 
 ### Notes for the authors, not for the paper
-- Persistence in Table 3 uses 2021–2022 because VSC defined the bands on it; the 2023–2025 sensitivity breaks the non-overlap. **This must stay in the text.** If there is an a priori reason to prefer 2021–2022 (indexing lag in 2024–2025; MTIX trough in 2022 argues the other way), it goes in Methods; if not, the sensitivity stands as written.
+- Persistence is now relative to each technology's own peak (surgeon's correction, 2026-09-03); the calendar-window sensitivity is gone because the calendar window was the error.
 - "Fourteen single-country literatures, all China or USA" — count from `kraj_eff_n ≤ 2.5`; verify the threshold is stated in Methods.
 - Doubling time "not computable" for 15: rule (peak < 2 years after y₀, or fewer than three positive years) belongs in Methods, one sentence.
 - Figure 1: timeline; Figure 2: effective countries vs papers, log x, extremes labelled; Figure 3: persistence by evidence state, dots, both windows.

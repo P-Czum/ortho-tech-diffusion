@@ -1,0 +1,344 @@
+{
+ "USA": [
+  {
+   "grupa": "reverse shoulder arthroplasty",
+   "pct": 46.8,
+   "eff": 4.1
+  },
+  {
+   "grupa": "anterior cervical discectomy fusion",
+   "pct": 37.6,
+   "eff": 3.8
+  },
+  {
+   "grupa": "unicompartmental knee arthroplasty",
+   "pct": 21.2,
+   "eff": 9.0
+  },
+  {
+   "grupa": "hip arthroscopy",
+   "pct": 62.2,
+   "eff": 2.5
+  },
+  {
+   "grupa": "artificial intelligence / machine learning",
+   "pct": 38.1,
+   "eff": 4.8
+  },
+  {
+   "grupa": "arthroscopic rotator cuff repair",
+   "pct": 27.6,
+   "eff": 7.0
+  },
+  {
+   "grupa": "direct anterior approach",
+   "pct": 28.1,
+   "eff": 7.3
+  },
+  {
+   "grupa": "total ankle arthroplasty",
+   "pct": 47.0,
+   "eff": 4.2
+  },
+  {
+   "grupa": "robotic assistance",
+   "pct": 40.7,
+   "eff": 5.1
+  },
+  {
+   "grupa": "adult spinal deformity surgery",
+   "pct": 53.6,
+   "eff": 3.1
+  },
+  {
+   "grupa": "lateral lumbar interbody fusion",
+   "pct": 48.0,
+   "eff": 3.5
+  },
+  {
+   "grupa": "patient specific instrumentation",
+   "pct": 18.3,
+   "eff": 12.0
+  },
+  {
+   "grupa": "electronic medical record",
+   "pct": 65.5,
+   "eff": 2.3
+  },
+  {
+   "grupa": "kyphoplasty",
+   "pct": 25.1,
+   "eff": 7.6
+  },
+  {
+   "grupa": "robotic",
+   "pct": 44.7,
+   "eff": 4.5
+  },
+  {
+   "grupa": "revision anterior cruciate ligament reconstruction",
+   "pct": 41.9,
+   "eff": 5.1
+  },
+  {
+   "grupa": "medial unicompartmental knee arthroplasty",
+   "pct": 24.0,
+   "eff": 9.5
+  },
+  {
+   "grupa": "periacetabular osteotomy",
+   "pct": 44.9,
+   "eff": 4.1
+  },
+  {
+   "grupa": "primary hip arthroscopy",
+   "pct": 89.0,
+   "eff": 1.3
+  },
+  {
+   "grupa": "lateral extra articular tenodesis",
+   "pct": 27.8,
+   "eff": 8.5
+  },
+  {
+   "grupa": "cervical disc arthroplasty",
+   "pct": 37.4,
+   "eff": 3.5
+  },
+  {
+   "grupa": "latarjet procedure",
+   "pct": 25.0,
+   "eff": 9.2
+  },
+  {
+   "grupa": "computer navigation",
+   "pct": 30.9,
+   "eff": 7.6
+  },
+  {
+   "grupa": "manipulation under anesthesia",
+   "pct": 66.7,
+   "eff": 2.2
+  },
+  {
+   "grupa": "labral repair",
+   "pct": 64.1,
+   "eff": 2.4
+  },
+  {
+   "grupa": "polyetheretherketone",
+   "pct": 24.3,
+   "eff": 8.2
+  },
+  {
+   "grupa": "total elbow arthroplasty",
+   "pct": 33.9,
+   "eff": 6.8
+  },
+  {
+   "grupa": "augmented reality",
+   "pct": 26.4,
+   "eff": 7.5
+  },
+  {
+   "grupa": "cephalomedullary nail",
+   "pct": 20.0,
+   "eff": 9.5
+  },
+  {
+   "grupa": "targeted muscle reinnervation",
+   "pct": 68.4,
+   "eff": 2.1
+  },
+  {
+   "grupa": "kinematic alignment",
+   "pct": 23.5,
+   "eff": 8.8
+  },
+  {
+   "grupa": "microfracture",
+   "pct": 33.3,
+   "eff": 7.0
+  },
+  {
+   "grupa": "mesenchymal stem cell",
+   "pct": 20.0,
+   "eff": 11.1
+  },
+  {
+   "grupa": "hip resurfacing",
+   "pct": 28.6,
+   "eff": 6.2
+  },
+  {
+   "grupa": "highly cross linked polyethylene",
+   "pct": 37.3,
+   "eff": 5.6
+  },
+  {
+   "grupa": "ponseti method",
+   "pct": 30.0,
+   "eff": 8.5
+  },
+  {
+   "grupa": "autologous chondrocyte implantation",
+   "pct": 37.1,
+   "eff": 5.3
+  },
+  {
+   "grupa": "anterolateral ligament",
+   "pct": 23.4,
+   "eff": 10.2
+  },
+  {
+   "grupa": "total disc replacement",
+   "pct": 36.8,
+   "eff": 5.5
+  },
+  {
+   "grupa": "double bundle reconstruction",
+   "pct": 27.6,
+   "eff": 7.6
+  },
+  {
+   "grupa": "mom total hip arthroplasty",
+   "pct": 34.1,
+   "eff": 5.8
+  }
+ ],
+ "China": [
+  {
+   "grupa": "finite element analysis",
+   "pct": 55.8,
+   "eff": 3.1
+  },
+  {
+   "grupa": "transforaminal lumbar interbody fusion",
+   "pct": 33.8,
+   "eff": 4.6
+  },
+  {
+   "grupa": "locking plate",
+   "pct": 20.0,
+   "eff": 10.0
+  },
+  {
+   "grupa": "vertebral augmentation",
+   "pct": 57.9,
+   "eff": 2.8
+  },
+  {
+   "grupa": "percutaneous kyphoplasty",
+   "pct": 90.5,
+   "eff": 1.2
+  },
+  {
+   "grupa": "oblique lumbar interbody fusion",
+   "pct": 64.9,
+   "eff": 2.2
+  },
+  {
+   "grupa": "cone beam computed tomography",
+   "pct": 15.9,
+   "eff": 14.7
+  },
+  {
+   "grupa": "3d printing",
+   "pct": 47.2,
+   "eff": 4.1
+  },
+  {
+   "grupa": "motor evoked potential",
+   "pct": 30.5,
+   "eff": 7.6
+  },
+  {
+   "grupa": "percutaneous endoscopic lumbar discectomy",
+   "pct": 81.4,
+   "eff": 1.5
+  },
+  {
+   "grupa": "adductor canal block",
+   "pct": 32.6,
+   "eff": 5.3
+  },
+  {
+   "grupa": "femoral neck system",
+   "pct": 70.0,
+   "eff": 2.0
+  },
+  {
+   "grupa": "pedicle subtraction osteotomy",
+   "pct": 31.6,
+   "eff": 4.9
+  },
+  {
+   "grupa": "proximal femoral nail antirotation",
+   "pct": 69.3,
+   "eff": 2.0
+  },
+  {
+   "grupa": "oblique lateral interbody fusion",
+   "pct": 60.7,
+   "eff": 2.4
+  },
+  {
+   "grupa": "cta",
+   "pct": 24.7,
+   "eff": 7.9
+  },
+  {
+   "grupa": "medial patellofemoral ligament reconstruction",
+   "pct": 30.6,
+   "eff": 6.4
+  },
+  {
+   "grupa": "mimic software",
+   "pct": 84.9,
+   "eff": 1.4
+  },
+  {
+   "grupa": "ultrasound guidance",
+   "pct": 35.7,
+   "eff": 5.7
+  },
+  {
+   "grupa": "femoral nerve block",
+   "pct": 37.0,
+   "eff": 4.7
+  }
+ ],
+ "South Korea": [
+  {
+   "grupa": "open wedge high tibial osteotomy",
+   "pct": 32.5,
+   "eff": 5.1
+  },
+  {
+   "grupa": "minimally invasive plate osteosynthesis",
+   "pct": 20.3,
+   "eff": 9.7
+  }
+ ],
+ "Japan": [
+  {
+   "grupa": "volar locking plate",
+   "pct": 15.7,
+   "eff": 12.8
+  }
+ ],
+ "Germany": [
+  {
+   "grupa": "short stem",
+   "pct": 16.7,
+   "eff": 12.8
+  }
+ ],
+ "France": [
+  {
+   "grupa": "dual mobility cup",
+   "pct": 32.5,
+   "eff": 7.2
+  }
+ ]
+}
