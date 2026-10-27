@@ -1,5 +1,5 @@
 # Deviations from the OSF registration
-## Register · compiled 2026-09-02 · covers 2026-08-27 → 2026-09-02
+## Register · compiled 2026-09-02, extended 2026-10-27 · covers 2026-08-27 → 2026-10-27
 
 The registration (OSF, secondary-data preregistration, 2026-08-27) cites twelve frozen files by
 SHA-256. **All twelve are unchanged; the manifest verifies 12/12.** Every change below is therefore
@@ -26,6 +26,8 @@ was set before the measurement was taken**.
 | D-8 | Object of study: technology diffusion across the field | **device and technique strata only**; drugs as a contrast layer; disease entities parked for a separate paper | 30 of 813 core phrases are technologies; the material as registered was 96% something else | No — this is the author's scoping decision, taken after seeing the composition | 2026-09-01 |
 | D-9 | — (no rule) | v1.4 §4a: **two- and three-letter abbreviations require measured expansions** before entering the material, and may never stand as a separate row beside the full form | fourth occurrence of the same failure (`ml`, then `ha`, `cr`, `ka`, `ai`); no dominant expansion in four of five cases; abbreviation share drifts −5.3 to +3.0 pp/year | No | 2026-09-02 |
 | D-10 | Second-coder round on a **60-term stratified subsample** | round two as a **census of the material** | five of seventeen disagreements were n-gram fragments that do not arise under chunking; at 75 groups a census is feasible | No | 2026-08-31 |
+| D-11 | RQ3: distribution of the **five categories** over the 287-term core; §6.2 consistency controls; after κ < 0.70, **recoding and reporting of both rounds** | coder 1's distribution over the 287-term core reported as a **closed result** in S1 (non-technological 229, renaming 20, novel concept 20, conceptual evolution 18, measurement artifact 0); **round two not run**; the five-category scheme is not applied to the noun-phrase material; §6.2(a) and (c) not performed | D-1 retired the n-gram core as material. The human coder saw concentration axes, doubling times and persistence while the material was being defined, so a second round could be blinded only on the model side and would not measure what the registration specified | No | 2026-10-27 |
+| D-12 | §6.3: `y₀` under the primary definition **with the secondary-definition value beside it**, flag where they differ by > 2 years; §6.2(b) reproduction under the secondary definition | `y₀` reported under the **primary definition only** | Not forced by a measurement — the author's decision to keep the paper to one field definition. The secondary definition exists only as n-gram counts for 2005–2025 (before D-1 and D-3); the two definitions overlap at Jaccard ≈ 0.31 and the secondary includes rheumatology and basic science, so its `y₀` differences would mix measurement uncertainty with field composition rather than estimate the former. Text for 2000–2025 (316,091 records) is extracted and retained; the analysis was not run | No — scoping decision | 2026-10-27 |
 
 ## 2. What was deliberately left alone
 
@@ -46,7 +48,7 @@ from tuning the instrument until the number passes.
 
 ## 3. The honest reading of column four
 
-**Two of ten deviations had their response rule set in advance** (D-1, D-4). The rest were decided
+**Two of twelve deviations had their response rule set in advance** (D-1, D-4). The rest were decided
 after seeing a measurement. That is the weakest point of this project and it should be stated in
 the Methods rather than discovered by a reader.
 
@@ -59,7 +61,8 @@ Three things bound how much it can be exploited:
    more rubbish to classify. D-7 removed 6.5% of the field. D-8 discarded the largest and most
    striking stratum of the results. None of them made a result easier to obtain.
 3. **The primary quantities were not re-specified.** The ranking axis survived a direct test
-   (MTIX: Spearman 0.14, p = 0.36, n = 43) rather than being replaced when it looked suspect.
+   (MTIX: Spearman 0.14, p = 0.36, n = 43; re-run on the final material 2026-09-03: Spearman
+   0.14, p = 0.18, n = 88) rather than being replaced when it looked suspect.
 
 ## 4. Procedural incidents — recorded, not excused
 
@@ -87,5 +90,9 @@ doubtful, 1 wrong of 51 rated), they are his.
 - **D5b is proposed but not implemented** — the dental leak entering through `Osteogenesis,
   Distraction` and `Bone Transplantation`. Its size (≥ 1.44% of the field) is a lower bound from
   title probes, not a measurement.
-- **No systematic test for foreign-domain contamination exists.** Four leaks were found by four
-  different accidents. This belongs in Limitations as stated, not as a solved problem.
+- ~~No systematic test for foreign-domain contamination exists.~~ **Closed 2026-09-03.**
+  `audyt_skazenia.py` measured, for every material group, the share of documents carrying a
+  descriptor from a foreign domain: 0 of 60 groups above 20%, median 0.6%, veterinary share 0.0%
+  in every group. The one group above the threshold before the audit (cone-beam CT, 82.5% dental)
+  had already been removed. The four earlier leaks were still found by accident; the audit is
+  the planned test that now stands behind them.
