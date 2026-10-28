@@ -670,3 +670,30 @@ zwycięzcy" upada razem z `single bundle`.
 Zliczenia na 66: y₀ 2000–09: 11, 2010–19: 42, 2020–25: 13; kraj_eff ≤ 2,5: 13 grup, wyłącznie
 Chiny (7) i USA (6); ≥ 9: 12 grup; bez czasu podwojenia 11; szczyt 2025: 19.
 `arcr`: 466 prac, y₀ 2017, USA 44% — do decyzji ortopedy.
+
+---
+
+# 2026-10-28 — recenzja zewnętrzna (ChatGPT) i co z niej wchodzi do atlasu
+
+Pełna recenzja u Przemka. Ocena: 8/10 koncepcja, 6/10 walidacja; główny zarzut — metoda
+kontroluje błędy już napotkane, nie zwalidowana wobec niewykrytych.
+
+**Teraz, do atlasu** (brief `walidacja_po_recenzji`): macierz wrażliwości k/m/θ (Z1);
+cenzurowanie trwałości — błąd w Tabeli 4, dual mobility +5–7 niepełne (Z2); zagnieżdżenie
+wariantów S2/S3 ⊂ primary — przecięcie jest filtrem, 174 odrzucone do scharakteryzowania (Z3);
+czy D6 opóźnia y₀ przez usunięcie prac zwierzęcych (Z4, nowy punkt); rok publikacji i MTIX 2024
+(Z5). Do tekstu: „geographic origin of the earliest detected publications" zamiast „kraj
+pochodzenia"; y₀ z tekstu, nie z MeSH; retronimy potwierdzone ze źródeł; zmiany praktyki
+publikacyjnej w ograniczeniach; odesłanie do Scientometrics 2026 (DOI potwierdzone, treść
+do przeczytania przed cytowaniem).
+
+**Wymaga Przemka:** zewnętrzna, opublikowana lista innowacji ortopedycznych 2000–2025 jako
+zbiór referencyjny dla odzysku (recall) — tania wersja „eleganckiego eksperymentu" z §7
+recenzji; drugi ortopeda na warstwową próbę 10–20% kandydatów (κ).
+
+**Na później, praca o metodzie:** hierarchia termin → koncept → rodzina jako definicja
+centralna; walidacja na drugiej specjalności z zamrożonymi parametrami; porównanie z detekcją
+wybuchów Kleinberga na zbiorze referencyjnym.
+
+**Odrzucone:** zarzut braku statystycznego uzasadnienia progu 90/5 — to reguła operacyjna
+z mierzoną rozdzielczością, tak opisana; bez zmian.

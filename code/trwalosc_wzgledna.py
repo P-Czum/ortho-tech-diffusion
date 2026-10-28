@@ -89,6 +89,11 @@ def main() -> int:
             lata = [y for y in range(pk + a, pk + b + 1) if y in YEARS]
             r[nazwa] = round(float(np.mean([s[YEARS.index(y)] for y in lata]) / sz), 4) \
                 if lata and sz else None
+        # okno wychodzace poza 2025 jest uciete: srednia z lat, ktore sa, nie z calego okna
+        for nazwa, a, b in OKNA:
+            n = len([y for y in range(pk + a, pk + b + 1) if y in YEARS])
+            r[f"{nazwa}_status"] = ("pelne" if n == b - a + 1 else
+                                    f"czesciowe ({n} z {b - a + 1} lat)" if n else "brak")
         rows.append(r)
 
     d = pd.DataFrame(rows).sort_values("po_3_5")
