@@ -1,5 +1,5 @@
 # Deviations from the OSF registration
-## Register · compiled 2026-09-02, extended 2026-10-27 · covers 2026-08-27 → 2026-10-27
+## Register · compiled 2026-09-02, extended 2026-10-28 · covers 2026-08-27 → 2026-10-28
 
 The registration (OSF, secondary-data preregistration, 2026-08-27) cites twelve frozen files by
 SHA-256. **All twelve are unchanged; the manifest verifies 12/12.** Every change below is therefore
@@ -28,6 +28,7 @@ was set before the measurement was taken**.
 | D-10 | Second-coder round on a **60-term stratified subsample** | round two as a **census of the material** | five of seventeen disagreements were n-gram fragments that do not arise under chunking; at 75 groups a census is feasible | No | 2026-08-31 |
 | D-11 | RQ3: distribution of the **five categories** over the 287-term core; §6.2 consistency controls; after κ < 0.70, **recoding and reporting of both rounds** | coder 1's distribution over the 287-term core reported as a **closed result** in S1 (non-technological 229, renaming 20, novel concept 20, conceptual evolution 18, measurement artifact 0); **round two not run**; the five-category scheme is not applied to the noun-phrase material; §6.2(a) and (c) not performed | D-1 retired the n-gram core as material. The human coder saw concentration axes, doubling times and persistence while the material was being defined, so a second round could be blinded only on the model side and would not measure what the registration specified | No | 2026-10-27 |
 | D-12 | §6.3: `y₀` under the primary definition **with the secondary-definition value beside it**, flag where they differ by > 2 years; §6.2(b) reproduction under the secondary definition | `y₀` reported under the **primary definition only** | Not forced by a measurement — the author's decision to keep the paper to one field definition. The secondary definition exists only as n-gram counts for 2005–2025 (before D-1 and D-3); the two definitions overlap at Jaccard ≈ 0.31 and the secondary includes rheumatology and basic science, so its `y₀` differences would mix measurement uncertainty with field composition rather than estimate the former. Text for 2000–2025 (316,091 records) is extracted and retained; the analysis was not run | No — scoping decision | 2026-10-27 |
+| D-13 | v1.4 §4a (D-9): an abbreviation **enters merged with its full form**, never on its own | the rule had been applied incompletely: **nine groups were labelled with the full name but counted the abbreviation alone** (`taa`/`tar`, `pao`, `tea`, `fnb`, `pvp`, `mep`, `pfna`, `mua`; and `anterolateral ligament` without the phrase the group is named after). Full forms are now merged. **Five groups lose `y₀`** (total ankle arthroplasty, total elbow arthroplasty, periacetabular osteotomy, femoral nerve block, vertebroplasty) — each was already present at baseline, and its "emergence" was the spread of the abbreviation — and leave the material; `manipulation under anesthesia` is excluded because its full form is not a noun phrase and cannot be counted. Material 54 → **48**; the 45 groups not touched are unchanged | Sensitivity analysis of the text-variant intersection (2026-10-28) found `vertebroplasty` (1,518 papers) outside the group named after it; a sweep of every abbreviation in the material found the others | **Yes** — §4a was written on 2026-09-02, before this measurement; this row executes it | 2026-10-28 |
 
 ## 2. What was deliberately left alone
 
@@ -48,7 +49,7 @@ from tuning the instrument until the number passes.
 
 ## 3. The honest reading of column four
 
-**Two of twelve deviations had their response rule set in advance** (D-1, D-4). The rest were decided
+**Three of thirteen deviations had their response rule set in advance** (D-1, D-4, D-13). The rest were decided
 after seeing a measurement. That is the weakest point of this project and it should be stated in
 the Methods rather than discovered by a reader.
 

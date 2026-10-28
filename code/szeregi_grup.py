@@ -8,8 +8,10 @@ Jeden przebieg liczy dwa pola naraz: obecne (D4+D5a+D5c+D6) i bez filtra weteryn
 (D4+D5a+D5c) — to drugie tylko do analizy wrazliwosci y0 na D6, nie jako nowa definicja pola.
 
 Uruchom:
-    python code/szeregi_grup.py --grupy data/processed/grupy_54.json --out-dir data/processed \
-        --bez-d6 results/szeregi_54_bez_d6_prace.csv
+    python code/szeregi_grup.py --grupy data/processed/grupy_48.json --out-dir data/processed \
+        --bez-d6 results/szeregi_48_bez_d6_prace.csv
+
+Pliki wyjsciowe biora numer materialu z nazwy pliku grup (grupy_48.json -> szeregi_48.csv).
 """
 from __future__ import annotations
 import argparse, json, sys, time
@@ -80,13 +82,14 @@ def main() -> int:
     dv = np.array([den[str(y)] for y in YEARS], float)
     ycols = [f"y{y}" for y in YEARS]
     out = Path(args.out_dir)
+    nr = Path(args.grupy).stem.replace("grupy_", "")
     ng = len(grupy)
 
     pd.DataFrame(np.round(100 * cnt_d6[:ng] / dv, 4), columns=ycols).assign(
         grupa=klucze[:ng])[["grupa"] + ycols].to_csv(
-        out / "szeregi_54.csv", index=False, encoding="utf-8-sig", lineterminator="\n")
+        out / f"szeregi_{nr}.csv", index=False, encoding="utf-8-sig", lineterminator="\n")
     pd.DataFrame(cnt_d6[:ng], columns=ycols).assign(grupa=klucze[:ng])[["grupa"] + ycols].to_csv(
-        out / "szeregi_54_prace.csv", index=False, encoding="utf-8-sig", lineterminator="\n")
+        out / f"szeregi_{nr}_prace.csv", index=False, encoding="utf-8-sig", lineterminator="\n")
     pd.DataFrame(cnt_bez[:ng], columns=ycols).assign(grupa=klucze[:ng])[["grupa"] + ycols].to_csv(
         args.bez_d6, index=False, encoding="utf-8-sig", lineterminator="\n")
 

@@ -1,10 +1,10 @@
 """wrazliwosc.py — analizy wrazliwosci po recenzji zewnetrznej (brief walidacja_po_recenzji, Z1/Z3/Z4).
 
-Nic tu nie zmienia materialu 54 ani osi. Regula detektora jest przepisana jako jedna funkcja
+Nic tu nie zmienia materialu ani osi. Regula detektora jest przepisana jako jedna funkcja
 z parametrami jawnie w argumentach; ZANIM policzymy jakikolwiek wariant, sprawdzamy, ze przy
 parametrach domyslnych odtwarza ona dokladnie:
   - zbiory i y0 z emerging_d6_{primary,s2_abstract,s3_english}.parquet (poziom terminu),
-  - y0 i rok szczytu z osie_54.csv (poziom grupy, szeregi z szeregi_grup.py).
+  - y0 i rok szczytu z osie_{nr}.csv (poziom grupy, szeregi z szeregi_grup.py).
 Jesli ktores sie nie zgadza, skrypt konczy sie bledem — wariant liczony inna regula niz
 wynik glowny bylby bezwartosciowy.
 
@@ -14,10 +14,10 @@ Z3  wylonienia primary, ktore odpadly na przecieciu z S2/S3 — gdzie i co to je
 Z4  y0 grup na polu bez filtra D6 (D4+D5a+D5c) obok obecnego.
 
 Uruchom (po szeregi_grup.py):
-    python code/wrazliwosc.py
+    python code/wrazliwosc.py --nr 48
 """
 from __future__ import annotations
-import json, sys
+import argparse, json, sys
 from pathlib import Path
 
 import numpy as np
@@ -57,6 +57,10 @@ def mianownik(nazwa: str) -> np.ndarray:
 
 
 def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--nr", required=True, help="numer materialu, np. 48")
+    nr = ap.parse_args().nr
+
     # --- poziom terminu: trzy warianty tekstu -------------------------------------------
     term = {}
     for v in ("primary", "s2_abstract", "s3_english"):
@@ -82,8 +86,8 @@ def main() -> int:
         sys.exit("KONTROLA: przeciecie nie odtwarza rdzen_d6.json")
 
     # --- poziom grupy --------------------------------------------------------------------
-    osie = pd.read_csv(D / "osie_54.csv", encoding="utf-8-sig").set_index("grupa")
-    gp = pd.read_csv(D / "szeregi_54_prace.csv", encoding="utf-8-sig").set_index("grupa")
+    osie = pd.read_csv(D / f"osie_{nr}.csv", encoding="utf-8-sig").set_index("grupa")
+    gp = pd.read_csv(D / f"szeregi_{nr}_prace.csv", encoding="utf-8-sig").set_index("grupa")
     dv = mianownik("terms_d6_primary")
     gc = gp[YC].to_numpy(float)
     y0_dom = pd.Series(wykryj(gc, dv, **DOM), index=gp.index)
@@ -92,12 +96,12 @@ def main() -> int:
     pk = pd.Series(np.array(YEARS)[(gc / dv).argmax(axis=1)], index=gp.index)
     if not ((y0_dom == ref_y0).all() and (pk == ref_pk).all()):
         zle = gp.index[(y0_dom != ref_y0) | (pk != ref_pk)].tolist()
-        sys.exit(f"KONTROLA: szeregi grup nie odtwarzaja osie_54: {zle}")
-    print("kontrola grup: y0 i rok szczytu 54/54 zgodne z osie_54", file=sys.stderr)
+        sys.exit(f"KONTROLA: szeregi grup nie odtwarzaja osie_{nr}: {zle}")
+    print(f"kontrola grup: y0 i rok szczytu {len(gp)}/{len(gp)} zgodne z osie_{nr}", file=sys.stderr)
 
     kat = pd.read_csv(D / "np_kategorie_propozycja.tsv", sep="\t")
     kat = dict(zip(kat.term, kat.kategoria))
-    material = set(pd.read_csv(D / "material_54.csv", encoding="utf-8-sig").term)
+    material = set(pd.read_csv(D / f"material_{nr}.csv", encoding="utf-8-sig").term)
 
     # --- Z1 ------------------------------------------------------------------------------
     wiersze, nowe = [], []
@@ -116,7 +120,7 @@ def main() -> int:
                          "kategoria_istniejaca": kat.get(t, "")})
         wiersze.append({
             "parametr": nazwa, "wartosc": wart,
-            "grup_nadal_wylania": int((y0 > 0).sum()), "grup_z_54": len(gp),
+            "grup_nadal_wylania": int((y0 > 0).sum()), "grup_w_materiale": len(gp),
             "grupy_wypadajace": " | ".join(gp.index[(y0 == 0) & (y0_dom > 0)]),
             "mediana_abs_dy0": float(d.abs().median()),
             "max_abs_dy0": int(abs(d[imax])), "max_dy0_grupa": imax if d[imax] else "",
@@ -128,9 +132,9 @@ def main() -> int:
             "nowe_technologie_nazwy": " | ".join(k_tech),
         })
     z1 = pd.DataFrame(wiersze)
-    z1.to_csv(R / "wrazliwosc_parametrow.csv", index=False, encoding="utf-8-sig",
+    z1.to_csv(R / f"wrazliwosc_parametrow_{nr}.csv", index=False, encoding="utf-8-sig",
               lineterminator="\n")
-    pd.DataFrame(nowe).to_csv(R / "wrazliwosc_nowe_frazy.csv", index=False,
+    pd.DataFrame(nowe).to_csv(R / f"wrazliwosc_nowe_frazy_{nr}.csv", index=False,
                               encoding="utf-8-sig", lineterminator="\n")
     print(z1.drop(columns=["nowe_technologie_nazwy", "grupy_wypadajace"]).to_string(index=False))
 
@@ -158,7 +162,7 @@ def main() -> int:
     print(z3[z3.kategoria_istniejaca.isin(TECH)].to_string(index=False))
 
     # --- Z4 ------------------------------------------------------------------------------
-    bp = pd.read_csv(R / "szeregi_54_bez_d6_prace.csv", encoding="utf-8-sig").set_index("grupa")
+    bp = pd.read_csv(R / f"szeregi_{nr}_bez_d6_prace.csv", encoding="utf-8-sig").set_index("grupa")
     bp = bp.reindex(gp.index)
     y0_bez = pd.Series(wykryj(bp[YC].to_numpy(float), mianownik("terms_w2000_primary"), **DOM),
                        index=gp.index)
@@ -168,7 +172,7 @@ def main() -> int:
                        "dy0": (y0_dom - y0_bez).where((y0_dom > 0) & (y0_bez > 0)).values,
                        "prac_d6_lacznie": (bp[YC].sum(axis=1) - gp[YC].sum(axis=1)).values,
                        "prac_d6_przed_y0": przed})
-    z4.to_csv(R / "d6_vs_y0.csv", index=False, encoding="utf-8-sig", lineterminator="\n")
+    z4.to_csv(R / f"d6_vs_y0_{nr}.csv", index=False, encoding="utf-8-sig", lineterminator="\n")
     print("\nZ4: dy0 = y0 (z D6) - y0 (bez D6)")
     print(z4.dy0.value_counts().sort_index().to_string())
     print(z4[z4.dy0.abs() >= 1].to_string(index=False))
