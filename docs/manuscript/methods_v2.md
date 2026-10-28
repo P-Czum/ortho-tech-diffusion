@@ -1,0 +1,44 @@
+# Methods — draft v2
+### 2026-10-27 · material 54 · ⟨…⟩ = to be filled
+
+## Data and field
+
+We used the PubMed 2026 annual baseline with daily update files, deduplicated so that the most recent record of each PMID is kept and deleted citations removed. The field was defined as all records indexed to the MeSH descriptor *Orthopedic Procedures* or any of its 56 descendants, published 2000–2025.
+
+The MeSH tree admits four literatures that are not orthopaedics. We identified them one by one — none by a planned test — and removed them at record level: vascular limb salvage entering through *Amputation, Surgical* and *Limb Salvage* (records whose only field descriptors are these and which carry a vascular or diabetic descriptor); maxillofacial surgery entering through five descriptors that also belong to the dentistry subtree; veterinary literature (records tagged *Animals* without *Humans*); and the physical sense of *Traction* (records whose only field descriptor is *Traction* and which carry a digestive, urogenital or ophthalmic descriptor). Together these removed ⟨n⟩ records, 9% of the field, leaving ⟨N⟩. For each rule we measured separation on terms known to belong to each side: 94–100% of documents for foreign terms fell inside the removed set, against 0–2% for orthopaedic terms (Supplement S3). An alternative field definition — 137 journals carrying the NLM Broad Subject Term *Orthopedics* — was kept unfiltered as an independent control.
+
+## Detecting emergence
+
+From each title and abstract we extracted noun phrases (spaCy 3.8, `en_core_web_sm`), lower-cased and lemmatised, and counted for each phrase the number of field records containing it in each year. A phrase's *share* is that count divided by the number of field records that year.
+
+A phrase was counted as emerging in the first year in which its share reached at least five times its mean share over 2000–2002 and at least 0.1% of the field (with at least five papers), and remained above that level for three consecutive years. Because three confirmatory years are required, no phrase can emerge after 2023. Detection was run on three text variants — all records; records with an abstract; English-language records — and a phrase entered the candidate set only if it emerged in all three. This yielded ⟨1,294⟩ candidate phrases.
+
+We had preregistered this detector on word n-grams rather than noun phrases (OSF ⟨DOI⟩). The registered analysis did not work: 80% of the registered 287-term core were fragments of abstract boilerplate or names of study designs rather than technologies, and agreement between the human coder and a second, model-based coder on the registered five-category scheme was κ = 0.44 against a preregistered threshold of 0.70. We replaced n-grams with noun phrases under a two-part criterion set before the run (boilerplate absent from the top 50; the robotics family reduced from eight rows to at most three). The registered five-category coding was not repeated on the new material: the human coder's blinding had already been broken, and his distribution on the registered core — 80% non-technological, 7% renaming, 7% novel, 6% evolution, 0% measurement artifact — is reported as a closed result in Supplement S1. All results below are exploratory. The registration and the twelve deviations from it are tabulated in Supplement S1.
+
+## Defining the material
+
+An orthopaedic surgeon (PC) screened the candidate phrases. A phrase was retained as a *technology* if it named a device, implant, material, or operative, periprocedural, or assistive technique applied to a patient, and excluded if it named a research method, outcome measure, score, disease entity, complication, patient characteristic, drug, or aspect of care organisation. The boundary of "research method" runs at use on the patient: finite element analysis and segmentation software were excluded because they are instruments for studying implants rather than for treating people (finite element analysis co-occurred with implants from our own material at 9–25 times chance), whereas artificial intelligence was retained because it is deployed in diagnosis and surgeons evaluate it. A language model proposed a category for each phrase; the surgeon's adjudication is the record (Supplement S4).
+
+Abbreviations were merged with their full forms, or excluded where no single expansion accounted for a clear majority of their documents (`ai`, `ha`, `cr`, `ka`). Merging matters: the share of a term's documents that use only the abbreviation changed by up to 5 percentage points per year over the window, so an abbreviation left as a separate row would have an incomplete series and a distorted year of emergence. Variants of one technology (*3D printing* / *3D printing technology*; *kyphoplasty* / *balloon kyphoplasty*) were merged by a fixed synonym list.
+
+Three phrases were removed as retronyms — names given to an existing standard only when a rival appeared (*single bundle* after double-bundle reconstruction; *anatomic total shoulder arthroplasty* after reverse arthroplasty; *mechanical alignment* after kinematic alignment) — and seven as generic descriptions of established procedures. A retronym is an emergence of a name, not of a technique: the detector measures language, and language and technology part company exactly when competition appears. The retronyms are reported in Table 4 rather than discarded, because they are the clearest demonstration that specialist review is not optional in this method. Each retained technology was assigned to one of six kinds — implant or material, joint arthroplasty, operative technique, assistive tool, perioperative care, biological therapy — by the surgeon. The final material comprised **54 technology groups** (89 phrases; 51 distinct technologies, three of them represented by two groups).
+
+## Measuring spread, growth, and persistence
+
+For each group, over all papers from its year of emergence onward: the share of papers from the leading country and the *effective number* of countries (the inverse Herfindahl index, 1/Σpᵢ²), which equals the number of equal-sized contributors that would produce the observed concentration. Country was taken from the first author's affiliation only; it was missing for a median of 9.4% of papers per group (maximum 19.4%). A country's over-representation is its share of a technology's papers divided by its share of all field papers in the same years.
+
+*Country of origin* was identified in two ways — the most frequent country among a technology's ten earliest papers with a known affiliation, and the most frequent in all its papers before emergence (median 43) — and a technology was classified as "started and led by the same country" or "moved" only when both agreed. The window opens in 2000, so for techniques older than that the earliest papers in the corpus are not the founding papers.
+
+*Doubling time* is ln 2 divided by the slope of log-share from the year of emergence to the peak year; it was not computed where the peak came less than two years after emergence or growth was not sustained (10 groups). *Peak share* is the maximum annual share. *Persistence* is a technology's share in a window after its own peak, divided by its peak share, for windows 1–3, 3–5, and 5–7 years after the peak year; a technology whose share fell below half of peak was counted as a decline. Windows are anchored to each technology's own peak rather than to calendar years, because technologies that peaked in 2007 and in 2020 are at different points of their cycles in any given calendar year.
+
+## Context of declines
+
+For each declining group, the surgeon recorded the clinical context of the decline from published guidelines, systematic reviews, and registry reports (Supplement S7). This was done with knowledge of the persistence values and is reported descriptively, not as a test.
+
+## Indexing discontinuity
+
+MEDLINE moved to automated indexing (MTIX) in 2022. We tested whether this affected the ranking: the number of descriptors per field record fell from 13.1 (2018) to 8.7 (2022) and recovered to 12.5 (2025), and descriptor composition shifted from general to specific terms, but a group's exposure to gaining or losing descriptors did not predict its deviation from trend (Spearman ρ = 0.14, p = 0.18, n = 88). The ranking was retained unchanged; the discontinuity is reported in Limitations.
+
+## Reporting
+
+Measurements describe attention in the published literature. They are not measurements of clinical use, and where the two are distinguished in this paper — a technology withdrawn from practice versus one that stopped being written about — the distinction rests on external sources named in Table 3, not on the curves. Code and derived tables are at ⟨repository⟩; abstracts are not redistributed (courtesy of the U.S. National Library of Medicine).
