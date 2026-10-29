@@ -17,8 +17,8 @@ liczył sam skrót. Liczyliśmy więc prace, które **użyły skrótu**, a nie p
 krzywa rośnie razem z nawykiem pisania skrótów w streszczeniach. Teraz każda grupa zawiera
 rozwinięcie swojego skrótu i frazę, od której ma nazwę.
 
-**Zapisane jako D-13** w `docs/protocol/deviations.md`, z regułą odpowiedzi ustaloną z góry
-(§4a powstał przed pomiarem). Rejestr ma teraz *„Three of thirteen”*.
+**Zapisane w `docs/protocol/deviations.md` §4 jako incydent proceduralny** (błąd wykonania §4a),
+nie jako odchylenie. Rejestr zostaje przy *„Two of twelve”*.
 
 | grupa | było | po scaleniu | wynik |
 |---|---|---|---|
@@ -35,11 +35,10 @@ rozwinięcie swojego skrótu i frazę, od której ma nazwę.
 ¹ Fraza rzeczownikowa kończy się przed przyimkiem, więc „manipulation under anesthesia” nigdy
 nie jest jedną frazą.
 
-**Brzmienie do Wyników:** pięć z 54 pozornych wyłonień było wyłonieniem skrótu, nie technologii.
-Każda z tych technik była dobrze obecna w piśmiennictwie już w latach 2000–2002, a próg
-przekroczyła dopiero wtedy, gdy autorzy zaczęli ją skracać. **To trzecia postać lekcji
-o języku, obok retronimów i pozornych zaników** — i jedyna znaleziona we własnym materiale.
-Tabela powyżej → suplement.
+**To nie jest wynik** (korekta 2026-10-29, zob. `brief_dla_cowork_korekta_skroty_2026-10-29`).
+Skrót i pełna nazwa to ta sama technologia, a §4a od początku kazało liczyć je razem. Pięć grup
+wypada, bo przy poprawnym liczeniu nigdy się nie wyłaniały — był to błąd zliczania, a nie zjawisko
+w piśmiennictwie. Do Wyników nic; tabela powyżej → suplement jako zapis korekty.
 
 ## 2. Liczby — tabela zastępcza
 
@@ -142,11 +141,10 @@ Box 1 wskazuje już pliki `_48`. Pliki `_54` zostają jako historia.
 ## 7. Do zrobienia w manuskrypcie
 
 1. Podmienić liczby wg §2–§4 (wszędzie, gdzie stoi 54, 51, 49, 11 zaników, 13 z 16).
-2. Wyniki, część o języku: dopisać akapit o pięciu wyłonieniach skrótu (§1, tabela do suplementu).
-3. Metody: jedno zdanie — *„Each abbreviation was merged with its expansion and each group with
-   the phrase it is named after; groups were tested for emergence on the merged series.
-   Five groups did not emerge once merged and were removed; one abbreviation whose expansion is
-   not a noun phrase was excluded (D-13).”*
+2. ~~Wyniki, część o języku: akapit o wyłonieniach skrótu~~ — **skreślone** (korekta 2026-10-29).
+3. Metody: jedno zdanie — *„Each abbreviation was counted together with its full form; one
+   abbreviation whose full form is not a noun phrase was excluded.”* Bez numeru odchylenia:
+   to poprawka błędu wykonania, zapisana w rejestrze jako incydent proceduralny.
 4. Zdanie o klasach: „techniki szybko i węziej”, bez „lokalnie”.
 
 ## 8. Kontrole
