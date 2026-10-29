@@ -85,7 +85,7 @@ def fig1():
             ax.text(2004.0, y - 0.15, f"{KIND_NAME[k]} ({n})", ha="left", va="bottom", color=INK, fontsize=8, fontweight="bold")
             ax.axhline(y - 0.5, color=GRID, lw=0.6); y += 0.55
         last = k; y0 = int(r["y0"]); pk = int(r["rok_szczytu"]); growing = pk == 2025
-        ax.plot([y0, pk], [y, y], color=HUE, lw=2.2, solid_capstyle="butt", alpha=0.5 if growing else 0.9, zorder=2)
+        ax.plot([y0, pk], [y, y], color=HUE, lw=2.2, solid_capstyle="butt", alpha=0.5 if growing else 0.9, zorder=2, ls=(0, (2, 1.5)) if pk < y0 else "-")
         ax.scatter([y0], [y], marker=KIND_MARK[k], s=34, color=HUE, zorder=4, edgecolor="white", lw=0.5)
         if growing: ax.annotate("", xy=(2026.3, y), xytext=(2025, y), arrowprops=dict(arrowstyle="-|>", color=HUE, lw=1.4, alpha=0.5, mutation_scale=7))
         else: ax.scatter([pk], [y], marker="|", s=50, color=HUE, zorder=4)
@@ -94,8 +94,10 @@ def fig1():
     ax.grid(axis="x", color=GRID, lw=0.5); ax.set_axisbelow(True); ax.tick_params(axis="y", length=0); ax.spines["left"].set_visible(False)
     h = [Line2D([], [], marker=KIND_MARK[k], color=HUE, ls="", ms=5, label=KIND_NAME[k]) for k in KIND_ORDER]
     h += [Line2D([], [], color=HUE, lw=2.2, alpha=0.9, label="emergence → peak year"), Line2D([], [], color=HUE, lw=2.2, alpha=0.5, label="still growing (peak = 2025)")]
-    ax.legend(handles=h, loc="upper center", bbox_to_anchor=(0.5, -0.04), ncol=4, fontsize=7, handlelength=1.6, columnspacing=1.2)
+    h.append(Line2D([], [], color=HUE, lw=2.2, ls=(0, (2, 1.5)), label="peak before emergence (short spike)"))
+    ax.legend(handles=h, loc="upper center", bbox_to_anchor=(0.5, -0.04), ncol=3, fontsize=7, handlelength=1.8, columnspacing=1.2)
     ax.set_title("Figure 1. What emerged, and when — 48 technologies, 2005–2023"); ax.set_xlabel("year")
+    fig.text(0.01, 0.0, "For two technologies attention peaked in a short spike before the first three consecutive years above threshold (mesenchymal stem cells, 2013;\nhighly cross-linked polyethylene, 2008); microfracture peaked in its year of emergence (2012).", color=INK3, fontsize=7, va="top")
     save(fig, "fig_timeline")
 
 # ------------------------------------------------------------------ Figure 2: origin vs lead

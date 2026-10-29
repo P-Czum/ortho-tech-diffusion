@@ -35,7 +35,7 @@ Let a **field** be a set of records defined before analysis (here: a MeSH subtre
 | # | Title | Form | Shows | Data | Status |
 |---|---|---|---|---|---|
 | **0** | Anatomy of an attention curve | one real series, annotated | every landmark in Box 1 on **hip resurfacing** (y₀ 2005, doubling 2.4 y, peak 2011, all three windows complete, decline). Metal-on-metal THA was the first choice but has no defined doubling time (fitted slope not positive), so it could not show that landmark | `szeregi_48.csv` | **done** (`fig_anatomy`) |
-| **1** | What emerged, and when | timeline: one row per technology, dot at y₀, bar to peak year, open end if still growing; rows grouped by kind | y₀, peak year, growing, kind | `osie_48.csv` + `material_48.csv` (kind) | **done** (`fig_timeline`) |
+| **1** | What emerged, and when | timeline: one row per technology, dot at y₀, bar to peak year, open end if still growing; rows grouped by kind | y₀, peak year, growing, kind; dashed bar where peak < y₀ (MSC, HXLPE), footnote with microfracture | `osie_48.csv` + `material_48.csv` (kind) | **done** (`fig_timeline`, 2026-10-29 audit) |
 | **2** | Who started and who leads | paired bars per country: started vs leads | origin, lead, flows | `kraj_pochodzenia_48.csv` | **done** (`fig_origin_lead`) |
 | **3** | Concentration is not paper count | scatter: effective countries (y) vs papers since y₀ (x, log); labelled extremes; kind by marker | effective countries, papers, kind | `osie_48.csv` | **done** (`fig_concentration`) |
 | **4** | Six kinds diffuse differently | small multiples: doubling time and effective countries by kind, dots + median bar | doubling, effective countries, kind | `osie_48.csv` | **done** (`fig_kinds`) |
