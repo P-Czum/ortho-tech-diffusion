@@ -31,7 +31,7 @@ przerywana, pozycja w legendzie, przypis. Pozostałe sześć rycin się nie zmie
 zmienił tylko `fig1`).
 
 Drobiazg, opcjonalnie: przypis stoi nisko pod legendą, z pustym pasem między nimi. Można
-podnieć `fig.text` (np. `y = 0.02`) albo przenieść tekst do podpisu ryciny w manuskrypcie.
+podnieść `fig.text` (np. `y = 0.02`) albo przenieść tekst do podpisu ryciny w manuskrypcie.
 
 ## 4. S8
 
