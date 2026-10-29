@@ -1,0 +1,414 @@
+{
+ "t1": [
+  {
+   "term": "olif",
+   "trend_rocznie_pct": 55.6,
+   "z_po_mtix": -9.15
+  },
+  {
+   "term": "owhto",
+   "trend_rocznie_pct": 30.4,
+   "z_po_mtix": -6.94
+  },
+  {
+   "term": "open wedge high tibial osteotomy",
+   "trend_rocznie_pct": 13.0,
+   "z_po_mtix": -6.28
+  },
+  {
+   "term": "hip arthroscopy",
+   "trend_rocznie_pct": 15.0,
+   "z_po_mtix": -5.83
+  },
+  {
+   "term": "lcp",
+   "trend_rocznie_pct": 5.1,
+   "z_po_mtix": -5.02
+  },
+  {
+   "term": "locking plate",
+   "trend_rocznie_pct": -0.9,
+   "z_po_mtix": -4.66
+  },
+  {
+   "term": "rcr",
+   "trend_rocznie_pct": 68.6,
+   "z_po_mtix": -3.92
+  },
+  {
+   "term": "lateral lumbar interbody fusion",
+   "trend_rocznie_pct": 16.2,
+   "z_po_mtix": -3.74
+  },
+  {
+   "term": "dual mobility cup",
+   "trend_rocznie_pct": 8.6,
+   "z_po_mtix": -3.06
+  },
+  {
+   "term": "3d printing",
+   "trend_rocznie_pct": 25.6,
+   "z_po_mtix": -2.93
+  },
+  {
+   "term": "pkp",
+   "trend_rocznie_pct": 19.5,
+   "z_po_mtix": -2.75
+  },
+  {
+   "term": "adductor canal block",
+   "trend_rocznie_pct": 18.3,
+   "z_po_mtix": -2.62
+  },
+  {
+   "term": "daa",
+   "trend_rocznie_pct": 18.4,
+   "z_po_mtix": -2.56
+  },
+  {
+   "term": "motor evoked potential",
+   "trend_rocznie_pct": 15.9,
+   "z_po_mtix": -2.51
+  },
+  {
+   "term": "locked plating",
+   "trend_rocznie_pct": -7.0,
+   "z_po_mtix": -2.46
+  },
+  {
+   "term": "labral repair",
+   "trend_rocznie_pct": 7.2,
+   "z_po_mtix": -2.07
+  },
+  {
+   "term": "anterolateral ligament",
+   "trend_rocznie_pct": 4.9,
+   "z_po_mtix": -2.05
+  },
+  {
+   "term": "oblique lateral interbody fusion",
+   "trend_rocznie_pct": 45.7,
+   "z_po_mtix": -2.03
+  },
+  {
+   "term": "arthroscopic rotator cuff repair",
+   "trend_rocznie_pct": 8.2,
+   "z_po_mtix": -1.91
+  },
+  {
+   "term": "oblique lumbar interbody fusion",
+   "trend_rocznie_pct": 47.8,
+   "z_po_mtix": -1.87
+  },
+  {
+   "term": "ponseti method",
+   "trend_rocznie_pct": -4.0,
+   "z_po_mtix": -1.74
+  },
+  {
+   "term": "lateral extra articular tenodesis",
+   "trend_rocznie_pct": 42.1,
+   "z_po_mtix": -1.67
+  },
+  {
+   "term": "proximal femoral nail antirotation",
+   "trend_rocznie_pct": 18.1,
+   "z_po_mtix": -1.63
+  },
+  {
+   "term": "minimally invasive plate osteosynthesis",
+   "trend_rocznie_pct": -1.8,
+   "z_po_mtix": -1.58
+  },
+  {
+   "term": "pfna",
+   "trend_rocznie_pct": 10.4,
+   "z_po_mtix": -1.56
+  },
+  {
+   "term": "polyetheretherketone",
+   "trend_rocznie_pct": 5.4,
+   "z_po_mtix": -1.56
+  },
+  {
+   "term": "direct anterior approach",
+   "trend_rocznie_pct": 12.8,
+   "z_po_mtix": -1.52
+  },
+  {
+   "term": "primary hip arthroscopy",
+   "trend_rocznie_pct": 41.4,
+   "z_po_mtix": -1.47
+  },
+  {
+   "term": "machine learning",
+   "trend_rocznie_pct": 69.4,
+   "z_po_mtix": -1.45
+  },
+  {
+   "term": "balloon kyphoplasty",
+   "trend_rocznie_pct": -1.1,
+   "z_po_mtix": -1.43
+  },
+  {
+   "term": "aci",
+   "trend_rocznie_pct": -5.7,
+   "z_po_mtix": -1.38
+  },
+  {
+   "term": "mesenchymal stem cell",
+   "trend_rocznie_pct": -3.3,
+   "z_po_mtix": -1.38
+  },
+  {
+   "term": "peld",
+   "trend_rocznie_pct": 9.6,
+   "z_po_mtix": -1.36
+  },
+  {
+   "term": "acb",
+   "trend_rocznie_pct": 10.2,
+   "z_po_mtix": -1.22
+  },
+  {
+   "term": "psi",
+   "trend_rocznie_pct": 3.2,
+   "z_po_mtix": -1.19
+  },
+  {
+   "term": "volar locking plate",
+   "trend_rocznie_pct": 5.6,
+   "z_po_mtix": -1.15
+  },
+  {
+   "term": "augmented reality",
+   "trend_rocznie_pct": 49.8,
+   "z_po_mtix": -1.14
+  },
+  {
+   "term": "unicompartmental knee arthroplasty",
+   "trend_rocznie_pct": 7.3,
+   "z_po_mtix": -1.06
+  },
+  {
+   "term": "3d printing technology",
+   "trend_rocznie_pct": 18.0,
+   "z_po_mtix": -1.01
+  },
+  {
+   "term": "mowhto",
+   "trend_rocznie_pct": 32.4,
+   "z_po_mtix": -1.0
+  },
+  {
+   "term": "percutaneous endoscopic lumbar discectomy",
+   "trend_rocznie_pct": 10.5,
+   "z_po_mtix": -0.95
+  },
+  {
+   "term": "arcr",
+   "trend_rocznie_pct": 32.6,
+   "z_po_mtix": -0.87
+  },
+  {
+   "term": "targeted muscle reinnervation",
+   "trend_rocznie_pct": 39.6,
+   "z_po_mtix": -0.86
+  },
+  {
+   "term": "computer assisted navigation",
+   "trend_rocznie_pct": 6.1,
+   "z_po_mtix": -0.64
+  },
+  {
+   "term": "kyphoplasty",
+   "trend_rocznie_pct": -5.6,
+   "z_po_mtix": -0.63
+  },
+  {
+   "term": "latarjet procedure",
+   "trend_rocznie_pct": 8.0,
+   "z_po_mtix": -0.62
+  },
+  {
+   "term": "let",
+   "trend_rocznie_pct": 34.5,
+   "z_po_mtix": -0.45
+  },
+  {
+   "term": "cervical disc arthroplasty",
+   "trend_rocznie_pct": 4.0,
+   "z_po_mtix": -0.35
+  },
+  {
+   "term": "mep",
+   "trend_rocznie_pct": 5.6,
+   "z_po_mtix": -0.33
+  },
+  {
+   "term": "primary reverse total shoulder arthroplasty",
+   "trend_rocznie_pct": 22.6,
+   "z_po_mtix": -0.15
+  },
+  {
+   "term": "robotic assisted total knee arthroplasty",
+   "trend_rocznie_pct": 53.9,
+   "z_po_mtix": -0.14
+  },
+  {
+   "term": "total disc replacement",
+   "trend_rocznie_pct": -14.7,
+   "z_po_mtix": -0.14
+  },
+  {
+   "term": "short stem",
+   "trend_rocznie_pct": 2.2,
+   "z_po_mtix": -0.08
+  },
+  {
+   "term": "mom total hip arthroplasty",
+   "trend_rocznie_pct": -22.5,
+   "z_po_mtix": -0.04
+  },
+  {
+   "term": "robotic",
+   "trend_rocznie_pct": 26.9,
+   "z_po_mtix": 0.08
+  },
+  {
+   "term": "reverse total shoulder arthroplasty",
+   "trend_rocznie_pct": 11.1,
+   "z_po_mtix": 0.09
+  },
+  {
+   "term": "anterior cervical discectomy fusion",
+   "trend_rocznie_pct": 5.1,
+   "z_po_mtix": 0.14
+  },
+  {
+   "term": "medial unicompartmental knee arthroplasty",
+   "trend_rocznie_pct": 7.3,
+   "z_po_mtix": 0.15
+  },
+  {
+   "term": "anterolateral ligament reconstruction",
+   "trend_rocznie_pct": 17.8,
+   "z_po_mtix": 0.15
+  },
+  {
+   "term": "fns",
+   "trend_rocznie_pct": 50.2,
+   "z_po_mtix": 0.24
+  },
+  {
+   "term": "cephalomedullary nail",
+   "trend_rocznie_pct": 7.3,
+   "z_po_mtix": 0.28
+  },
+  {
+   "term": "double bundle reconstruction",
+   "trend_rocznie_pct": -9.6,
+   "z_po_mtix": 0.3
+  },
+  {
+   "term": "cda",
+   "trend_rocznie_pct": 7.7,
+   "z_po_mtix": 0.31
+  },
+  {
+   "term": "kinematic alignment",
+   "trend_rocznie_pct": 14.3,
+   "z_po_mtix": 0.33
+  },
+  {
+   "term": "hip resurfacing",
+   "trend_rocznie_pct": -11.5,
+   "z_po_mtix": 0.52
+  },
+  {
+   "term": "robotic assistance",
+   "trend_rocznie_pct": 31.8,
+   "z_po_mtix": 0.53
+  },
+  {
+   "term": "percutaneous kyphoplasty",
+   "trend_rocznie_pct": 11.6,
+   "z_po_mtix": 0.72
+  },
+  {
+   "term": "autologous chondrocyte implantation",
+   "trend_rocznie_pct": -12.2,
+   "z_po_mtix": 1.27
+  },
+  {
+   "term": "medial patellofemoral ligament reconstruction",
+   "trend_rocznie_pct": 1.7,
+   "z_po_mtix": 1.28
+  },
+  {
+   "term": "ultrasound guidance",
+   "trend_rocznie_pct": -2.0,
+   "z_po_mtix": 1.32
+  },
+  {
+   "term": "microfracture",
+   "trend_rocznie_pct": -9.6,
+   "z_po_mtix": 2.13
+  },
+  {
+   "term": "pso",
+   "trend_rocznie_pct": -5.4,
+   "z_po_mtix": 2.47
+  },
+  {
+   "term": "hip resurfacing arthroplasty",
+   "trend_rocznie_pct": -15.8,
+   "z_po_mtix": 2.48
+  },
+  {
+   "term": "computer navigation",
+   "trend_rocznie_pct": -12.1,
+   "z_po_mtix": 2.52
+  },
+  {
+   "term": "tdr",
+   "trend_rocznie_pct": -18.9,
+   "z_po_mtix": 2.58
+  },
+  {
+   "term": "patient specific instrumentation",
+   "trend_rocznie_pct": -5.3,
+   "z_po_mtix": 2.59
+  },
+  {
+   "term": "pedicle subtraction osteotomy",
+   "trend_rocznie_pct": -10.6,
+   "z_po_mtix": 2.76
+  },
+  {
+   "term": "transforaminal lumbar interbody fusion",
+   "trend_rocznie_pct": 1.9,
+   "z_po_mtix": 2.8
+  },
+  {
+   "term": "reverse shoulder arthroplasty",
+   "trend_rocznie_pct": 0.9,
+   "z_po_mtix": 3.59
+  },
+  {
+   "term": "highly cross linked polyethylene",
+   "trend_rocznie_pct": -9.8,
+   "z_po_mtix": 5.58
+  }
+ ],
+ "t2": {
+  "przed MTIX 2017-2021": {
+   "spearman_obecnosc_przekroczenie": 0.763
+  },
+  "po MTIX 2023-2025": {
+   "spearman_obecnosc_przekroczenie": 0.854
+  }
+ },
+ "spearman_obecnosc_przed_po": 0.509,
+ "mediana_z": -0.975
+}

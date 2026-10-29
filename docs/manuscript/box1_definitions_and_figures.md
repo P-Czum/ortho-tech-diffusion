@@ -34,14 +34,16 @@ Let a **field** be a set of records defined before analysis (here: a MeSH subtre
 
 | # | Title | Form | Shows | Data | Status |
 |---|---|---|---|---|---|
-| **0** | Anatomy of an attention curve | one real series, annotated | every landmark in Box 1 on metal-on-metal THA | `szeregi_48.csv` (redraw: `szeregi_jednoterminowe.json` used the field denominator before the D6 filter, shares ~3.5% low; years unchanged) | **redraw** (`fig_anatomy`) |
-| **1** | What emerged, and when | timeline: one row per technology, dot at y₀, bar to peak year, open end if still growing; rows grouped by kind | y₀, peak year, growing, kind | `osie_48.csv` + `material_48.csv` (kind) | to draw |
+| **0** | Anatomy of an attention curve | one real series, annotated | every landmark in Box 1 on **hip resurfacing** (y₀ 2005, doubling 2.4 y, peak 2011, all three windows complete, decline). Metal-on-metal THA was the first choice but has no defined doubling time (fitted slope not positive), so it could not show that landmark | `szeregi_48.csv` | **done** (`fig_anatomy`) |
+| **1** | What emerged, and when | timeline: one row per technology, dot at y₀, bar to peak year, open end if still growing; rows grouped by kind | y₀, peak year, growing, kind | `osie_48.csv` + `material_48.csv` (kind) | **done** (`fig_timeline`) |
 | **2** | Who started and who leads | paired bars per country: started vs leads | origin, lead, flows | `kraj_pochodzenia_48.csv` | **done** (`fig_origin_lead`) |
-| **3** | Concentration is not paper count | scatter: effective countries (y) vs papers since y₀ (x, log); labelled extremes; kind by marker | effective countries, papers, kind | `osie_48.csv` | to draw |
-| **4** | Six kinds diffuse differently | small multiples: doubling time and effective countries by kind, dots + median bar | doubling, effective countries, kind | `osie_48.csv` | to draw |
-| **5** | Eleven declines, relative to own peak | 11 lines, x = years after own peak (−3…+7), y = share ÷ peak; rejected pair in dark, others light; 0.5 line | persistence | `szeregi_48.csv`, `trwalosc_wzgledna_48.csv` (window status) | to draw |
-| **6** | A name is not a technology | two panels: (a) retronym pair — rival and standard's name, both series; (b) one merged group — members' series and the group's union | retronyms, merging | `szeregi_czlonow.csv` | to draw |
+| **3** | Concentration is not paper count | scatter: effective countries (y) vs papers since y₀ (x, log); labelled extremes; kind by marker | effective countries, papers, kind | `osie_48.csv` | **done** (`fig_concentration`) |
+| **4** | Six kinds diffuse differently | small multiples: doubling time and effective countries by kind, dots + median bar | doubling, effective countries, kind | `osie_48.csv` | **done** (`fig_kinds`) |
+| **5** | Ten declines, relative to own peak | 10 lines, x = years after own peak (−3…+7), y = share ÷ peak; rejected pair in dark, others light; 0.5 line | persistence | `szeregi_48.csv`, `trwalosc_wzgledna_48.csv` (window status) | **done** (`fig_declines`) |
+| **6** | A name is not a technology | two panels: (a) retronym pair — rival and standard's name, both series; (b) one merged group — members' series and the group's union | retronyms, merging | `szeregi_czlonow.csv` | **done** (`fig_names`) |
 
 Figures 1, 3, 4 can be drawn now from `osie_48.csv`. Figures 5 and 6 need one file from VS Code: `szeregi_48.csv` — share by year for each of the 48 groups (union of members, the same series `trwalosc_wzgledna_48` was computed from), plus the member-level series for the retronym pairs and for one merged group (kyphoplasty: four members).
 
 Palette: one hue for data (`#3d6b8f`), one light tint for context, text in ink colours; kind encoded by marker shape, never by colour alone; every figure readable in greyscale.
+
+**Drawn 2026-10-29** from `docs/manuscript/figures/draw_figures_48.py` (reads the six `_48` files; one hue `#3d6b8f`, kind by marker, greyscale-readable). `fig_countries.*` (material 54, leads only) is superseded by `fig_origin_lead` and moved to `figures/_superseded/`.

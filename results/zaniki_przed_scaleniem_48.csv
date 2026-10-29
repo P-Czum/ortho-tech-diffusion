@@ -1,0 +1,22 @@
+﻿term,trw_terminu,grupa,trw_grupy,klasa_zaniku
+autologous chondrocyte implantation,0.0899,autologous chondrocyte implantation,0.13,zanik_grupy
+aci,0.1173,autologous chondrocyte implantation,0.13,druga_nazwa
+computer navigation,0.2556,computer navigation,0.27,zanik_grupy
+computer assisted navigation,0.2739,computer navigation,0.27,druga_nazwa
+double bundle reconstruction,0.156,double bundle reconstruction,0.16,zanik_grupy
+dual mobility cup,0.3811,dual mobility cup,0.38,zanik_grupy
+hip resurfacing,0.1005,hip resurfacing,0.15,zanik_grupy
+hip resurfacing arthroplasty,0.1955,hip resurfacing,0.15,druga_nazwa
+balloon kyphoplasty,0.2998,kyphoplasty,0.81,przesuniecie
+kyphoplasty,0.3406,kyphoplasty,0.81,przesuniecie
+locked plating,0.1421,locking plate,0.51,przesuniecie
+lcp,0.4216,locking plate,0.51,przesuniecie
+mesenchymal stem cell,0.307,mesenchymal stem cell,0.31,zanik_grupy
+microfracture,0.4294,microfracture,0.43,zanik_grupy
+mom total hip arthroplasty,0.1026,mom total hip arthroplasty,0.1,zanik_grupy
+owhto,0.3882,open wedge high tibial osteotomy,0.79,przesuniecie
+open wedge high tibial osteotomy,0.428,open wedge high tibial osteotomy,0.79,przesuniecie
+pedicle subtraction osteotomy,0.396,pedicle subtraction osteotomy,0.58,przesuniecie
+ponseti method,0.2108,ponseti method,0.21,zanik_grupy
+total disc replacement,0.0661,total disc replacement,0.23,zanik_grupy
+tdr,0.2434,total disc replacement,0.23,druga_nazwa
