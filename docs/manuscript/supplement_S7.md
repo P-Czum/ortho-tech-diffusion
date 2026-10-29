@@ -1,0 +1,22 @@
+# Supplement S7. Clinical context of the ten declines
+
+A decline is a group whose share of field records in 2025 was below half of its peak share (Methods). The persistence windows in Table 4 describe the course of each decline; they do not say why attention fell. For each declining group the orthopaedic surgeon (co-author) recorded the clinical context from published guidelines, systematic reviews, and registry reports, and classified it into one of the five contexts below. The classification was made on 2026-09-02, by a surgeon who had already seen the curves, and is not used in any quantitative comparison in the paper. An earlier draft related the depth of decline to the context; it was dropped because only two technologies fall in context 1, their separation from the rest at 1–3 years after peak is 0.003, and the classification was not blind to the curves. What remains is descriptive.
+
+**Contexts.** (1) Evidence against use — the technology was withdrawn from practice or its indications were radically narrowed. (2) Evidence for an alternative — the technology remains in use, but attention moved to a rival for the same indication. (3) No decisive evidence — variants of one method, or alternative methods for one indication, with the dispute ending without a winner, or an immature technology whose indications narrowed. (4) Evidence for, absorbed — the technology remains in use as a component of a successor system. (5) Evidence for, routine — the technology became a standard of care and stopped being written about.
+
+| Group | Peak | Context | Surgeon's note | Sources ⟨to be cited⟩ |
+|---|---:|---|---|---|
+| Metal-on-metal total hip arthroplasty | 2018 | 1. Evidence against use | Implants withdrawn from the market and from operating rooms after adverse local tissue reactions | regulatory recalls; national joint registry reports ⟨ref⟩ |
+| Hip resurfacing | 2011 | 1. Evidence against use | Indications radically narrowed in the wake of the metal-on-metal findings; a few designs remain in restricted use | registry revision data; guidance on patient selection ⟨ref⟩ |
+| Computer navigation | 2007 | 4. Evidence for, absorbed | Still used; absorbed as a component of robotic systems — the curve settles on a plateau (0.68 of peak at 3–5 years) rather than falling away | reviews of navigation and robotics in arthroplasty ⟨ref⟩ |
+| Double-bundle ACL reconstruction | 2010 | 3. No decisive evidence | Variants of one method without a winner; the dispute with single-bundle reconstruction ended, both sides' attention falling together (Results, Table 3) | meta-analyses single- vs double-bundle ⟨ref⟩ |
+| Total disc replacement | 2015 | 3. No decisive evidence | A decade of plateau (2005–2018) without resolution, then decline; indications narrowed, the operation still performed | systematic reviews; guideline statements ⟨ref⟩ |
+| Microfracture | 2012 | 3. No decisive evidence | Alternative methods for one indication (cartilage repair) without a winner; in use | reviews of cartilage repair ⟨ref⟩ |
+| Autologous chondrocyte implantation | 2010 | 3. No decisive evidence | Same indication as microfracture; in use, expensive, regulated as a medicinal product, performed in few centres | reviews of cartilage repair; regulatory status ⟨ref⟩ |
+| Mesenchymal stem cells | 2013 | 3. No decisive evidence | A returning topic rather than an abandoned technology: two humps, with emergence after the first; the literature moved into basic science and back | reviews of cell therapy in orthopaedics ⟨ref⟩ |
+| Ponseti method | 2009 | 5. Evidence for, routine | Standard of care for clubfoot; the fall in attention is a sign of success | guidelines on clubfoot management ⟨ref⟩ |
+| Dual-mobility cup | 2020 | 5. Evidence for, routine | Clinical use growing while attention falls after a phase of dispute; a 1974 design whose English-language literature begins in 2008 | registry uptake data ⟨ref⟩ |
+
+Kyphoplasty, listed as a decline on the unmerged material, is not one once its four names are counted together (S1.4, Figure 6c): the name *kyphoplasty* gave way to *percutaneous kyphoplasty* while the technology's literature as a whole did not fall below half of peak.
+
+**Reading the table.** The two technologies in context 1 fell deepest (0.11–0.17 of peak at 5–7 years, against 0.31–0.72 for the other eight); at 1–3 years after peak the separation is marginal (hip resurfacing 0.497, Ponseti method 0.500). The paper reports this as an observation on two cases and draws no rule from it.

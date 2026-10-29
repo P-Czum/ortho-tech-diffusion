@@ -97,7 +97,6 @@ def fig1():
     h.append(Line2D([], [], color=HUE, lw=2.2, ls=(0, (2, 1.5)), label="peak before emergence (short spike)"))
     ax.legend(handles=h, loc="upper center", bbox_to_anchor=(0.5, -0.04), ncol=3, fontsize=7, handlelength=1.8, columnspacing=1.2)
     ax.set_title("Figure 1. What emerged, and when — 48 technologies, 2005–2023"); ax.set_xlabel("year")
-    ax.text(0.0, -0.118, "For two technologies attention peaked in a short spike before the first three consecutive years above threshold (mesenchymal stem cells, 2013;\nhighly cross-linked polyethylene, 2008); microfracture peaked in its year of emergence (2012).", color=INK3, fontsize=7, va="top", transform=ax.transAxes)
     save(fig, "fig_timeline")
 
 # ------------------------------------------------------------------ Figure 2: origin vs lead

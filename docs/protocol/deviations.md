@@ -62,7 +62,7 @@ Three things bound how much it can be exploited:
    striking stratum of the results. None of them made a result easier to obtain.
 3. **The primary quantities were not re-specified.** The ranking axis survived a direct test
    (MTIX: Spearman 0.14, p = 0.36, n = 43; re-run on the final material 2026-09-03: Spearman
-   0.14, p = 0.18, n = 88) rather than being replaced when it looked suspect.
+   0.14, p = 0.18, n = 88; on material 48, 2026-10-29: Spearman 0.14, p = 0.23, n = 75 phrases) rather than being replaced when it looked suspect.
 
 ## 4. Procedural incidents — recorded, not excused
 
