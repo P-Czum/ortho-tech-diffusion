@@ -14,8 +14,8 @@ opisywac inna dziedzine — dokladnie jak CBCT.
 Nie wylacza niczego. Podaje liczby; prog dzialania ustala Cowork (dotad: 20%).
 
 Uruchom:
-    python code/audyt_skazenia.py --grupy data/processed/grupy_61.json \
-        --out data/processed/audyt_skazenia.csv
+    python code/audyt_skazenia.py --grupy data/processed/grupy_48.json \
+        --out data/processed/audyt_skazenia_48.csv
 """
 from __future__ import annotations
 import argparse, json, sys, time
@@ -39,6 +39,10 @@ DZIEDZINY = {
     "nerwowy": ("C10",),
     "nowotwory": ("C04",),
 }
+# obce dla ortopedii sa tylko te, wobec ktorych pisano D5a i D5c; C14, C10 i C04 to czeste
+# WSKAZANIA zabiegow ortopedycznych (TMR, ACDF, przerzuty) — raportowane, ale nie licza sie do
+# max_obca (poprawka z briefu audyt_skazenia 2026-09-03 §2, wczesniej tylko w CSV)
+OBCE = ("stomatologia", "trawienny", "moczowoplciowy", "oko")
 UI_ZWIERZ = "D000818"
 UI_LUDZIE = "D006801"
 
@@ -102,8 +106,8 @@ def main() -> int:
         r["zwierzeta_bez_ludzi"] = round(
             100 * sum(1 for p in ps if UI_ZWIERZ in mesh[p] and UI_LUDZIE not in mesh[p])
             / len(ps), 1)
-        r["max_obca"] = max(r[n] for n in zbior)
-        r["dziedzina_max"] = max(zbior, key=lambda n: r[n])
+        r["max_obca"] = max(r[n] for n in OBCE)
+        r["dziedzina_max"] = max(OBCE, key=lambda n: r[n])
         rows.append(r)
 
     d = pd.DataFrame(rows).sort_values("max_obca", ascending=False)
