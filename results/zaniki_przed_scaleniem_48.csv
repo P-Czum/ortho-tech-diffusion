@@ -9,8 +9,8 @@ hip resurfacing,0.1005,hip resurfacing,0.15,zanik_grupy
 hip resurfacing arthroplasty,0.1955,hip resurfacing,0.15,druga_nazwa
 balloon kyphoplasty,0.2998,kyphoplasty,0.81,przesuniecie
 kyphoplasty,0.3406,kyphoplasty,0.81,przesuniecie
-locked plating,0.1421,locking plate,0.51,przesuniecie
-lcp,0.4216,locking plate,0.51,przesuniecie
+locked plating,0.1421,locking plate,0.52,przesuniecie
+lcp,0.4216,locking plate,0.52,przesuniecie
 mesenchymal stem cell,0.307,mesenchymal stem cell,0.31,zanik_grupy
 microfracture,0.4294,microfracture,0.43,zanik_grupy
 mom total hip arthroplasty,0.1026,mom total hip arthroplasty,0.1,zanik_grupy

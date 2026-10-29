@@ -336,6 +336,11 @@
    "z_po_mtix": 0.72
   },
   {
+   "term": "locking plate fixation",
+   "trend_rocznie_pct": -6.2,
+   "z_po_mtix": 0.76
+  },
+  {
    "term": "autologous chondrocyte implantation",
    "trend_rocznie_pct": -12.2,
    "z_po_mtix": 1.27
@@ -403,12 +408,12 @@
  ],
  "t2": {
   "przed MTIX 2017-2021": {
-   "spearman_obecnosc_przekroczenie": 0.763
+   "spearman_obecnosc_przekroczenie": 0.772
   },
   "po MTIX 2023-2025": {
-   "spearman_obecnosc_przekroczenie": 0.854
+   "spearman_obecnosc_przekroczenie": 0.856
   }
  },
- "spearman_obecnosc_przed_po": 0.509,
- "mediana_z": -0.975
+ "spearman_obecnosc_przed_po": 0.506,
+ "mediana_z": -0.95
 }

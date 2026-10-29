@@ -1,5 +1,5 @@
 # Deviations from the OSF registration
-## Register · compiled 2026-09-02, extended 2026-10-28 · covers 2026-08-27 → 2026-10-28
+## Register · compiled 2026-09-02, extended 2026-10-29 · covers 2026-08-27 → 2026-10-29
 
 The registration (OSF, secondary-data preregistration, 2026-08-27) cites twelve frozen files by
 SHA-256. **All twelve are unchanged; the manifest verifies 12/12.** Every change below is therefore
@@ -62,7 +62,7 @@ Three things bound how much it can be exploited:
    striking stratum of the results. None of them made a result easier to obtain.
 3. **The primary quantities were not re-specified.** The ranking axis survived a direct test
    (MTIX: Spearman 0.14, p = 0.36, n = 43; re-run on the final material 2026-09-03: Spearman
-   0.14, p = 0.18, n = 88; on material 48, 2026-10-29: Spearman 0.14, p = 0.23, n = 75 phrases) rather than being replaced when it looked suspect.
+   0.14, p = 0.18, n = 88; on material 48 after the variant correction of 2026-10-29: Spearman 0.15, p = 0.20, n = 76 phrases) rather than being replaced when it looked suspect.
 
 ## 4. Procedural incidents — recorded, not excused
 
@@ -85,6 +85,21 @@ because its full form is not a noun phrase and cannot be counted. Material 54 �
 groups not touched are unchanged cell for cell. Found by the sensitivity analysis of the
 text-variant intersection, which placed `vertebroplasty` (1,518 papers) outside the group named
 after it; a sweep of every abbreviation in the material found the rest.
+
+**Variants agreed for a group but not counted in it, found 2026-10-29.** The same error by another
+route. `locking plate fixation` is on the synonym list as a variant of *locking plate*, and the
+surgeon marked it so; it dropped out of the group because, after D6, it no longer emerged on its
+own, and group membership had been carried over only for phrases that emerged individually.
+`ra total knee arthroplasty` (90 of 91 papers about robotic surgery) and `imn` were agreed for the
+material on 2026-09-01 on the 2005–2025 window and lost in the move to 2000–2025, because they
+had no category proposal and the default for such phrases was *research method*. Corrected:
+*locking plate* 1,574 → 1,692 papers, doubling time 6.2 → 5.6 years, y₀ and peak unchanged, not a
+decline (0.51 → 0.52 of peak); *robotic assistance* 679 → 714 papers, y₀ 2019 → **2018**; `imn`,
+counted with *intramedullary nail(ing)*, does not emerge (baseline 1.35% of the field) and is
+recorded among the exclusions. The other 46 groups are unchanged cell for cell. Material: 48
+groups, 86 phrases. Every exclusion is now listed with its stage, reason and source in
+`data/processed/wylaczenia_48.csv`; a check confirms that it covers every phrase that was ever in
+a version of the material and is not in the final one.
 
 **Precision of the material is measured by the domain expert, not by the analyst.** The category
 proposals in `np_kategorie_propozycja.tsv` are the language model's; the adjudication is the

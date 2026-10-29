@@ -113,7 +113,8 @@ def main() -> int:
         imax = d.abs().idxmax()
         rv = rdzen_przy(**par)
         przyb = sorted(rv - rdzen)
-        k_tech = [t for t in przyb if kat.get(t) in TECH]
+        # wariant juz liczony w grupie materialu (np. locking plate fixation) nie jest nowa technologia
+        k_tech = [t for t in przyb if kat.get(t) in TECH and t not in material]
         k_zn = [t for t in przyb if t in kat]
         for t in przyb:
             nowe.append({"parametr": nazwa, "wartosc": wart, "term": t,

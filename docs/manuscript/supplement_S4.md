@@ -7,7 +7,7 @@ project's drafting assistant: Claude (Anthropic), in the desktop application. Th
 was not recorded at the time; this is a limitation of the record, not of the procedure. The
 proposals are in `data/processed/np_kategorie_propozycja.tsv` (columns `term`, `kategoria`;
 643 phrases). They span the candidate sets of successive versions of the material, so the file
-is larger than the 84 phrases of the final material.
+is larger than the 86 phrases of the final material.
 
 | Proposed category | Phrases |
 |---|---:|
@@ -25,6 +25,12 @@ is larger than the 84 phrases of the final material.
 | research method | 5 |
 
 A phrase absent from the file was treated as *research method* and did not enter the material.
+This default cost two phrases that had been agreed for the material on 2026-09-01, on the
+2005–2025 window: `imn` and `ra total knee arthroplasty` had no proposal in the 2000–2025
+candidate list and silently dropped out. Both were restored on 2026-10-29. `ra total knee
+arthroplasty` (90 of its 91 papers are about robotic surgery) is now counted in the robotic group.
+`imn`, counted together with *intramedullary nail* and *intramedullary nailing*, does not emerge
+and is recorded among the exclusions (S5).
 
 ## S4.2 The record is the surgeon's
 
@@ -41,8 +47,9 @@ note.
 The surgeon changed no proposed category. His work went into three other kinds of decision:
 - merging variants of one name;
 - removing phrases too general to name a specific thing (`material_wykluczenia.json`);
-- the final exclusions: ambiguous abbreviations, complications, and the restoration of finite
-  element analysis (`material_decyzje_koncowe.json`).
+- the final exclusions: ambiguous abbreviations and complications (`material_decyzje_koncowe.json`);
+  finite element analysis, restored on 2026-09-02, was excluded on 2026-09-25 together with
+  segmentation software as a research method (S5).
 
 Ratings were given only to phrases proposed as technology or technique: 51 of 80 such phrases
 in the first sheet and 41 of 68 in the second. No phrase with another proposed label was rated.

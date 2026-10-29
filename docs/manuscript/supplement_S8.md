@@ -1,6 +1,6 @@
 # Supplement S8. Sensitivity of the material to the detector and to the field definition
 
-All numbers refer to the final material of 48 technology groups (84 phrases). Each section names
+All numbers refer to the final material of 48 technology groups (86 phrases). Each section names
 the file it is read from; the code that produced each file is given in brackets.
 
 ## S8.1 Detector parameters
@@ -45,10 +45,12 @@ few:
 |---|---:|---:|---:|---|
 | *k* = 3 | 1,844 | 555 | 24 | 8: CT image, intraoperative fluoroscopy, non-surgical treatment, ORIF, ORIF group, postoperative CT scan, TJR, virtual reality |
 | *k* = 4 | 1,502 | 213 | 21 | 8 (same) |
-| *m* = 2 | 1,793 | 504 | 13 | 4: CT image, locking plate fixation, non-surgical treatment, ORIF group |
-| *θ* = 0.05% | 2,799 | 1,510 | 14 | 6: CBCT scan, locking plate fixation, micro-CT, VEGF (two forms), virtual surgical planning |
+| *m* = 2 | 1,793 | 504 | 13 | 3: CT image, non-surgical treatment, ORIF group |
+| *θ* = 0.05% | 2,799 | 1,510 | 14 | 5: CBCT scan, micro-CT, VEGF (two forms), virtual surgical planning |
 
-Stricter variants (*k* = 7, *m* = 4, *θ* = 0.2%) add no phrases.
+*Locking plate fixation*, which also enters the core at *m* = 2 and *θ* = 0.05%, is a variant of
+*locking plate* and is counted in that group, so it is not listed. Stricter variants (*k* = 7,
+*m* = 4, *θ* = 0.2%) add no phrases.
 
 Source: `results/wrazliwosc_parametrow_48.csv`, `results/wrazliwosc_nowe_frazy_48.csv`
 [`code/wrazliwosc.py --nr 48`].
@@ -113,8 +115,9 @@ Source: `results/d6_vs_y0_48.csv` [`code/szeregi_grup.py`, `code/wrazliwosc.py`]
 from 12.6 (2019) to 8.7 (2022), and the mix of descriptors moved from general to specific terms.
 The test asked whether a phrase's exposure to the descriptors that gained or lost under MTIX
 predicts its deviation from its own 2015–2021 trend in 2023–2025. It does not: Spearman
-ρ = 0.14, p = 0.23, n = 75 phrases. The other 9 of the 84 phrases lack a usable 2015–2021
-series. On the earlier version of the material the same test gave ρ = 0.14, p = 0.18, n = 88.
+ρ = 0.15, p = 0.20, n = 76 phrases. The other 10 of the 86 phrases lack a usable 2015–2021
+series. On earlier versions of the material the same test gave ρ = 0.14 (p = 0.18, n = 88; and
+p = 0.23, n = 75 before two variants were added to their groups, S5).
 
 **Second discontinuity, 2024.** Descriptors per record rose to 11.7 in 2024 and 12.5 in 2025,
 back to the depth of 2019. Declines are defined on the 2025 share, so they could depend on a
