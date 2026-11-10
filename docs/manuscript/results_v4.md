@@ -5,13 +5,13 @@
 
 Forty-eight technologies and techniques emerged in the orthopaedic literature between 2000 and 2025 (Table 1, Figure 1): 9 in the first decade, 32 in the second, and 7 in 2020–2023 — the last figure truncated by design, since emergence requires three confirmatory years.
 
-The earliest were kyphoplasty, hip resurfacing, and total disc replacement (all 2005); computer navigation, the Ponseti method, autologous chondrocyte implantation, and locking plates (2006); reverse shoulder arthroplasty and double-bundle ACL reconstruction (2007). The second decade was the decade of percutaneous and endoscopic spine surgery — transforaminal interbody fusion (2010), lateral interbody fusion (2013), endoscopic discectomy (2016), oblique interbody fusion (2018) — together with patient-specific instrumentation (2012), the direct anterior approach (2014), 3D printing (2016), and mesenchymal stem cells (2017). Since 2019: artificial intelligence and robotic assistance (2019), lateral extra-articular tenodesis (2020), the femoral neck system, cephalomedullary nails, and targeted muscle reinnervation (2021), augmented reality and kinematic alignment (2022), ultrasound guidance (2023).
+The earliest were kyphoplasty, hip resurfacing, and total disc replacement (all 2005); computer navigation, the Ponseti method, autologous chondrocyte implantation, and locking plates (2006); reverse shoulder arthroplasty and double-bundle ACL reconstruction (2007). The second decade was the decade of percutaneous and endoscopic spine surgery — transforaminal interbody fusion (2010), lateral interbody fusion (2013), endoscopic discectomy (2016), oblique interbody fusion (2018) — together with patient-specific instrumentation (2012), the direct anterior approach (2014), 3D printing (2016), mesenchymal stem cells (2017), and robotic assistance (2018). Since 2019: artificial intelligence (2019), lateral extra-articular tenodesis (2020), the femoral neck system, cephalomedullary nails, and targeted muscle reinnervation (2021), augmented reality and kinematic alignment (2022), ultrasound guidance (2023).
 
 Fourteen of the 48 — more than a quarter — had not peaked by 2025, among them reverse shoulder arthroplasty, robotic assistance, artificial intelligence, 3D printing, patient-specific instrumentation, and kinematic alignment. For two technologies attention peaked in a short spike before the first three consecutive years above threshold (mesenchymal stem cells, 2013; highly cross-linked polyethylene, 2008), and microfracture peaked in its year of emergence (Figure 1, Table 1). Doubling times of attention, where computable (39 of 48), ranged from 2.1 years (artificial intelligence) to 57 years (total disc replacement) and are given in Table 1.
 
 ## Six kinds of technology diffuse differently
 
-Grouped by kind (Table 2), the 48 technologies show distinct patterns. Implants and materials (10) diffused slowly and widely — median doubling time 17.8 years, 7.7 effective countries. Operative techniques (21) diffused fast and more narrowly — 5 years, 5.1 countries. Assistive tools — navigation, patient-specific instrumentation, 3D printing, robotics, artificial intelligence, augmented reality, ultrasound guidance — are the youngest group (median emergence 2019) and five of seven are still growing. All three biological therapies declined.
+Grouped by kind (Table 2), the 48 technologies show distinct patterns. Implants and materials (10) diffused slowly and widely — median doubling time 17.8 years, 7.7 effective countries. Operative techniques (21) diffused fast and more narrowly — 5 years, 5.1 countries. Assistive tools — navigation, patient-specific instrumentation, 3D printing, robotics, artificial intelligence, augmented reality, ultrasound guidance — are the youngest group (median emergence 2018) and five of seven are still growing. All three biological therapies declined.
 
 **Table 2.** Diffusion by kind of technology. Medians; "growing" = peak in 2025.
 
@@ -20,7 +20,7 @@ Grouped by kind (Table 2), the 48 technologies show distinct patterns. Implants 
 | Implant or material | 10 | 2014.5 | 17.8 | 7.7 | 3 | 2 |
 | Joint arthroplasty | 5 | 2007 | 11.7 | 5.5 | 1 | 2 |
 | Operative technique | 21 | 2014 | 5.2 | 5.1 | 4 | 2 |
-| Assistive tool | 7 | 2019 | 8.1 | 5.7 | 5 | 1 |
+| Assistive tool | 7 | 2018 | 8.1 | 5.7 | 5 | 1 |
 | Perioperative care | 2 | 2014.5 | 18.4 | 6.7 | 1 | 0 |
 | Biological therapy | 3 | 2012 | 5.0 | 7.0 | 0 | 3 |
 

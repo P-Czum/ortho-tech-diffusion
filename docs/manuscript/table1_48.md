@@ -7,7 +7,7 @@
 | total disc replacement | Arthroplasty | 2005 | 2015 | 57.3 | 5.5 | USA (37 %) | USA | same |
 | autologous chondrocyte implantation | Biological | 2006 | 2010 | 5.0 | 5.3 | USA (37 %) | USA | same |
 | computer navigation | Assistive tool | 2006 | 2007 | — (peak < 2 y after y₀) | 7.6 | USA (31 %) | USA | same |
-| locking plate | Implant/material | 2006 | 2014 | 6.2 | 10.0 | China (20 %) | —† | flow |
+| locking plate | Implant/material | 2006 | 2014 | 5.6 | 10.1 | China (20 %) | —† | flow |
 | ponseti method | Technique | 2006 | 2009 | 3.0 | 8.5 | USA (30 %) | USA | same |
 | double bundle reconstruction | Technique | 2007 | 2010 | — (slope ≤ 0) | 7.6 | USA (28 %) | —† | unclassified |
 | reverse shoulder arthroplasty | Arthroplasty | 2007 | 2025 | 5.5 | 4.1 | USA (47 %) | USA | same |
@@ -40,9 +40,9 @@
 | hip arthroscopy | Technique | 2018 | 2021 | 7.0 | 2.4 | USA (63 %) | USA | same |
 | medial patellofemoral ligament reconstruction | Technique | 2018 | 2024 | — (slope ≤ 0) | 6.4 | China (31 %) | USA | flow |
 | oblique lumbar interbody fusion | Technique | 2018 | 2022 | 2.3 | 2.3 | China (65 %) | Japan | flow |
+| robotic assistance | Assistive tool | 2018 | 2025 | 2.2 | 4.9 | USA (42 %) | USA | same |
 | unicompartmental knee arthroplasty | Arthroplasty | 2018 | 2024 | 11.7 | 9.0 | USA (22 %) | —† | unclassified |
 | artificial intelligence / machine learning | Assistive tool | 2019 | 2025 | 2.1 | 4.8 | USA (38 %) | Germany | flow |
-| robotic assistance | Assistive tool | 2019 | 2025 | 2.2 | 4.9 | USA (42 %) | USA | same |
 | lateral extra articular tenodesis | Technique | 2020 | 2025 | 4.9 | 8.5 | USA (28 %) | USA | same |
 | cephalomedullary nail | Implant/material | 2021 | 2025 | 21.5 | 9.5 | USA (20 %) | USA | same |
 | femoral neck system | Implant/material | 2021 | 2024 | 2.3 | 2.0 | China (70 %) | South Korea | flow |

@@ -127,3 +127,20 @@ doubtful, 1 wrong of 51 rated), they are his.
   corrected domain list (dental, digestive, urogenital, eye) was moved from a post-processed CSV
   column into `audyt_skazenia.py`: 0 of 48 groups above 20%, 0 above 10%, median 0.5%, maximum
   8.6% (ACDF, digestive); veterinary share 0.0% in every group (`audyt_skazenia_48.csv`).
+
+## 6. Recall test (Supplement S9) — reference list fixed before any overlap was seen
+
+**Decision, 2026-10-30 (author, PC), recorded before the list was downloaded or compared.** Recall of the
+material is to be measured against **one** external reference list: the NICE Interventional Procedures
+programme (published 2003 onward; since 2025 carried as HealthTech guidance with the former IPG number),
+restricted to orthopaedic procedures. **Refinement, same day, before any comparison:** NICE's own topic filing is inconsistent (balloon kyphoplasty is filed under *Cancer*, endoscopic lumbar discectomy under *Chronic pain*), so the *Musculoskeletal conditions* filing cannot define the set. Instead: all 610 published IPGs (2003–2025, catalogue read 2026-10-30) were screened by a broad anatomical keyword list plus three NICE topics (musculoskeletal, injuries, surgical care, chronic pain), yielding 247 titles in `data/external/S9_nice_screen.csv`; the surgeon marks each as orthopaedic or not (a model proposal column flags obvious other specialties; the surgeon's column is the record). Chosen because it is a
+regulator's list of procedures judged *new* at a dated point, produced independently of this study and
+of the bibliographic record. A second list (expert survey, *Injury* 2022, trauma only) was considered and
+**rejected for simplicity** — one list, one table, one sentence.
+
+Rules fixed in advance:
+- The surgeon maps every NICE title he marks as orthopaedic to a phrase or to *no equivalent* **without consulting the 48-group material**; the analyst then matches phrases to the material and to `wylaczenia_48.csv`.
+- Each NICE item receives one of three outcomes: *in the material* / *was a candidate and was excluded* (reason from S5.3) / *never a candidate*. The last is split by the item's peak share of field records: **< 0.1 % (below θ — a size bound already reported in S8, not a detector miss)** vs **≥ 0.1 % (a true miss)**.
+- NICE items published 2024–2025 are reported separately as *outside the window* (emergence requires three years above threshold, so y₀ ≤ 2023), not as misses. Items before 2003 do not exist (programme start); the study's own baseline is 2000–2002.
+- Non-orthopaedic musculoskeletal items (rheumatology, pain procedures without an orthopaedic operation, maxillofacial) are excluded by the surgeon at mapping, with the exclusion listed.
+- No parameter of the detector or of the material is changed in response to the result.
