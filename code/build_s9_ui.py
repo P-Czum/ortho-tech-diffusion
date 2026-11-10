@@ -66,10 +66,9 @@ tr.done td{background:color-mix(in srgb,var(--surface) 92%,var(--ok))}
 <main>
  <div class="card">
   <b>Dla kazdego tytulu:</b> <b>tak</b> (procedura ortopedyczna) albo <b>nie</b>.
-  Przy <b>tak</b> wpisz <b>wszystkie nazwy</b>, pod ktorymi technologia wystepuje w abstraktach,
-  rozdzielone srednikami — pelna nazwe, skrot i warianty, np.
-  <i>percutaneous vertebroplasty; vertebroplasty; pvp</i>. Policzone beda razem.
-  Jesli nie ma odpowiednika w literaturze, kliknij <b>brak odpowiednika</b>.
+  Przy <b>tak</b> wpisz <b>jedna nazwe</b>, tak jak sam bys o tej technologii powiedzial
+  (skrot dopisz po sredniku tylko, jesli go znasz). Warianty nazwy wyszukam w korpusie i dam Ci
+  do potwierdzenia. Jesli nie ma odpowiednika w literaturze, kliknij <b>brak odpowiednika</b>.
   Etykieta <span class="tagchip">other specialty?</span> to tylko propozycja — decydujesz Ty.
   Nie zagladaj przy tym do materialu 48. Postep zapisuje sie w przegladarce; na koniec
   <b>Zapisz CSV</b>. Tytul prowadzi do strony NICE.
@@ -109,7 +108,7 @@ function draw(){
   var test = FILTRY.filter(function(f){ return f[0]===filtr; })[0][2];
   var v = ROWS.filter(test);
   $("#tbl").innerHTML = '<tr><th>rok</th><th>IPG</th><th>tytul NICE</th><th>ortopedia?</th>'
-    + '<th style="width:32%">nazwy w abstraktach (srednik)</th><th style="width:14%">uwaga</th></tr>' + v.map(function(r){
+    + '<th style="width:32%">nazwa technologii</th><th style="width:14%">uwaga</th></tr>' + v.map(function(r){
     var i = ROWS.indexOf(r), tak = r.ortopedia_PC === "tak";
     return '<tr class="'+(done(r)?"done":"")+'"><td class="num">'+r.year+'</td><td class="num">'+r.ipg+'</td>'
      + '<td><div class="title"><a href="https://www.nice.org.uk/guidance/'+r.htg.toLowerCase()+'" target="_blank" rel="noopener">'+esch(r.title)+'</a></div>'

@@ -85,4 +85,10 @@ Po kodowaniu PC policzę dla każdej pozycji „tak”:
 
 Z materiałem 48 nie porównuję niczego. Dopasowanie robisz Ty.
 
+**Korekta, ten sam dzień.** Wskazówka powyżej była zła: PC nie ma skąd znać wszystkich wariantów
+nazwy w abstraktach. Wraca Twoja pierwotna instrukcja: PC wpisuje **jedną nazwę** (skrót tylko,
+jeśli go zna). Warianty wyszukuję ja w korpusie, mechanicznie: wszystkie frazy pola zawierające tę
+nazwę lub skrót, z liczbą prac. PC potwierdza, które znaczą to samo, jak przy scaleniach.
+Dopiero potem liczę udział grupy. Strona do kodowania: `code/s9_ui.html`.
+
 Manifest **12/12**.
