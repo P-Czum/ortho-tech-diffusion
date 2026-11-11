@@ -1,0 +1,248 @@
+ipg,ortopedia,fraza,uwaga
+IPG12,tak,percutaneous vertebroplasty; pvp,
+IPG18,nie,,urology/urogynaecology
+IPG29,nie,,urology
+IPG31,tak,endoscopic laser foraminoplasty,spinal decompression surgery
+IPG42,nie,,
+IPG43,tak,percutaneous needle fasciotomy; pnf,hand surgery; also called needle aponeurotomy
+IPG53,tak,radiofrequency ablation; rfa,borderline: IR procedure but replaces surgical excision of bone tumour (osteoid osteoma)
+IPG60,nie,,
+IPG61,tak,percutaneous endoscopic thoracic discectomy,
+IPG66,nie,,
+IPG68,nie,,borderline/uncertain: CSF diversion shunt (neurosurgical) rather than spine surgery
+IPG69,nie,,
+IPG79,nie,,
+IPG80,nie,,neurosurgery for dystonia
+IPG90,nie,,
+IPG98,nie,,
+IPG108,nie,,
+IPG110,tak,metacarpophalangeal joint arthroplasty,also covers interphalangeal joints
+IPG111,tak,trapeziometacarpal joint arthroplasty,
+IPG113,nie,,
+IPG127,nie,,
+IPG128,nie,,
+IPG131,nie,,
+IPG140,tak,first metatarsophalangeal joint arthroplasty,
+IPG141,tak,automated percutaneous lumbar discectomy; apld,
+IPG146,tak,c1 lateral mass screw,
+IPG153,nie,,
+IPG155,nie,,
+IPG156,nie,,
+IPG163,nie,,
+IPG166,tak,balloon kyphoplasty; bkp,
+IPG179,tak,percutaneous cementoplasty,borderline: IR procedure for bone metastases; bone stabilisation analogous to vertebroplasty
+IPG180,nie,,
+IPG205,nie,,
+IPG209,nie,,
+IPG216,nie,,
+IPG219,nie,,
+IPG222,nie,,
+IPG223,tak,synovial cyst aspiration,borderline: percutaneous spinal procedure (facet/synovial cysts) as alternative to surgical excision; name not well established
+IPG225,nie,,
+IPG226,nie,,
+IPG227,nie,,
+IPG230,tak,arthroscopic lavage and debridement,
+IPG234,nie,,
+IPG238,nie,,orthodontics
+IPG240,nie,,
+IPG241,nie,,
+IPG243,nie,,
+IPG247,nie,,
+IPG258,nie,,
+IPG259,nie,,
+IPG263,nie,,diagnostic test for hydrocephalus
+IPG264,nie,,
+IPG271,tak,total wrist arthroplasty; twa,
+IPG274,nie,,
+IPG276,nie,,
+IPG278,nie,,neurorehabilitation device; no operation
+IPG285,nie,,anaesthesia
+IPG287,nie,,
+IPG290,nie,,
+IPG293,nie,,
+IPG297,tak,superhip procedure,paediatric orthopaedics; name refers to Paley SUPERhip for congenital femoral deficiency
+IPG298,nie,,
+IPG299,nie,,
+IPG303,tak,percutaneous endoscopic cervical discectomy; pecd,
+IPG305,tak,subtalar arthroereisis,
+IPG306,tak,lumbar total disc replacement; tdr,
+IPG310,nie,,borderline: chest wall deformity treated by thoracic/paediatric surgeons
+IPG311,tak,extracorporeal shockwave therapy; eswt,non-operative musculoskeletal treatment
+IPG313,tak,extracorporeal shockwave therapy; eswt,non-operative musculoskeletal treatment
+IPG317,tak,unicompartmental interpositional spacer,device known as ConforMIS iForma
+IPG323,nie,,
+IPG324,nie,,
+IPG325,nie,,
+IPG326,nie,,
+IPG327,nie,,
+IPG333,nie,,borderline: epiduroscopic adhesiolysis is a pain procedure without decompression/operation
+IPG341,tak,cervical disc arthroplasty; cda,
+IPG345,tak,minimally invasive total knee arthroplasty; mis tka,
+IPG354,tak,shoulder resurfacing arthroplasty,
+IPG357,tak,percutaneous laser disc decompression; pldd,
+IPG361,tak,surgical stabilization of rib fractures; ssrf,borderline: fracture fixation often done by thoracic surgeons
+IPG362,nie,,
+IPG363,tak,minimally invasive total hip arthroplasty; mis tha,
+IPG364,nie,,
+IPG365,tak,interspinous spacer,
+IPG366,tak,dynamic stabilization,
+IPG369,nie,,
+IPG375,tak,iliotibial band lengthening,
+IPG376,tak,extracorporeal shockwave therapy; eswt,non-operative musculoskeletal treatment
+IPG377,nie,,
+IPG380,nie,,
+IPG382,nie,,
+IPG383,tak,hand transplantation,borderline: hand surgery but mainly plastic/transplant teams
+IPG389,nie,,
+IPG390,nie,,
+IPG395,nie,,
+IPG403,tak,surgical hip dislocation,open FAI surgery; also open osteochondroplasty
+IPG408,tak,hip arthroscopy,arthroscopic FAI surgery
+IPG430,tak,meniscal scaffold,
+IPG434,nie,,
+IPG436,nie,,
+IPG437,tak,autologous blood injection; abi,
+IPG438,tak,autologous blood injection; abi,
+IPG441,nie,,
+IPG445,nie,,
+IPG446,nie,,
+IPG449,nie,,maxillofacial
+IPG450,nie,,
+IPG451,nie,,pain neuromodulation
+IPG455,nie,,
+IPG457,nie,,maxillofacial
+IPG467,nie,,
+IPG468,tak,phrenic nerve transfer,borderline: brachial plexus surgery (upper limb/hand surgery; also plastic surgeons)
+IPG471,nie,,
+IPG474,tak,arthroscopic trochleoplasty,
+IPG475,nie,,
+IPG480,nie,,
+IPG487,nie,,
+IPG493,tak,radiofrequency chondroplasty,
+IPG494,nie,,
+IPG500,nie,,borderline: joint replacement but maxillofacial specialty
+IPG506,tak,annular closure device,device Barricaid
+IPG507,nie,,
+IPG508,nie,,
+IPG511,tak,modified dunn procedure,
+IPG512,tak,kinespring knee implant,brand name; no generic name established
+IPG516,nie,,
+IPG518,nie,,
+IPG519,nie,,
+IPG521,tak,suture button fixation,
+IPG527,nie,,
+IPG529,tak,knee joint distraction; kjd,
+IPG533,nie,,
+IPG534,nie,,
+IPG537,nie,,
+IPG538,tak,ankle joint distraction,
+IPG539,tak,radiofrequency ablation; rfa,borderline: alternative to foot surgery (neurectomy) for Morton's neuroma; could be seen as pain nerve ablation
+IPG543,tak,nucleoplasty,borderline: percutaneous intradiscal procedure
+IPG544,tak,intradiscal electrothermal therapy; idet,borderline: percutaneous intradiscal procedure close to pain medicine
+IPG545,tak,percutaneous intradiscal radiofrequency thermocoagulation; pirft,borderline: percutaneous intradiscal procedure close to pain medicine
+IPG552,nie,,
+IPG553,nie,,
+IPG555,tak,percutaneous endoscopic interlaminar discectomy; peid,
+IPG556,tak,percutaneous transforaminal endoscopic discectomy; pted,
+IPG561,nie,,
+IPG565,nie,,
+IPG568,tak,vertebral body stenting; vbs,also SpineJack-type implants
+IPG570,tak,sacral epiduroscopic laser decompression; seld,
+IPG571,tak,extracorporeal shockwave therapy; eswt,non-operative musculoskeletal treatment
+IPG573,nie,,borderline: hand condition but radiotherapy without operation
+IPG574,tak,lateral lumbar interbody fusion; llif,
+IPG578,tak,sacroiliac joint fusion,
+IPG586,nie,,
+IPG592,nie,,
+IPG593,nie,,
+IPG595,tak,distal radioulnar joint arthroplasty,
+IPG597,tak,processed nerve allograft,borderline: peripheral nerve repair (hand surgery; also plastic surgeons)
+IPG601,nie,,
+IPG602,nie,,
+IPG603,nie,,
+IPG607,tak,mosaicplasty,
+IPG610,tak,nerve transfer,borderline: upper limb reconstruction in tetraplegia (hand surgery)
+IPG619,tak,superior capsular reconstruction; scr,
+IPG620,tak,axial lumbar interbody fusion; axialif,
+IPG621,tak,low-intensity pulsed ultrasound; lipus,
+IPG622,tak,low-intensity pulsed ultrasound; lipus,
+IPG623,tak,low-intensity pulsed ultrasound; lipus,
+IPG624,nie,,
+IPG628,nie,,
+IPG631,nie,,
+IPG632,nie,,
+IPG634,nie,,
+IPG637,tak,platelet-rich plasma; prp,orthopaedic biologic injection
+IPG638,nie,,
+IPG639,nie,,
+IPG640,nie,,
+IPG653,nie,,
+IPG654,nie,,
+IPG655,nie,,
+IPG656,nie,,
+IPG660,nie,,
+IPG662,nie,,
+IPG663,tak,midcarpal hemiarthroplasty,
+IPG669,nie,,
+IPG672,nie,,
+IPG677,nie,,
+IPG679,nie,,
+IPG685,nie,,
+IPG686,nie,,
+IPG687,tak,free functioning muscle transfer; ffmt,borderline: brachial plexus reconstruction (upper limb surgery; also plastic surgeons)
+IPG689,nie,,
+IPG691,nie,,
+IPG694,nie,,
+IPG702,nie,,borderline: non-invasive physical therapy device for knee OA; no operation
+IPG705,tak,lateral elbow resurfacing,
+IPG706,nie,,
+IPG707,nie,,
+IPG708,nie,,borderline: interventional radiology for OA pain; no orthopaedic operation
+IPG709,nie,,
+IPG711,nie,,
+IPG712,nie,,
+IPG715,nie,,
+IPG716,nie,,
+IPG717,nie,,
+IPG718,tak,intramedullary lengthening nail,
+IPG720,nie,,
+IPG722,tak,intramedullary lengthening nail,
+IPG726,tak,superpath,
+IPG728,tak,vertebral body tethering; vbt,
+IPG729,nie,,
+IPG732,nie,,
+IPG734,tak,focal knee resurfacing,
+IPG735,nie,,
+IPG736,nie,,
+IPG737,nie,,
+IPG738,nie,,
+IPG739,nie,,borderline: implanted neuromodulation for back pain; no spinal operation
+IPG742,tak,extracorporeal shockwave therapy; eswt,non-operative musculoskeletal treatment
+IPG747,nie,,pain nerve ablation
+IPG750,nie,,
+IPG755,nie,,
+IPG758,tak,radiofrequency ablation; rfa,borderline: IR tumour ablation in vertebrae for pain palliation
+IPG759,tak,radiofrequency ablation; rfa,borderline: RFA as adjunct to vertebral augmentation
+IPG760,nie,,
+IPG761,nie,,
+IPG762,nie,,
+IPG764,nie,,
+IPG765,tak,posterior dynamic distraction device,device ApiFix
+IPG767,nie,,borderline: genicular nerve ablation for pain; no operation
+IPG769,nie,,
+IPG772,nie,,
+IPG773,nie,,
+IPG775,tak,subacromial balloon spacer,
+IPG777,nie,,
+IPG779,nie,,
+IPG786,nie,,
+IPG788,nie,,
+IPG789,tak,minimally invasive hallux valgus surgery,
+IPG791,nie,,
+IPG792,nie,,
+IPG793,tak,autologous matrix-induced chondrogenesis; amic,
+IPG795,tak,osseointegrated prosthesis,
+IPG799,nie,,
+IPG803,nie,,
+IPG804,tak,targeted muscle reinnervation; tmr,borderline: nerve surgery in amputees (orthopaedic and plastic surgeons)
+IPG805,nie,,
